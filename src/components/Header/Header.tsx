@@ -1,33 +1,36 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 
 function Header() {
+    const currentURL = window.location.pathname;
     return(
         <DsfrHeader
             brandTop={<>République<br />Française</>}
             homeLinkProps={{
-                href: '/',
+                to: '/',
                 title: 'Accueil - ProConnect'
             }}
             id="fr-header-header-with-quick-access-items-nav-items"
             navigation={[
                 {
+                isActive: currentURL === '/',
                 linkProps: {
-                    href: '#',
+                    to: '/',
                     target: '_self'
                 },
                 text: 'Accueil'
                 },
                 {
-                isActive: true,
+                isActive: currentURL === '/annuaire',
                 linkProps: {
-                    href: '#',
+                    to: '/annuaire',
                     target: '_self'
                 },
                 text: 'Annuaire des services'
                 },
                 {
+                isActive: currentURL === '/partenaires',
                 linkProps: {
-                    href: '#',
+                    to: '/partenaires',
                     target: '_self'
                 },
                 text: 'Liste des partenaires'
@@ -37,21 +40,21 @@ function Header() {
                 {
                 iconId: 'fr-icon-code-s-slash-line',
                 linkProps: {
-                    href: '#'
+                    to: '#'
                 },
                 text: 'Intégrer ProConnect sur votre site'
                 },
                 {
                 iconId: 'fr-icon-timer-line',
                 linkProps: {
-                    href: '#'
+                    to: '#'
                 },
                 text: 'Feuille de route'
                 },
                 {
                 iconId: 'fr-icon-question-line',
                 linkProps: {
-                    href: '#'
+                    to: '#'
                 },
                 text: 'Aide'
                 }

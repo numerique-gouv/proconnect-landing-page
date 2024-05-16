@@ -1,15 +1,8 @@
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import './app.css'
-import welcome from './assets/welcome.svg'
-import Button from './components/Buttons/ButtonRadius'
+import welcome from '../assets/welcome.svg'
+import Button from '../components/Buttons/ButtonRadius'
 
-function App() {
-  
-
-  return (
-    <>
-      <Header/>
+function HomeLayout(){
+    return(
         <div className='fr-container--fluid background-welcome-page fr-py-8w fr-px-12w'>
           <div className='fr-grid-row fr-grid-row--gutters fr-grid-row--middle'>
             <div className='fr-col-7'>
@@ -25,9 +18,7 @@ function App() {
             </div>
           </div>
         </div>
-      <Footer/>
-    </>
-  )
+    )
 }
 
-export default App
+export default HomeLayout
