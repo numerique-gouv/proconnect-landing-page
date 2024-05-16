@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "postinstall": "copy-dsfr-to-public",
     "predev": "only-include-used-icons",
-    "prebuild": "only-include-used-icons"
+    "prebuild": "only-include-used-icons",
+    "start": "vite --port $PORT"
   },
   "dependencies": {
     "@codegouvfr/react-dsfr": "^1.9.11",
