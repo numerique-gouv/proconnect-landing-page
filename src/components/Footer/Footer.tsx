@@ -3,8 +3,7 @@ import { Footer as DsfrFooter } from "@codegouvfr/react-dsfr/Footer";
 function Footer(){
     return(
         <DsfrFooter
-            accessibility="fully compliant"
-            contentDescription="TOTO TATA TITI"
+            accessibility="partially compliant"
             termsLinkProps={{
                 href: '#'
             }}

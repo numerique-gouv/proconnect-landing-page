@@ -21,17 +21,17 @@ function HomeLayout(){
 
     return(
       <React.Fragment>
-        <div className='fr-container--fluid background-welcome-page fr-py-8w fr-px-12w'>
+        <div className='fr-container--fluid background-welcome-page fr-py-4w fr-py-md-8w fr-px-6w fr-px-md-12w'>
           <div className='fr-grid-row fr-grid-row--gutters fr-grid-row--middle'>
-            <div className='fr-col-7'>
+            <div className='fr-col-12 fr-col-md-7'>
               <h1 className='fr-h2'>
                 Avec le bouton <span className='blue-france'>ProConnect</span>, <br />nous vous identifions <br />sur les sites de l'administration.
               </h1>
               <p>Vous êtes :</p>
-              <ButtonRadius onClick={() => handleButtonClick("publicMember")} isSelected={selectedComponent === "publicMember"} >Membre de la Fonction Publique</ButtonRadius>
+              <ButtonRadius onClick={() => handleButtonClick("publicMember")} isSelected={selectedComponent === "publicMember"} personalized="fr-mr-2w fr-mb-2w">Membre de la Fonction Publique</ButtonRadius>
               <ButtonRadius onClick={() => handleButtonClick("privateProfessional")} isSelected={selectedComponent === "privateProfessional"}>Professionnel du privé</ButtonRadius>
             </div>
-            <div className='fr-col-5 centered-content'>
+            <div className='fr-col-5 fr-hidden fr-unhidden-md centered-content'>
                 <img src={welcome} alt="" />
             </div>
           </div>
