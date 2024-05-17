@@ -1,0 +1,54 @@
+/* Conteneur de la grille */
+.grid-container {
+    display: flex;
+    justify-content: center; /* Centrer la grille horizontalement */
+    padding-bottom: 2rem; /* Ajouter du padding autour de la grille */
+}
+
+/* Grille des tuiles */
+.grid {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux tuiles de passer à la ligne suivante si nécessaire */
+    gap: 1rem; /* Espacement entre les tuiles */
+    max-width: 1200px; /* Limite la largeur totale de la grille */
+}
+
+/* Tuiles individuelles */
+.tile {
+    flex: 1 1 22%; /* Les tuiles prennent une largeur de 22% et peuvent s'ajuster */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* S'assurer que le contenu occupe tout l'espace vertical */
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background-alt-brown-opera);
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 200px; /* Hauteur minimale pour uniformité */
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem; /* Espacement entre l'image et le texte */
+}
+
+.tile p {
+    flex: 1; /* Le texte prend tout l'espace vertical restant */
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+    margin: 0;
+}
+
+/* Ajustements pour différents écrans */
+@media (max-width: 768px) {
+    .tile {
+        flex: 1 1 45%; /* Deux tuiles par ligne sur les écrans moyens */
+    }
+}
+
+@media (max-width: 480px) {
+    .tile {
+        flex: 1 1 100%; /* Une tuile par ligne sur les petits écrans */
+    }
+}
