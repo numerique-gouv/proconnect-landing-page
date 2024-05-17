@@ -1,7 +1,6 @@
 import "./tiles.css"
 
 function Tile({illu, content}: {illu: string, content: string}){
-    console.log(illu)
     return (
         <div className="tile space-between">
             <div>
