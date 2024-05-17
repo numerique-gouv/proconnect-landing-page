@@ -10,7 +10,7 @@ declare module '@codegouvfr/react-dsfr/spa' {
   }
 }
 
-startReactDsfr({ defaultColorScheme: "system", Link, });
+startReactDsfr({ defaultColorScheme: "light", Link, });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
