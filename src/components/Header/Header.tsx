@@ -37,17 +37,17 @@ function Header() {
                 },
             ]}
             quickAccessItems={[
-                {
-                iconId: 'fr-icon-code-s-slash-line',
-                linkProps: {
-                    to: '#'
-                },
-                text: 'Intégrer ProConnect sur votre site'
-                },
+                // {
+                // iconId: 'fr-icon-code-s-slash-line',
+                // linkProps: {
+                //     to: '#'
+                // },
+                // text: 'Intégrer ProConnect sur votre site'
+                // },
                 {
                 iconId: 'fr-icon-timer-line',
                 linkProps: {
-                    to: '#'
+                    to: '/feuille-de-route'
                 },
                 text: 'Feuille de route'
                 },
