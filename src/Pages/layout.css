@@ -26,7 +26,7 @@ body {
 }
 
 .centered-content {
-    text-align: center;
+    justify-content: center;
 }
 
 .blue-france {
