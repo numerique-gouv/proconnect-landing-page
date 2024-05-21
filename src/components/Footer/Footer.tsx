@@ -8,7 +8,7 @@ function Footer(){
                 href: '#'
             }}
             websiteMapLinkProps={{
-                href: '#'
+                to: '/plan-du-site'
             }}
         />
     )

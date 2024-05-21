@@ -1,9 +1,7 @@
-import React from "react"
-
 function SiteMap() {
     return(
-        <React.Fragment>
-            <h1 className="fr-h3"></h1>
+        <div className="fr-container fr-mt-2w fr-mb-4w">
+            <h1 className="fr-h3">Plan du site</h1>
             <ul>
                 <li>
                     <a className="fr-raw-link" href="/">Accueil</a>
@@ -42,7 +40,7 @@ function SiteMap() {
                     <a className="fr-raw-link" href="/cgu">Condition générale d'utilisation</a>
                 </li>
             </ul>
-        </React.Fragment>
+        </div>
     )
 }
 

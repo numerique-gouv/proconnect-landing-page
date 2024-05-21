@@ -7,6 +7,7 @@ import HomeLayout from '../Pages/HomeLayout';
 import FakeLayout from '../Pages/FakeLayout';
 import Roadmap from '../Pages/Roadmap';
 import ServiceDirectory from '../Pages/ServiceDirectory';
+import SiteMap from '../Pages/SiteMap';
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,14 @@ const router = createBrowserRouter([
       element: (
         <WrapperLayout>
           <FakeLayout></FakeLayout>
+        </WrapperLayout>
+      ),
+    },
+    {
+      path: '/plan-du-site',
+      element: (
+        <WrapperLayout>
+          <SiteMap/>
         </WrapperLayout>
       ),
     },
