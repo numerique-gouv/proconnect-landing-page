@@ -6,6 +6,7 @@ import WrapperLayout from '../Pages/WrapperLayout';
 import HomeLayout from '../Pages/HomeLayout';
 import FakeLayout from '../Pages/FakeLayout';
 import Roadmap from '../Pages/Roadmap';
+import ServiceDirectory from '../Pages/ServiceDirectory';
 
 const router = createBrowserRouter([
     {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       path: '/annuaire',
       element: (
         <WrapperLayout>
-          <FakeLayout></FakeLayout>
+          <ServiceDirectory></ServiceDirectory>
         </WrapperLayout>
       ),
     },
@@ -37,6 +38,14 @@ const router = createBrowserRouter([
       element: (
         <WrapperLayout>
           <Roadmap></Roadmap>
+        </WrapperLayout>
+      ),
+    },
+    {
+      path: '/aide',
+      element: (
+        <WrapperLayout>
+          <FakeLayout></FakeLayout>
         </WrapperLayout>
       ),
     },

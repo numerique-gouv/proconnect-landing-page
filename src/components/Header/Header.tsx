@@ -54,7 +54,7 @@ function Header() {
                 {
                 iconId: 'fr-icon-question-line',
                 linkProps: {
-                    to: '#'
+                    to: '/aide'
                 },
                 text: 'Aide'
                 }
