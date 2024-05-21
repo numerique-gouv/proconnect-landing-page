@@ -4,10 +4,10 @@ import {
   } from 'react-router-dom';
 import WrapperLayout from '../Pages/WrapperLayout';
 import HomeLayout from '../Pages/HomeLayout';
-import FakeLayout from '../Pages/FakeLayout';
 import Roadmap from '../Pages/Roadmap';
 import ServiceDirectory from '../Pages/ServiceDirectory';
 import SiteMap from '../Pages/SiteMap';
+import InConstruction from '../Pages/InConstruction';
 
 const router = createBrowserRouter([
     {
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       path: '/partenaires',
       element: (
         <WrapperLayout>
-          <FakeLayout></FakeLayout>
+          <InConstruction></InConstruction>
         </WrapperLayout>
       ),
     },
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       path: '/aide',
       element: (
         <WrapperLayout>
-          <FakeLayout></FakeLayout>
+          <InConstruction></InConstruction>
         </WrapperLayout>
       ),
     },
