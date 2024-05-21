@@ -1,15 +1,16 @@
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import './layout.css'
-import React from 'react'
 
 function WrapperLayout(props: { children: JSX.Element }) {
   return (
-    <React.Fragment>
+    <div className='app'>
       <Header/>
-        {props.children}
+        <div className='content'>
+          {props.children}
+        </div>
       <Footer/>
-    </React.Fragment>
+    </div>
   )
 }
 
