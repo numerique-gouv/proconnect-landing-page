@@ -1,5 +1,5 @@
 import { Button as DsfrButton } from "@codegouvfr/react-dsfr/Button";
-import './Button.css'
+import './button.css'
 import { PropsWithChildren } from "react";
 
 interface MyComponentProps extends PropsWithChildren {

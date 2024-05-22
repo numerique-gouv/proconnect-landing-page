@@ -1,10 +1,10 @@
-import YouAre from "../components/YouAre/YouAre"
+import PrivateOrPublic from "../components/PrivateOrPublic/PrivateOrPublic"
 import {tilesData, stepsInfosPublic} from "../Datas"
 
 function AgentPublic(){
     return(
         <div className="fr-container" id="public">
-            <YouAre tiles={tilesData} stepsInfos={stepsInfosPublic} ></YouAre>
+            <PrivateOrPublic tiles={tilesData} stepsInfos={stepsInfosPublic} ></PrivateOrPublic>
         </div>
     )
 }
