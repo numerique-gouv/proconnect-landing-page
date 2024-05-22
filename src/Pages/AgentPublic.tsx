@@ -1,12 +1,12 @@
-import PrivateOrPublic from "../components/PrivateOrPublic/PrivateOrPublic"
-import {tilesData, stepsInfosPublic} from "../Datas"
+import PrivateOrPublic from '../components/PrivateOrPublic/PrivateOrPublic';
+import { tilesData, stepsInfosPublic } from '../Datas';
 
-function AgentPublic(){
-    return(
+function AgentPublic() {
+    return (
         <div className="fr-container" id="public">
-            <PrivateOrPublic tiles={tilesData} stepsInfos={stepsInfosPublic} ></PrivateOrPublic>
+            <PrivateOrPublic tiles={tilesData} stepsInfos={stepsInfosPublic}></PrivateOrPublic>
         </div>
-    )
+    );
 }
 
-export default AgentPublic
+export default AgentPublic;

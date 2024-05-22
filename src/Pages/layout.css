@@ -1,6 +1,8 @@
 /* Set the footer at the bottom of the pages */
 
-html, body, #root {
+html,
+body,
+#root {
     height: 100%;
     margin: 0;
 }
@@ -30,5 +32,5 @@ body {
 }
 
 .blue-france {
-    color: var(--text-title-blue-france)
+    color: var(--text-title-blue-france);
 }

@@ -1,7 +1,4 @@
-import {
-    createBrowserRouter,
-    RouterProvider
-  } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import WrapperLayout from '../Pages/WrapperLayout';
 import HomeLayout from '../Pages/HomeLayout';
 import Roadmap from '../Pages/Roadmap';
@@ -13,52 +10,52 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: (
-          <WrapperLayout>
-            <HomeLayout />
-          </WrapperLayout>
+            <WrapperLayout>
+                <HomeLayout />
+            </WrapperLayout>
         ),
     },
     {
-      path: '/annuaire',
-      element: (
-        <WrapperLayout>
-          <ServiceDirectory></ServiceDirectory>
-        </WrapperLayout>
-      ),
+        path: '/annuaire',
+        element: (
+            <WrapperLayout>
+                <ServiceDirectory></ServiceDirectory>
+            </WrapperLayout>
+        ),
     },
     {
-      path: '/partenaires',
-      element: (
-        <WrapperLayout>
-          <InConstruction></InConstruction>
-        </WrapperLayout>
-      ),
+        path: '/partenaires',
+        element: (
+            <WrapperLayout>
+                <InConstruction></InConstruction>
+            </WrapperLayout>
+        ),
     },
     {
-      path: '/feuille-de-route',
-      element: (
-        <WrapperLayout>
-          <Roadmap></Roadmap>
-        </WrapperLayout>
-      ),
+        path: '/feuille-de-route',
+        element: (
+            <WrapperLayout>
+                <Roadmap></Roadmap>
+            </WrapperLayout>
+        ),
     },
     {
-      path: '/aide',
-      element: (
-        <WrapperLayout>
-          <InConstruction></InConstruction>
-        </WrapperLayout>
-      ),
+        path: '/aide',
+        element: (
+            <WrapperLayout>
+                <InConstruction></InConstruction>
+            </WrapperLayout>
+        ),
     },
     {
-      path: '/plan-du-site',
-      element: (
-        <WrapperLayout>
-          <SiteMap/>
-        </WrapperLayout>
-      ),
+        path: '/plan-du-site',
+        element: (
+            <WrapperLayout>
+                <SiteMap />
+            </WrapperLayout>
+        ),
     },
-])
+]);
 
 function Router() {
     return <RouterProvider router={router} />;

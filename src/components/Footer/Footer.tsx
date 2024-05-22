@@ -1,17 +1,17 @@
-import { Footer as DsfrFooter } from "@codegouvfr/react-dsfr/Footer";
+import { Footer as DsfrFooter } from '@codegouvfr/react-dsfr/Footer';
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <DsfrFooter
             accessibility="partially compliant"
             termsLinkProps={{
-                href: '#'
+                href: '#',
             }}
             websiteMapLinkProps={{
-                to: '/plan-du-site'
+                to: '/plan-du-site',
             }}
         />
-    )
+    );
 }
 
-export default Footer
+export default Footer;

@@ -1,12 +1,12 @@
-import PrivateOrPublic from "../components/PrivateOrPublic/PrivateOrPublic"
-import {tilesData, stepsInfosPrivate} from "../Datas"
+import PrivateOrPublic from '../components/PrivateOrPublic/PrivateOrPublic';
+import { tilesData, stepsInfosPrivate } from '../Datas';
 
-function PrivateProfessional(){
-    return(
+function PrivateProfessional() {
+    return (
         <div className="fr-container">
             <PrivateOrPublic tiles={tilesData} stepsInfos={stepsInfosPrivate} />
         </div>
-    )
+    );
 }
 
-export default PrivateProfessional
+export default PrivateProfessional;

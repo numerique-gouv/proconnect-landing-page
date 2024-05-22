@@ -5,17 +5,17 @@
     padding-left: 30px;
     position: relative;
     border-left: 2px solid var(--background-action-high-blue-france);
-  }
-  
-  .navmenu ul li {
+}
+
+.navmenu ul li {
     padding: 20px 0;
     padding-left: 15px;
     position: relative;
     line-height: 1rem;
-  }
-  
-  .navmenu ul li::after {
-    content: "";
+}
+
+.navmenu ul li::after {
+    content: '';
     position: absolute;
     background: white;
     width: 22px;
@@ -26,48 +26,47 @@
     border-radius: 50px;
     border: 2px solid var(--background-action-high-blue-france);
     transition: background 250ms;
-  }
-  
-  .navmenu ul li.active::after {
+}
+
+.navmenu ul li.active::after {
     background: var(--background-action-high-blue-france);
-  }
-  
-  .navmenu ul li:last-child::before {
-    content: "";
+}
+
+.navmenu ul li:last-child::before {
+    content: '';
     width: 18px;
     top: 40px;
     bottom: 0;
     position: absolute;
     background-color: white;
     left: -40px;
-  }
-  
-  .navmenu ul li:first-child::before {
-    content: "";
+}
+
+.navmenu ul li:first-child::before {
+    content: '';
     width: 20px;
     top: 0;
     height: 38px;
     position: absolute;
     background-color: white;
     left: -41.5px;
-  }
-  
-  /* BULLE */
-  
-  .bubble {
+}
+
+/* BULLE */
+
+.bubble {
     background: var(--background-alt-grey);
     position: relative;
     padding: 15px;
     max-width: 700px;
-  }
-  
-  .bubble::after {
-    content: "";
+}
+
+.bubble::after {
+    content: '';
     border: 20px solid transparent;
     border-width: 12px 20px;
     position: absolute;
     left: -40px;
     top: 13px;
     border-right-color: var(--background-alt-grey);
-  }
-  
+}
