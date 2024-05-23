@@ -10,8 +10,9 @@ function ServiceDirectory() {
     const test = () => {
         return setAvailableToPrivate((prevState) => !prevState);
     };
+
     const filteredOffres = availableToPrivate
-        ? offres_fi.filter((offre) => offre.openPrivate)
+        ? offres_fi.filter(({ openPrivate }) => openPrivate)
         : offres_fi;
 
     return (
