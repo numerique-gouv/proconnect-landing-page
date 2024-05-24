@@ -59,15 +59,15 @@ export const stepsInfosPrivate = [
 
 export const offres_fs = [
     {
-        title: 'Osmose',
-        url: 'https://osmose.numerique.gouv.fr/plugins/DINUMThemePlugin/jsp/front/privateLoginOsmose.jsp?redirect=https%3A%2F%2Fosmose.numerique.gouv.fr%2Fjcms%2F',
-        description: 'Outil de travail collaboratif',
-    },
-    {
         title: 'Resana',
         url: 'https://resana.numerique.gouv.fr/public/',
         description: 'Outil de travail collaboratif',
         openPrivate: true,
+    },
+    {
+        title: 'Portail CISIRH RIE',
+        url: 'https://portail.cisirh.rie.gouv.fr/',
+        description: 'Portail des applications interministérielles RH',
     },
     {
         title: 'Webconférence de l’État',
@@ -75,15 +75,26 @@ export const offres_fs = [
         description: 'Outil de conférence à distance',
     },
     {
-        title: 'Webinaire',
-        url: 'https://webinaire.numerique.gouv.fr/welcome',
-        description: 'Outil de conférence à distance',
+        title: 'Osmose',
+        url: 'https://osmose.numerique.gouv.fr/plugins/DINUMThemePlugin/jsp/front/privateLoginOsmose.jsp?redirect=https%3A%2F%2Fosmose.numerique.gouv.fr%2Fjcms%2F',
+        description: 'Outil de travail collaboratif',
+    },
+    {
+        title: 'Annuaire des Entreprises',
+        url: 'https://annuaire-entreprises.data.gouv.fr/',
+        description:
+            'Vérification des informations légales publiques des entreprises, associations et services publics en France',
     },
     {
         title: 'Démarches Simplifiées',
         url: 'https://www.demarches-simplifiees.fr/',
         description: 'Outil pour réaliser des démarches administratives en ligne',
         openPrivate: true,
+    },
+    {
+        title: 'Webinaire',
+        url: 'https://webinaire.numerique.gouv.fr/welcome',
+        description: 'Outil de conférence à distance',
     },
     {
         title: 'Rizomo',
@@ -132,22 +143,6 @@ export const offres_fs = [
             'Services du CEREMA (centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement)',
     },
     {
-        title: 'Mentor',
-        url: 'https://mentor.gouv.fr/login/index.php',
-        description: 'Plateforme interministérielle de formation professionnelle',
-    },
-    {
-        title: 'Portail CISIRH RIE',
-        url: 'https://portail.cisirh.rie.gouv.fr/',
-        description: 'Portail des applications interministérielles RH',
-    },
-    {
-        title: 'Annuaire des Entreprises',
-        url: 'https://annuaire-entreprises.data.gouv.fr/',
-        description:
-            'Vérification des informations légales publiques des entreprises, associations et services publics en France',
-    },
-    {
         title: 'Contrats Territoires Internet et RIE',
         url: 'https://contrats-territoires.interieur.gouv.fr/accounts/login',
         description: 'Service pour élaborer les Contrats Plan État-Région (CPER)',
@@ -159,5 +154,10 @@ export const offres_fs = [
         description:
             'Cet outil s’adresse aux ayants droits qui souhaiteraient exploiter des données à caractère personnel.',
         openPrivate: true,
+    },
+    {
+        title: 'Mentor',
+        url: 'https://mentor.gouv.fr/login/index.php',
+        description: 'Plateforme interministérielle de formation professionnelle',
     },
 ];
