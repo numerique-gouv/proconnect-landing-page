@@ -13,7 +13,7 @@ function Header() {
             }
             homeLinkProps={{
                 to: '/',
-                title: 'Accueil - ProConnect',
+                title: 'Accueil - AgentConnect',
             }}
             id="fr-header-header-with-quick-access-items-nav-items"
             navigation={[
@@ -66,7 +66,7 @@ function Header() {
                 },
             ]}
             serviceTagline="Identifie les professionnels sur les sites de l'administation"
-            serviceTitle="ProConnect"
+            serviceTitle="AgentConnect"
         />
     );
 }

@@ -1,10 +1,11 @@
-import ButtonProCo from './assets/proConnect.svg';
+// import ButtonProCo from './assets/proConnect.svg';
+import AgentConnect from './assets/AgentConnect.svg';
 import EnterEmail from './assets/enterEmail.svg';
 import Identity from './assets/checkIdentity.svg';
 import EnjoyServices from './assets/enjoyServices.svg';
 
 export const tilesData = [
-    { illu: ButtonProCo, content: 'Cliquez sur le bouton ProConnect' },
+    { illu: AgentConnect, content: 'Cliquez sur le bouton Agentconnect' },
     { illu: EnterEmail, content: 'Entrez votre adresse email professionnelle.' },
     {
         illu: Identity,
@@ -21,7 +22,7 @@ export const stepsInfosPublic = [
     {
         question: 'Êtes-vous éligible ?',
         response:
-            'Oui ! Tous les membres de la Fonction Publique peuvent utiliser nos boutons de connexion ProConnect et AgentConnect.',
+            'Oui ! Tous les membres de la Fonction Publique peuvent utiliser notre bouton de connexion AgentConnect.',
     },
     {
         question: 'Que se passe-t-il si votre administration n’est pas partenaire ?',
@@ -31,12 +32,12 @@ export const stepsInfosPublic = [
     {
         question: 'À quels services en ligne pouvez-vous vous connecter ?',
         response:
-            'Grâce aux boutons ProConnect et AgentConnect, accédez à tous les outils de la DINUM, à la Suite Numérique et à tous les services interministériels de nos partenaires.',
+            'Grâce au AgentConnect, accédez à tous les outils de la DINUM, à la Suite Numérique et à tous les services interministériels de nos partenaires.',
     },
-    {
-        question: 'Quelle est la différence entre AgentConnect et ProConnect ?',
-        response: `Il n’y a aucune différence ! AgentConnect est l’ancien nom de ProConnect. Ces deux boutons fonctionnent exactement pareil pour vous.`,
-    },
+    // {
+    //     question: 'Quelle est la différence entre AgentConnect et ProConnect ?',
+    //     response: `Il n’y a aucune différence ! AgentConnect est l’ancien nom de ProConnect. Ces deux boutons fonctionnent exactement pareil pour vous.`,
+    // },
 ];
 
 export const stepsInfosPrivate = [
@@ -56,7 +57,7 @@ export const stepsInfosPrivate = [
     },
 ];
 
-export const offres_fi = [
+export const offres_fs = [
     {
         title: 'Osmose',
         url: 'https://osmose.numerique.gouv.fr/plugins/DINUMThemePlugin/jsp/front/privateLoginOsmose.jsp?redirect=https%3A%2F%2Fosmose.numerique.gouv.fr%2Fjcms%2F',

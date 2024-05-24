@@ -26,7 +26,7 @@ function HomeLayout() {
                     <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
                         <div className="fr-col-12 fr-col-md-6">
                             <h1 className="fr-h2">
-                                Avec le bouton <span className="blue-france">ProConnect</span>,{' '}
+                                Avec le bouton <span className="blue-france">AgentConnect</span>,
                                 <br />
                                 nous vous identifions <br />
                                 sur les sites de l'administration.
@@ -39,12 +39,12 @@ function HomeLayout() {
                             >
                                 Membre de la Fonction Publique
                             </ButtonRadius>
-                            <ButtonRadius
+                            {/* <ButtonRadius
                                 onClick={() => handleButtonClick('privateProfessional')}
                                 isSelected={selectedComponent === 'privateProfessional'}
                             >
                                 Professionnel du privé
-                            </ButtonRadius>
+                            </ButtonRadius> */}
                         </div>
                         <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
                             <img src={welcome} alt="" />

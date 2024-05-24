@@ -1,5 +1,5 @@
 import { Card as DsfrCard } from '@codegouvfr/react-dsfr/Card';
-import { Badge } from '@codegouvfr/react-dsfr/Badge';
+// import { Badge } from '@codegouvfr/react-dsfr/Badge';
 
 interface Offre {
     description: string;
@@ -12,7 +12,7 @@ type Props = {
     offre: Offre;
 };
 
-const Card: React.FC<Props> = ({ offre: { description, url, title, openPrivate } }) => {
+const Card: React.FC<Props> = ({ offre: { description, url, title } }) => {
     return (
         <div
             className="container fr-col-12 fr-col-md-4 fr-mt-2w"
@@ -21,15 +21,15 @@ const Card: React.FC<Props> = ({ offre: { description, url, title, openPrivate }
             }}
         >
             <DsfrCard
-                start={
-                    openPrivate ? (
-                        <ul className="fr-badges-group">
-                            <li>
-                                <Badge severity="success">Ouvert au privé</Badge>
-                            </li>
-                        </ul>
-                    ) : null
-                }
+                // start={
+                //     openPrivate ? (
+                //         <ul className="fr-badges-group">
+                //             <li>
+                //                 <Badge severity="success">Ouvert au privé</Badge>
+                //             </li>
+                //         </ul>
+                //     ) : null
+                // }
                 background
                 border
                 desc={description}
