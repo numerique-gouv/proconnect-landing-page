@@ -1,6 +1,6 @@
 import PrivateOrPublic from '../components/PrivateOrPublic/PrivateOrPublic';
 import { tilesData, stepsInfosPublic } from '../Datas';
-import AgentConnect from '../assets/AgentConnect.svg';
+import AgentConnectButton from '../assets/AgentConnectButton.svg';
 
 function AgentPublic() {
     return (
@@ -20,7 +20,7 @@ function AgentPublic() {
                             </p>
                         </div>
                         <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
-                            <img src={AgentConnect} alt="" />
+                            <img src={AgentConnectButton} alt="" />
                         </div>
                     </div>
                 </a>
