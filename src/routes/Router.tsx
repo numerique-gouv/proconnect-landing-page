@@ -5,6 +5,10 @@ import Roadmap from '../Pages/Roadmap';
 import ServiceDirectory from '../Pages/ServiceDirectory';
 import SiteMap from '../Pages/SiteMap';
 import InConstruction from '../Pages/InConstruction';
+import Partners from '../Pages/Partners';
+import Cgu from '../Pages/Cgu';
+import LegalNotices from '../Pages/LegalNotices';
+import Stats from '../Pages/Stats';
 
 const router = createBrowserRouter([
     {
@@ -27,7 +31,7 @@ const router = createBrowserRouter([
         path: '/partenaires',
         element: (
             <WrapperLayout>
-                <InConstruction></InConstruction>
+                <Partners></Partners>
             </WrapperLayout>
         ),
     },
@@ -52,6 +56,30 @@ const router = createBrowserRouter([
         element: (
             <WrapperLayout>
                 <SiteMap />
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/cgu',
+        element: (
+            <WrapperLayout>
+                <Cgu />
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/mentions-legales',
+        element: (
+            <WrapperLayout>
+                <LegalNotices />
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/statistiques',
+        element: (
+            <WrapperLayout>
+                <Stats />
             </WrapperLayout>
         ),
     },
