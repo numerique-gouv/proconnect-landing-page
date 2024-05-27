@@ -28,11 +28,15 @@ export const stepsInfosPublic = [
         question: 'Que se passe-t-il si votre administration n’est pas partenaire ?',
         response: `Aucun problème, vous pouvez utiliser ProConnnect ! 
     Nous nous assurons nous-même que vous faites partie de la Fonction Publique en vérifiant votre email professionnel et le SIRET de votre organisation.`,
+        link: '/partenaires',
+        descriptionLink: 'Découvrez la liste des partenaires',
     },
     {
         question: 'À quels services en ligne pouvez-vous vous connecter ?',
         response:
             'Grâce au AgentConnect, accédez à tous les outils de la DINUM, à la Suite Numérique et à tous les services interministériels de nos partenaires.',
+        link: '/annuaire',
+        descriptionLink: `Découvrez l'annuaire des services`,
     },
     // {
     //     question: 'Quelle est la différence entre AgentConnect et ProConnect ?',
