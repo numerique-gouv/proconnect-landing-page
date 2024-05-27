@@ -1,18 +1,31 @@
-import { Footer as DsfrFooter } from "@codegouvfr/react-dsfr/Footer";
+import { Footer as DsfrFooter } from '@codegouvfr/react-dsfr/Footer';
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <DsfrFooter
-            accessibility="fully compliant"
-            contentDescription="TOTO TATA TITI"
+            accessibility="non compliant"
             termsLinkProps={{
-                href: '#'
+                to: '/mentions-legales',
             }}
             websiteMapLinkProps={{
-                href: '#'
+                to: '/plan-du-site',
             }}
+            bottomItems={[
+                <a href="/cgu#url-anchor-dp" className="fr-footer__bottom-link">
+                    Données personnelles
+                </a>,
+                <a href="/cgu#url-anchor-gdc" className="fr-footer__bottom-link">
+                    Gestion des cookies
+                </a>,
+                <a href="/cgu" className="fr-footer__bottom-link">
+                    Conditions générales d'utilisation
+                </a>,
+                <a href="/statistiques" className="fr-footer__bottom-link">
+                    Statistiques d'utilisation
+                </a>,
+            ]}
         />
-    )
+    );
 }
 
-export default Footer
+export default Footer;

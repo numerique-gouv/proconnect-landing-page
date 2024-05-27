@@ -1,17 +1,28 @@
-import { Button as DsfrButton } from "@codegouvfr/react-dsfr/Button";
-import './Button.css'
-import { PropsWithChildren } from "react";
+import { Button as DsfrButton } from '@codegouvfr/react-dsfr/Button';
+import './button.css';
+import { PropsWithChildren } from 'react';
 
-function Button({ children }: PropsWithChildren){
-    return(
-        <DsfrButton
-            className="personalized-button fr-mr-2w"
-            onClick={function noRefCheck(){}}
-            priority="secondary"
-            >
-            {children}
-        </DsfrButton>
-    )
+interface MyComponentProps extends PropsWithChildren {
+    onClick: () => void;
+    isSelected: boolean;
+    personalized?: string;
 }
 
-export default Button
+const ButtonRadius: React.FC<MyComponentProps> = ({
+    children,
+    onClick,
+    isSelected,
+    personalized,
+}) => {
+    return (
+        <DsfrButton
+            className={`personalized-button ${personalized}`}
+            onClick={onClick}
+            priority={isSelected ? 'primary' : 'secondary'}
+        >
+            {children}
+        </DsfrButton>
+    );
+};
+
+export default ButtonRadius;

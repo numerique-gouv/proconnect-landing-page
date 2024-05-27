@@ -1,65 +1,74 @@
-import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
+import { Header as DsfrHeader } from '@codegouvfr/react-dsfr/Header';
 
 function Header() {
-    return(
+    const currentURL = window.location.pathname;
+    return (
         <DsfrHeader
-            brandTop={<>République<br />Française</>}
+            brandTop={
+                <>
+                    République
+                    <br />
+                    Française
+                </>
+            }
             homeLinkProps={{
-                href: '/',
-                title: 'Accueil - ProConnect'
+                to: '/',
+                title: 'Accueil - AgentConnect',
             }}
             id="fr-header-header-with-quick-access-items-nav-items"
             navigation={[
                 {
-                linkProps: {
-                    href: '#',
-                    target: '_self'
-                },
-                text: 'Accueil'
-                },
-                {
-                isActive: true,
-                linkProps: {
-                    href: '#',
-                    target: '_self'
-                },
-                text: 'Annuaire des services'
+                    isActive: currentURL === '/',
+                    linkProps: {
+                        to: '/',
+                        target: '_self',
+                    },
+                    text: 'Accueil',
                 },
                 {
-                linkProps: {
-                    href: '#',
-                    target: '_self'
+                    isActive: currentURL === '/annuaire',
+                    linkProps: {
+                        to: '/annuaire',
+                        target: '_self',
+                    },
+                    text: 'Annuaire des services',
                 },
-                text: 'Liste des partenaires'
+                {
+                    isActive: currentURL === '/partenaires',
+                    linkProps: {
+                        to: '/partenaires',
+                        target: '_self',
+                    },
+                    text: 'Liste des partenaires',
                 },
             ]}
             quickAccessItems={[
                 {
-                iconId: 'fr-icon-code-s-slash-line',
-                linkProps: {
-                    href: '#'
-                },
-                text: 'Intégrer ProConnect sur votre site'
-                },
-                {
-                iconId: 'fr-icon-timer-line',
-                linkProps: {
-                    href: '#'
-                },
-                text: 'Feuille de route'
+                    iconId: 'fr-icon-code-s-slash-line',
+                    linkProps: {
+                        to: 'https://github.com/france-connect/Documentation-AgentConnect',
+                    },
+                    text: 'Intégrer AgentConnect sur votre site',
                 },
                 {
-                iconId: 'fr-icon-question-line',
-                linkProps: {
-                    href: '#'
+                    iconId: 'fr-icon-timer-line',
+                    linkProps: {
+                        to: '/feuille-de-route',
+                    },
+                    text: 'Feuille de route',
                 },
-                text: 'Aide'
-                }
+                {
+                    iconId: 'fr-icon-question-line',
+                    linkProps: {
+                        to: '/aide',
+                    },
+                    text: 'Aide',
+                },
             ]}
             serviceTagline="Identifie les professionnels sur les sites de l'administation"
-            serviceTitle="ProConnect"
+            serviceTitle="AgentConnect"
         />
-    )
+    );
 }
 
-export default Header
+export default Header;

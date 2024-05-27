@@ -1,0 +1,7 @@
+.personalized-button {
+    border-radius: 39px;
+}
+
+.fr-btn--secondary {
+    background-color: var(--background-default-grey);
+}

@@ -1,0 +1,36 @@
+/* Set the footer at the bottom of the pages */
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+/* Content css */
+.background-welcome-page {
+    background-color: var(--background-alt-brown-opera);
+}
+
+.centered-content {
+    justify-content: center;
+}
+
+.blue-france {
+    color: var(--text-title-blue-france);
+}

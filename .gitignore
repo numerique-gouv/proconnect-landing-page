@@ -104,3 +104,6 @@ dist
 .tern-port
 
 /public/dsfr/
+
+# For mac 
+.DS_Store
