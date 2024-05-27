@@ -29,7 +29,7 @@ function HomeLayout() {
                                 Avec le bouton <span className="blue-france">AgentConnect</span>,
                                 <br />
                                 nous vous identifions <br />
-                                sur les sites de l'administration.
+                                sur les sites de l'administration
                             </h1>
                             <p>Vous êtes :</p>
                             <ButtonRadius
