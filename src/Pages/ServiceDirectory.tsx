@@ -17,7 +17,7 @@ function ServiceDirectory() {
 
     return (
         <div className="fr-container">
-            <h1 className="fr-h3 fr-mt-2w">Annuaire des entreprises</h1>
+            <h1 className="fr-h3 fr-mt-2w">Annuaire des services</h1>
             <p>Connectez-vous à tous ces sites avec AgentConnect !</p>
             {/* <ToggleSwitch
                 style={{
