@@ -17,7 +17,7 @@
 .navmenu ul li::after {
     content: '';
     position: absolute;
-    background: white;
+    background: var(--background-default-grey);
     width: 22px;
     height: 22px;
     left: -42px;
@@ -38,7 +38,7 @@
     top: 40px;
     bottom: 0;
     position: absolute;
-    background-color: white;
+    background-color: var(--background-default-grey);
     left: -40px;
 }
 
@@ -48,7 +48,7 @@
     top: 0;
     height: 38px;
     position: absolute;
-    background-color: white;
+    background-color: var(--background-default-grey);
     left: -41.5px;
 }
 
