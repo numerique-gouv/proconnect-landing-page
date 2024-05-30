@@ -1,7 +1,5 @@
 import { Badge } from '@codegouvfr/react-dsfr/Badge';
 import './layout.css';
-import coding from '../assets/coding.svg';
-import { Button } from '@codegouvfr/react-dsfr/Button';
 
 function Partners() {
     return (
@@ -261,41 +259,6 @@ function Partners() {
                 nous-même que vous faites partie de la Fonction Publique en vérifiant <br />
                 votre email professionnel et le SIRET de votre organisation.
             </p>
-            <div className="fr-container fr-col-12 fr-col-md-8 fr-py-6w fr-py-md-2w fr-my-10w card-radius">
-                <div className="fr-container centered-content">
-                    <div className="fr-grid-row fr-grid-row--center fr-grid-row--middle">
-                        <div className="fr-col-1 fr-hidden fr-unhidden-md ">
-                            <img src={coding} alt="" />
-                        </div>
-                        <div className="fr-ml-3w">
-                            <p
-                                style={{ fontWeight: 'bold' }}
-                                className="centered-content delete-margin-bottom"
-                            >
-                                Vous voulez intégrer AgentConnect sur votre site ?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="fr-container centered-text fr-my-2w">
-                    <a
-                        className="fr-raw-link"
-                        href="mailto:support.partenaires@agentconnect.gouv.fr"
-                    >
-                        <Button className="fr-mr-2w fr-mb-2w" iconId="fr-icon-mail-line">
-                            Nous écrire
-                        </Button>
-                    </a>
-                    <a
-                        className="fr-raw-link"
-                        href="https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md#-agentconnect---documentation"
-                    >
-                        <Button priority="secondary" iconId="fr-icon-code-s-slash-line">
-                            Commencer vos tests
-                        </Button>
-                    </a>
-                </div>
-            </div>
         </div>
     );
 }

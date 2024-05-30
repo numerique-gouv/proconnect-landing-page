@@ -4,21 +4,22 @@ import { PropsWithChildren } from 'react';
 
 interface MyComponentProps extends PropsWithChildren {
     onClick: () => void;
-    isSelected: boolean;
+    // isSelected: boolean;
     personalized?: string;
 }
 
 const ButtonRadius: React.FC<MyComponentProps> = ({
     children,
     onClick,
-    isSelected,
+    // isSelected,
     personalized,
 }) => {
     return (
         <DsfrButton
-            className={`personalized-button ${personalized}`}
+            className={` ${personalized}`}
             onClick={onClick}
-            priority={isSelected ? 'primary' : 'secondary'}
+            priority="primary"
+            // priority={isSelected ? 'primary' : 'secondary'}
         >
             {children}
         </DsfrButton>

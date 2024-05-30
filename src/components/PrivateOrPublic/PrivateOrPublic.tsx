@@ -19,16 +19,18 @@ function PrivateOrPublic({ tiles, stepsInfos }: any) {
                 ) => (
                     <div key={index}>
                         <h2 className="fr-h3 fr-mt-2w">{question}</h2>
-                        <p className="fr-col-12 fr-col-md-8">{response}</p>
-                        {link ? (
-                            <a href={link} className="blue-france fr-mb-2w">
-                                {descriptionLink}&nbsp;
-                                <span
-                                    className="fr-icon-arrow-right-line"
-                                    aria-hidden="true"
-                                ></span>
-                            </a>
-                        ) : null}
+                        <p className="fr-col-12 fr-col-md-8 fr-mb-1w">{response}</p>
+                        <div className="fr-mb-3w">
+                            {link ? (
+                                <a href={link} className="blue-france fr-mb-5w">
+                                    {descriptionLink}&nbsp;
+                                    <span
+                                        className="fr-icon-arrow-right-line"
+                                        aria-hidden="true"
+                                    ></span>
+                                </a>
+                            ) : null}
+                        </div>
                     </div>
                 ),
             )}

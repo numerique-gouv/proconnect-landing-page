@@ -5,7 +5,7 @@ import Identity from './assets/checkIdentity.svg';
 import EnjoyServices from './assets/enjoyServices.svg';
 
 export const tilesData = [
-    { illu: AgentConnect, content: 'Cliquez sur le bouton Agentconnect' },
+    { illu: AgentConnect, content: 'Cliquez sur le bouton Agentconnect.' },
     { illu: EnterEmail, content: 'Entrez votre adresse email professionnelle.' },
     {
         illu: Identity,
@@ -67,101 +67,119 @@ export const offres_fs = [
         url: 'https://resana.numerique.gouv.fr/public/',
         description: 'Outil de travail collaboratif',
         openPrivate: true,
+        internet: true,
     },
     {
         title: 'Portail CISIRH RIE',
         url: 'https://portail.cisirh.rie.gouv.fr/',
         description: 'Portail des applications interministérielles RH',
+        internet: false,
     },
     {
         title: 'Webconférence de l’État',
         url: 'https://webconf.numerique.gouv.fr/',
         description: 'Outil de conférence à distance',
+        internet: true,
     },
     {
         title: 'Osmose',
         url: 'https://osmose.numerique.gouv.fr/plugins/DINUMThemePlugin/jsp/front/privateLoginOsmose.jsp?redirect=https%3A%2F%2Fosmose.numerique.gouv.fr%2Fjcms%2F',
         description: 'Outil de travail collaboratif',
+        internet: true,
     },
     {
         title: 'Annuaire des Entreprises',
         url: 'https://annuaire-entreprises.data.gouv.fr/',
         description:
             'Vérification des informations légales publiques des entreprises, associations et services publics en France',
+        internet: true,
     },
     {
         title: 'Démarches Simplifiées',
         url: 'https://www.demarches-simplifiees.fr/',
         description: 'Outil pour réaliser des démarches administratives en ligne',
         openPrivate: true,
+        internet: true,
     },
     {
         title: 'Webinaire',
         url: 'https://webinaire.numerique.gouv.fr/welcome',
         description: 'Outil de conférence à distance',
+        internet: true,
     },
     {
         title: 'Rizomo',
         url: 'https://rizomo.numerique.gouv.fr/',
         description: 'Portail / raccourci vers des applications collaboratives interministérielles',
+        internet: true,
     },
     {
         title: 'Socle interministériel de logiciels libres',
         url: 'https://sill.code.gouv.fr/',
         description: 'Catalogue de référence des logiciels libres au sein de l’État',
+        internet: true,
     },
     {
         title: 'France Transfert',
         url: 'https://francetransfert.numerique.gouv.fr/connect',
         description:
             'Envoi de fichiers volumineux non sensibles de manière sécurisée à un agent de l’État ou entre agent',
+        internet: true,
     },
     {
         title: 'Mobilic',
         url: 'https://mobilic.beta.gouv.fr/',
         description:
             'Plateforme numérique gouvernementale de suivi du temps de travail dans le transport routier léger',
+        internet: true,
     },
     {
         title: 'Datalab SSP Cloud',
         url: 'https://datalab.sspcloud.fr/home)',
         description:
             'Plateforme mutualisée de services de traitement des données statistiques et de datascience',
+        internet: true,
     },
     {
         title: 'Orion du CEREMA Internet',
         url: 'https://orion.cerema.fr/auth/realms/CeremaApps/account/#/',
         description:
             'Services du CEREMA (centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement)',
+        internet: true,
     },
     {
         title: 'Orion du CEREMA RIE',
         url: 'https://orion.cerema.e2.rie.gouv.fr/auth/realms/CeremaApps/account/#/',
         description:
             'Services du CEREMA (centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement)',
+        internet: false,
     },
     {
         title: 'Expertises Territoires',
         url: 'https://www.expertises-territoires.fr/',
         description:
             'Services du CEREMA (centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement)',
+        internet: true,
     },
     {
         title: 'Contrats Territoires Internet et RIE',
         url: 'https://contrats-territoires.interieur.gouv.fr/accounts/login',
         description: 'Service pour élaborer les Contrats Plan État-Région (CPER)',
         openPrivate: true,
+        internet: false,
     },
     {
         title: 'DataPass',
-        url: 'https://beta.gouv.fr/startups/datapass.html',
+        url: 'https://datapass.api.gouv.fr/',
         description:
             'Cet outil s’adresse aux ayants droits qui souhaiteraient exploiter des données à caractère personnel.',
         openPrivate: true,
+        internet: true,
     },
     {
         title: 'Mentor',
         url: 'https://mentor.gouv.fr/login/index.php',
         description: 'Plateforme interministérielle de formation professionnelle',
+        internet: true,
     },
 ];

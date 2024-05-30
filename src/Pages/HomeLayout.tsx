@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import welcome from '../assets/welcome.svg';
 import ButtonRadius from '../components/Buttons/ButtonRadius';
 import AgentPublic from './AgentPublic';
-import PrivateProfessional from './PrivateProfessional';
+// import PrivateProfessional from './PrivateProfessional';
 import { Element, scroller } from 'react-scroll';
 import './layout.css';
 
-type ComponentType = 'publicMember' | 'privateProfessional';
+// type ComponentType = 'publicMember' | 'privateProfessional';
 
 function HomeLayout() {
-    const [selectedComponent, setSelectedComponent] = useState<ComponentType | null>(null);
-    const handleButtonClick = (componentName: ComponentType) => {
-        setSelectedComponent(componentName);
+    // const [selectedComponent, setSelectedComponent] = useState<ComponentType | null>(null);
+    const handleButtonClick = () => {
+        // setSelectedComponent(componentName);
         scroller.scrollTo('componentStart', {
             duration: 400,
             delay: 0,
@@ -29,15 +29,15 @@ function HomeLayout() {
                                 Avec le bouton <span className="blue-france">AgentConnect</span>,
                                 <br />
                                 nous vous identifions <br />
-                                sur les sites de l'administration
+                                sur les sites de l'administration.
                             </h1>
-                            <p>Vous êtes :</p>
+                            {/* <p>Vous êtes :</p> */}
                             <ButtonRadius
-                                onClick={() => handleButtonClick('publicMember')}
-                                isSelected={selectedComponent === 'publicMember'}
+                                onClick={() => handleButtonClick()}
+                                // isSelected={selectedComponent === 'publicMember'}
                                 personalized="fr-mr-2w fr-mb-2w"
                             >
-                                Membre de la Fonction Publique
+                                Découvrir
                             </ButtonRadius>
                             {/* <ButtonRadius
                                 onClick={() => handleButtonClick('privateProfessional')}
@@ -53,9 +53,12 @@ function HomeLayout() {
                 </div>
             </div>
             <Element name="componentStart">
+                <AgentPublic />
+            </Element>
+            {/* <Element name="componentStart">
                 {selectedComponent === 'publicMember' && <AgentPublic />}
                 {selectedComponent === 'privateProfessional' && <PrivateProfessional />}
-            </Element>
+            </Element> */}
         </React.Fragment>
     );
 }
