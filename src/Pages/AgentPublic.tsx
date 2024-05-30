@@ -1,15 +1,13 @@
 import PrivateOrPublic from '../components/PrivateOrPublic/PrivateOrPublic';
 import { tilesData, stepsInfosPublic } from '../Datas';
 import AgentConnectButton from '../assets/AgentConnectButton.svg';
+import './layout.css';
 
 function AgentPublic() {
     return (
         <div className="fr-container" id="public">
             <PrivateOrPublic tiles={tilesData} stepsInfos={stepsInfosPublic}></PrivateOrPublic>
-            <div
-                className="fr-container fr-py-4w fr-py-md-8w fr-mb-4w"
-                style={{ backgroundColor: '#f5f5fe', borderRadius: '11px' }}
-            >
+            <div className="fr-container fr-py-4w fr-py-md-8w fr-mb-4w card-radius">
                 <a href="https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md">
                     <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
                         <div className="fr-col-12 fr-col-md-6 fr-pl-6w">

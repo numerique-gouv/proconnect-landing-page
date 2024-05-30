@@ -1,15 +1,17 @@
 import { Badge } from '@codegouvfr/react-dsfr/Badge';
+import './layout.css';
+import coding from '../assets/coding.svg';
+import { Button } from '@codegouvfr/react-dsfr/Button';
 
 function Partners() {
     return (
         <div className="fr-container fr-mt-2w">
-            <h1>Liste des administrations partenaires</h1>
+            <h1 className="fr-h3">Liste des administrations partenaires</h1>
             <div className="fr-table fr-pt-0" style={{ verticalAlign: 'top' }}>
                 <table>
                     <thead>
                         <tr>
                             <th scope="col">Structure</th>
-                            <th scope="col">Domaine email autorisé</th>
                             <th scope="col">Fournisseur d'identité</th>
                             <th scope="col">Statut</th>
                         </tr>
@@ -17,24 +19,8 @@ function Partners() {
                     <tbody>
                         <tr>
                             <td>
-                                Centre d'études et d'expertise sur les risques, l'environnement, la
-                                mobilité et l'aménagement
-                            </td>
-                            <td>
-                                <i>*@cerema.fr</i>
-                            </td>
-                            <td>CEREMA</td>
-                            <td>
-                                <Badge severity="success">ACTIF</Badge>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
                                 Institut national de recherche pour l'agriculture, l'alimentation et
                                 l'environnement
-                            </td>
-                            <td>
-                                <i>*@inrae.fr</i>
                             </td>
                             <td>INRAE</td>
                             <td>
@@ -43,9 +29,6 @@ function Partners() {
                         </tr>
                         <tr>
                             <td>Commissariat à l'énergie atomique et aux énergies alternatives</td>
-                            <td>
-                                <i>*@cea.fr, *@cte.gouv.fr, *@ddcg.fr, *@dsnd.fr</i>
-                            </td>
                             <td>Commissariat à l'Énergie Atomique (CEA)</td>
                             <td>
                                 <Badge severity="success">ACTIF</Badge>
@@ -56,23 +39,10 @@ function Partners() {
                                 Ministère de l'Économie, des Finances et de la Souveraineté
                                 industrielle et numérique (MEFSIN)
                             </td>
-
-                            <td>
-                                <i>
-                                    *@finances.gouv.fr, *@afa.gouv.fr, *@igf.finances.gouv.fr,
-                                    *@ape.finances.gouv.fr, *@transformation.gouv.fr,
-                                    *@cabinets.finances.gouv.fr, *@cabinet.finances.gouv.fr,
-                                    *@syndicats.finances.gouv.fr, *@ofgl.fr,
-                                    *@territoires-industrie.gouv.fr, *@numerique.gouv.fr,
-                                    *@industrie.gouv.fr, *@autoritedelaconcurrence.fr,
-                                    *@modernisation.gouv.fr, *@anc.gouv.fr, *@cades.fr,
-                                    *@sgae.gouv.fr, *@ape.gouv.fr
-                                </i>
-                            </td>
                             <td>
                                 <ul className="fr-mt-0">
                                     <li>
-                                        Administration centrale
+                                        Administration centrale&nbsp;
                                         <a
                                             className="fr-text--xs"
                                             href="https://agentconnect.gouv.fr/liste-entites-administration-centrale.pdf"
@@ -80,6 +50,7 @@ function Partners() {
                                             (&nbsp;Agents de l'Administration Centrale du MEFSIN
                                             concernés&nbsp;-&nbsp;PDF&nbsp;611&nbsp;ko&nbsp;)
                                         </a>
+                                        &nbsp;
                                         <span
                                             className="fr-icon-file-download-line"
                                             aria-hidden="true"
@@ -100,21 +71,34 @@ function Partners() {
                             </td>
                         </tr>
                         <tr>
-                            <td>Ministère de la Transition Écologique / Énergétique</td>
+                            <td>Ministère de l'Intérieur et des Outre-mer</td>
                             <td>
-                                <i>*@developpement-durable.gouv.fr</i>
+                                <ul className="fr-mt-0">
+                                    <li>
+                                        Administration centrale&nbsp;
+                                        <a
+                                            className="fr-text--xs"
+                                            href="https://agentconnect.gouv.fr/liste-entites-administration-centrale.pdf"
+                                        >
+                                            (&nbsp;Agents de l'Administration Centrale du MEFSIN
+                                            concernés&nbsp;-&nbsp;PDF&nbsp;611&nbsp;ko&nbsp;)
+                                        </a>
+                                        &nbsp;
+                                        <span
+                                            className="fr-icon-file-download-line"
+                                            aria-hidden="true"
+                                        ></span>
+                                    </li>
+                                    <li>Passage2</li>
+                                </ul>
                             </td>
-                            <td>Cerbère</td>
                             <td>
                                 <Badge severity="success">ACTIF</Badge>
                             </td>
                         </tr>
                         <tr>
-                            <td>Ministère de l'Intérieur - Gendarmerie Nationale</td>
-                            <td>
-                                <i>*@gendarmerie.interieur.gouv.fr </i>
-                            </td>
-                            <td>Curasso</td>
+                            <td>Ministère de la Transition Écologique / Énergétique</td>
+                            <td>Cerbère</td>
                             <td>
                                 <Badge severity="success">ACTIF</Badge>
                             </td>
@@ -124,9 +108,6 @@ function Partners() {
                                 Institut National de la Statistique et des Etudes Economiques
                                 (INSEE)
                             </td>
-                            <td>
-                                <i>*@insee.fr </i>
-                            </td>
                             <td>INSEE</td>
                             <td>
                                 <Badge severity="success">ACTIF</Badge>
@@ -134,9 +115,6 @@ function Partners() {
                         </tr>
                         <tr>
                             <td>Direction Générale des Douanes et Droits Indirects (DGDDI)</td>
-                            <td>
-                                <i>*@douane.finances.gouv.fr </i>
-                            </td>
                             <td>DGDDI</td>
                             <td>
                                 <Badge severity="success">ACTIF</Badge>
@@ -144,56 +122,179 @@ function Partners() {
                         </tr>
                         <tr>
                             <td>Direction Générale des Finances Publiques (DGFIP)</td>
-                            <td>
-                                <i>*@dgfip.finances.gouv.fr</i>
-                            </td>
                             <td>FIDGFiP</td>
                             <td>
                                 <Badge severity="success">ACTIF</Badge>
                             </td>
                         </tr>
                         <tr>
-                            <td>Ministère de l'Intérieur</td>
                             <td>
-                                <i>*@interieur.gouv.fr</i>
+                                Direction générale de la concurrence, de la consommation et de la
+                                répression des fraudes (DGCCRF)
                             </td>
-                            <td>Passage2</td>
-                            <td>
-                                <Badge severity="success">ACTIF</Badge>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Ministère de l'Europe et des Affaires étrangères</td>
-                            <td>
-                                <i>*@diplomatie.gouv.fr</i>
-                            </td>
-                            <td>AROBAS</td>
+                            <td>DGCCRF</td>
                             <td>
                                 <Badge severity="success">ACTIF</Badge>
                             </td>
                         </tr>
                         <tr>
-                            <td>Ministère de la Justice (en cours d'intégration)</td>
+                            <td>Direction interministérielle du numérique (DINUM)</td>
+                            <td>MonComptePro</td>
                             <td>
-                                <i>*@justice.gouv.fr</i>
+                                <Badge severity="success">ACTIF</Badge>
                             </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Institut national de la santé et de la recherche médicale (INSERM)
+                            </td>
+                            <td>INSERM</td>
+                            <td>
+                                <Badge severity="success">ACTIF</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ministère de la Justice (MJ)</td>
                             <td>Ministère de la Justice</td>
                             <td>
-                                <Badge severity="success">ACTIF</Badge>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ministères Sociaux</td>
+                            <td>Ministères Sociaux</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
                             </td>
                         </tr>
                         <tr>
                             <td>Ministère de la Culture (en cours d'intégration)</td>
-                            <td>
-                                <i>*@culture.gouv.fr</i>
-                            </td>
                             <td>SSO Ministère de la Culture</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ministère de l'Europe et des Affaires étrangères</td>
+                            <td>AROBAS</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gendarmerie Nationale</td>
+                            <td>Gendarmerie Nationale (Curasso)</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gendarmerie Nationale</td>
+                            <td>Gendarmerie Nationale (Extensso GN)</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Police Nationale</td>
+                            <td>Police Nationale (Calypsso)</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Police Nationale</td>
+                            <td>Police Nationale (Extensso PN)</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Établissement Public d'aménagement Universitaire de la Région
+                                Ile-de-France (EPAURIF)
+                            </td>
+                            <td>EPAURIF</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Institut national de recherche en sciences et technologies du
+                                numérique (INRIA)
+                            </td>
+                            <td>INRIA</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Réseau Canopé</td>
+                            <td>Réseau Canopé</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cour des Comptes</td>
+                            <td>Cour des Comptes</td>
+                            <td>
+                                <Badge severity="info">PROCHAINEMENT</Badge>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RENATER</td>
+                            <td>RENATER</td>
                             <td>
                                 <Badge severity="info">PROCHAINEMENT</Badge>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <h2 className="fr-h4">
+                Que se passe-t-il si votre administration n’est pas partenaire ?
+            </h2>
+            <p>
+                Aucun problème, vous pouvez utiliser AgentConnect ! <br /> Nous nous assurons
+                nous-même que vous faites partie de la Fonction Publique en vérifiant <br />
+                votre email professionnel et le SIRET de votre organisation.
+            </p>
+            <div className="fr-container fr-col-12 fr-col-md-8 fr-py-6w fr-py-md-2w fr-my-10w card-radius">
+                <div className="fr-container centered-content">
+                    <div className="fr-grid-row fr-grid-row--center fr-grid-row--middle">
+                        <div className="fr-col-1 fr-hidden fr-unhidden-md ">
+                            <img src={coding} alt="" />
+                        </div>
+                        <div className="fr-ml-3w">
+                            <p
+                                style={{ fontWeight: 'bold' }}
+                                className="centered-content delete-margin-bottom"
+                            >
+                                Vous voulez intégrer AgentConnect sur votre site ?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="fr-container centered-text fr-my-2w">
+                    <a
+                        className="fr-raw-link"
+                        href="mailto:support.partenaires@agentconnect.gouv.fr"
+                    >
+                        <Button className="fr-mr-2w fr-mb-2w" iconId="fr-icon-mail-line">
+                            Nous écrire
+                        </Button>
+                    </a>
+                    <a
+                        className="fr-raw-link"
+                        href="https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md#-agentconnect---documentation"
+                    >
+                        <Button priority="secondary" iconId="fr-icon-code-s-slash-line">
+                            Commencer vos tests
+                        </Button>
+                    </a>
+                </div>
             </div>
         </div>
     );
