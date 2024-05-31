@@ -217,7 +217,9 @@ function Cgu() {
                     <li>l’adresse IP et numéro du port source&nbsp;;</li>
                     <li>les dates et heures de connexion au Service AgentConnect.</li>
                 </ul>
-                <h2 className="fr-col-12 fr-mt-5v">4. Roles et engagements de la DINUM</h2>
+                <h2 className="fr-col-12 fr-mt-5v" id="confidential">
+                    4. Roles et engagements de la DINUM
+                </h2>
                 <h3>4.1. Responsabilité générale</h3>
                 <p>
                     La DINUM met en œuvre et opère le Service conformément au cadre juridique en
