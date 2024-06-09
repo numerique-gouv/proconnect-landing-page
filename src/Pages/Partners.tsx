@@ -136,13 +136,6 @@ function Partners() {
                             </td>
                         </tr>
                         <tr>
-                            <td>Direction interministérielle du numérique (DINUM)</td>
-                            <td>MonComptePro</td>
-                            <td>
-                                <Badge severity="success">ACTIF</Badge>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>
                                 Institut national de la santé et de la recherche médicale (INSERM)
                             </td>
