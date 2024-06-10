@@ -17,7 +17,7 @@ function Partners() {
                     </thead>
                     <tbody>
                         {PARTNERS_LIST.map((PARTNER_LIST) => (
-                            <tr>
+                            <tr key={PARTNER_LIST.structure}>
                                 <td>{PARTNER_LIST.structure}</td>
                                 <td>{renderIdentityProviders(PARTNER_LIST.identityProviders)}</td>
                                 <td>
@@ -49,7 +49,7 @@ function renderIdentityProviders(identityProviders: string[]) {
         return (
             <ul>
                 {identityProviders.map((identityProvider) => (
-                    <li>{identityProvider}</li>
+                    <li key={identityProvider}>{identityProvider}</li>
                 ))}
             </ul>
         );
