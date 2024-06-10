@@ -35,7 +35,7 @@ export const stepsInfosPublic = [
         question: 'À quels services en ligne pouvez-vous vous connecter ?',
         response:
             'Grâce au AgentConnect, accédez à tous les outils de la DINUM, à la Suite Numérique et à tous les services interministériels de nos partenaires.',
-        link: '/annuaire',
+        link: '/services',
         descriptionLink: `Découvrez l'annuaire des services`,
     },
     // {

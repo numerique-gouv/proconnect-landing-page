@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: '/annuaire',
+        path: '/services',
         element: (
             <WrapperLayout>
                 <ServiceDirectory></ServiceDirectory>
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: '/statistiques',
+        path: '/stats',
         element: (
             <WrapperLayout>
                 <Stats />

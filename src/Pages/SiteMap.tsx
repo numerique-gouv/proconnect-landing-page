@@ -9,7 +9,7 @@ function SiteMap() {
                     </a>
                 </li>
                 <li>
-                    <a className="fr-raw-link" href="/annuaire">
+                    <a className="fr-raw-link" href="/services">
                         Annuaire des services
                     </a>
                 </li>
@@ -54,7 +54,7 @@ function SiteMap() {
                     </a>
                 </li>
                 <li>
-                    <a className="fr-raw-link" href="/statistiques">
+                    <a className="fr-raw-link" href="/stats">
                         Statistiques d'utilisation
                     </a>
                 </li>

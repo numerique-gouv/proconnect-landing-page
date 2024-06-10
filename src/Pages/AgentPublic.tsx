@@ -8,7 +8,7 @@ function AgentPublic() {
         <div className="fr-container" id="public">
             <PrivateOrPublic tiles={tilesData} stepsInfos={stepsInfosPublic}></PrivateOrPublic>
             <div className="fr-container fr-py-4w fr-py-md-8w fr-mb-4w card-radius">
-                <a href="/annuaire">
+                <a href="/services">
                     <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
                         <div className="fr-col-12 fr-col-md-6 fr-pl-6w">
                             <p style={{ fontSize: '32px', lineHeight: '38px' }}>

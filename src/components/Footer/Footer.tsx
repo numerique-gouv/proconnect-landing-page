@@ -20,7 +20,7 @@ function Footer() {
                 <a href="/cgu" className="fr-footer__bottom-link">
                     Conditions générales d'utilisation
                 </a>,
-                <a href="/statistiques" className="fr-footer__bottom-link">
+                <a href="/stats" className="fr-footer__bottom-link">
                     Statistiques d'utilisation
                 </a>,
             ]}

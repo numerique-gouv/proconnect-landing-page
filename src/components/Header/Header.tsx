@@ -26,9 +26,9 @@ function Header() {
                     text: 'Accueil',
                 },
                 {
-                    isActive: currentURL === '/annuaire',
+                    isActive: currentURL === '/services',
                     linkProps: {
-                        to: '/annuaire',
+                        to: '/services',
                         target: '_self',
                     },
                     text: 'Annuaire des services',
