@@ -62,6 +62,11 @@ const PARTNERS_LIST: Array<{
         status: 'active',
     },
     {
+        structure: 'Réseau Canopé',
+        identityProviders: ['Réseau Canopé'],
+        status: 'active',
+    },
+    {
         structure: 'Ministère de la Justice (MJ)',
         identityProviders: ['Ministère de la Justice'],
         status: 'pending',
@@ -101,11 +106,6 @@ const PARTNERS_LIST: Array<{
         structure:
             'Institut national de recherche en sciences et technologies du numérique (INRIA)',
         identityProviders: ['INRIA'],
-        status: 'pending',
-    },
-    {
-        structure: 'Réseau Canopé',
-        identityProviders: ['Réseau Canopé'],
         status: 'pending',
     },
     {
