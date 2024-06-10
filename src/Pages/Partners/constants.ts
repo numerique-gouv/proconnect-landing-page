@@ -67,6 +67,16 @@ const PARTNERS_LIST: Array<{
         status: 'active',
     },
     {
+        structure: "Commissariat à l'énergie atomique et aux énergies Alternatives (CEA)",
+        identityProviders: ["Commissariat à l'énergie atomique et aux énergies Alternatives (CEA)"],
+        status: 'active',
+    },
+    {
+        structure: 'Cerema',
+        identityProviders: ['Orion'],
+        status: 'active',
+    },
+    {
         structure: 'Ministère de la Justice (MJ)',
         identityProviders: ['Ministère de la Justice'],
         status: 'pending',
