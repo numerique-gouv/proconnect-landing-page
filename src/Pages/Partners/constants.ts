@@ -19,9 +19,10 @@ const PARTNERS_LIST: Array<{
             "Ministère de l'Économie, des Finances et de la Souveraineté industrielle et numérique (MEFSIN)",
         identityProviders: [
             'Administration centrale',
-            'Direction générale des Douanes et Droits indirects (DGDDI)',
+            'Direction générale des Douanes et Droits Indirects (DGDDI)',
             'Direction générale des Finances publiques (DGFIP)',
             'Institut National de la Statistique et des Études Économiques (INSEE)',
+            'Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF)',
         ],
         status: 'active',
     },
@@ -41,19 +42,8 @@ const PARTNERS_LIST: Array<{
         status: 'active',
     },
     {
-        structure: 'Direction Générale des Douanes et Droits Indirects (DGDDI)',
-        identityProviders: ['DGDDI'],
-        status: 'active',
-    },
-    {
         structure: 'Direction Générale des Finances Publiques (DGFIP)',
         identityProviders: ['FIDGFiP'],
-        status: 'active',
-    },
-    {
-        structure:
-            'Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF)',
-        identityProviders: ['DGCCRF'],
         status: 'active',
     },
     {
