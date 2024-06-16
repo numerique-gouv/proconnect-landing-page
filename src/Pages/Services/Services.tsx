@@ -1,51 +1,28 @@
 import { ToggleSwitch } from '@codegouvfr/react-dsfr/ToggleSwitch';
-import { offres_fs } from '../Datas';
-import Card from '../components/Card/Card';
-import './serviceDirectory.css';
+import Card from '../../components/Card/Card';
+import './services.css';
 import { useState } from 'react';
 import { Button } from '@codegouvfr/react-dsfr/Button';
-import coding from '../assets/coding.svg';
+import coding from '../../assets/coding.svg';
+import { SERVICES_LIST } from './constants';
 
-function ServiceDirectory() {
-    // const [availableToPrivate, setAvailableToPrivate] = useState<boolean | null>(false);
+function Services() {
     const [availableToRIE, setAvailableToRIE] = useState<boolean | null>(false);
 
-    // const displayServicesForPrivate = () => {
-    //     return setAvailableToPrivate((prevState) => !prevState);
-    // };
+    const servicesOnInternet = SERVICES_LIST.filter(({ network }) => network === 'internet');
 
-    const displayServicesForRIE = () => {
-        return setAvailableToRIE((prevState) => !prevState);
-    };
-
-    const servicesOnInternet = offres_fs.filter(({ internet }) => internet);
-    console.log(servicesOnInternet);
-
-    const servicesOnRIE = offres_fs.filter(({ internet }) => !internet);
-    console.log(servicesOnRIE);
-
-    // const filteredOffres = availableToPrivate
-    //     ? offres_fs.filter(({ openPrivate }) => openPrivate)
-    //     : offres_fs;
+    const servicesOnRIE = SERVICES_LIST.filter(({ network }) => network === 'RIE');
 
     return (
         <div className="fr-container">
             <h1 className="fr-h3 fr-mt-2w">Annuaire des services</h1>
             <p className="fr-h6">Connectez-vous à tous ces sites avec AgentConnect !</p>
-            {/* <ToggleSwitch
-                style={{
-                    maxHeight: '0',
-                }}
-                inputTitle="the-title"
-                label="Uniquement les sites ouverts au secteur privé"
-                labelPosition="right"
-                onChange={displayServicesForPrivate}
-            /> */}
+
             <ToggleSwitch
                 inputTitle="the-title"
                 label="Afficher les services disponibles sur le RIE"
                 labelPosition="right"
-                onChange={displayServicesForRIE}
+                onChange={toggleServicesForRIE}
             />
 
             {availableToRIE ? (
@@ -98,6 +75,10 @@ function ServiceDirectory() {
             </div>
         </div>
     );
+
+    function toggleServicesForRIE() {
+        return setAvailableToRIE((prevState) => !prevState);
+    }
 }
 
-export default ServiceDirectory;
+export default Services;
