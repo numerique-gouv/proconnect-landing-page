@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import WrapperLayout from '../Pages/WrapperLayout';
 import HomeLayout from '../Pages/HomeLayout';
 import Roadmap from '../Pages/Roadmap';
-import ServiceDirectory from '../Pages/ServiceDirectory';
+import Services from '../Pages/Services';
 import SiteMap from '../Pages/SiteMap';
 import InConstruction from '../Pages/InConstruction';
 import Partners from '../Pages/Partners';
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         path: '/services',
         element: (
             <WrapperLayout>
-                <ServiceDirectory></ServiceDirectory>
+                <Services></Services>
             </WrapperLayout>
         ),
     },

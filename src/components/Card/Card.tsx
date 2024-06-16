@@ -2,7 +2,7 @@ import { Card as DsfrCard } from '@codegouvfr/react-dsfr/Card';
 // import { Badge } from '@codegouvfr/react-dsfr/Badge';
 
 interface Offre {
-    description: string;
+    description?: string;
     url: string;
     title: string;
     openPrivate?: boolean;
@@ -21,18 +21,9 @@ const Card: React.FC<Props> = ({ offre: { description, url, title } }) => {
             }}
         >
             <DsfrCard
-                // start={
-                //     openPrivate ? (
-                //         <ul className="fr-badges-group">
-                //             <li>
-                //                 <Badge severity="success">Ouvert au privé</Badge>
-                //             </li>
-                //         </ul>
-                //     ) : null
-                // }
                 background
                 border
-                desc={description}
+                desc={description || '-'}
                 endDetail="Visiter le site"
                 enlargeLink
                 linkProps={{
