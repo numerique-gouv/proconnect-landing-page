@@ -102,7 +102,7 @@ function Roadmap() {
                                     <div className="bubble">
                                         <h2 className="fr-h6 fr-mb-1w">En 2025</h2>
                                         <p className="fr-mb-0">
-                                            • AgentConnect suit une personne tout au long de sa
+                                            • AgentConnect accompagne une personne tout au long de sa
                                             carrière.
                                         </p>
                                     </div>
