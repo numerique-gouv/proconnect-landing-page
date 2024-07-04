@@ -23,6 +23,9 @@ function Footer() {
                 <a href="/stats" className="fr-footer__bottom-link">
                     Statistiques d'utilisation
                 </a>,
+                <a href="https://status.agentconnect.gouv.fr/" className="fr-footer__bottom-link">
+                    Statuts des services
+                </a>,
             ]}
         />
     );
