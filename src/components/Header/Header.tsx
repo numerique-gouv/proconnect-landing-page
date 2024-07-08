@@ -46,7 +46,7 @@ function Header() {
                 {
                     iconId: 'fr-icon-code-s-slash-line',
                     linkProps: {
-                        to: 'https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md#-agentconnect---documentation',
+                        to: 'https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation',
                     },
                     text: 'Intégrer AgentConnect sur votre site',
                 },

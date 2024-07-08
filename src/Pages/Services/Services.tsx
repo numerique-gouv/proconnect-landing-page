@@ -65,7 +65,7 @@ function Services() {
                     </a>
                     <a
                         className="fr-raw-link"
-                        href="https://github.com/france-connect/Documentation-AgentConnect/blob/main/README.md#-agentconnect---documentation"
+                        href="https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation"
                     >
                         <Button priority="secondary" iconId="fr-icon-code-s-slash-line">
                             Commencer vos tests
