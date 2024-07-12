@@ -14,7 +14,7 @@
         "start": "vite --port $PORT"
     },
     "dependencies": {
-        "@codegouvfr/react-dsfr": "^1.9.11",
+        "@codegouvfr/react-dsfr": "^1.9.27",
         "@vitejs/plugin-react": "^4.2.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
