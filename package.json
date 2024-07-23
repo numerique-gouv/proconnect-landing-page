@@ -1,16 +1,16 @@
 {
     "name": "proconnect",
-    "private": true,
     "version": "0.0.0",
+    "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "preview": "vite preview",
-        "postinstall": "copy-dsfr-to-public",
-        "predev": "only-include-used-icons",
         "prebuild": "only-include-used-icons",
-        "start": "vite --port $PORT"
+        "build": "tsc && vite build",
+        "predev": "only-include-used-icons",
+        "dev": "vite",
+        "postinstall": "copy-dsfr-to-public",
+        "preview": "vite preview",
+        "start": "serve dist"
     },
     "dependencies": {
         "@codegouvfr/react-dsfr": "^1.9.27",
@@ -19,6 +19,7 @@
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.23.1",
         "react-scroll": "^1.9.0",
+        "serve": "^14.2.3",
         "vite": "^5.2.0"
     },
     "devDependencies": {
