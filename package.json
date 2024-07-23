@@ -10,7 +10,7 @@
         "dev": "vite",
         "postinstall": "copy-dsfr-to-public",
         "preview": "vite preview",
-        "start": "serve dist"
+        "start": "serve --single dist"
     },
     "dependencies": {
         "@codegouvfr/react-dsfr": "^1.9.27",
