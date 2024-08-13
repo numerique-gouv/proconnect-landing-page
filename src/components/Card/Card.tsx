@@ -15,7 +15,7 @@ type Props = {
 const Card: React.FC<Props> = ({ offre: { description, url, title } }) => {
     return (
         <div
-            className="container fr-col-12 fr-col-md-4 fr-mt-2w"
+            className="fr-col-12 fr-col-md-4 fr-mt-2w"
             style={{
                 width: 200,
             }}
