@@ -33,14 +33,6 @@ function Header() {
                     },
                     text: 'Annuaire des services',
                 },
-                {
-                    isActive: currentURL === '/partenaires',
-                    linkProps: {
-                        to: '/partenaires',
-                        target: '_self',
-                    },
-                    text: 'Liste des partenaires',
-                },
             ]}
             quickAccessItems={[
                 {

@@ -2,7 +2,6 @@ import { ToggleSwitch } from '@codegouvfr/react-dsfr/ToggleSwitch';
 import Card from '../../components/Card/Card';
 import './services.css';
 import { useState } from 'react';
-import { Button } from '@codegouvfr/react-dsfr/Button';
 import coding from '../../assets/coding.svg';
 import { SERVICES_LIST } from './constants';
 
@@ -53,24 +52,6 @@ function Services() {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="fr-container centered-text fr-my-2w">
-                    <a
-                        className="fr-raw-link"
-                        href="mailto:support.partenaires@agentconnect.gouv.fr"
-                    >
-                        <Button className="fr-mr-2w fr-mb-2w" iconId="fr-icon-mail-line">
-                            Nous écrire
-                        </Button>
-                    </a>
-                    <a
-                        className="fr-raw-link"
-                        href="https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation"
-                    >
-                        <Button priority="secondary" iconId="fr-icon-code-s-slash-line">
-                            Commencer vos tests
-                        </Button>
-                    </a>
                 </div>
             </div>
         </div>

@@ -14,11 +14,6 @@ function SiteMap() {
                     </a>
                 </li>
                 <li>
-                    <a className="fr-raw-link" href="/partenaires">
-                        Liste des partenaires
-                    </a>
-                </li>
-                <li>
                     <a className="fr-raw-link" href="/feuille-de-route">
                         Feuille de route
                     </a>

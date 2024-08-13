@@ -6,7 +6,7 @@ import { fr } from '@codegouvfr/react-dsfr';
 import Button from '@codegouvfr/react-dsfr/Button';
 import whatService from '../assets/quelService.svg';
 import HowDoesItWork from '../components/HowDoesItWork/HowDoesItWork';
-import { tilesData, stepsInfosPublic } from '../Datas';
+import { tilesData } from '../Datas';
 import EligibilityTest from './Eligibility/EligibilityTest';
 
 // type ComponentType = 'publicMember' | 'privateProfessional';
@@ -70,10 +70,7 @@ function HomeLayout() {
                     </div>
 
                     <div className="fr-container">
-                        <HowDoesItWork
-                            tiles={tilesData}
-                            stepsInfos={stepsInfosPublic}
-                        ></HowDoesItWork>
+                        <HowDoesItWork tiles={tilesData}></HowDoesItWork>
                         <div className="fr-container--fluid">
                             <div className="fr-container fr-py-4w fr-py-md-8w">
                                 <div className="fr-grid-row fr-grid-row--gutters">

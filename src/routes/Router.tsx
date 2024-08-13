@@ -5,7 +5,6 @@ import Roadmap from '../Pages/Roadmap';
 import Services from '../Pages/Services';
 import SiteMap from '../Pages/SiteMap';
 import InConstruction from '../Pages/InConstruction';
-import Partners from '../Pages/Partners';
 import Cgu from '../Pages/Cgu';
 import LegalNotices from '../Pages/LegalNotices';
 import Stats from '../Pages/Stats';
@@ -24,14 +23,6 @@ const router = createBrowserRouter([
         element: (
             <WrapperLayout>
                 <Services></Services>
-            </WrapperLayout>
-        ),
-    },
-    {
-        path: '/partenaires',
-        element: (
-            <WrapperLayout>
-                <Partners></Partners>
             </WrapperLayout>
         ),
     },
