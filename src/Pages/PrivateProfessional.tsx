@@ -1,4 +1,4 @@
-import PrivateOrPublic from '../components/PrivateOrPublic/PrivateOrPublic';
+import PrivateOrPublic from '../components/HowDoesItWork/HowDoesItWork';
 import { tilesData, stepsInfosPrivate } from '../Datas';
 
 function PrivateProfessional() {

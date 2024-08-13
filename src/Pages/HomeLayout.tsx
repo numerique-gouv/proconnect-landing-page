@@ -5,6 +5,7 @@ import AgentPublic from './AgentPublic';
 // import PrivateProfessional from './PrivateProfessional';
 import { Element, scroller } from 'react-scroll';
 import './layout.css';
+import { fr } from '@codegouvfr/react-dsfr';
 
 // type ComponentType = 'publicMember' | 'privateProfessional';
 
@@ -37,7 +38,8 @@ function HomeLayout() {
                                 // isSelected={selectedComponent === 'publicMember'}
                                 personalized="fr-mr-2w fr-mb-2w"
                             >
-                                Découvrir
+                                <i className={fr.cx('ri-user-star-line') + ' fr-pr-2w'} />
+                                Testez votre éligibilité
                             </ButtonRadius>
                             {/* <ButtonRadius
                                 onClick={() => handleButtonClick('privateProfessional')}
