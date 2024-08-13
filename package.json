@@ -13,12 +13,14 @@
         "start": "serve --single dist"
     },
     "dependencies": {
+        "react-lottie": "^1.2.4",
         "serve": "^14.2.3"
     },
     "devDependencies": {
         "@codegouvfr/react-dsfr": "^1.9.27",
         "@types/react": "^18.2.66",
         "@types/react-dom": "^18.2.22",
+        "@types/react-lottie": "^1.2.10",
         "@types/react-scroll": "^1.8.10",
         "@vitejs/plugin-react": "^4.2.1",
         "react": "^18.2.0",
