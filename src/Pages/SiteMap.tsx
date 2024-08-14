@@ -14,6 +14,11 @@ function SiteMap() {
                     </a>
                 </li>
                 <li>
+                    <a className="fr-raw-link" href="/eligibilite">
+                        Testez votre éligibilité
+                    </a>
+                </li>
+                <li>
                     <a className="fr-raw-link" href="/feuille-de-route">
                         Feuille de route
                     </a>

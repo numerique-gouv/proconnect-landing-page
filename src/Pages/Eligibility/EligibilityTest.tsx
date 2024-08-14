@@ -9,7 +9,7 @@ import Lottie from 'react-lottie';
 import notEligible from '../../assets/notEligible.svg';
 import eligibleAnimation from '../../assets/Success.json';
 
-function EligibilityTest({ closeTestEligibility }: any) {
+function EligibilityTest() {
     const [selectedOption, setSelectedOption] = useState<
         | 'asso_entreprise_prive'
         | 'autre_structure_public'
@@ -30,26 +30,11 @@ function EligibilityTest({ closeTestEligibility }: any) {
         },
     };
 
-    const closeTest = (
-        <Button
-            className="fr-mt-2w"
-            iconId="ri-close-large-line"
-            onClick={function noRefCheck() {
-                closeTestEligibility(false);
-            }}
-            priority="tertiary no outline"
-            title="Label button"
-        >
-            Fermer
-        </Button>
-    );
-
     return (
         <div className="fr-container" id="componentStart">
             {!showResponse ? (
                 <React.Fragment>
-                    {closeTest}
-                    <div className="container fr-mt-1w">
+                    <div className="container fr-mt-8w">
                         <div className="fr-container fr-py-3w">
                             <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
                                 <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
@@ -135,10 +120,7 @@ function EligibilityTest({ closeTestEligibility }: any) {
                                     <img src={coding} alt="" />
                                 </div>
                                 <div className="fr-ml-3w">
-                                    <p
-                                        style={{ fontWeight: 'bold' }}
-                                        className="centered-content delete-margin-bottom"
-                                    >
+                                    <p className="centered-content delete-margin-bottom bold">
                                         Vous voulez intégrer AgentConnect sur votre site ?
                                     </p>
                                 </div>
@@ -166,8 +148,7 @@ function EligibilityTest({ closeTestEligibility }: any) {
                 </React.Fragment>
             ) : (
                 <React.Fragment>
-                    {closeTest}
-                    <div className="container fr-mt-1w fr-mb-8w">
+                    <div className="container fr-my-8w">
                         {selectedOption !== 'asso_entreprise_prive' ? (
                             <div className="fr-container fr-py-3w">
                                 <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">

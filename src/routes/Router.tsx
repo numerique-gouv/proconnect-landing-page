@@ -8,6 +8,7 @@ import InConstruction from '../Pages/InConstruction';
 import Cgu from '../Pages/Cgu';
 import LegalNotices from '../Pages/LegalNotices';
 import Stats from '../Pages/Stats';
+import EligibilityTest from '../Pages/Eligibility/EligibilityTest';
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
         element: (
             <WrapperLayout>
                 <Services></Services>
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/eligibilite',
+        element: (
+            <WrapperLayout>
+                <EligibilityTest></EligibilityTest>
             </WrapperLayout>
         ),
     },
