@@ -4,11 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prebuild": "only-include-used-icons",
     "build": "tsc && vite build",
-    "predev": "only-include-used-icons",
     "dev": "vite",
+    "format": "prettier --write .",
     "postinstall": "copy-dsfr-to-public",
+    "prebuild": "only-include-used-icons",
+    "predev": "only-include-used-icons",
     "preview": "vite preview",
     "start": "serve --single dist"
   },
