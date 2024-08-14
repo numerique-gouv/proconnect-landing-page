@@ -1,72 +1,72 @@
 /* FRISE CHRONOLOGIQUE */
 
 .navmenu ul {
-  list-style: none;
-  padding-left: 30px;
-  position: relative;
-  border-left: 2px solid var(--background-action-high-blue-france);
+    list-style: none;
+    padding-left: 30px;
+    position: relative;
+    border-left: 2px solid var(--background-action-high-blue-france);
 }
 
 .navmenu ul li {
-  padding: 20px 0;
-  padding-left: 15px;
-  position: relative;
-  line-height: 1rem;
+    padding: 20px 0;
+    padding-left: 15px;
+    position: relative;
+    line-height: 1rem;
 }
 
 .navmenu ul li::after {
-  content: "";
-  position: absolute;
-  background: var(--background-default-grey);
-  width: 22px;
-  height: 22px;
-  left: -42px;
-  top: 46px;
-  transform: translateY(-50%);
-  border-radius: 50px;
-  border: 2px solid var(--background-action-high-blue-france);
-  transition: background 250ms;
+    content: '';
+    position: absolute;
+    background: var(--background-default-grey);
+    width: 22px;
+    height: 22px;
+    left: -42px;
+    top: 46px;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    border: 2px solid var(--background-action-high-blue-france);
+    transition: background 250ms;
 }
 
 .navmenu ul li.active::after {
-  background: var(--background-action-high-blue-france);
+    background: var(--background-action-high-blue-france);
 }
 
 .navmenu ul li:last-child::before {
-  content: "";
-  width: 18px;
-  top: 40px;
-  bottom: 0;
-  position: absolute;
-  background-color: var(--background-default-grey);
-  left: -40px;
+    content: '';
+    width: 18px;
+    top: 40px;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--background-default-grey);
+    left: -40px;
 }
 
 .navmenu ul li:first-child::before {
-  content: "";
-  width: 20px;
-  top: 0;
-  height: 38px;
-  position: absolute;
-  background-color: var(--background-default-grey);
-  left: -41.5px;
+    content: '';
+    width: 20px;
+    top: 0;
+    height: 38px;
+    position: absolute;
+    background-color: var(--background-default-grey);
+    left: -41.5px;
 }
 
 /* BULLE */
 
 .bubble {
-  background: var(--background-alt-grey);
-  position: relative;
-  padding: 15px;
-  max-width: 700px;
+    background: var(--background-alt-grey);
+    position: relative;
+    padding: 15px;
+    max-width: 700px;
 }
 
 .bubble::after {
-  content: "";
-  border: 20px solid transparent;
-  border-width: 12px 20px;
-  position: absolute;
-  left: -40px;
-  top: 13px;
-  border-right-color: var(--background-alt-grey);
+    content: '';
+    border: 20px solid transparent;
+    border-width: 12px 20px;
+    position: absolute;
+    left: -40px;
+    top: 13px;
+    border-right-color: var(--background-alt-grey);
 }
