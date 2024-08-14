@@ -9,6 +9,8 @@ import Cgu from '../Pages/Cgu';
 import LegalNotices from '../Pages/LegalNotices';
 import Stats from '../Pages/Stats';
 import EligibilityTest from '../Pages/Eligibility/EligibilityTest';
+import { Eligible } from '../Pages/Eligibility/Eligible';
+import { NotEligible } from '../Pages/Eligibility/NotEligible';
 
 const router = createBrowserRouter([
     {
@@ -31,7 +33,23 @@ const router = createBrowserRouter([
         path: '/eligibilite',
         element: (
             <WrapperLayout>
-                <EligibilityTest></EligibilityTest>
+                <EligibilityTest />
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/eligibilite/eligible',
+        element: (
+            <WrapperLayout>
+                <Eligible />
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/eligibilite/non-eligible',
+        element: (
+            <WrapperLayout>
+                <NotEligible />
             </WrapperLayout>
         ),
     },
