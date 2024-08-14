@@ -1,3 +1,3 @@
-import Partners from './Partners';
+import Partners from "./Partners";
 
 export default Partners;

@@ -1,16 +1,17 @@
 name: Tests
 
 on:
-    push:
+  push:
 
 jobs:
-    test:
-        runs-on: ubuntu-22.04
-        steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
-              with:
-                  cache: 'npm'
-                  node-version-file: package.json
-            - run: npm ci --include=dev
-            - run: npm run build
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: "npm"
+          node-version-file: package.json
+      - run: npm ci --include=dev
+      - run: npx prettier -c .
+      - run: npm run build

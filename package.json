@@ -1,31 +1,32 @@
 {
-    "name": "proconnect",
-    "version": "0.0.0",
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "prebuild": "only-include-used-icons",
-        "build": "tsc && vite build",
-        "predev": "only-include-used-icons",
-        "dev": "vite",
-        "postinstall": "copy-dsfr-to-public",
-        "preview": "vite preview",
-        "start": "serve --single dist"
-    },
-    "dependencies": {
-        "serve": "^14.2.3"
-    },
-    "devDependencies": {
-        "@codegouvfr/react-dsfr": "^1.9.27",
-        "@types/react": "^18.2.66",
-        "@types/react-dom": "^18.2.22",
-        "@types/react-scroll": "^1.8.10",
-        "@vitejs/plugin-react": "^4.2.1",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-router-dom": "^6.23.1",
-        "react-scroll": "^1.9.0",
-        "typescript": "^5.2.2",
-        "vite": "^5.2.0"
-    }
+  "name": "proconnect",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "only-include-used-icons",
+    "build": "tsc && vite build",
+    "predev": "only-include-used-icons",
+    "dev": "vite",
+    "postinstall": "copy-dsfr-to-public",
+    "preview": "vite preview",
+    "start": "serve --single dist"
+  },
+  "dependencies": {
+    "serve": "^14.2.3"
+  },
+  "devDependencies": {
+    "@codegouvfr/react-dsfr": "^1.9.27",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@types/react-scroll": "^1.8.10",
+    "@vitejs/plugin-react": "^4.2.1",
+    "prettier": "^3.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "react-scroll": "^1.9.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
 }
