@@ -6,7 +6,10 @@ import EnjoyServices from "./assets/enjoyServices.svg";
 
 export const tilesData = [
   { illu: AgentConnect, content: "Cliquez sur le bouton Agentconnect." },
-  { illu: EnterEmail, content: "Entrez votre adresse email professionnelle." },
+  {
+    illu: EnterEmail,
+    content: "Entrez votre adresse email professionnelle.",
+  },
   {
     illu: Identity,
     content:

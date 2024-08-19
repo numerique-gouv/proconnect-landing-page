@@ -10,7 +10,7 @@ function HowDoesItWork({ tiles }: any) {
           {tiles.map(
             ({ illu, content }: any, index: React.Key | null | undefined) => (
               <Tile illu={illu} content={content} key={index} />
-            ),
+            )
           )}
         </div>
       </div>

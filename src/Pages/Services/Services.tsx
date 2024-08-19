@@ -9,11 +9,11 @@ function Services() {
   const [availableToRIE, setAvailableToRIE] = useState<boolean | null>(false);
 
   const servicesOnInternet = SERVICES_LIST.filter(
-    ({ network }) => network === "internet",
+    ({ network }) => network === "internet"
   );
 
   const servicesOnRIE = SERVICES_LIST.filter(
-    ({ network }) => network === "RIE",
+    ({ network }) => network === "RIE"
   );
 
   return (
