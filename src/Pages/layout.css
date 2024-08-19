@@ -47,3 +47,9 @@ body {
     background-color: var(--background-alt-blue-france);
     border-radius: 11px;
 }
+
+.display-column {
+    display: 'flex';
+    flex-direction: 'column';
+    align-items: 'center';
+}

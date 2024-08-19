@@ -5,10 +5,12 @@ import Roadmap from '../Pages/Roadmap';
 import Services from '../Pages/Services';
 import SiteMap from '../Pages/SiteMap';
 import InConstruction from '../Pages/InConstruction';
-import Partners from '../Pages/Partners';
 import Cgu from '../Pages/Cgu';
 import LegalNotices from '../Pages/LegalNotices';
 import Stats from '../Pages/Stats';
+import EligibilityTest from '../Pages/Eligibility/EligibilityTest';
+import { Eligible } from '../Pages/Eligibility/Eligible';
+import { NotEligible } from '../Pages/Eligibility/NotEligible';
 
 const router = createBrowserRouter([
     {
@@ -28,10 +30,26 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: '/partenaires',
+        path: '/eligibilite',
         element: (
             <WrapperLayout>
-                <Partners></Partners>
+                <EligibilityTest />
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/eligibilite/eligible',
+        element: (
+            <WrapperLayout>
+                <Eligible />
+            </WrapperLayout>
+        ),
+    },
+    {
+        path: '/eligibilite/non-eligible',
+        element: (
+            <WrapperLayout>
+                <NotEligible />
             </WrapperLayout>
         ),
     },

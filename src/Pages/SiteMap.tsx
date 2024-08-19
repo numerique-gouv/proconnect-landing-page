@@ -14,8 +14,8 @@ function SiteMap() {
                     </a>
                 </li>
                 <li>
-                    <a className="fr-raw-link" href="/partenaires">
-                        Liste des partenaires
+                    <a className="fr-raw-link" href="/eligibilite">
+                        Testez votre éligibilité
                     </a>
                 </li>
                 <li>

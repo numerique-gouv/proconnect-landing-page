@@ -16,9 +16,10 @@ const ButtonRadius: React.FC<MyComponentProps> = ({
 }) => {
     return (
         <DsfrButton
-            className={` ${personalized}`}
+            className={`${personalized}`}
             onClick={onClick}
             priority="primary"
+
             // priority={isSelected ? 'primary' : 'secondary'}
         >
             {children}
