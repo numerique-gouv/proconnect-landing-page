@@ -1,43 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AgentConnect</title>
-        <link rel="apple-touch-icon" href="/dsfr/favicon/apple-touch-icon.png?v=1.12.1" />
-        <link rel="icon" href="/dsfr/favicon/favicon.svg?v=1.12.1" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/dsfr/favicon/favicon.ico?v=1.12.1" type="image/x-icon" />
-        <link
-            rel="manifest"
-            href="/dsfr/favicon/manifest.webmanifest?v=1.12.1"
-            crossorigin="use-credentials"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgentConnect</title>
+    <link
+      rel="apple-touch-icon"
+      href="/dsfr/favicon/apple-touch-icon.png?v=1.12.1"
+    />
+    <link
+      rel="icon"
+      href="/dsfr/favicon/favicon.svg?v=1.12.1"
+      type="image/svg+xml"
+    />
+    <link
+      rel="shortcut icon"
+      href="/dsfr/favicon/favicon.ico?v=1.12.1"
+      type="image/x-icon"
+    />
+    <link
+      rel="manifest"
+      href="/dsfr/favicon/manifest.webmanifest?v=1.12.1"
+      crossorigin="use-credentials"
+    />
 
-        <link rel="stylesheet" href="/dsfr/utility/icons/icons.min.css?hash=b9c27aa0" />
-        <link rel="stylesheet" href="/dsfr/dsfr.min.css?v=1.12.1" />
-        <!-- Matomo -->
-        <script>
-            var _paq = (window._paq = window._paq || []);
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function () {
-                var u = 'https://stats.data.gouv.fr/';
-                _paq.push(['setTrackerUrl', u + 'piwik.php']);
-                _paq.push(['setSiteId', '286']);
-                var d = document,
-                    g = d.createElement('script'),
-                    s = d.getElementsByTagName('script')[0];
-                g.async = true;
-                g.src = u + 'piwik.js';
-                s.parentNode.insertBefore(g, s);
-            })();
-        </script>
-        <!-- End Matomo Code -->
-    </head>
-    <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.tsx"></script>
-    </body>
+    <link rel="stylesheet" href="/dsfr/utility/icons/icons.min.css?v=1.12.1" />
+    <link rel="stylesheet" href="/dsfr/dsfr.min.css?v=1.12.1" />
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "https://stats.data.gouv.fr/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "286"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.async = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

@@ -1,12 +1,12 @@
-import './eligibility.css';
+import "./eligibility.css";
 
-import { WhoIsYourBoss } from './WhoIsYourBoss';
+import { WhoIsYourBoss } from "./WhoIsYourBoss";
 
 function EligibilityTest() {
-    return (
-        <div className="fr-container" id="componentStart">
-            <WhoIsYourBoss />
-        </div>
-    );
+  return (
+    <div className="fr-container" id="componentStart">
+      <WhoIsYourBoss />
+    </div>
+  );
 }
 export default EligibilityTest;
