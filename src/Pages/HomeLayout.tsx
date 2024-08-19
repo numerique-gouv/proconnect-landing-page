@@ -1,14 +1,11 @@
 import React from "react";
 import welcome from "../assets/welcome.svg";
-// import PrivateProfessional from './PrivateProfessional';
 import "./layout.css";
 import { fr } from "@codegouvfr/react-dsfr";
 import Button from "@codegouvfr/react-dsfr/Button";
 import whatService from "../assets/quelService.svg";
 import HowDoesItWork from "../components/HowDoesItWork/HowDoesItWork";
 import { tilesData } from "../Datas";
-
-// type ComponentType = 'publicMember' | 'privateProfessional';
 
 function HomeLayout() {
   return (
@@ -25,21 +22,12 @@ function HomeLayout() {
                 nous vous identifions <br />
                 sur les sites de l'administration.
               </h1>
-              {/* <p>Vous êtes :</p> */}
               <a className="fr-raw-link" href="/eligibilite">
-                <Button
-                // isSelected={selectedComponent === 'publicMember'}
-                >
+                <Button>
                   <i className={fr.cx("ri-user-star-line") + " fr-pr-2w"} />
                   Testez votre éligibilité
                 </Button>
               </a>
-              {/* <ButtonRadius
-                                onClick={() => handleButtonClick('privateProfessional')}
-                                isSelected={selectedComponent === 'privateProfessional'}
-                            >
-                                Professionnel du privé
-                            </ButtonRadius> */}
             </div>
             <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
               <img src={welcome} alt="" />
@@ -89,10 +77,6 @@ function HomeLayout() {
           </div>
         </div>
       </div>
-      {/* <Element name="componentStart">
-                {selectedComponent === 'publicMember' && <AgentPublic />}
-                {selectedComponent === 'privateProfessional' && <PrivateProfessional />}
-            </Element> */}
     </React.Fragment>
   );
 }

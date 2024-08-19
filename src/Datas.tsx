@@ -1,4 +1,3 @@
-// import ButtonProCo from './assets/proConnect.svg';
 import AgentConnect from "./assets/AgentConnect.svg";
 import EnterEmail from "./assets/enterEmail.svg";
 import Identity from "./assets/checkIdentity.svg";
