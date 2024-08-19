@@ -3,53 +3,53 @@
 html,
 body,
 #root {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
-    flex: 1;
+  flex: 1;
 }
 
 /* Content css */
 .background-welcome-page {
-    background-color: var(--background-alt-brown-opera);
+  background-color: var(--background-alt-brown-opera);
 }
 
 .centered-content {
-    justify-content: center;
+  justify-content: center;
 }
 
 .centered-text {
-    text-align: center;
+  text-align: center;
 }
 
 .blue-france {
-    color: var(--text-title-blue-france);
+  color: var(--text-title-blue-france);
 }
 
 .delete-margin-bottom {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .card-radius {
-    background-color: var(--background-alt-blue-france);
-    border-radius: 11px;
+  background-color: var(--background-alt-blue-france);
+  border-radius: 11px;
 }
 
 .display-column {
-    display: 'flex';
-    flex-direction: 'column';
-    align-items: 'center';
+  display: "flex";
+  flex-direction: "column";
+  align-items: "center";
 }
