@@ -1,5 +1,4 @@
 import { Card as DsfrCard } from "@codegouvfr/react-dsfr/Card";
-// import { Badge } from '@codegouvfr/react-dsfr/Badge';
 
 interface Offre {
   description?: string;

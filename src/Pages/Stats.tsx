@@ -1,5 +1,3 @@
-//
-
 function Stats() {
   return (
     <div className="fr-container">
