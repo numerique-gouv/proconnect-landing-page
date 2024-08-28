@@ -15,7 +15,7 @@ function HomeLayout() {
           <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
             <div className="fr-col-12 fr-col-md-6">
               <h1 className="fr-h2">
-                Avec le bouton
+                Avec le bouton&nbsp;
                 <span className="blue-france">AgentConnect</span>
                 ,
                 <br />
