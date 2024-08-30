@@ -89,6 +89,13 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
   },
   {
+    title: "RDV Service Public",
+    url: "https://rdv.anct.gouv.fr",
+    description:
+      "Faciliter la prise des rendez-vous entre le service public et les usagers",
+    network: "internet",
+  },
+  {
     title: "Mobilic",
     url: "https://mobilic.beta.gouv.fr/",
     description: "Suivre le temps de travail dans le transport routier léger",
@@ -96,7 +103,7 @@ const SERVICES_LIST: Array<serviceType> = [
   },
   {
     title: "Datalab SSP Cloud",
-    url: "https://datalab.sspcloud.fr/home)",
+    url: "https://datalab.sspcloud.fr/home",
     description:
       "Répertorier les services de traitement des données statistiques et de datascience",
     network: "internet",
