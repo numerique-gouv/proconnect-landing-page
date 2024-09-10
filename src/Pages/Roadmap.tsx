@@ -76,7 +76,8 @@ function Roadmap() {
                       d’identité
                     </p>
                     <p className="fr-mb-0">
-                      • La Gendarmerie Nationale et la Police Nationale rejoignent la Fédération d'Identité
+                      • La Gendarmerie Nationale et la Police Nationale
+                      rejoignent la Fédération d'Identité
                     </p>
                   </div>
                 </li>
