@@ -75,6 +75,9 @@ function Roadmap() {
                       • Le ministère de la Justice rejoint la fédération
                       d’identité
                     </p>
+                    <p className="fr-mb-0">
+                      • La Gendarmerie Nationale et la Police Nationale rejoignent la Fédération d'Identité
+                    </p>
                   </div>
                 </li>
                 <li>
