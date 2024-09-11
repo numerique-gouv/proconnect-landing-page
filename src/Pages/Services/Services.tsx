@@ -19,9 +19,7 @@ function Services() {
   return (
     <div className="fr-container">
       <h1 className="fr-h3 fr-mt-2w">Annuaire des services</h1>
-      <p className="fr-h6">
-        Connectez-vous à tous ces sites avec AgentConnect !
-      </p>
+      <p className="fr-h6">Connectez-vous à tous ces sites avec ProConnect !</p>
 
       <ToggleSwitch
         inputTitle="the-title"
@@ -54,7 +52,7 @@ function Services() {
                 style={{ fontWeight: "bold" }}
                 className="centered-content delete-margin-bottom"
               >
-                Vous voulez intégrer AgentConnect sur votre site ?
+                Vous voulez intégrer ProConnect sur votre site ?
               </p>
             </div>
           </div>

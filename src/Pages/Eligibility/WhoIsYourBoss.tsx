@@ -55,7 +55,7 @@ export function WhoIsYourBoss() {
             </div>
             <div className="fr-ml-3w">
               <p className="centered-content delete-margin-bottom bold">
-                Vous voulez intégrer AgentConnect sur votre site ?
+                Vous voulez intégrer ProConnect sur votre site ?
               </p>
             </div>
           </div>

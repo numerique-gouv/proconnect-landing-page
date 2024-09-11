@@ -13,7 +13,7 @@ function Header() {
       }
       homeLinkProps={{
         to: "/",
-        title: "Accueil - AgentConnect",
+        title: "Accueil - ProConnect",
       }}
       id="fr-header-header-with-quick-access-items-nav-items"
       navigation={[
@@ -40,7 +40,7 @@ function Header() {
           linkProps: {
             to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
           },
-          text: "Intégrer AgentConnect sur votre site",
+          text: "Intégrer ProConnect sur votre site",
         },
         {
           iconId: "fr-icon-timer-line",
@@ -58,7 +58,7 @@ function Header() {
         },
       ]}
       serviceTagline="Identifie les professionnels sur les sites de l'administation"
-      serviceTitle="AgentConnect"
+      serviceTitle="ProConnect"
     />
   );
 }

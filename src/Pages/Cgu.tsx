@@ -2,11 +2,11 @@ function Cgu() {
   return (
     <div className="fr-container fr-my-5w">
       <div className="fr-grid-row">
-        <h1>Conditions générales d'utilisation d'AgentConnect</h1>
+        <h1>Conditions générales d'utilisation de ProConnect</h1>
         <h2 className="fr-col-12">1. Préambule</h2>
         <p>
-          Ce document présente les modalités d'engagement à l'utilisation
-          d'AgentConnect (ci-après le «&nbsp;Service&nbsp;») pour les Agents
+          Ce document présente les modalités d'engagement à l'utilisation de
+          ProConnect (ci-après le «&nbsp;Service&nbsp;») pour les Agents
           utilisateurs du Service. Il traduit leurs engagements de chacun en vue
           de faciliter et de simplifier l'accès aux outils utilisés dans le
           cadre professionnel pour les Utilisateurs du Service. Il s'inscrit
@@ -85,7 +85,7 @@ function Cgu() {
                 décision n°DINUM-202106-01 du 1er juin 2021 (PDF 754 Ko)
               </span>
             </a>
-            , signée par le DINUM, créant le Service AgentConnect à destination
+            , signée par le DINUM, créant le Service ProConnect à destination
             des agents de la fonction publique d'Etat et des opérateurs de
             l'Etat.
           </li>
@@ -93,68 +93,68 @@ function Cgu() {
         <h2>2. Objet du document</h2>
         <p>
           Le présent document a pour objet de définir les conditions générales
-          d'utilisation (CGU) d'AgentConnect par les personnes disposant d'un
+          d'utilisation (CGU) de ProConnect par les personnes disposant d'un
           compte vérifié dans le cadre de leur activité professionnelle et
           exerçant au sein de la fonction publique d'Etat (administrations
           centrales, services déconcentrés) et des opérateurs de l'Etat présents
           dans les annexes générales au projet de loi de finances de l'année.
         </p>
-        <h2>3. Service «&nbsp;AgentConnect&nbsp;»</h2>
+        <h2>3. Service «&nbsp;ProConnect&nbsp;»</h2>
         <h3 className="fr-col-12">3.1. Définitions</h3>
         <p>
-          AgentConnect est un service mis en œuvre par la DINUM, dénommé
-          ci-après le <b>«&nbsp;Service&nbsp;»</b>. <br />
+          ProConnect est un service mis en œuvre par la DINUM, dénommé ci-après
+          le <b>«&nbsp;Service&nbsp;»</b>. <br />
           Un
           <b>«&nbsp;Agent&nbsp;»</b>, ou <b>«&nbsp;Agent utilisateur&nbsp;»</b>,
           est toute personne physique disposant d'un compte vérifié dans le
           cadre de son activité professionnelle. <br />
           Un
           <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité partenaire
-          du Service AgentConnect qui propose un ou des services nécessitant
+          du Service ProConnect qui propose un ou des services nécessitant
           l'authentification en ligne des personnes habilitées à y accéder.
           <br />
           L'ensemble des parties prenantes au Service (Fournisseurs d'Identité,
           Fournisseurs de Services) sont dénommées ci-après les
           <b>«&nbsp;Partenaires&nbsp;»</b>.
         </p>
-        <h3>3.2. Objet d'AgentConnect</h3>
+        <h3>3.2. Objet de ProConnect</h3>
         <p>
-          AgentConnect met en relation des Fournisseurs d'identité et des
+          ProConnect met en relation des Fournisseurs d'identité et des
           Fournisseurs de services pour permettre de simplifier le travail des
           agents.
           <br />
           C'est un service proposé par la DINUM qui permet aux agents de se
           connecter à des services en ligne proposés par des Fournisseurs de
-          services autorisés préalablement. AgentConnect s'appuie sur des
-          comptes d'identité numérique vérifiés par ses partenaires Fournisseurs
+          services autorisés préalablement. ProConnect s'appuie sur des comptes
+          d'identité numérique vérifiés par ses partenaires Fournisseurs
           d'identité. <br />
-          Ainsi, AgentConnect permet de
+          Ainsi, ProConnect permet de
           <i>
             «&nbsp;Contribuer au décloisonnement des applications ministérielles
             et à leur ouverture à l'interministériel&nbsp;»
           </i>
           conformément aux 8 missions du programme TECH.GOUV. <br />
-          Le Service AgentConnect s'adresse aux agents de la fonction publique
-          de l'Etat et des opérateurs présents dans les annexes générales au
-          projet de loi de finances de l'année. <br />
-          L'utilisation du service AgentConnect est facultative et gratuite.
+          Le Service ProConnect s'adresse aux agents de la fonction publique de
+          l'Etat et des opérateurs présents dans les annexes générales au projet
+          de loi de finances de l'année. <br />
+          L'utilisation du service ProConnect est facultative et gratuite.
         </p>
         <h3>3.3. Fonctionnalités</h3>
         <p>
-          AgentConnect est un dispositif facultatif d'identification et
+          ProConnect est un dispositif facultatif d'identification et
           d'authentification pour les agents exerçant au sein de la fonction
           publique d'Etat (administrations centrales, services déconcentrés) et
           des opérateurs de l'Etat.
           <br />
-          «&nbsp;AgentConnect&nbsp;» repose sur une fédération d'identité.
+          «&nbsp;ProConnect&nbsp;» repose sur une fédération d'identité.
           <br />
-          Le service AgentConnect permet à un agent d'accéder à des services en
+          Le service ProConnect permet à un agent d'accéder à des services en
           ligne en utilisant un compte déjà existant sous réserve que ce compte
           fourni par le fournisseur d'identité soit reconnu par le service
-          AgentConnect et que l'application dispose d'un bouton de connexion
-          AgentConnect.
+          ProConnect et que l'application dispose d'un bouton de connexion
+          ProConnect.
         </p>
-        <h3>3.4. Modalités d'utilisation d'AgentConnect</h3>
+        <h3>3.4. Modalités d'utilisation de ProConnect</h3>
         <p>
           L'accès au Service est ouvert à toute personne physique ayant la
           qualité d'agent de la fonction publique d'Etat ou assimilé exerçant
@@ -163,15 +163,15 @@ function Cgu() {
           <br />
           <i>Cinématique d'usage&nbsp;:</i> <br />
           Pour accéder à un service en ligne, l'Agent utilisateur clique sur le
-          bouton de connexion «&nbsp;AgentConnect&nbsp;» présent sur la page
-          dudit service puis sélectionne un compte (fournisseur d'identité)
-          qu'il connait parmi ceux proposés. <br />
-          AgentConnect le redirige alors vers la page de connexion de ce compte
+          bouton de connexion «&nbsp;ProConnect&nbsp;» présent sur la page dudit
+          service puis sélectionne un compte (fournisseur d'identité) qu'il
+          connait parmi ceux proposés. <br />
+          ProConnect le redirige alors vers la page de connexion de ce compte
           pour que l'agent puisse s'identifier par un moyen d'authentification.{" "}
           <br />
           L'agent utilisateur accède alors au service souhaité une fois qu'il a
           été authentifié par le fournisseur de service à partir des données
-          d'identité transmises par le fournisseur d'identité à AgentConnect.{" "}
+          d'identité transmises par le fournisseur d'identité à ProConnect.{" "}
           <br />
           En utilisant le Service, l'Agent utilisateur reconnait être informé de
           l'échange et du partage des informations nécessaires à son
@@ -236,7 +236,7 @@ function Cgu() {
         </h4>
         <ul>
           <li>l'adresse IP et numéro du port source&nbsp;;</li>
-          <li>les dates et heures de connexion au Service AgentConnect.</li>
+          <li>les dates et heures de connexion au Service ProConnect.</li>
         </ul>
         <h2 className="fr-col-12 fr-mt-5v" id="confidential">
           4. Roles et engagements de la DINUM
@@ -278,7 +278,7 @@ function Cgu() {
           Service, et à ne pas les communiquer à des tiers, en dehors des cas
           prévus par la loi.
           <br />
-          En cas d'incident lors de l'utilisation d'AgentConnect, l'Agent est
+          En cas d'incident lors de l'utilisation de ProConnect, l'Agent est
           invité à se rapprocher de son administration de rattachement, ou à
           défaut, du Fournisseur de Service auquel il souhaite accéder.
         </p>
@@ -324,7 +324,7 @@ function Cgu() {
             <tbody>
               <tr>
                 <td>
-                  Données relatives à AgentConnect pour la gestion de
+                  Données relatives à ProConnect pour la gestion de
                   l'identification de l'agent.
                 </td>
                 <td>
@@ -337,7 +337,7 @@ function Cgu() {
               </tr>
               <tr>
                 <td>
-                  Données relatives à AgentConnect pour la gestion de la
+                  Données relatives à ProConnect pour la gestion de la
                   traçabilité des accès de l'agent utilisateur les catégories de
                   données à caractère personnel enregistrées sont les suivantes.
                 </td>

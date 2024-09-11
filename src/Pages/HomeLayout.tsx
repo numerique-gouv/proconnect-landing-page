@@ -16,7 +16,7 @@ function HomeLayout() {
             <div className="fr-col-12 fr-col-md-6">
               <h1 className="fr-h2">
                 Avec le bouton&nbsp;
-                <span className="blue-france">AgentConnect</span>
+                <span className="blue-france">ProConnect</span>
                 ,
                 <br />
                 nous vous identifions <br />
@@ -45,7 +45,7 @@ function HomeLayout() {
                   A quels services en ligne pouvez-vous vous connecter ?
                 </h1>
                 <p>
-                  Grâce au bouton AgentConnect, accédez à tous les outils de la
+                  Grâce au bouton ProConnect, accédez à tous les outils de la
                   DINUM,
                   <br />à la Suite Numérique et à tous les services
                   interministériels de nos partenaires.
@@ -63,7 +63,7 @@ function HomeLayout() {
                   <img src={whatService} className="fr-mb-2w" alt="" />
 
                   <h3 className="fr-text--lead centered-text">
-                    Êtes-vous éligible <br />à AgentConnect ?
+                    Êtes-vous éligible <br />à ProConnect ?
                   </h3>
                   <a className="fr-raw-link" href="/eligibilite">
                     <Button>

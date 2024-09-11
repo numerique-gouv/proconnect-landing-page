@@ -23,7 +23,7 @@ export function Eligible() {
             <div className="fr-col-12 fr-col-md-6">
               <h1 className="fr-h2">Bonne nouvelle, vous êtes éligible !</h1>
               <p>
-                Vous pouvez dès maintenant utiliser AgentConnect pour vous
+                Vous pouvez dès maintenant utiliser ProConnect pour vous
                 connecter à de nombreux outils et sites de l'administration
               </p>
               <a className="fr-raw-link" href="/services">

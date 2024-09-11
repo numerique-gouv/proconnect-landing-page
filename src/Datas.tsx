@@ -4,7 +4,7 @@ import Identity from "./assets/checkIdentity.svg";
 import EnjoyServices from "./assets/enjoyServices.svg";
 
 export const tilesData = [
-  { illu: AgentConnect, content: "Cliquez sur le bouton Agentconnect." },
+  { illu: AgentConnect, content: "Cliquez sur le bouton Proconnect." },
   {
     illu: EnterEmail,
     content: "Entrez votre adresse email professionnelle.",

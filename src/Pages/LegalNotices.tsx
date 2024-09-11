@@ -4,10 +4,10 @@ function LegalNotices() {
       <h1 className="fr-h3">Mentions légales</h1>
       <h2 className="fr-h4">Éditeur</h2>
       <p>
-        Ce site est édité par le programme AgentConnect de la direction
+        Ce site est édité par le programme ProConnect de la direction
         interministérielle du numérique (DINUM), un service du Premier ministre.{" "}
         <br />
-        AgentConnect/DINUM
+        ProConnect/DINUM
         <br />
         20 avenue de Ségur 75007 Paris <br />
         Tel. accueil : 01.71.21.01.70 <br />
@@ -24,7 +24,7 @@ function LegalNotices() {
       <p>
         Ce site est développé en mode agile, selon un principe d’amélioration
         continue. Le suivi éditorial et graphique est assuré au quotidien par
-        AgentConnect.
+        ProConnect.
       </p>
       <h2 className="fr-h4">
         Propriété intellectuelle et liens vers agentconnect.gouv.fr
