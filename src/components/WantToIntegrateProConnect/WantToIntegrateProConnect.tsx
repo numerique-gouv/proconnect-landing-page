@@ -1,4 +1,3 @@
-import coding from "../../assets/coding.svg";
 import Button from "@codegouvfr/react-dsfr/Button";
 
 function WantToIntegrateProConnect() {

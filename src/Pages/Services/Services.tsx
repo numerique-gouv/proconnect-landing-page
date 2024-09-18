@@ -2,7 +2,6 @@ import { ToggleSwitch } from "@codegouvfr/react-dsfr/ToggleSwitch";
 import Card from "../../components/Card/Card";
 import "./services.css";
 import { useState } from "react";
-import coding from "../../assets/coding.svg";
 import { SERVICES_LIST } from "./constants";
 
 function Services() {
