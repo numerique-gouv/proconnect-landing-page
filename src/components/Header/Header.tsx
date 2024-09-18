@@ -1,24 +1,11 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
-import { Notice } from "@codegouvfr/react-dsfr/Notice";
-
-function NoticeTitle() {
-  return (
-    <span>
-      AgentConnect devient ProConnect !{" "}
-      <a href="#agentconnect-devient-proconnect-container">En savoir plus</a>
-    </span>
-  );
-}
+import NameChangeNotice from "./NameChangeNotice";
 
 function Header() {
   const currentURL = window.location.pathname;
   return (
     <>
-      <Notice
-        isClosable
-        onClose={function noRefCheck() {}}
-        title={<NoticeTitle />}
-      />
+      <NameChangeNotice />
       <DsfrHeader
         brandTop={
           <>
