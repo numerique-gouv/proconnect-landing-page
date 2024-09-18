@@ -1,6 +1,7 @@
 import Button from "@codegouvfr/react-dsfr/Button";
 import Lottie from "react-lottie";
 import eligibleAnimation from "../../assets/Success.json";
+import WantToIntegrateProConnect from "../../components/WantToIntegrateProConnect/WantToIntegrateProConnect";
 
 const defaultOptions = {
   loop: true,
@@ -11,7 +12,7 @@ const defaultOptions = {
   },
 };
 
-export function Eligible() {
+function Result(props: { subtitle: string }) {
   return (
     <div className="fr-container">
       <div className="container fr-my-8w">
@@ -22,10 +23,7 @@ export function Eligible() {
             </div>
             <div className="fr-col-12 fr-col-md-6">
               <h1 className="fr-h2">Bonne nouvelle, vous êtes éligible !</h1>
-              <p>
-                Vous pouvez dès maintenant utiliser ProConnect pour vous
-                connecter à de nombreux outils et sites de l'administration
-              </p>
+              <p>{props.subtitle}</p>
               <a className="fr-raw-link" href="/services">
                 <Button>Explorer l'annuaire des sites</Button>
               </a>
@@ -33,6 +31,9 @@ export function Eligible() {
           </div>
         </div>
       </div>
+      <WantToIntegrateProConnect />
     </div>
   );
 }
+
+export default Result;

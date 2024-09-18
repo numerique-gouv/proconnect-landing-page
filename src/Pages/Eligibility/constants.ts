@@ -8,37 +8,38 @@ const bossNames = [
 ] as const;
 
 type bossNameType = (typeof bossNames)[number];
+type categoryType = "public" | "private";
 
 const bosses: Record<
   bossNameType,
   {
     label: string;
-    isEligible: boolean;
+    category: categoryType;
   }
 > = {
   fonction_publique_etat: {
     label: "Fonction publique d'État",
-    isEligible: true,
+    category: "public",
   },
   fonction_publique_territoriale: {
     label: "Fonction publique territoriale",
-    isEligible: true,
+    category: "public",
   },
   fonction_publique_hospitaliere: {
     label: "Fonction publique hospitalière",
-    isEligible: true,
+    category: "public",
   },
   operateur_etat: {
     label: "Opérateur de l'État",
-    isEligible: true,
+    category: "public",
   },
   autre_structure_public: {
     label: "Autre structure du service public",
-    isEligible: true,
+    category: "public",
   },
   asso_entreprise_prive: {
     label: "Association ou entreprise privée",
-    isEligible: false,
+    category: "private",
   },
 };
 
