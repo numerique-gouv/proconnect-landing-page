@@ -24,11 +24,6 @@ function SiteMap() {
           </a>
         </li>
         <li>
-          <a className="fr-raw-link" href="/aide">
-            Aide
-          </a>
-        </li>
-        <li>
           <a className="fr-raw-link" href="/plan-du-site">
             Plan du site
           </a>

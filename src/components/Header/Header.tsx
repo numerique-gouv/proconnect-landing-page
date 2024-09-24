@@ -55,7 +55,7 @@ function Header() {
           {
             iconId: "fr-icon-question-line",
             linkProps: {
-              to: "/aide",
+              to: "https://proconnect.crisp.help",
             },
             text: "Aide",
           },

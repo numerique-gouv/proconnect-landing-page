@@ -4,7 +4,6 @@ import HomeLayout from "../Pages/HomeLayout";
 import Roadmap from "../Pages/Roadmap";
 import Services from "../Pages/Services";
 import SiteMap from "../Pages/SiteMap";
-import InConstruction from "../Pages/InConstruction";
 import Cgu from "../Pages/Cgu";
 import LegalNotices from "../Pages/LegalNotices";
 import Stats from "../Pages/Stats";
@@ -58,14 +57,6 @@ const router = createBrowserRouter([
     element: (
       <WrapperLayout>
         <Roadmap></Roadmap>
-      </WrapperLayout>
-    ),
-  },
-  {
-    path: "/aide",
-    element: (
-      <WrapperLayout>
-        <InConstruction></InConstruction>
       </WrapperLayout>
     ),
   },
