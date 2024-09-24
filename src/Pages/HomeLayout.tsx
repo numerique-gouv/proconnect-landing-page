@@ -54,10 +54,6 @@ function HomeLayout() {
                 <ul>
                   <li>Vous continuez à vous connecter de la même manière.</li>
                   <li>
-                    Vos collaborateurs et prestataires privés accèdent plus
-                    facilement aux services.
-                  </li>
-                  <li>
                     Vous pouvez désormais accéder à encore plus de sites et
                     d'outils de l'administration !
                   </li>
