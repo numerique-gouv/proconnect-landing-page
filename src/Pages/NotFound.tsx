@@ -14,7 +14,7 @@ function NotFound() {
             Nous n'arrivons pas à trouver la page que vous souhaitez afficher.
           </p>
 
-          <Button onClick={() => navigate(-1)}>Retour</Button>
+          <Button onClick={() => navigate("/")}>Retour</Button>
         </div>
         <div className="fr-col-6 centered-content">
           <img src={ConnectionLost} alt="" />
