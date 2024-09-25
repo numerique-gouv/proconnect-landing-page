@@ -2,7 +2,6 @@ import { ToggleSwitch } from "@codegouvfr/react-dsfr/ToggleSwitch";
 import Card from "../../components/Card/Card";
 import "./services.css";
 import { useState } from "react";
-import coding from "../../assets/coding.svg";
 import { SERVICES_LIST } from "./constants";
 
 function Services() {
@@ -19,9 +18,7 @@ function Services() {
   return (
     <div className="fr-container">
       <h1 className="fr-h3 fr-mt-2w">Annuaire des services</h1>
-      <p className="fr-h6">
-        Connectez-vous à tous ces sites avec AgentConnect !
-      </p>
+      <p className="fr-h6">Connectez-vous à tous ces sites avec ProConnect !</p>
 
       <ToggleSwitch
         inputTitle="the-title"
@@ -43,23 +40,6 @@ function Services() {
           ))}
         </div>
       )}
-      <div className="fr-container fr-col-12 fr-col-md-8 fr-py-6w fr-py-md-2w fr-my-10w card-radius">
-        <div className="fr-container centered-content">
-          <div className="fr-grid-row fr-grid-row--center fr-grid-row--middle">
-            <div className="fr-col-1 fr-hidden fr-unhidden-md ">
-              <img src={coding} alt="" />
-            </div>
-            <div className="fr-ml-3w">
-              <p
-                style={{ fontWeight: "bold" }}
-                className="centered-content delete-margin-bottom"
-              >
-                Vous voulez intégrer AgentConnect sur votre site ?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 

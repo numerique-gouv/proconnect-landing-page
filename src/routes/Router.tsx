@@ -4,13 +4,12 @@ import HomeLayout from "../Pages/HomeLayout";
 import Roadmap from "../Pages/Roadmap";
 import Services from "../Pages/Services";
 import SiteMap from "../Pages/SiteMap";
-import InConstruction from "../Pages/InConstruction";
 import Cgu from "../Pages/Cgu";
 import LegalNotices from "../Pages/LegalNotices";
 import Stats from "../Pages/Stats";
 import EligibilityTest from "../Pages/Eligibility/EligibilityTest";
-import { Eligible } from "../Pages/Eligibility/Eligible";
-import { NotEligible } from "../Pages/Eligibility/NotEligible";
+import { PublicResult } from "../Pages/Eligibility/PublicResult";
+import { PrivateResult } from "../Pages/Eligibility/PrivateResult";
 
 const router = createBrowserRouter([
   {
@@ -38,18 +37,18 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/eligibilite/eligible",
+    path: "/eligibilite/public",
     element: (
       <WrapperLayout>
-        <Eligible />
+        <PublicResult />
       </WrapperLayout>
     ),
   },
   {
-    path: "/eligibilite/non-eligible",
+    path: "/eligibilite/private",
     element: (
       <WrapperLayout>
-        <NotEligible />
+        <PrivateResult />
       </WrapperLayout>
     ),
   },
@@ -58,14 +57,6 @@ const router = createBrowserRouter([
     element: (
       <WrapperLayout>
         <Roadmap></Roadmap>
-      </WrapperLayout>
-    ),
-  },
-  {
-    path: "/aide",
-    element: (
-      <WrapperLayout>
-        <InConstruction></InConstruction>
       </WrapperLayout>
     ),
   },
