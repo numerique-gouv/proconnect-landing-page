@@ -28,6 +28,7 @@ body {
 }
 
 .centered-content {
+  display: flex;
   justify-content: center;
 }
 
