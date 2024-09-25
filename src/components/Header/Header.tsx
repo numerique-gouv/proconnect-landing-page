@@ -52,13 +52,6 @@ function Header() {
             },
             text: "Feuille de route",
           },
-          {
-            iconId: "fr-icon-question-line",
-            linkProps: {
-              to: "https://proconnect.crisp.help",
-            },
-            text: "Aide",
-          },
         ]}
         serviceTagline="la solution officielle qui vous identifie en tant que professionnel"
         serviceTitle="ProConnect"
