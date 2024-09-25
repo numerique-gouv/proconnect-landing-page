@@ -57,7 +57,7 @@ function Roadmap() {
                     </p>
                   </div>
                 </li>
-                <li className="active">
+                <li>
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">T3 2024</h2>
                     <p className="fr-mb-0">
@@ -81,7 +81,7 @@ function Roadmap() {
                     </p>
                   </div>
                 </li>
-                <li>
+                <li className="active">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">T4 2024</h2>
                     <p className="fr-mb-0">
