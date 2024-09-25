@@ -170,18 +170,6 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
   },
   {
-    title: "Hub d'Échange de l'État",
-    url: "https://demarches.hubee.numerique.gouv.fr/",
-    description: "Recevoir des démarches administratives dématérialisées",
-    network: "internet",
-  },
-  {
-    title: "e-Campus",
-    url: "https://e-campus.interieur.gouv.fr",
-    description: "",
-    network: "internet",
-  },
-  {
     title: "SPOTE",
     url: "https://spote.developpement-durable.gouv.fr/",
     description:
