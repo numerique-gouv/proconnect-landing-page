@@ -7,7 +7,7 @@ const LOCAL_STORAGE_SHOULD_HIDE_NAME_CHANGE_KEY =
 function NoticeTitle() {
   return (
     <span>
-      AgentConnect devient ProConnect !{" "}
+      AgentConnect devient ProConnect&nbsp;!&nbsp;
       <a href="#agentconnect-devient-proconnect-container">En savoir plus</a>
     </span>
   );
