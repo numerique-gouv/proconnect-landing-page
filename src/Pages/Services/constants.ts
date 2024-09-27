@@ -3,7 +3,7 @@ type networkType = "internet" | "RIE";
 type serviceType = {
   title: string;
   url: string;
-  description?: string;
+  description: string;
   isOpenToPrivate?: boolean;
   network: networkType;
 };
@@ -174,6 +174,13 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://spote.developpement-durable.gouv.fr/",
     description:
       "Répertorier les services de l'État partenaires de la démarches naOS",
+    network: "internet",
+  },
+  {
+    title:
+      "Le service public des cartes et données du territoire | cartes.gouv.fr",
+    url: "https://cartes.gouv.fr",
+    description: "Consulter, créer et partager des cartes et des géodonnées",
     network: "internet",
   },
 ];
