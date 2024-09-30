@@ -2,7 +2,6 @@
 .grid-container {
   display: flex;
   justify-content: center; /* Centrer la grille horizontalement */
-  padding-bottom: 2rem; /* Ajouter du padding autour de la grille */
 }
 
 /* Grille des tuiles */
