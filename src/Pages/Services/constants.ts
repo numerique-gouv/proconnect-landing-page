@@ -183,6 +183,12 @@ const SERVICES_LIST: Array<serviceType> = [
     description: "Consulter, créer et partager des cartes et des géodonnées",
     network: "internet",
   },
+  {
+    title: "Chorus DT",
+    url: "https://chorus-dt.finances.ader.gouv.fr",
+    description: "Gérer les déplacements professionnels",
+    network: "RIE",
+  },
 ];
 
 export { SERVICES_LIST };
