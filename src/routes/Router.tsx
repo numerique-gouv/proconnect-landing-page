@@ -45,10 +45,42 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/eligibilite/public",
+        path: "/eligibilite/fp-etat",
         element: (
           <WrapperLayout>
             <PublicResult />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/eligibilite/fp-territoriale",
+        element: (
+          <WrapperLayout>
+            <PrivateResult />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/eligibilite/fp-hospitaliere",
+        element: (
+          <WrapperLayout>
+            <PrivateResult />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/eligibilite/operateur-etat",
+        element: (
+          <WrapperLayout>
+            <PrivateResult />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/eligibilite/autre-structure",
+        element: (
+          <WrapperLayout>
+            <PrivateResult />
           </WrapperLayout>
         ),
       },
