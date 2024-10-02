@@ -53,6 +53,8 @@ export function WhoIsYourBoss() {
       return;
     }
 
-    navigate(`/eligibilite/${bosses[selectedOption].category}`);
+    navigate(
+      `/eligibilite/${bosses[selectedOption].category}?employer=${selectedOption}`
+    );
   }
 }
