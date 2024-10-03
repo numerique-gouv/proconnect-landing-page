@@ -8,7 +8,7 @@ function NoticeTitle() {
   return (
     <span>
       AgentConnect devient ProConnect&nbsp;!&nbsp;
-      <a href="#agentconnect-devient-proconnect-container">En savoir plus</a>
+      <a href="/#agentconnect-devient-proconnect">En savoir plus</a>
     </span>
   );
 }

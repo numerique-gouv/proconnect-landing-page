@@ -38,7 +38,7 @@ function HomeLayout() {
         <HowDoesItWork tiles={tilesData} />
         <div
           className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-mt-2w"
-          id="agentconnect-devient-proconnect-container"
+          id="agentconnect-devient-proconnect"
         >
           <div className="fr-col-12 fr-col-md-6 fr-pt-0">
             <h2 className="fr-h3">AgentConnect devient ProConnect&nbsp;!</h2>
