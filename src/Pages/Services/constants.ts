@@ -189,6 +189,13 @@ const SERVICES_LIST: Array<serviceType> = [
     description: "Gérer les déplacements professionnels",
     network: "RIE",
   },
+  {
+    title: "Uniforces",
+    url: "https://www.uniforces.fr",
+    network: "internet",
+    description:
+      "Gérer les uniformes et équipements des agents de la Gendarmerie et Police Nationales",
+  },
 ];
 
 export { SERVICES_LIST };
