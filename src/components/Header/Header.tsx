@@ -43,7 +43,7 @@ function Header() {
             linkProps: {
               to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
             },
-            text: "Intégrer ProConnect sur votre site",
+            text: "Intégrer ProConnect",
           },
           {
             iconId: "fr-icon-timer-line",
@@ -51,6 +51,13 @@ function Header() {
               to: "/feuille-de-route",
             },
             text: "Feuille de route",
+          },
+          {
+            iconId: "fr-icon-account-circle-line",
+            linkProps: {
+              to: "/connexion",
+            },
+            text: "Se connecter",
           },
         ]}
         serviceTagline="la solution officielle qui vous identifie en tant que professionnel"
