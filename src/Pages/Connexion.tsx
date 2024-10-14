@@ -5,24 +5,23 @@ import Card from "../components/Card/Card";
 import { SHORT_LIST_SERVICES } from "./Services/constants";
 
 function Connexion() {
-  console.log(SHORT_LIST_SERVICES);
   return (
     <div>
       <div className="fr-container--fluid pc-background-alt-blue-france">
         <div className="fr-container fr-my-7w">
           <h1 className="fr-mb-4w">Bienvenue sur ProConnect !</h1>
-          <div className="pc-background-white fr-p-3w fr-mb-7w fr-col-12 fr-col-md-7">
+          <div className="pc-background-white fr-p-3w fr-mb-7w fr-col-12 fr-col-md-8 fr-col-lg-6">
             <div className="fr-mb-4w fr-grid-row fr-grid-row--middle">
-              <div className="fr-col-1 fr-mr-4w fr-hidden fr-unhidden-md">
+              <div className="fr-col-1 fr-mr-4w">
                 <img src={yourProfil} alt="" />
               </div>
-              <h2 className="fr-mb-0 fr-h3">Votre profil</h2>
+              <h2 className="fr-mb-0 fr-h3 blue-france">Votre profil</h2>
             </div>
             <div className="fr-grid-row fr-grid-row--middle">
               <Badge
                 noIcon
                 severity="info"
-                className="fr-mr-0 fr-mb-1v fr-col-4 centered-content fr-mr-md-2w fr-mb-md-2w fr-col-md-3"
+                className="fr-mr-0 fr-mb-1v fr-col-4 centered-content fr-mr-md-2w fr-mb-md-2w fr-col-sm-3"
               >
                 Prénom
               </Badge>
@@ -30,7 +29,7 @@ function Connexion() {
               <Badge
                 noIcon
                 severity="info"
-                className="fr-mr-0 fr-mb-1v fr-col-4 centered-content fr-mr-md-2w fr-mb-md-2w fr-col-md-3"
+                className="fr-mr-0 fr-mb-1v fr-col-4 centered-content fr-mr-md-2w fr-mb-md-2w fr-col-sm-3"
               >
                 Nom
               </Badge>
@@ -38,7 +37,7 @@ function Connexion() {
               <Badge
                 noIcon
                 severity="info"
-                className="fr-mr-0 fr-mb-1v fr-col-4 centered-content fr-mr-md-2w fr-mb-md-2w fr-col-md-3"
+                className="fr-mr-0 fr-mb-1v fr-col-4 centered-content fr-mr-md-2w fr-mb-md-2w fr-col-sm-3"
               >
                 Email
               </Badge>
@@ -62,7 +61,7 @@ function Connexion() {
               {SHORT_LIST_SERVICES.map((offre, index) => (
                 <Card
                   offre={offre}
-                  customizedMdCol={"fr-col-md-3"}
+                  customizedMdCol={"fr-col-lg-3 fr-col-md-6"}
                   key={index}
                 ></Card>
               ))}
