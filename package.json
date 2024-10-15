@@ -1,35 +1,28 @@
 {
-  "name": "proconnect",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
+  "name": "proconnect-landing-page",
+  "version": "1.0.0",
+  "description": "## Lancer ce site localement",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc && vite build",
-    "dev": "vite",
-    "format": "prettier --write .",
-    "postinstall": "copy-dsfr-to-public",
-    "prebuild": "only-include-used-icons",
-    "predev": "only-include-used-icons",
-    "preview": "vite preview",
-    "start": "serve --single dist"
+    "build": "npm run buildClient && npm run buildServer",
+    "buildServer": "npx tsc",
+    "buildClient": "cd src/client && npm install && npm run build",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   },
   "dependencies": {
-    "react-lottie": "^1.2.4",
-    "serve": "^14.2.3"
-  },
-  "devDependencies": {
-    "@codegouvfr/react-dsfr": "^1.9.27",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@types/react-lottie": "^1.2.10",
-    "@types/react-scroll": "^1.8.10",
-    "@vitejs/plugin-react": "^4.2.1",
-    "prettier": "^3.3.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1",
-    "react-scroll": "^1.9.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
   }
 }
