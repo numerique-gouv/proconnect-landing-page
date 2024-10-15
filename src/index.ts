@@ -1,10 +1,15 @@
-import express, { Express, Request, Response } from "express";
+import Express, { Request, Response } from "express";
+import path from "path";
 
-const app = express();
+const app = Express();
 const port = 3000;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Express + TypeScript Server");
+app.use(Express.static(path.join(__dirname, "..", "src", "client", "dist")));
+
+app.get("/*", (_, res: Response) => {
+  res.sendFile(
+    path.join(__dirname, "..", "src", "client", "dist", "index.html")
+  );
 });
 
 app.listen(port, () => {
