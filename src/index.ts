@@ -1,8 +1,8 @@
 import Express, { Request, Response } from "express";
 import path from "path";
+import { config } from "./config";
 
 const app = Express();
-const port = 3000;
 
 app.use(Express.static(path.join(__dirname, "..", "src", "client", "dist")));
 
@@ -12,6 +12,6 @@ app.get("/*", (_, res: Response) => {
   );
 });
 
-app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
+app.listen(config.PORT, () => {
+  console.log(`[server]: Server is running at http://localhost:${config.PORT}`);
 });
