@@ -55,7 +55,7 @@ function Header() {
           {
             iconId: "fr-icon-account-circle-line",
             linkProps: {
-              to: "/connexion",
+              to: "http://localhost:3001/openid/authorize",
             },
             text: "Se connecter",
           },
