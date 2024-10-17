@@ -4,7 +4,7 @@ import Button from "@codegouvfr/react-dsfr/Button";
 import Card from "../components/Card/Card";
 import { SHORT_LIST_SERVICES } from "./Services/constants";
 
-function Connexion() {
+function MonCompte() {
   return (
     <div>
       <div className="fr-container--fluid pc-background-alt-blue-france">
@@ -77,4 +77,4 @@ function Connexion() {
     </div>
   );
 }
-export default Connexion;
+export default MonCompte;
