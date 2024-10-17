@@ -3,8 +3,11 @@ import yourProfil from "../assets/your-profil.svg";
 import Button from "@codegouvfr/react-dsfr/Button";
 import Card from "../components/Card/Card";
 import { SHORT_LIST_SERVICES } from "./Services/constants";
+import { getUserInfos } from "../lib/authentication";
 
 function MonCompte() {
+  const userInfos = getUserInfos();
+
   return (
     <div>
       <div className="fr-container--fluid pc-background-alt-blue-france">
@@ -25,7 +28,9 @@ function MonCompte() {
               >
                 Prénom
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">Jacintha</p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
+                {userInfos.firstName}
+              </p>
               <Badge
                 noIcon
                 severity="info"
@@ -33,7 +38,9 @@ function MonCompte() {
               >
                 Nom
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">Froment</p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
+                {userInfos.lastName}
+              </p>
               <Badge
                 noIcon
                 severity="info"
@@ -42,16 +49,23 @@ function MonCompte() {
                 Email
               </Badge>
               <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
-                jacintha.froment@beta.gouv.fr
+                {userInfos.email}
               </p>
             </div>
-            <Button
-              iconId="fr-icon-settings-5-line"
-              priority="secondary"
-              className="fr-mt-2w"
-            >
-              Gérer le profil
-            </Button>
+            {userInfos.isIdentityProviderPCI && (
+              <a
+                className="fr-raw-link"
+                href="https://app-sandbox.moncomptepro.beta.gouv.fr/personal-information"
+              >
+                <Button
+                  iconId="fr-icon-settings-5-line"
+                  priority="secondary"
+                  className="fr-mt-2w"
+                >
+                  Gérer le profil
+                </Button>
+              </a>
+            )}
           </div>
           <div>
             <h2 className="fr-h3">

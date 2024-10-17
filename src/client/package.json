@@ -14,11 +14,13 @@
     "start": "serve --single dist"
   },
   "dependencies": {
+    "js-cookie": "^3.0.5",
     "react-lottie": "^1.2.4",
     "serve": "^14.2.3"
   },
   "devDependencies": {
     "@codegouvfr/react-dsfr": "^1.9.27",
+    "@types/js-cookie": "^3.0.6",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/react-lottie": "^1.2.10",

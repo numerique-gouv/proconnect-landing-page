@@ -21,13 +21,8 @@ declare module "express-session" {
   interface SessionData {
     state: string | null;
     nonce: string | null;
-    user: {
-      firstName: string | undefined;
-      lastName: string;
-      email: string | undefined;
-      idToken: string | undefined;
-      isIdentityProviderPCI: boolean;
-    };
+    idToken: string | undefined;
+    destroy: () => void;
   }
 }
 
@@ -82,15 +77,26 @@ app.get("/openid/oidc-callback", async (req, res) => {
   }
 
   const userinfo = await client.userinfo(tokenSet.access_token);
-  const user = {
-    firstName: userinfo.given_name,
-    lastName: userinfo.usual_name as string,
-    email: userinfo.email,
-    idToken: tokenSet.id_token,
-    isIdentityProviderPCI: userinfo.idp_id === config.PCI_IDP_ID,
-  };
-  req.session.user = user;
+
+  req.session.idToken = tokenSet.id_token;
+  res.cookie("firstName", userinfo.given_name);
+  res.cookie("lastName", userinfo.usual_name);
+  res.cookie("email", userinfo.email);
+  res.cookie("isIdentityProviderPCI", userinfo.idp_id === config.PCI_IDP_ID);
   res.redirect("http://localhost:5173/mon-compte");
+});
+
+app.get("/openid/logout", async (req, res) => {
+  const client = await getProConnectClient();
+  const id_token_hint = req.session.idToken;
+  req.session.destroy();
+
+  const redirectUrl = client.endSessionUrl({
+    post_logout_redirect_uri: `http://localhost:5173/`,
+    id_token_hint,
+  });
+
+  res.redirect(redirectUrl);
 });
 
 app.get("/*", (_, res: Response) => {
