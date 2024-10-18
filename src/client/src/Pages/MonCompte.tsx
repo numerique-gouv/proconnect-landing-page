@@ -6,7 +6,7 @@ import { SHORT_LIST_SERVICES } from "./Services/constants";
 import { getUserInfos } from "../lib/authentication";
 
 function MonCompte() {
-  const userInfos = getUserInfos();
+  const { isIdentityProviderPCI, lastName, email, firstName } = getUserInfos();
 
   return (
     <div>
@@ -28,9 +28,7 @@ function MonCompte() {
               >
                 Prénom
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
-                {userInfos.firstName}
-              </p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">{firstName}</p>
               <Badge
                 noIcon
                 severity="info"
@@ -38,9 +36,7 @@ function MonCompte() {
               >
                 Nom
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
-                {userInfos.lastName}
-              </p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">{lastName}</p>
               <Badge
                 noIcon
                 severity="info"
@@ -48,11 +44,9 @@ function MonCompte() {
               >
                 Email
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
-                {userInfos.email}
-              </p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">{email}</p>
             </div>
-            {userInfos.isIdentityProviderPCI && (
+            {isIdentityProviderPCI && (
               <a
                 className="fr-raw-link"
                 href="https://app-sandbox.moncomptepro.beta.gouv.fr/personal-information"
