@@ -11,6 +11,7 @@ import EligibilityTest from "../Pages/Eligibility/EligibilityTest";
 import { PublicResult } from "../Pages/Eligibility/PublicResult";
 import { PrivateResult } from "../Pages/Eligibility/PrivateResult";
 import NotFound from "../Pages/NotFound";
+import MonCompte from "../Pages/MonCompte";
 
 const router = createBrowserRouter([
   {
@@ -97,6 +98,14 @@ const router = createBrowserRouter([
         element: (
           <WrapperLayout>
             <Stats />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/mon-compte",
+        element: (
+          <WrapperLayout>
+            <MonCompte />
           </WrapperLayout>
         ),
       },
