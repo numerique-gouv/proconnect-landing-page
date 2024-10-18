@@ -7,14 +7,14 @@ function Header() {
   const { lastName, firstName } = getUserInfos();
   const quickAccessItems = [
     {
-      iconId: "fr-icon-code-s-slash-line",
+      iconId: "fr-icon-code-s-slash-line" as const,
       linkProps: {
         to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
       },
       text: "Intégrer ProConnect",
     },
     {
-      iconId: "fr-icon-timer-line",
+      iconId: "fr-icon-timer-line" as const,
       linkProps: {
         to: "/feuille-de-route",
       },
@@ -23,14 +23,14 @@ function Header() {
     ...(isConnected
       ? [
           {
-            iconId: "fr-icon-account-circle-line",
+            iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
               to: "http://localhost:5173/mon-compte",
             },
             text: `${firstName} ${lastName}`,
           },
           {
-            iconId: "fr-icon-logout-box-r-line",
+            iconId: "fr-icon-logout-box-r-line" as const,
             linkProps: {
               to: "http://localhost:3001/openid/logout",
             },
@@ -39,7 +39,7 @@ function Header() {
         ]
       : [
           {
-            iconId: "fr-icon-account-circle-line",
+            iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
               to: "http://localhost:3001/openid/authorize",
             },
