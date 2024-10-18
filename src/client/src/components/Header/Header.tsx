@@ -1,7 +1,53 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
+import { isUserConnected, getUserInfos } from "../../lib/authentication";
 
 function Header() {
+  const isConnected = isUserConnected();
+  const { lastName, firstName } = getUserInfos();
+  const quickAccessItems = [
+    {
+      iconId: "fr-icon-code-s-slash-line",
+      linkProps: {
+        to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
+      },
+      text: "Intégrer ProConnect",
+    },
+    {
+      iconId: "fr-icon-timer-line",
+      linkProps: {
+        to: "/feuille-de-route",
+      },
+      text: "Feuille de route",
+    },
+    ...(isConnected
+      ? [
+          {
+            iconId: "fr-icon-account-circle-line",
+            linkProps: {
+              to: "http://localhost:5173/mon-compte",
+            },
+            text: `${firstName} ${lastName}`,
+          },
+          {
+            iconId: "fr-icon-logout-box-r-line",
+            linkProps: {
+              to: "http://localhost:3001/openid/logout",
+            },
+            text: "Se déconnecter",
+          },
+        ]
+      : [
+          {
+            iconId: "fr-icon-account-circle-line",
+            linkProps: {
+              to: "http://localhost:3001/openid/authorize",
+            },
+            text: "Se connecter",
+          },
+        ]),
+  ];
+
   const currentURL = window.location.pathname;
   return (
     <>
@@ -37,29 +83,7 @@ function Header() {
             text: "Annuaire des services",
           },
         ]}
-        quickAccessItems={[
-          {
-            iconId: "fr-icon-code-s-slash-line",
-            linkProps: {
-              to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
-            },
-            text: "Intégrer ProConnect",
-          },
-          {
-            iconId: "fr-icon-timer-line",
-            linkProps: {
-              to: "/feuille-de-route",
-            },
-            text: "Feuille de route",
-          },
-          {
-            iconId: "fr-icon-account-circle-line",
-            linkProps: {
-              to: "http://localhost:3001/openid/authorize",
-            },
-            text: "Se connecter",
-          },
-        ]}
+        quickAccessItems={quickAccessItems}
         serviceTagline="la solution officielle qui vous identifie en tant que professionnel"
         serviceTitle="ProConnect"
       />
