@@ -1,10 +1,10 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
-import { isUserConnected, getUserInfos } from "../../lib/authentication";
+import { isUserConnected } from "../../lib/authentication";
+import { DropDownLogout } from "../DropDownLogout/DropDownLogout";
 
 function Header() {
   const isConnected = isUserConnected();
-  const { lastName, firstName } = getUserInfos();
   const quickAccessItems = [
     {
       iconId: "fr-icon-code-s-slash-line" as const,
@@ -21,22 +21,7 @@ function Header() {
       text: "Feuille de route",
     },
     ...(isConnected
-      ? [
-          {
-            iconId: "fr-icon-account-circle-line" as const,
-            linkProps: {
-              to: "http://localhost:5173/mon-compte",
-            },
-            text: `${firstName} ${lastName}`,
-          },
-          {
-            iconId: "fr-icon-logout-box-r-line" as const,
-            linkProps: {
-              to: "http://localhost:3001/openid/logout",
-            },
-            text: "Se déconnecter",
-          },
-        ]
+      ? [<DropDownLogout />]
       : [
           {
             iconId: "fr-icon-account-circle-line" as const,
