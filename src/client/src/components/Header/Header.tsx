@@ -25,7 +25,7 @@ function Header() {
           {
             iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
-              to: "http://localhost:5173/mon-compte",
+              to: "/mon-compte",
             },
             text: `${firstName} ${lastName}`,
           },
@@ -41,7 +41,7 @@ function Header() {
           {
             iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
-              to: "http://localhost:3001/openid/authorize",
+              to: "/oidc-authorize",
             },
             text: "Se connecter",
           },

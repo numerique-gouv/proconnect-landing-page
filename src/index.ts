@@ -1,13 +1,12 @@
 import Express, { Response } from "express";
 import path from "path";
+import cors from "cors";
 import { config } from "./config";
 import { Issuer } from "openid-client";
 import * as crypto from "crypto";
 import session from "express-session";
 
 const app = Express();
-
-app.use(Express.static(path.join(__dirname, "..", "src", "client", "dist")));
 
 app.use(
   session({
@@ -17,6 +16,8 @@ app.use(
   })
 );
 
+app.use(Express.static(path.join(__dirname, "..", "src", "client", "dist")));
+
 declare module "express-session" {
   interface SessionData {
     state: string | null;
@@ -25,6 +26,8 @@ declare module "express-session" {
     destroy: () => void;
   }
 }
+
+app.use(cors({ origin: "*" }));
 
 app.get("/openid/authorize", async (req, res) => {
   const client = await getProConnectClient();
@@ -50,20 +53,30 @@ app.get("/openid/authorize", async (req, res) => {
     },
   });
 
-  res.redirect(redirectUrl);
+  console.log("GET /openid/oidc-authorize");
+  console.log("SESSION_ID", req.session.id);
+  console.log("===");
+  res.json({ redirectUrl });
 });
 
 app.get("/openid/oidc-callback", async (req, res) => {
+  console.log("GET /openid/oidc-callback");
+  console.log("SESSION_ID", req.session.id);
+  console.log("===");
   const client = await getProConnectClient();
   const params = client.callbackParams(req);
   if (params.state !== req.session.state) {
-    throw new Error();
+    console.error("Wrong state");
+    res.send("Error");
+    return;
   }
   if (req.session.nonce === null) {
-    throw new Error();
+    console.error("No nonce");
+    res.send("Error");
+    return;
   }
   const tokenSet = await client.callback(
-    "http://localhost:3001/openid/oidc-callback",
+    "http://localhost:5173/oidc-callback",
     params,
     {
       state: req.session.state,
@@ -79,10 +92,10 @@ app.get("/openid/oidc-callback", async (req, res) => {
   const userinfo = await client.userinfo(tokenSet.access_token);
 
   req.session.idToken = tokenSet.id_token;
-  res.cookie("firstName", userinfo.given_name);
-  res.cookie("lastName", userinfo.usual_name);
-  res.cookie("email", userinfo.email);
-  res.cookie("isIdentityProviderPCI", userinfo.idp_id === config.PCI_IDP_ID);
+  // res.cookie("firstName", userinfo.given_name);
+  // res.cookie("lastName", userinfo.usual_name);
+  // res.cookie("email", userinfo.email);
+  // res.cookie("isIdentityProviderPCI", userinfo.idp_id === config.PCI_IDP_ID);
   res.redirect("http://localhost:5173/mon-compte");
 });
 
@@ -115,7 +128,7 @@ const getProConnectClient = async () => {
   return new pcIssuer.Client({
     client_id: config.PC_CLIENT_ID,
     client_secret: config.PC_CLIENT_SECRET,
-    redirect_uris: ["http://localhost:3001/openid/oidc-callback"],
+    redirect_uris: ["http://localhost:5173/oidc-callback"],
     response_types: ["code"],
     id_token_signed_response_alg: config.PC_ID_TOKEN_SIGNED_RESPONSE_ALG,
     userinfo_signed_response_alg: config.PC_USERINFO_SIGNED_RESPONSE_ALG,

@@ -12,6 +12,8 @@ import { PublicResult } from "../Pages/Eligibility/PublicResult";
 import { PrivateResult } from "../Pages/Eligibility/PrivateResult";
 import NotFound from "../Pages/NotFound";
 import MonCompte from "../Pages/MonCompte";
+import OidcCallback from "../Pages/OidcCallback/OidcCallback";
+import OidcAuthorize from "../Pages/OidcAuthorize/OidcAuthorize";
 
 const router = createBrowserRouter([
   {
@@ -106,6 +108,22 @@ const router = createBrowserRouter([
         element: (
           <WrapperLayout>
             <MonCompte />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/oidc-callback",
+        element: (
+          <WrapperLayout>
+            <OidcCallback />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/oidc-authorize",
+        element: (
+          <WrapperLayout>
+            <OidcAuthorize />
           </WrapperLayout>
         ),
       },
