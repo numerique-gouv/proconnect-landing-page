@@ -79,7 +79,7 @@ app.get("/api/openid/oidc-callback", async (req, res) => {
     return;
   }
   const tokenSet = await client.callback(
-    "http://localhost:3001/api/openid/oidc-callback",
+    `${config.HOST_URL}/api/openid/oidc-callback`,
     params,
     {
       state: req.session.state,
@@ -100,7 +100,7 @@ app.get("/api/openid/oidc-callback", async (req, res) => {
   req.session.lastName = userinfo.usual_name as string;
   req.session.isIdentityProviderPCI = userinfo.idp_id === config.PCI_IDP_ID;
 
-  res.redirect("http://localhost:3001/post-authentication");
+  res.redirect(`${config.HOST_URL}/post-authentication`);
 });
 
 app.get("/api/openid/logout", async (req, res) => {
@@ -109,7 +109,7 @@ app.get("/api/openid/logout", async (req, res) => {
   req.session.destroy();
 
   const redirectUrl = client.endSessionUrl({
-    post_logout_redirect_uri: `http://localhost:3001/post-logout`,
+    post_logout_redirect_uri: `${config.HOST_URL}/post-logout`,
     id_token_hint,
   });
 
@@ -132,7 +132,7 @@ const getProConnectClient = async () => {
   return new pcIssuer.Client({
     client_id: config.PC_CLIENT_ID,
     client_secret: config.PC_CLIENT_SECRET,
-    redirect_uris: ["http://localhost:3001/api/openid/oidc-callback"],
+    redirect_uris: [`${config.HOST_URL}/api/openid/oidc-callback`],
     response_types: ["code"],
     id_token_signed_response_alg: config.PC_ID_TOKEN_SIGNED_RESPONSE_ALG,
     userinfo_signed_response_alg: config.PC_USERINFO_SIGNED_RESPONSE_ALG,

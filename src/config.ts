@@ -15,6 +15,7 @@ const config = {
   PC_SCOPES: process.env["PC_SCOPES"] || "",
   SESSION_SECRET: process.env["SESSION_SECRET"] || "",
   PCI_IDP_ID: process.env["PCI_IDP_ID"] || "",
+  HOST_URL: process.env["HOST_URL"] || "",
 };
 
 export { config };

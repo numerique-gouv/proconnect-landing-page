@@ -1,7 +1,9 @@
+import { config } from "../config";
+
 const api = { me };
 
 async function me() {
-  const response = await fetch(`http://localhost:3001/api/me`);
+  const response = await fetch(`${config.HOST_URL}/api/me`);
   return response.json();
 }
 
