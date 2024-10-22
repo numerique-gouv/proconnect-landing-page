@@ -3,10 +3,13 @@ import yourProfil from "../assets/your-profil.svg";
 import Button from "@codegouvfr/react-dsfr/Button";
 import Card from "../components/Card/Card";
 import { SHORT_LIST_SERVICES } from "./Services/constants";
-import { getUserInfos } from "../lib/authentication";
+import { getUserInfo } from "../lib/authentication";
 
 function MonCompte() {
-  const { isIdentityProviderPCI, lastName, email, firstName } = getUserInfos();
+  const userInfo = getUserInfo();
+  if (!userInfo) {
+    return <div />;
+  }
 
   return (
     <div>
@@ -28,7 +31,9 @@ function MonCompte() {
               >
                 Prénom
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">{firstName}</p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
+                {userInfo.firstName}
+              </p>
               <Badge
                 noIcon
                 severity="info"
@@ -36,7 +41,9 @@ function MonCompte() {
               >
                 Nom
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">{lastName}</p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
+                {userInfo.lastName}
+              </p>
               <Badge
                 noIcon
                 severity="info"
@@ -44,9 +51,11 @@ function MonCompte() {
               >
                 Email
               </Badge>
-              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">{email}</p>
+              <p className="fr-mb-2w fr-col-12 fr-col-md-7 bold">
+                {userInfo.email}
+              </p>
             </div>
-            {isIdentityProviderPCI && (
+            {userInfo.isIdentityProviderPCI && (
               <a
                 className="fr-raw-link"
                 href="https://app-sandbox.moncomptepro.beta.gouv.fr/personal-information"

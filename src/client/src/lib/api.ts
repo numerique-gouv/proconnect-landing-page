@@ -1,14 +1,7 @@
-const api = { oidcCallback, oidcAuthorize };
+const api = { me };
 
-async function oidcCallback(oidcParams: { code: string; state: string }) {
-  const response = await fetch(
-    `http://localhost:3001/openid/oidc-callback?code=${oidcParams.code}&state=${oidcParams.state}`
-  );
-  return response.text();
-}
-
-async function oidcAuthorize() {
-  const response = await fetch(`http://localhost:3001/openid/authorize`);
+async function me() {
+  const response = await fetch(`http://localhost:3001/api/me`);
   return response.json();
 }
 

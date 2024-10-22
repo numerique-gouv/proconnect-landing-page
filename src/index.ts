@@ -24,12 +24,16 @@ declare module "express-session" {
     nonce: string | null;
     idToken: string | undefined;
     destroy: () => void;
+    email: string | null;
+    firstName: string | null;
+    lastName: string | null;
+    isIdentityProviderPCI: boolean | null;
   }
 }
 
 app.use(cors({ origin: "*" }));
 
-app.get("/openid/authorize", async (req, res) => {
+app.get("/api/openid/authorize", async (req, res) => {
   const client = await getProConnectClient();
   const acr_values = config.PC_ACR_VALUES;
   const scope = config.PC_SCOPES;
@@ -53,16 +57,15 @@ app.get("/openid/authorize", async (req, res) => {
     },
   });
 
-  console.log("GET /openid/oidc-authorize");
-  console.log("SESSION_ID", req.session.id);
-  console.log("===");
-  res.json({ redirectUrl });
+  res.redirect(redirectUrl);
 });
 
-app.get("/openid/oidc-callback", async (req, res) => {
-  console.log("GET /openid/oidc-callback");
-  console.log("SESSION_ID", req.session.id);
-  console.log("===");
+app.get("/api/me", (req, res) => {
+  const { firstName, lastName, email, isIdentityProviderPCI } = req.session;
+  res.json({ firstName, lastName, email, isIdentityProviderPCI });
+});
+
+app.get("/api/openid/oidc-callback", async (req, res) => {
   const client = await getProConnectClient();
   const params = client.callbackParams(req);
   if (params.state !== req.session.state) {
@@ -76,7 +79,7 @@ app.get("/openid/oidc-callback", async (req, res) => {
     return;
   }
   const tokenSet = await client.callback(
-    "http://localhost:5173/oidc-callback",
+    "http://localhost:3001/api/openid/oidc-callback",
     params,
     {
       state: req.session.state,
@@ -86,26 +89,27 @@ app.get("/openid/oidc-callback", async (req, res) => {
   req.session.nonce = null;
   req.session.state = null;
   if (!tokenSet.access_token) {
-    throw new Error();
+    throw new Error("MAUVAIS ACCESS TOKEN");
   }
 
   const userinfo = await client.userinfo(tokenSet.access_token);
 
   req.session.idToken = tokenSet.id_token;
-  // res.cookie("firstName", userinfo.given_name);
-  // res.cookie("lastName", userinfo.usual_name);
-  // res.cookie("email", userinfo.email);
-  // res.cookie("isIdentityProviderPCI", userinfo.idp_id === config.PCI_IDP_ID);
-  res.redirect("http://localhost:5173/mon-compte");
+  req.session.email = userinfo.email;
+  req.session.firstName = userinfo.given_name;
+  req.session.lastName = userinfo.usual_name as string;
+  req.session.isIdentityProviderPCI = userinfo.idp_id === config.PCI_IDP_ID;
+
+  res.redirect("http://localhost:3001/post-authentication");
 });
 
-app.get("/openid/logout", async (req, res) => {
+app.get("/api/openid/logout", async (req, res) => {
   const client = await getProConnectClient();
   const id_token_hint = req.session.idToken;
   req.session.destroy();
 
   const redirectUrl = client.endSessionUrl({
-    post_logout_redirect_uri: `http://localhost:5173/`,
+    post_logout_redirect_uri: `http://localhost:3001/post-logout`,
     id_token_hint,
   });
 
@@ -128,7 +132,7 @@ const getProConnectClient = async () => {
   return new pcIssuer.Client({
     client_id: config.PC_CLIENT_ID,
     client_secret: config.PC_CLIENT_SECRET,
-    redirect_uris: ["http://localhost:5173/oidc-callback"],
+    redirect_uris: ["http://localhost:3001/api/openid/oidc-callback"],
     response_types: ["code"],
     id_token_signed_response_alg: config.PC_ID_TOKEN_SIGNED_RESPONSE_ALG,
     userinfo_signed_response_alg: config.PC_USERINFO_SIGNED_RESPONSE_ALG,

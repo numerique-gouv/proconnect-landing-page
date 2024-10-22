@@ -1,10 +1,9 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
-import { isUserConnected, getUserInfos } from "../../lib/authentication";
+import { getUserInfo } from "../../lib/authentication";
 
 function Header() {
-  const isConnected = isUserConnected();
-  const { lastName, firstName } = getUserInfos();
+  const userInfo = getUserInfo();
   const quickAccessItems = [
     {
       iconId: "fr-icon-code-s-slash-line" as const,
@@ -20,19 +19,19 @@ function Header() {
       },
       text: "Feuille de route",
     },
-    ...(isConnected
+    ...(!!userInfo
       ? [
           {
             iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
               to: "/mon-compte",
             },
-            text: `${firstName} ${lastName}`,
+            text: `${userInfo.firstName} ${userInfo.lastName}`,
           },
           {
             iconId: "fr-icon-logout-box-r-line" as const,
             linkProps: {
-              to: "http://localhost:3001/openid/logout",
+              to: "/api/openid/logout",
             },
             text: "Se déconnecter",
           },
@@ -41,7 +40,7 @@ function Header() {
           {
             iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
-              to: "/oidc-authorize",
+              to: `/api/openid/authorize`,
             },
             text: "Se connecter",
           },
