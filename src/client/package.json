@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@codegouvfr/react-dsfr": "^1.9.27",
+    "@types/node": "^22.7.8",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/react-lottie": "^1.2.10",

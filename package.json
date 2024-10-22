@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run buildClient && npm run buildServer",
-    "buildServer": "npx tsc",
+    "buildServer": "tsc",
     "buildClient": "cd src/client && npm install && npm run build",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
@@ -21,14 +21,14 @@
     "@types/node": "^22.7.5",
     "concurrently": "^9.0.1",
     "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
-    "openid-client": "^5.7.0"
+    "openid-client": "^5.7.0",
+    "typescript": "^5.6.3"
   }
 }
