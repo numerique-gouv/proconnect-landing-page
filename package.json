@@ -4,8 +4,8 @@
   "description": "## Lancer ce site localement",
   "main": "index.js",
   "scripts": {
-    "build": "npm run buildClient && npm run buildServer",
-    "buildServer": "npx tsc",
+    "build": "npm run buildServer && npm run buildClient",
+    "buildServer": "tsc",
     "buildClient": "cd src/client && npm install && npm run build",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
