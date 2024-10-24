@@ -12,7 +12,6 @@ function buildRouter() {
     "/openid/authorize",
     buildRedirectController(async (req) => {
       const client = await getProConnectClient();
-      const acr_values = config.PC_ACR_VALUES;
       const scope = config.PC_SCOPES;
       const nonce = crypto.randomBytes(16).toString("hex");
       const state = crypto.randomBytes(16).toString("hex");
@@ -22,10 +21,9 @@ function buildRouter() {
 
       const redirectUrl = client.authorizationUrl({
         scope,
-        acr_values,
         nonce,
         state,
-        redirect_uri: `${config.HOST_URL}/openid/oidc-callback`,
+        redirect_uri: `${config.HOST_URL}/openid/callback`,
         claims: {
           id_token: {
             amr: {
@@ -40,7 +38,7 @@ function buildRouter() {
   );
 
   router.get(
-    "/openid/oidc-callback",
+    "/openid/callback",
     buildRedirectController(async (req) => {
       const client = await getProConnectClient();
       const params = client.callbackParams(req);
@@ -53,7 +51,7 @@ function buildRouter() {
         throw new Error(`No nonce stored in the session`);
       }
       const tokenSet = await client.callback(
-        `${config.HOST_URL}/openid/oidc-callback`,
+        `${config.HOST_URL}/openid/callback`,
         params,
         {
           state: req.session.state,

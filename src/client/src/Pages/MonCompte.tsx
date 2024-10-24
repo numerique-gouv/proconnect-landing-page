@@ -4,9 +4,17 @@ import Button from "@codegouvfr/react-dsfr/Button";
 import Card from "../components/Card/Card";
 import { SHORT_LIST_SERVICES } from "./Services/constants";
 import { getUserInfo } from "../lib/authentication";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function MonCompte() {
   const userInfo = getUserInfo();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!userInfo) {
+      navigate("/");
+    }
+  }, []);
   if (!userInfo) {
     return <div></div>;
   }

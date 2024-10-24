@@ -12,7 +12,6 @@ const config = {
   PC_USERINFO_SIGNED_RESPONSE_ALG:
     process.env["PC_USERINFO_SIGNED_RESPONSE_ALG"] || "RS256",
   PC_DISCOVERY_URL: process.env["PC_DISCOVERY_URL"] || "",
-  PC_ACR_VALUES: process.env["PC_ACR_VALUES"] || "",
   PC_SCOPES: process.env["PC_SCOPES"] || "",
   SESSION_SECRET: process.env["SESSION_SECRET"] || "",
   PCI_IDP_ID: process.env["PCI_IDP_ID"] || "",

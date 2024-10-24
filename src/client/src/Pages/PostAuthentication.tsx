@@ -14,6 +14,7 @@ type meType = {
 function PostAuthentification() {
   const query = useQuery<meType>({ queryFn: api.me, queryKey: ["me"] });
   const navigate = useNavigate();
+
   useEffect(() => {
     if (query.data) {
       setUserInfo(query.data);
@@ -24,6 +25,7 @@ function PostAuthentification() {
   if (!query.data) {
     return <div>Loading</div>;
   }
+
   return <div>Loading</div>;
 }
 export default PostAuthentification;
