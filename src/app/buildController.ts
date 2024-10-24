@@ -12,7 +12,7 @@ function buildRedirectController(
       res.redirect(redirectUrl);
     } catch (error) {
       console.error(error);
-      res.redirect(`${config.HOST_URL}/error`);
+      res.redirect(`${config.HOST_URL}/authentication-error`);
     }
   };
 }

@@ -14,6 +14,7 @@ import NotFound from "../Pages/NotFound";
 import MonCompte from "../Pages/MonCompte";
 import PostAuthentification from "../Pages/PostAuthentication";
 import PostLogout from "../Pages/PostLogout";
+import AuthenticationError from "../Pages/AuthenticationError";
 
 const router = createBrowserRouter([
   {
@@ -116,6 +117,14 @@ const router = createBrowserRouter([
         element: (
           <WrapperLayout>
             <PostLogout />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/authentication-error",
+        element: (
+          <WrapperLayout>
+            <AuthenticationError />
           </WrapperLayout>
         ),
       },

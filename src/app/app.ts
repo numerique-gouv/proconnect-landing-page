@@ -1,4 +1,4 @@
-import Express, { Response } from "express";
+import Express from "express";
 import path from "path";
 import RedisStore from "connect-redis";
 import { config } from "../config";
