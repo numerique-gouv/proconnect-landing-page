@@ -4,8 +4,8 @@ import RedisStore from "connect-redis";
 import { config } from "../config";
 
 import session from "express-session";
-import { getNewRedisClient } from "../connectors/reddis.connector";
 import { buildRouter } from "./router";
+import { getNewRedisClient } from "../connectors/reddis.connector";
 
 declare module "express-session" {
   interface SessionData {
@@ -24,7 +24,9 @@ function buildApp() {
   const app = Express();
   const router = buildRouter();
 
-  app.use(Express.static(path.join(__dirname, "..", "src", "client", "dist")));
+  app.use(
+    Express.static(path.join(__dirname, "..", "..", "src", "client", "dist"))
+  );
 
   app.use(
     session({

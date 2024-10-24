@@ -3,92 +3,104 @@ import { config } from "../config";
 import { Issuer } from "openid-client";
 import path from "path";
 import * as crypto from "crypto";
+import { buildRedirectController } from "./buildController";
 
 function buildRouter() {
   const router = Express.Router();
 
-  router.get("/openid/authorize", async (req, res) => {
-    const client = await getProConnectClient();
-    const acr_values = config.PC_ACR_VALUES;
-    const scope = config.PC_SCOPES;
-    const nonce = crypto.randomBytes(16).toString("hex");
-    const state = crypto.randomBytes(16).toString("hex");
+  router.get(
+    "/openid/authorize",
+    buildRedirectController(async (req) => {
+      const client = await getProConnectClient();
+      const acr_values = config.PC_ACR_VALUES;
+      const scope = config.PC_SCOPES;
+      const nonce = crypto.randomBytes(16).toString("hex");
+      const state = crypto.randomBytes(16).toString("hex");
 
-    req.session.state = state;
-    req.session.nonce = nonce;
+      req.session.state = state;
+      req.session.nonce = nonce;
 
-    const redirectUrl = client.authorizationUrl({
-      scope,
-      acr_values,
-      nonce,
-      state,
-      redirect_uri: `${config.HOST_URL}/openid/oidc-callback`,
-      claims: {
-        id_token: {
-          amr: {
-            essential: true,
+      const redirectUrl = client.authorizationUrl({
+        scope,
+        acr_values,
+        nonce,
+        state,
+        redirect_uri: `${config.HOST_URL}/openid/oidc-callback`,
+        claims: {
+          id_token: {
+            amr: {
+              essential: true,
+            },
           },
         },
-      },
-    });
+      });
 
-    res.redirect(redirectUrl);
-  });
+      return redirectUrl;
+    })
+  );
 
-  router.get("/openid/oidc-callback", async (req, res) => {
-    const client = await getProConnectClient();
-    const params = client.callbackParams(req);
-    if (params.state !== req.session.state) {
-      throw new Error("WRONG STATE");
-    }
-    if (req.session.nonce === null) {
-      throw new Error("NO NONCE");
-    }
-    const tokenSet = await client.callback(
-      `${config.HOST_URL}/openid/oidc-callback`,
-      params,
-      {
-        state: req.session.state,
-        nonce: req.session.nonce,
+  router.get(
+    "/openid/oidc-callback",
+    buildRedirectController(async (req) => {
+      const client = await getProConnectClient();
+      const params = client.callbackParams(req);
+      if (params.state !== req.session.state) {
+        throw new Error(
+          `The provided state "${params.state}" does not match the stored session state "${req.session.state}"`
+        );
       }
-    );
-    req.session.nonce = null;
-    req.session.state = null;
-    if (!tokenSet.access_token) {
-      throw new Error("NO ACCESS TOKEN");
-    }
+      if (req.session.nonce === null) {
+        throw new Error(`No nonce stored in the session`);
+      }
+      const tokenSet = await client.callback(
+        `${config.HOST_URL}/openid/oidc-callback`,
+        params,
+        {
+          state: req.session.state,
+          nonce: req.session.nonce,
+        }
+      );
+      req.session.nonce = null;
+      req.session.state = null;
+      if (!tokenSet.access_token) {
+        throw new Error("The access_token value was not provided");
+      }
 
-    const userinfo = await client.userinfo(tokenSet.access_token);
+      const userinfo = await client.userinfo(tokenSet.access_token);
 
-    req.session.idToken = tokenSet.id_token;
-    req.session.email = userinfo.email;
-    req.session.firstName = userinfo.given_name;
-    req.session.lastName = userinfo.usual_name as string;
-    req.session.isIdentityProviderPCI = userinfo.idp_id === config.PCI_IDP_ID;
-    res.redirect(`${config.HOST_URL}/post-authentication`);
-  });
+      req.session.idToken = tokenSet.id_token;
+      req.session.email = userinfo.email;
+      req.session.firstName = userinfo.given_name;
+      req.session.lastName = userinfo.usual_name as string;
+      req.session.isIdentityProviderPCI = userinfo.idp_id === config.PCI_IDP_ID;
+      return `${config.HOST_URL}/post-authentication`;
+    })
+  );
+
+  router.get(
+    "/openid/logout",
+    buildRedirectController(async (req) => {
+      const client = await getProConnectClient();
+      const id_token_hint = req.session.idToken;
+      req.session.destroy();
+
+      const redirectUrl = client.endSessionUrl({
+        post_logout_redirect_uri: `${config.HOST_URL}/post-logout`,
+        id_token_hint,
+      });
+
+      return redirectUrl;
+    })
+  );
 
   router.get("/api/me", (req, res) => {
     const { firstName, lastName, email, isIdentityProviderPCI } = req.session;
     res.json({ firstName, lastName, email, isIdentityProviderPCI });
   });
 
-  router.get("/openid/logout", async (req, res) => {
-    const client = await getProConnectClient();
-    const id_token_hint = req.session.idToken;
-    req.session.destroy();
-
-    const redirectUrl = client.endSessionUrl({
-      post_logout_redirect_uri: `${config.HOST_URL}/post-logout`,
-      id_token_hint,
-    });
-
-    res.redirect(redirectUrl);
-  });
-
   router.get("/*", (_, res) => {
     res.sendFile(
-      path.join(__dirname, "..", "src", "client", "dist", "index.html")
+      path.join(__dirname, "..", "..", "src", "client", "dist", "index.html")
     );
   });
 
