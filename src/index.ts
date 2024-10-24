@@ -45,6 +45,7 @@ app.get("/openid/authorize", async (req, res) => {
     acr_values,
     nonce,
     state,
+    redirect_uri: `${config.HOST_URL}/openid/oidc-callback`,
     claims: {
       id_token: {
         amr: {
