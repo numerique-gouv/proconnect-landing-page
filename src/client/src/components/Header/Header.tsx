@@ -2,6 +2,7 @@ import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
 import { getUserInfo } from "../../lib/authentication";
 import { DropDownLogout } from "../DropDownLogout/DropDownLogout";
+import { config } from "../../config";
 
 function Header() {
   const userInfo = getUserInfo();
@@ -28,7 +29,7 @@ function Header() {
             iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
               target: "_self",
-              to: "http://localhost:3001/openid/authorize",
+              to: `${config.API_URL}/openid/authorize`,
             },
             text: "Se connecter",
           },

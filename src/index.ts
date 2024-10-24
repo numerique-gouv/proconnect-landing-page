@@ -124,7 +124,6 @@ const getProConnectClient = async () => {
   return new pcIssuer.Client({
     client_id: config.PC_CLIENT_ID,
     client_secret: config.PC_CLIENT_SECRET,
-    redirect_uris: ["http://localhost:3001/openid/oidc-callback"],
     response_types: ["code"],
     id_token_signed_response_alg: config.PC_ID_TOKEN_SIGNED_RESPONSE_ALG,
     userinfo_signed_response_alg: config.PC_USERINFO_SIGNED_RESPONSE_ALG,
