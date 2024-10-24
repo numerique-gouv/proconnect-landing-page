@@ -23,6 +23,10 @@ declare module "express-session" {
     nonce: string | null;
     idToken: string | undefined;
     destroy: () => void;
+    email: string | null;
+    firstName: string | null;
+    lastName: string | null;
+    isIdentityProviderPCI: boolean | null;
   }
 }
 
@@ -57,13 +61,13 @@ app.get("/openid/oidc-callback", async (req, res) => {
   const client = await getProConnectClient();
   const params = client.callbackParams(req);
   if (params.state !== req.session.state) {
-    throw new Error();
+    throw new Error("WRONG STATE");
   }
   if (req.session.nonce === null) {
-    throw new Error();
+    throw new Error("NO NONCE");
   }
   const tokenSet = await client.callback(
-    "http://localhost:3001/openid/oidc-callback",
+    `${config.HOST_URL}/openid/oidc-callback`,
     params,
     {
       state: req.session.state,
@@ -73,17 +77,22 @@ app.get("/openid/oidc-callback", async (req, res) => {
   req.session.nonce = null;
   req.session.state = null;
   if (!tokenSet.access_token) {
-    throw new Error();
+    throw new Error("NO ACCESS TOKEN");
   }
 
   const userinfo = await client.userinfo(tokenSet.access_token);
 
   req.session.idToken = tokenSet.id_token;
-  res.cookie("firstName", userinfo.given_name);
-  res.cookie("lastName", userinfo.usual_name);
-  res.cookie("email", userinfo.email);
-  res.cookie("isIdentityProviderPCI", userinfo.idp_id === config.PCI_IDP_ID);
-  res.redirect("http://localhost:5173/mon-compte");
+  req.session.email = userinfo.email;
+  req.session.firstName = userinfo.given_name;
+  req.session.lastName = userinfo.usual_name as string;
+  req.session.isIdentityProviderPCI = userinfo.idp_id === config.PCI_IDP_ID;
+  res.redirect(`${config.HOST_URL}/post-authentication`);
+});
+
+app.get("/api/me", (req, res) => {
+  const { firstName, lastName, email, isIdentityProviderPCI } = req.session;
+  res.json({ firstName, lastName, email, isIdentityProviderPCI });
 });
 
 app.get("/openid/logout", async (req, res) => {
@@ -92,7 +101,7 @@ app.get("/openid/logout", async (req, res) => {
   req.session.destroy();
 
   const redirectUrl = client.endSessionUrl({
-    post_logout_redirect_uri: `http://localhost:5173/`,
+    post_logout_redirect_uri: `${config.HOST_URL}/post-logout`,
     id_token_hint,
   });
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getUserInfos } from "../../lib/authentication";
+import { getUserInfo } from "../../lib/authentication";
 
 export function DropDownLogout() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -9,8 +9,11 @@ export function DropDownLogout() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const { lastName, firstName } = getUserInfos();
+  const userInfo = getUserInfo();
+  if (!userInfo) {
+    return <div></div>;
+  }
+  const { lastName, firstName } = userInfo;
   return (
     <>
       {width >= 991 ? (

@@ -3,10 +3,14 @@ import yourProfil from "../assets/your-profil.svg";
 import Button from "@codegouvfr/react-dsfr/Button";
 import Card from "../components/Card/Card";
 import { SHORT_LIST_SERVICES } from "./Services/constants";
-import { getUserInfos } from "../lib/authentication";
+import { getUserInfo } from "../lib/authentication";
 
 function MonCompte() {
-  const { isIdentityProviderPCI, lastName, email, firstName } = getUserInfos();
+  const userInfo = getUserInfo();
+  if (!userInfo) {
+    return <div></div>;
+  }
+  const { isIdentityProviderPCI, lastName, email, firstName } = userInfo;
 
   return (
     <div>

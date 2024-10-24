@@ -1,10 +1,11 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
-import { isUserConnected } from "../../lib/authentication";
+import { getUserInfo } from "../../lib/authentication";
 import { DropDownLogout } from "../DropDownLogout/DropDownLogout";
 
 function Header() {
-  const isConnected = isUserConnected();
+  const userInfo = getUserInfo();
+  const isConnected = !!userInfo;
   const quickAccessItems = [
     {
       iconId: "fr-icon-code-s-slash-line" as const,
@@ -26,6 +27,7 @@ function Header() {
           {
             iconId: "fr-icon-account-circle-line" as const,
             linkProps: {
+              target: "_self",
               to: "http://localhost:3001/openid/authorize",
             },
             text: "Se connecter",

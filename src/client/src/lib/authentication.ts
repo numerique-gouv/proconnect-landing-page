@@ -1,22 +1,26 @@
-import Cookies from "js-cookie";
+type userInfoType = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  isIdentityProviderPCI: boolean;
+};
 
-function getUserInfos() {
-  const firstName = Cookies.get("firstName");
-  const lastName = Cookies.get("lastName");
-  const email = Cookies.get("email");
-  const isIdentityProviderPCI = Cookies.get("isIdentityProviderPCI") === "true";
+const USER_INFO_KEY = "PRO_CONNECT_LANDING_PAGE_USER_INFO";
 
-  return {
-    firstName,
-    lastName,
-    email,
-    isIdentityProviderPCI,
-  };
+function getUserInfo(): userInfoType | undefined {
+  const userInfo = localStorage.getItem(USER_INFO_KEY);
+  if (!userInfo) {
+    return undefined;
+  }
+  return JSON.parse(userInfo) as userInfoType;
 }
 
-function isUserConnected() {
-  const { firstName, lastName, email } = getUserInfos();
-  return !!firstName && !!lastName && !!email;
+function setUserInfo(userInfo: userInfoType) {
+  return localStorage.setItem(USER_INFO_KEY, JSON.stringify(userInfo));
 }
 
-export { getUserInfos, isUserConnected };
+function deleteUserInfo() {
+  return localStorage.removeItem(USER_INFO_KEY);
+}
+
+export { getUserInfo, setUserInfo, deleteUserInfo };
