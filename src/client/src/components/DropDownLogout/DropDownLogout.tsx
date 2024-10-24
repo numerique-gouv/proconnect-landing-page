@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { getUserInfo } from "../../lib/authentication";
+import { config } from "../../config";
 
 export function DropDownLogout() {
   const [width, setWidth] = useState(window.innerWidth);
-
+  console.log(config);
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
