@@ -16,7 +16,7 @@ const config = {
   PC_SCOPES: process.env["PC_SCOPES"] || "",
   SESSION_SECRET: process.env["SESSION_SECRET"] || "",
   PCI_IDP_ID: process.env["PCI_IDP_ID"] || "",
-  REACT_APP_API_URL: process.env["REACT_APP_API_URL"] || "",
+  REDIS_URL: process.env["REDIS_URL"] || "",
 };
 
 export { config };

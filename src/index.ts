@@ -1,9 +1,11 @@
 import Express, { Response } from "express";
 import path from "path";
+import RedisStore from "connect-redis";
 import { config } from "./config";
 import { Issuer } from "openid-client";
 import * as crypto from "crypto";
 import session from "express-session";
+import { getNewRedisClient } from "./connectors/reddis.connector";
 
 const app = Express();
 
@@ -11,6 +13,10 @@ app.use(Express.static(path.join(__dirname, "..", "src", "client", "dist")));
 
 app.use(
   session({
+    store: new RedisStore({
+      client: getNewRedisClient(),
+      prefix: "pc:session:",
+    }),
     name: "pc_session",
     secret: config.SESSION_SECRET,
     rolling: true,
