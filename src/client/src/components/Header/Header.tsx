@@ -1,7 +1,40 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
+import { getUserInfo } from "../../lib/authentication";
+import { DropDownLogout } from "../DropDownLogout/DropDownLogout";
 
 function Header() {
+  const userInfo = getUserInfo();
+  const isConnected = !!userInfo;
+  const quickAccessItems = [
+    {
+      iconId: "fr-icon-code-s-slash-line" as const,
+      linkProps: {
+        to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
+      },
+      text: "Intégrer ProConnect",
+    },
+    {
+      iconId: "fr-icon-timer-line" as const,
+      linkProps: {
+        to: "/feuille-de-route",
+      },
+      text: "Feuille de route",
+    },
+    ...(isConnected
+      ? [<DropDownLogout />]
+      : [
+          {
+            iconId: "fr-icon-account-circle-line" as const,
+            linkProps: {
+              target: "_self",
+              to: `${window.location.origin}/openid/authorize`,
+            },
+            text: "Se connecter",
+          },
+        ]),
+  ];
+
   const currentURL = window.location.pathname;
   return (
     <>
@@ -37,22 +70,7 @@ function Header() {
             text: "Annuaire des services",
           },
         ]}
-        quickAccessItems={[
-          {
-            iconId: "fr-icon-code-s-slash-line",
-            linkProps: {
-              to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
-            },
-            text: "Intégrer ProConnect sur votre site",
-          },
-          {
-            iconId: "fr-icon-timer-line",
-            linkProps: {
-              to: "/feuille-de-route",
-            },
-            text: "Feuille de route",
-          },
-        ]}
+        quickAccessItems={quickAccessItems}
         serviceTagline="la solution officielle qui vous identifie en tant que professionnel"
         serviceTitle="ProConnect"
       />

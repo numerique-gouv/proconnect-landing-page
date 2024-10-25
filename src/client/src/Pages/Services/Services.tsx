@@ -32,13 +32,21 @@ function Services() {
       {availableToRIE ? (
         <div className="fr-grid-row fr-grid-row--gutters fr-mb-5w">
           {servicesOnRIE.map((offre, index) => (
-            <Card offre={offre} key={index}></Card>
+            <Card
+              customizedMdCol={"fr-col-md-4"}
+              offre={offre}
+              key={index}
+            ></Card>
           ))}
         </div>
       ) : (
         <div className="fr-grid-row fr-grid-row--gutters fr-mb-5w">
           {servicesOnInternet.map((offre, index) => (
-            <Card offre={offre} key={index}></Card>
+            <Card
+              offre={offre}
+              customizedMdCol={"fr-col-md-4"}
+              key={index}
+            ></Card>
           ))}
         </div>
       )}

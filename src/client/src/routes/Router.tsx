@@ -11,6 +11,10 @@ import EligibilityTest from "../Pages/Eligibility/EligibilityTest";
 import { PublicResult } from "../Pages/Eligibility/PublicResult";
 import { PrivateResult } from "../Pages/Eligibility/PrivateResult";
 import NotFound from "../Pages/NotFound";
+import MonCompte from "../Pages/MonCompte";
+import PostAuthentification from "../Pages/PostAuthentication";
+import PostLogout from "../Pages/PostLogout";
+import AuthenticationError from "../Pages/AuthenticationError";
 
 const router = createBrowserRouter([
   {
@@ -97,6 +101,38 @@ const router = createBrowserRouter([
         element: (
           <WrapperLayout>
             <Stats />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/post-authentication",
+        element: (
+          <WrapperLayout>
+            <PostAuthentification />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/post-logout",
+        element: (
+          <WrapperLayout>
+            <PostLogout />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/authentication-error",
+        element: (
+          <WrapperLayout>
+            <AuthenticationError />
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/mon-compte",
+        element: (
+          <WrapperLayout>
+            <MonCompte />
           </WrapperLayout>
         ),
       },

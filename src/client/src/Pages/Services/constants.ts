@@ -198,4 +198,10 @@ const SERVICES_LIST: Array<serviceType> = [
   },
 ];
 
-export { SERVICES_LIST };
+const titlesToKeep = ["Webinaire", "Osmose", "Resana", "DataPass"];
+
+const SHORT_LIST_SERVICES = SERVICES_LIST.filter((service) =>
+  titlesToKeep.includes(service.title)
+).map(({ title, url, description }) => ({ title, url, description }));
+
+export { SERVICES_LIST, SHORT_LIST_SERVICES };
