@@ -126,7 +126,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Expertises Territoires",
     url: "https://www.expertises-territoires.fr/",
     description:
-      "Répertorier les services du CEREMA (centre d’études et d’expertise sur les risques, l’environnement, la mobilité et l’aménagement)",
+      "Développer des projets de transition écologique et d'adaptation aux changements climatiques par la coopération entre acteurs territoriaux, partenaires et experts en vous connectant sur cette plateforme numérique collaborative en marque blanche",
     network: "internet",
   },
   {
