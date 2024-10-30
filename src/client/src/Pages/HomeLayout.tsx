@@ -72,6 +72,20 @@ function HomeLayout() {
               Facile&nbsp;! Vous verrez la Marianne avec la mention "pro" en
               jaune.
             </p>
+            <h3 className="fr-h4">Comment certifiez-vous les dirigeants ?</h3>
+            <p>
+              La certification des dirigeants évolue et rejoint bientôt
+              l'identification ProConnect !
+            </p>
+            <a className="fr-raw-link" href="https://proconnect.gouv.fr">
+              <Button
+                iconId="fr-icon-external-link-line"
+                iconPosition="right"
+                priority="secondary"
+              >
+                En savoir plus sur la certification Insee
+              </Button>
+            </a>
           </div>
           <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
             <img src={news} alt="" />
