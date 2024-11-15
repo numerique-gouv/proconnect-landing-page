@@ -218,7 +218,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "La Coop de la médiation numérique",
     url: "https://coop-numerique.anct.gouv.fr",
     network: "internet",
-    description: "-",
+    description: "Accompagner les personnes éloignées du numérique",
     category: "inclusion",
     isOpenToPrivate: true,
   },
