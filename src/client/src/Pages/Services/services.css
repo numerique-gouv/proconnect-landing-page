@@ -1,3 +1,8 @@
-.fr-toggle label::before {
-  max-width: 3.6rem !important;
+.tag-container {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.tags-container {
+  display: flex;
 }

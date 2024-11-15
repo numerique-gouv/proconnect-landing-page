@@ -1,60 +1,95 @@
-import { ToggleSwitch } from "@codegouvfr/react-dsfr/ToggleSwitch";
 import Card from "../../components/Card/Card";
+import { Tag } from "@codegouvfr/react-dsfr/Tag";
 import "./services.css";
 import { useState } from "react";
-import { SERVICES_LIST } from "./constants";
+import { categoryType, SERVICES_LIST } from "./constants";
 
 function Services() {
-  const [availableToRIE, setAvailableToRIE] = useState<boolean | null>(false);
+  const [selectedTag, setSelectedTag] = useState<categoryType | "all">("all");
 
-  const servicesOnInternet = SERVICES_LIST.filter(
-    ({ network }) => network === "internet"
-  );
-
-  const servicesOnRIE = SERVICES_LIST.filter(
-    ({ network }) => network === "RIE"
-  );
+  const services = computeFilteredServiceList();
 
   return (
     <div className="fr-container">
       <h1 className="fr-h3 fr-mt-2w">Annuaire des services</h1>
       <p className="fr-h6">
-        Connectez-vous à tous ces sites avec ProConnect&nbsp;!
+        ProConnect vous donne accès à de nombreux outils et sites Internet de
+        l'administration.
       </p>
-
-      <ToggleSwitch
-        inputTitle="the-title"
-        label="Afficher les services disponibles sur le RIE"
-        labelPosition="right"
-        onChange={toggleServicesForRIE}
-      />
-
-      {availableToRIE ? (
-        <div className="fr-grid-row fr-grid-row--gutters fr-mb-5w">
-          {servicesOnRIE.map((offre, index) => (
-            <Card
-              customizedMdCol={"fr-col-md-4"}
-              offre={offre}
-              key={index}
-            ></Card>
-          ))}
+      <div className="tags-container">
+        <div className="tag-container">
+          <Tag
+            pressed={selectedTag === "all"}
+            nativeButtonProps={{
+              onClick: selectAllServices,
+            }}
+          >
+            Tous les services
+          </Tag>
         </div>
-      ) : (
-        <div className="fr-grid-row fr-grid-row--gutters fr-mb-5w">
-          {servicesOnInternet.map((offre, index) => (
-            <Card
-              offre={offre}
-              customizedMdCol={"fr-col-md-4"}
-              key={index}
-            ></Card>
-          ))}
+        <div className="tag-container">
+          <Tag
+            pressed={selectedTag === "suiteNumerique"}
+            nativeButtonProps={{
+              onClick: selectSuiteNumeriqueServices,
+            }}
+          >
+            Suite Numérique
+          </Tag>
         </div>
-      )}
+        <div className="tag-container">
+          <Tag
+            pressed={selectedTag === "inclusion"}
+            nativeButtonProps={{
+              onClick: selectInclusionServices,
+            }}
+          >
+            Plateforme de l'inclusion
+          </Tag>
+        </div>
+      </div>
+
+      <div className="fr-grid-row fr-grid-row--gutters fr-mb-5w">
+        {services.map((offre, index) => (
+          <Card
+            customizedMdCol={"fr-col-md-4"}
+            offre={offre}
+            key={index}
+          ></Card>
+        ))}
+      </div>
     </div>
   );
 
-  function toggleServicesForRIE() {
-    return setAvailableToRIE((prevState) => !prevState);
+  function selectAllServices() {
+    setSelectedTag("all");
+  }
+
+  function selectInclusionServices() {
+    setSelectedTag("inclusion");
+  }
+
+  function selectSuiteNumeriqueServices() {
+    setSelectedTag("suiteNumerique");
+  }
+
+  function computeFilteredServiceList() {
+    const sortedServicesList = [...SERVICES_LIST];
+    sortedServicesList.sort((serviceA, serviceB) =>
+      serviceA.title.localeCompare(serviceB.title)
+    );
+    switch (selectedTag) {
+      case "all":
+        return sortedServicesList;
+      case "suiteNumerique":
+        return sortedServicesList.filter(
+          (service) => service.category === "suiteNumerique"
+        );
+      case "inclusion":
+        return sortedServicesList.filter(
+          (service) => service.category === "inclusion"
+        );
+    }
   }
 }
 
