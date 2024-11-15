@@ -261,7 +261,6 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Faciliter la mise à disposition et la location des espaces publics",
-    category: "inclusion",
     isOpenToPrivate: true,
   },
   {
@@ -285,11 +284,10 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Faciliter la recherche d'aides des collectivités territoriales et de leurs partenaires locaux.",
-    category: "inclusion",
     isOpenToPrivate: true,
   },
   {
-    title: "Wordline Parcours Solidarités",
+    title: "Parcours Solidarités",
     url: "https://www.parcours-solidarites.fr",
     network: "internet",
     description: "-",
@@ -378,7 +376,6 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Permet aux communes de certifier et modifier les données présentes sur l'Annuaire des Collectivités",
-    category: "inclusion",
   },
   {
     title: "Les emplois de l'inclusion",
@@ -389,7 +386,7 @@ const SERVICES_LIST: Array<serviceType> = [
     category: "inclusion",
   },
   {
-    title: "MetEmploi",
+    title: "MET Emploi Lyon",
     url: "https://metemploi.grandlyon.com",
     description: "Regrouper des informations utiles en lien avec l'insertion",
     network: "internet",
@@ -402,6 +399,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Gérer les dossiers des bénéficiaires du RSA de la Métropole de Lyon",
     network: "internet",
+    category: "inclusion",
     isOpenToPrivate: true,
   },
   {
