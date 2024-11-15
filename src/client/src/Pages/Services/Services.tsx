@@ -44,7 +44,7 @@ function Services() {
               onClick: selectInclusionServices,
             }}
           >
-            Plateforme de l'inclusion
+            Sphère inclusion
           </Tag>
         </div>
       </div>
