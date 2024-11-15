@@ -20,18 +20,21 @@ const SERVICES_LIST: Array<serviceType> = [
     description: "Outil de travail collaboratif",
     isOpenToPrivate: true,
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "Pad",
     url: "https://pad.numerique.gouv.fr/",
     description: "Editer des documents et des textes de manière collaborative",
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "Audioconf",
     url: "https://audioconf.numerique.gouv.fr/",
     description: "Organiser des conférences audio",
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "Portail CISIRH RIE",
@@ -44,12 +47,14 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://webconf.numerique.gouv.fr/",
     description: "Organiser des conférences à distance",
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "Osmose",
     url: "https://osmose.numerique.gouv.fr/plugins/DINUMThemePlugin/jsp/front/privateLoginOsmose.jsp?redirect=https%3A%2F%2Fosmose.numerique.gouv.fr%2Fjcms%2F",
     description: "Travailler avec des outils collaboratifs",
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "Annuaire des Entreprises",
@@ -70,6 +75,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://webinaire.numerique.gouv.fr/welcome",
     description: "Organiser des conférences à distance",
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "Rizomo",
@@ -77,6 +83,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Accéder au portail des applications collaboratives interministérielles",
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "Socle interministériel de logiciels libres",
@@ -90,6 +97,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Envoyer des fichiers volumineux non sensibles de manière sécurisée à un agent de l’État ou entre agents",
     network: "internet",
+    category: "suiteNumerique",
   },
   {
     title: "RDV Service Public",
@@ -371,12 +379,6 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Permet aux communes de certifier et modifier les données présentes sur l'Annuaire des Collectivités",
     category: "inclusion",
-  },
-  {
-    title: "RDV Service Public",
-    url: "https://rdv.anct.gouv.fr",
-    network: "internet",
-    description: "-",
   },
   {
     title: "Les emplois de l'inclusion",
