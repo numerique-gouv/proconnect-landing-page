@@ -264,10 +264,11 @@ const SERVICES_LIST: Array<serviceType> = [
     isOpenToPrivate: true,
   },
   {
-    title: "RDV Insertion",
+    title: "rdv-insertion",
     url: "https://rdv-insertion.fr",
     network: "internet",
-    description: "-",
+    description:
+      "Accélérer les rendez-vous d'insertion et diminuer le taux d'absentéisme",
     category: "inclusion",
     isOpenToPrivate: true,
   },
@@ -409,6 +410,15 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     isOpenToPrivate: true,
     category: "inclusion",
+  },
+  {
+    title: "Mon Suivi Social",
+    url: "https://monsuivisocial.incubateur.anct.gouv.fr",
+    description:
+      "Améliorer la prise en charge des bénéficiaires d'accompagnement social",
+    network: "internet",
+    category: "inclusion",
+    isOpenToPrivate: true,
   },
 ];
 
