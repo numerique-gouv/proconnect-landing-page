@@ -388,15 +388,16 @@ const SERVICES_LIST: Array<serviceType> = [
   },
   {
     title: "MET Emploi Lyon",
-    url: "https://metemploi.grandlyon.com",
-    description: "Regrouper des informations utiles en lien avec l'insertion",
+    url: "https://metemploi.grandlyon.com/auth/connexion",
+    description:
+      "Regrouper des informations utiles concernant l'insertion sur le territoire de la Métropole de Lyon",
     network: "internet",
     isOpenToPrivate: true,
     category: "inclusion",
   },
   {
     title: "Insertis",
-    url: "https://insertis.grandlyon.com",
+    url: "https://insertis.grandlyon.com/login",
     description:
       "Gérer les dossiers des bénéficiaires du RSA de la Métropole de Lyon",
     network: "internet",
