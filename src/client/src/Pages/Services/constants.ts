@@ -381,7 +381,8 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "Les emplois de l'inclusion",
     url: "https://emplois.inclusion.beta.gouv.fr",
-    description: "Accompagner les candidats dans le dispositif de l'IAE",
+    description:
+      "Faciliter la mise en relation des personnes les plus éloignées de l’emploi avec des employeurs inclusifs.",
     network: "internet",
     isOpenToPrivate: true,
     category: "inclusion",
