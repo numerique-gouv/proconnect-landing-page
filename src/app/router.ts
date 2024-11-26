@@ -80,6 +80,9 @@ function buildRouter() {
     buildRedirectController(async (req) => {
       const client = await getProConnectClient();
       const id_token_hint = req.session.idToken;
+      if (!id_token_hint) {
+        console.error(`id_token empty : ${JSON.stringify(req.session)}`);
+      }
       req.session.destroy();
 
       const redirectUrl = client.endSessionUrl({
