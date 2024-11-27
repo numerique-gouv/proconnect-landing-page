@@ -82,7 +82,7 @@ function buildRouter() {
       const id_token_hint = req.session.idToken;
       req.session.destroy();
       if (!id_token_hint) {
-        return config.HOST_URL;
+        return `${config.HOST_URL}/post-logout`;
       }
 
       const redirectUrl = client.endSessionUrl({
