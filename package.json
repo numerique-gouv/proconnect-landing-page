@@ -24,7 +24,7 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "connect-redis": "^7.1.1",
+    "connect-redis": "^8.0.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "ioredis": "^5.4.1",
