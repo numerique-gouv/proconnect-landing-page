@@ -45,7 +45,8 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "Webconférence de l’État",
     url: "https://webconf.numerique.gouv.fr/",
-    description: "Organiser des conférences à distance",
+    description:
+      "Collaborer en temps réel avec vos équipes via des réunions à distance.",
     network: "internet",
     category: "suiteNumerique",
   },
@@ -73,7 +74,8 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "Webinaire",
     url: "https://webinaire.numerique.gouv.fr/welcome",
-    description: "Organiser des conférences à distance",
+    description:
+      "Animer des présentations interactives avec un public à distance.",
     network: "internet",
     category: "suiteNumerique",
   },
@@ -277,7 +279,8 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Planka",
     url: "https://projets.beta.numerique.gouv.fr",
     network: "internet",
-    description: "-",
+    description:
+      "Organiser et suivre vos projets grâce à un outil collaboratif de gestion de tâches.",
     category: "suiteNumerique",
   },
   {
@@ -307,7 +310,8 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Visio",
     url: "https://visio.numerique.gouv.fr",
     network: "internet",
-    description: "-",
+    description:
+      "Communiquer en direct avec vos équipes ou partenaires grâce à des appels vidéo sécurisés.",
     category: "suiteNumerique",
   },
   {
@@ -330,7 +334,8 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Grist",
     url: "https://grist.numerique.gouv.fr",
     network: "internet",
-    description: "-",
+    description:
+      "Structurer et analyser vos données dans des tableaux collaboratifs sur mesure.",
     category: "suiteNumerique",
   },
   {
