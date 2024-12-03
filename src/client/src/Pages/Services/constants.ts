@@ -17,7 +17,8 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "Resana",
     url: "https://resana.numerique.gouv.fr/public/",
-    description: "Outil de travail collaboratif",
+    description:
+      "Collaborer en temps réel sur vos documents, présentations et tableurs, tout en facilitant les échanges au sein de vos équipes.",
     isOpenToPrivate: true,
     network: "internet",
     category: "suiteNumerique",
