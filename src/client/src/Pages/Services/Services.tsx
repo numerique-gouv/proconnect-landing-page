@@ -34,7 +34,17 @@ function Services() {
               onClick: selectSuiteNumeriqueServices,
             }}
           >
-            Suite Numérique
+            Suite numérique
+          </Tag>
+        </div>
+        <div className="tag-container">
+          <Tag
+            pressed={selectedTag === "suiteTerritoriale"}
+            nativeButtonProps={{
+              onClick: selectSuiteTerritorialeServices,
+            }}
+          >
+            Suite territoriale
           </Tag>
         </div>
         <div className="tag-container">
@@ -73,6 +83,10 @@ function Services() {
     setSelectedTag("suiteNumerique");
   }
 
+  function selectSuiteTerritorialeServices() {
+    setSelectedTag("suiteTerritoriale");
+  }
+
   function computeFilteredServiceList() {
     const sortedServicesList = [...SERVICES_LIST];
     sortedServicesList.sort((serviceA, serviceB) =>
@@ -83,11 +97,15 @@ function Services() {
         return sortedServicesList;
       case "suiteNumerique":
         return sortedServicesList.filter(
-          (service) => service.category === "suiteNumerique"
+          (service) => service.categories?.includes("suiteNumerique")
         );
+        case "suiteTerritoriale":
+          return sortedServicesList.filter(
+            (service) => service.categories?.includes("suiteTerritoriale")
+          );
       case "inclusion":
         return sortedServicesList.filter(
-          (service) => service.category === "inclusion"
+          (service) => service.categories?.includes("inclusion")
         );
     }
   }
