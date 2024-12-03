@@ -240,9 +240,10 @@ const SERVICES_LIST: Array<serviceType> = [
   },
   {
     title: "La communauté de l'inclusion",
-    url: "https://communaute.inclusion.beta.gouv.fr/pro_connect/callback",
+    url: "https://communaute.inclusion.beta.gouv.fr",
     network: "internet",
-    description: "-",
+    description:
+      "Améliorer la pratique professionnelle des accompagnateurs de personnes éloignées de l'emploi",
     category: "inclusion",
     isOpenToPrivate: true,
   },
@@ -334,9 +335,10 @@ const SERVICES_LIST: Array<serviceType> = [
   },
   {
     title: "Horizon",
-    url: "https://api.bimbamjob.fr",
+    url: "https://www.bimbamjob.fr/horizon",
     network: "internet",
-    description: "Accompagner les bénéficiaires du RSA",
+    description:
+      "Piloter l’accompagnement socioprofessionnel : identifier, proposer et suivre des solutions concrètes (emplois, formations, services)",
     category: "inclusion",
     isOpenToPrivate: true,
   },
