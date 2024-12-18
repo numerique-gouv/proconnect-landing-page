@@ -430,9 +430,22 @@ const SERVICES_LIST: Array<serviceType> = [
     category: "inclusion",
     isOpenToPrivate: true,
   },
+  {
+    title: "Egapro",
+    url: "https://egapro.travail.gouv.fr/",
+    description:
+      "Calculer et publier l'index égalité professionnelle pour promouvoir la parité.",
+    network: "internet",
+    isOpenToPrivate: false,
+  },
 ];
 
-const titlesToKeep = ["Webinaire", "Osmose", "Resana", "DataPass"];
+const titlesToKeep = [
+  "Egapro",
+  "Les emplois de l'inclusion",
+  "Immersion Facilitée",
+  "DataPass",
+];
 
 const SHORT_LIST_SERVICES = SERVICES_LIST.filter((service) =>
   titlesToKeep.includes(service.title)
