@@ -1,12 +1,12 @@
 type networkType = "internet" | "RIE";
 
-type categoryType = "inclusion" | "suiteNumerique";
+type categoryType = "inclusion" | "suiteNumerique" | "suiteTerritoriale";
 
 type serviceType = {
   title: string;
   url: string;
   description: string;
-  category?: categoryType;
+  categories?: categoryType[];
   isOpenToPrivate?: boolean;
   network: networkType;
 };
@@ -21,21 +21,21 @@ const SERVICES_LIST: Array<serviceType> = [
       "Collaborer en temps réel sur vos documents, présentations et tableurs, tout en facilitant les échanges au sein de vos équipes.",
     isOpenToPrivate: true,
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Pad",
     url: "https://pad.numerique.gouv.fr/",
     description: "Editer des documents et des textes de manière collaborative",
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Audioconf",
     url: "https://audioconf.numerique.gouv.fr/",
     description: "Organiser des conférences audio",
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Portail CISIRH RIE",
@@ -49,14 +49,14 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Collaborer en temps réel avec vos équipes via des réunions à distance.",
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Osmose",
     url: "https://osmose.numerique.gouv.fr/plugins/DINUMThemePlugin/jsp/front/privateLoginOsmose.jsp?redirect=https%3A%2F%2Fosmose.numerique.gouv.fr%2Fjcms%2F",
     description: "Travailler avec des outils collaboratifs",
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Annuaire des Entreprises",
@@ -70,6 +70,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://www.demarches-simplifiees.fr/",
     description: "Réaliser des démarches administratives en ligne",
     isOpenToPrivate: true,
+    categories: ["suiteTerritoriale"],
     network: "internet",
   },
   {
@@ -78,7 +79,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Animer des présentations interactives avec un public à distance.",
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Rizomo",
@@ -86,7 +87,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Accéder au portail des applications collaboratives interministérielles",
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Socle interministériel de logiciels libres",
@@ -100,13 +101,14 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Envoyer des fichiers volumineux non sensibles de manière sécurisée à un agent de l’État ou entre agents",
     network: "internet",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique", "suiteTerritoriale"],
   },
   {
     title: "RDV Service Public",
     url: "https://rdv.anct.gouv.fr",
     description:
       "Faciliter la prise des rendez-vous entre le service public et les usagers",
+    categories: ["suiteTerritoriale"],
     network: "internet",
   },
   {
@@ -215,14 +217,14 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://rdv-solidarites.fr",
     network: "internet",
     description: "-",
-    category: "inclusion",
+    categories: ["inclusion"],
   },
   {
     title: "La Coop de la médiation numérique",
     url: "https://coop-numerique.anct.gouv.fr",
     network: "internet",
     description: "Accompagner les personnes éloignées du numérique",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -230,7 +232,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://www.rdv-aide-numerique.fr",
     network: "internet",
     description: "-",
-    category: "inclusion",
+    categories: ["inclusion"],
   },
   {
     title: "Tableau de pilotage - Conseiller numérique",
@@ -238,7 +240,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Visualiser l'ensemble des informations concernant le dispositif Conseiller Numérique",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -247,7 +249,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Améliorer la pratique professionnelle des accompagnateurs de personnes éloignées de l'emploi",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -256,7 +258,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Partager les ressources & communs numériques à l’échelle nationale",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -265,6 +267,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Faciliter la mise à disposition et la location des espaces publics",
+    categories: ["suiteTerritoriale"],
     isOpenToPrivate: true,
   },
   {
@@ -273,7 +276,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Accélérer les rendez-vous d'insertion et diminuer le taux d'absentéisme",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -282,7 +285,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Organiser et suivre vos projets grâce à un outil collaboratif de gestion de tâches.",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
   },
   {
     title: "Aides-territoires",
@@ -290,6 +293,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Faciliter la recherche d'aides des collectivités territoriales et de leurs partenaires locaux.",
+    categories: ["suiteTerritoriale"],
     isOpenToPrivate: true,
   },
   {
@@ -297,14 +301,14 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://www.parcours-solidarites.fr",
     network: "internet",
     description: "-",
-    category: "inclusion",
+    categories: ["inclusion"],
   },
   {
     title: "Immersion Facilitée",
     url: "https://immersion-facile.beta.gouv.fr",
     network: "internet",
     description: "Faciliter la réalisation des immersions professionnelles",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -313,14 +317,14 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Communiquer en direct avec vos équipes ou partenaires grâce à des appels vidéo sécurisés.",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique", "suiteTerritoriale"],
   },
   {
     title: "Diagoriente",
     url: "https://immersion-facile.beta.gouv.fr",
     network: "internet",
     description: "Faciliter l'orientation et les transitions professionnelles",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -328,7 +332,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://app.bealink.io/?company=academiefrancetravail",
     network: "internet",
     description: "-",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -337,7 +341,15 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Structurer et analyser vos données dans des tableaux collaboratifs sur mesure.",
-    category: "suiteNumerique",
+    categories: ["suiteNumerique"],
+  },
+  {
+    title: "Grist (ANCT)",
+    url: "https://grist.incubateur.anct.gouv.fr/",
+    network: "internet",
+    description:
+      "Structurer et analyser vos données dans des tableaux collaboratifs sur mesure.",
+    categories: ["suiteTerritoriale"],
   },
   {
     title: "Horizon",
@@ -345,7 +357,7 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     description:
       "Piloter l’accompagnement socioprofessionnel : identifier, proposer et suivre des solutions concrètes (emplois, formations, services)",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -355,11 +367,12 @@ const SERVICES_LIST: Array<serviceType> = [
     description: "Créer des cartes en ligne",
   },
   {
-    title: "MonServiceSécurisé (service ANSSI)",
+    title: "MonServiceSécurisé (ANSSI)",
     url: "https://www.monservicesecurise.cyber.gouv.fr",
     network: "internet",
     description:
       "Piloter en équipe la sécurité de tous vos services numériques et les homologuer rapidement",
+    categories: ["suiteTerritoriale"],
     isOpenToPrivate: true,
   },
   {
@@ -369,7 +382,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Favoriser l’insertion en identifiant les difficultés avec les compétences de base et en valorisant les compétences transversales acquises",
     isOpenToPrivate: true,
-    category: "inclusion",
+    categories: ["inclusion"],
   },
   {
     title: "Demande de bulletin numéro 2 du Casier Judiciaire National",
@@ -383,6 +396,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Annuaire des collectivités",
     url: "https://collectivite.fr",
     network: "internet",
+    categories: ["suiteTerritoriale"],
     description:
       "Permet aux communes de certifier et modifier les données présentes sur l'Annuaire des Collectivités",
   },
@@ -393,7 +407,7 @@ const SERVICES_LIST: Array<serviceType> = [
       "Faciliter la mise en relation des personnes les plus éloignées de l’emploi avec des employeurs inclusifs.",
     network: "internet",
     isOpenToPrivate: true,
-    category: "inclusion",
+    categories: ["inclusion"],
   },
   {
     title: "MET Emploi Lyon",
@@ -402,7 +416,7 @@ const SERVICES_LIST: Array<serviceType> = [
       "Regrouper des informations utiles concernant l'insertion sur le territoire de la Métropole de Lyon",
     network: "internet",
     isOpenToPrivate: true,
-    category: "inclusion",
+    categories: ["inclusion"],
   },
   {
     title: "Insertis",
@@ -410,7 +424,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Gérer les dossiers des bénéficiaires du RSA de la Métropole de Lyon",
     network: "internet",
-    category: "inclusion",
+    categories: ["inclusion"],
     isOpenToPrivate: true,
   },
   {
@@ -419,7 +433,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description: "Aider à la prescription des accompagnateurs professionnels",
     network: "internet",
     isOpenToPrivate: true,
-    category: "inclusion",
+    categories: ["inclusion"],
   },
   {
     title: "Mon Suivi Social",
@@ -427,7 +441,7 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Améliorer la prise en charge des bénéficiaires d'accompagnement social",
     network: "internet",
-    category: "inclusion",
+    categories: ["inclusion", "suiteTerritoriale"],
     isOpenToPrivate: true,
   },
   {
