@@ -96,16 +96,16 @@ function Services() {
       case "all":
         return sortedServicesList;
       case "suiteNumerique":
-        return sortedServicesList.filter(
-          (service) => service.categories?.includes("suiteNumerique")
+        return sortedServicesList.filter((service) =>
+          service.categories?.includes("suiteNumerique")
         );
-        case "suiteTerritoriale":
-          return sortedServicesList.filter(
-            (service) => service.categories?.includes("suiteTerritoriale")
-          );
+      case "suiteTerritoriale":
+        return sortedServicesList.filter((service) =>
+          service.categories?.includes("suiteTerritoriale")
+        );
       case "inclusion":
-        return sortedServicesList.filter(
-          (service) => service.categories?.includes("inclusion")
+        return sortedServicesList.filter((service) =>
+          service.categories?.includes("inclusion")
         );
     }
   }
