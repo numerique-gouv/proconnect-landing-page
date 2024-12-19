@@ -21,7 +21,7 @@ function Services() {
           <Tag
             pressed={selectedTag === "all"}
             nativeButtonProps={{
-              onClick: selectAllServices,
+              onClick: onClickAllServices,
             }}
           >
             Tous les services
@@ -31,7 +31,7 @@ function Services() {
           <Tag
             pressed={selectedTag === "suiteNumerique"}
             nativeButtonProps={{
-              onClick: selectSuiteNumeriqueServices,
+              onClick: onClickSuiteNumeriqueServices,
             }}
           >
             Suite numérique
@@ -41,7 +41,7 @@ function Services() {
           <Tag
             pressed={selectedTag === "suiteTerritoriale"}
             nativeButtonProps={{
-              onClick: selectSuiteTerritorialeServices,
+              onClick: onClickSuiteTerritorialeServices,
             }}
           >
             Suite territoriale
@@ -51,7 +51,7 @@ function Services() {
           <Tag
             pressed={selectedTag === "inclusion"}
             nativeButtonProps={{
-              onClick: selectInclusionServices,
+              onClick: onClickInclusionServices,
             }}
           >
             Sphère inclusion
@@ -71,20 +71,32 @@ function Services() {
     </div>
   );
 
-  function selectAllServices() {
+  function onClickAllServices() {
     setSelectedTag("all");
   }
 
-  function selectInclusionServices() {
-    setSelectedTag("inclusion");
+  function onClickInclusionServices() {
+    if (selectedTag === "inclusion") {
+      setSelectedTag("all");
+    } else {
+      setSelectedTag("inclusion");
+    }
   }
 
-  function selectSuiteNumeriqueServices() {
-    setSelectedTag("suiteNumerique");
+  function onClickSuiteNumeriqueServices() {
+    if (selectedTag === "suiteNumerique") {
+      setSelectedTag("all");
+    } else {
+      setSelectedTag("suiteNumerique");
+    }
   }
 
-  function selectSuiteTerritorialeServices() {
-    setSelectedTag("suiteTerritoriale");
+  function onClickSuiteTerritorialeServices() {
+    if (selectedTag === "suiteTerritoriale") {
+      setSelectedTag("all");
+    } else {
+      setSelectedTag("suiteTerritoriale");
+    }
   }
 
   function computeFilteredServiceList() {
