@@ -106,14 +106,16 @@ function Cgu() {
           le <b>«&nbsp;Service&nbsp;»</b>.
         </p>
         <p>
-          Un <b>«&nbsp;Agent&nbsp;»</b>, ou <b>«&nbsp;Agent utilisateur&nbsp;»</b>,
-          est toute personne physique disposant d'un compte vérifié dans le
-          cadre de son activité professionnelle.
+          Un <b>«&nbsp;Agent&nbsp;»</b>, ou
+          <b>«&nbsp;Agent utilisateur&nbsp;»</b>, est toute personne physique
+          disposant d'un compte vérifié dans le cadre de son activité
+          professionnelle.
         </p>
         <p>
-          Un <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité partenaire
-          du Service ProConnect qui propose un ou des services nécessitant
-          l'authentification en ligne des personnes habilitées à y accéder.
+          Un <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité
+          partenaire du Service ProConnect qui propose un ou des services
+          nécessitant l'authentification en ligne des personnes habilitées à y
+          accéder.
         </p>
         <p>
           L'ensemble des parties prenantes au Service (Fournisseurs d'Identité,
@@ -130,7 +132,7 @@ function Cgu() {
           connecter à des services en ligne proposés par des Fournisseurs de
           services autorisés préalablement. ProConnect s'appuie sur des comptes
           d'identité numérique vérifiés par ses partenaires Fournisseurs
-          d'identité. 
+          d'identité.
         </p>
         <p>
           Ainsi, ProConnect permet de
@@ -176,7 +178,7 @@ function Cgu() {
         <p>
           ProConnect le redirige alors vers la page de connexion de ce compte
           pour que l'agent puisse s'identifier par un moyen d'authentification.{" "}
-       </p>
+        </p>
         <p>
           L'agent utilisateur accède alors au service souhaité une fois qu'il a
           été authentifié par le fournisseur de service à partir des données
@@ -197,8 +199,8 @@ function Cgu() {
             <ul>
               <li className="secondary-list">
                 Les informations relatives à l'état-civil et notamment le prénom
-                et le nom utilisés par l'agent dans le cadre de ses fonctions (nom
-                de naissance, nom patronymique ou nom d'usage)&nbsp;;
+                et le nom utilisés par l'agent dans le cadre de ses fonctions
+                (nom de naissance, nom patronymique ou nom d'usage)&nbsp;;
               </li>
               <li className="secondary-list">
                 l'adresse de courrier électronique professionnelle&nbsp;;
@@ -208,8 +210,8 @@ function Cgu() {
                 service et qui permettent notamment d'assurer sa sécurité. Ces
                 données sont&nbsp;: clés de fédération ou «&nbsp;alias&nbsp;»
                 générés par le système à la connexion de l'usager, comprenant
-                notamment l'identifiant technique propre au Fournisseur d'identité
-                et un alias technique unique propre au système.
+                notamment l'identifiant technique propre au Fournisseur
+                d'identité et un alias technique unique propre au système.
               </li>
             </ul>
           </li>
@@ -230,9 +232,9 @@ function Cgu() {
                 …)&nbsp;;
               </li>
               <li className="secondary-list">
-                des informations relatives aux fonctions ou au rôle occupé par la
-                personnel au sein de son administration comme son statut, son rôle
-                ou la population d'appartenance (agent fonctionnaire, agent
+                des informations relatives aux fonctions ou au rôle occupé par
+                la personnel au sein de son administration comme son statut, son
+                rôle ou la population d'appartenance (agent fonctionnaire, agent
                 contractuel, prestataire, stagiaire, …) qui comprennent le cas
                 échéant l'identifiant unique créé par l'application Chorus DT.
               </li>

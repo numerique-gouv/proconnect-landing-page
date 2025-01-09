@@ -35,12 +35,12 @@ function LegalNotices() {
       <p>
         Tout site public ou privé est autorisé à établir, sans autorisation
         préalable, un lien (y compris profond) vers les informations diffusées
-        sur proconnect.gouv.fr. Sauf mention de propriété intellectuelle
-        détenue par des tiers (notamment un crédit sur certaines images), les
-        contenus de ce site sont proposés sous licence ouverte. La mise en place
-        de liens vers nos contenus et documents est cependant à privilégier par
-        rapport à la reproduction sur un site tiers. La mention explicite du
-        site source proconnect.gouv.fr est recommandée.
+        sur proconnect.gouv.fr. Sauf mention de propriété intellectuelle détenue
+        par des tiers (notamment un crédit sur certaines images), les contenus
+        de ce site sont proposés sous licence ouverte. La mise en place de liens
+        vers nos contenus et documents est cependant à privilégier par rapport à
+        la reproduction sur un site tiers. La mention explicite du site source
+        proconnect.gouv.fr est recommandée.
       </p>
       <h2 className="fr-h4">Hébergement</h2>
       <p>

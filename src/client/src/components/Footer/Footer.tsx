@@ -11,7 +11,7 @@ function Footer() {
         to: "/plan-du-site",
       }}
       bottomItems={[
-        < a href="/accessibility" className="fr-footer__bottom-link">
+        <a href="/accessibility" className="fr-footer__bottom-link">
           Accessibilité : non conforme
         </a>,
         <a href="/cgu#url-anchor-dp" className="fr-footer__bottom-link">
