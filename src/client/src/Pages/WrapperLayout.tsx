@@ -6,7 +6,7 @@ function WrapperLayout(props: { children: JSX.Element }) {
   return (
     <div className="app">
       <Header />
-      <div className="content">{props.children}</div>
+      <main role="main" className="content">{props.children}</main>
       <Footer />
     </div>
   );

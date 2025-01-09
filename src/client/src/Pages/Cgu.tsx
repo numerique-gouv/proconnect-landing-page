@@ -86,8 +86,8 @@ function Cgu() {
               </span>
             </a>
             , signée par le DINUM, créant le Service ProConnect à destination
-            des agents de la fonction publique d'Etat et des opérateurs de
-            l'Etat.
+            des agents de la fonction publique d'État et des opérateurs de
+            l'État.
           </li>
         </ul>
         <h2>2. Objet du document</h2>
@@ -95,24 +95,27 @@ function Cgu() {
           Le présent document a pour objet de définir les conditions générales
           d'utilisation (CGU) de ProConnect par les personnes disposant d'un
           compte vérifié dans le cadre de leur activité professionnelle et
-          exerçant au sein de la fonction publique d'Etat (administrations
-          centrales, services déconcentrés) et des opérateurs de l'Etat présents
+          exerçant au sein de la fonction publique d'État (administrations
+          centrales, services déconcentrés) et des opérateurs de l'État présents
           dans les annexes générales au projet de loi de finances de l'année.
         </p>
         <h2>3. Service «&nbsp;ProConnect&nbsp;»</h2>
         <h3 className="fr-col-12">3.1. Définitions</h3>
         <p>
           ProConnect est un service mis en œuvre par la DINUM, dénommé ci-après
-          le <b>«&nbsp;Service&nbsp;»</b>. <br />
-          Un
-          <b>«&nbsp;Agent&nbsp;»</b>, ou <b>«&nbsp;Agent utilisateur&nbsp;»</b>,
+          le <b>«&nbsp;Service&nbsp;»</b>.
+        </p>
+        <p>
+          Un <b>«&nbsp;Agent&nbsp;»</b>, ou <b>«&nbsp;Agent utilisateur&nbsp;»</b>,
           est toute personne physique disposant d'un compte vérifié dans le
-          cadre de son activité professionnelle. <br />
-          Un
-          <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité partenaire
+          cadre de son activité professionnelle.
+        </p>
+        <p>
+          Un <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité partenaire
           du Service ProConnect qui propose un ou des services nécessitant
           l'authentification en ligne des personnes habilitées à y accéder.
-          <br />
+        </p>
+        <p>
           L'ensemble des parties prenantes au Service (Fournisseurs d'Identité,
           Fournisseurs de Services) sont dénommées ci-après les
           <b>«&nbsp;Partenaires&nbsp;»</b>.
@@ -127,7 +130,9 @@ function Cgu() {
           connecter à des services en ligne proposés par des Fournisseurs de
           services autorisés préalablement. ProConnect s'appuie sur des comptes
           d'identité numérique vérifiés par ses partenaires Fournisseurs
-          d'identité. <br />
+          d'identité. 
+        </p>
+        <p>
           Ainsi, ProConnect permet de
           <i>
             «&nbsp;Contribuer au décloisonnement des applications ministérielles
@@ -143,8 +148,8 @@ function Cgu() {
         <p>
           ProConnect est un dispositif facultatif d'identification et
           d'authentification pour les agents exerçant au sein de la fonction
-          publique d'Etat (administrations centrales, services déconcentrés) et
-          des opérateurs de l'Etat.
+          publique d'État (administrations centrales, services déconcentrés) et
+          des opérateurs de l'État.
           <br />
           «&nbsp;ProConnect&nbsp;» repose sur une fédération d'identité.
           <br />
@@ -157,22 +162,27 @@ function Cgu() {
         <h3>3.4. Modalités d'utilisation de ProConnect</h3>
         <p>
           L'accès au Service est ouvert à toute personne physique ayant la
-          qualité d'agent de la fonction publique d'Etat ou assimilé exerçant
+          qualité d'agent de la fonction publique d'État ou assimilé exerçant
           dans une administration centrale, un service déconcentré ou au sein
-          d'un opérateur de l'Etat.
-          <br />
+          d'un opérateur de l'État.
+        </p>
+        <p>
           <i>Cinématique d'usage&nbsp;:</i> <br />
           Pour accéder à un service en ligne, l'Agent utilisateur clique sur le
           bouton de connexion «&nbsp;ProConnect&nbsp;» présent sur la page dudit
           service puis sélectionne un compte (fournisseur d'identité) qu'il
-          connait parmi ceux proposés. <br />
+          connait parmi ceux proposés.
+        </p>
+        <p>
           ProConnect le redirige alors vers la page de connexion de ce compte
           pour que l'agent puisse s'identifier par un moyen d'authentification.{" "}
-          <br />
+       </p>
+        <p>
           L'agent utilisateur accède alors au service souhaité une fois qu'il a
           été authentifié par le fournisseur de service à partir des données
           d'identité transmises par le fournisseur d'identité à ProConnect.{" "}
-          <br />
+        </p>
+        <p>
           En utilisant le Service, l'Agent utilisateur reconnait être informé de
           l'échange et du partage des informations nécessaires à son
           identification et authentification. Ainsi les informations suivantes
@@ -184,50 +194,50 @@ function Cgu() {
         <ul>
           <li>
             De façon obligatoire, les informations relatives à l'identité&nbsp;:
+            <ul>
+              <li className="secondary-list">
+                Les informations relatives à l'état-civil et notamment le prénom
+                et le nom utilisés par l'agent dans le cadre de ses fonctions (nom
+                de naissance, nom patronymique ou nom d'usage)&nbsp;;
+              </li>
+              <li className="secondary-list">
+                l'adresse de courrier électronique professionnelle&nbsp;;
+              </li>
+              <li className="secondary-list">
+                les données techniques indispensables au bon fonctionnement du
+                service et qui permettent notamment d'assurer sa sécurité. Ces
+                données sont&nbsp;: clés de fédération ou «&nbsp;alias&nbsp;»
+                générés par le système à la connexion de l'usager, comprenant
+                notamment l'identifiant technique propre au Fournisseur d'identité
+                et un alias technique unique propre au système.
+              </li>
+            </ul>
           </li>
-          <ul>
-            <li className="secondary-list">
-              Les informations relatives à l'état-civil et notamment le prénom
-              et le nom utilisés par l'agent dans le cadre de ses fonctions (nom
-              de naissance, nom patronymique ou nom d'usage)&nbsp;;
-            </li>
-            <li className="secondary-list">
-              l'adresse de courrier électronique professionnelle&nbsp;;
-            </li>
-            <li className="secondary-list">
-              les données techniques indispensables au bon fonctionnement du
-              service et qui permettent notamment d'assurer sa sécurité. Ces
-              données sont&nbsp;: clés de fédération ou «&nbsp;alias&nbsp;»
-              générés par le système à la connexion de l'usager, comprenant
-              notamment l'identifiant technique propre au Fournisseur d'identité
-              et un alias technique unique propre au système.
-            </li>
-          </ul>
           <li>
             De façon facultative, les informations relatives à la situation
             professionnelle&nbsp;:
+            <ul>
+              <li className="secondary-list">
+                le numéro de téléphone de l'agent&nbsp;;
+              </li>
+              <li className="secondary-list">
+                le numéro d'inscription de l'administration ou de l'opérateur de
+                l'État au répertoire des entreprises et de leurs établissements
+                (SIREN ou SIRET)&nbsp;;
+              </li>
+              <li className="secondary-list">
+                l'unité d'affectation (intitulé de la direction, du service,
+                …)&nbsp;;
+              </li>
+              <li className="secondary-list">
+                des informations relatives aux fonctions ou au rôle occupé par la
+                personnel au sein de son administration comme son statut, son rôle
+                ou la population d'appartenance (agent fonctionnaire, agent
+                contractuel, prestataire, stagiaire, …) qui comprennent le cas
+                échéant l'identifiant unique créé par l'application Chorus DT.
+              </li>
+            </ul>
           </li>
-          <ul>
-            <li className="secondary-list">
-              le numéro de téléphone de l'agent&nbsp;;
-            </li>
-            <li className="secondary-list">
-              le numéro d'inscription de l'administration ou de l'opérateur de
-              l'Etat au répertoire des entreprises et de leurs établissements
-              (SIREN ou SIRET)&nbsp;;
-            </li>
-            <li className="secondary-list">
-              l'unité d'affectation (intitulé de la direction, du service,
-              …)&nbsp;;
-            </li>
-            <li className="secondary-list">
-              des informations relatives aux fonctions ou au rôle occupé par la
-              personnel au sein de son administration comme son statut, son rôle
-              ou la population d'appartenance (agent fonctionnaire, agent
-              contractuel, prestataire, stagiaire, …) qui comprennent le cas
-              échéant l'identifiant unique créé par l'application Chorus DT.
-            </li>
-          </ul>
         </ul>
         <h4>
           2° Pour la gestion de la traçabilité des accès de l'utilisateur les
@@ -239,7 +249,7 @@ function Cgu() {
           <li>les dates et heures de connexion au Service ProConnect.</li>
         </ul>
         <h2 className="fr-col-12 fr-mt-5v" id="confidential">
-          4. Roles et engagements de la DINUM
+          4. Rôles et engagements de la DINUM
         </h2>
         <h3>4.1. Responsabilité générale</h3>
         <p>
