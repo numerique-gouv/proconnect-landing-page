@@ -106,14 +106,16 @@ function Cgu() {
           le <b>«&nbsp;Service&nbsp;»</b>.
         </p>
         <p>
-          Un <b>«&nbsp;Agent&nbsp;»</b>, ou <b>«&nbsp;Agent utilisateur&nbsp;»</b>,
-          est toute personne physique disposant d'un compte vérifié dans le
-          cadre de son activité professionnelle.
+          Un <b>«&nbsp;Agent&nbsp;»</b>, ou{" "}
+          <b>«&nbsp;Agent utilisateur&nbsp;»</b>, est toute personne physique
+          disposant d'un compte vérifié dans le cadre de son activité
+          professionnelle.
         </p>
         <p>
-          Un <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité partenaire
-          du Service ProConnect qui propose un ou des services nécessitant
-          l'authentification en ligne des personnes habilitées à y accéder.
+          Un <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité
+          partenaire du Service ProConnect qui propose un ou des services
+          nécessitant l'authentification en ligne des personnes habilitées à y
+          accéder.
         </p>
         <p>
           L'ensemble des parties prenantes au Service (Fournisseurs d'Identité,
@@ -130,7 +132,7 @@ function Cgu() {
           connecter à des services en ligne proposés par des Fournisseurs de
           services autorisés préalablement. ProConnect s'appuie sur des comptes
           d'identité numérique vérifiés par ses partenaires Fournisseurs
-          d'identité. 
+          d'identité.
         </p>
         <p>
           Ainsi, ProConnect permet de
@@ -138,7 +140,8 @@ function Cgu() {
             «&nbsp;Contribuer au décloisonnement des applications ministérielles
             et à leur ouverture à l'interministériel&nbsp;»
           </i>
-          conformément aux 8 missions du programme TECH.GOUV.</p>
+          conformément aux 8 missions du programme TECH.GOUV.
+        </p>
         <p>
           Le Service ProConnect s'adresse aux agents de la fonction publique de
           l'Etat et des opérateurs présents dans les annexes générales au projet
@@ -151,8 +154,7 @@ function Cgu() {
           d'authentification pour les agents exerçant au sein de la fonction
           publique d'État (administrations centrales, services déconcentrés) et
           des opérateurs de l'État.
-        </p>
-        <p>
+          <br />
           «&nbsp;ProConnect&nbsp;» repose sur une fédération d'identité.
         </p>
         <p>
@@ -179,7 +181,7 @@ function Cgu() {
         <p>
           ProConnect le redirige alors vers la page de connexion de ce compte
           pour que l'agent puisse s'identifier par un moyen d'authentification.{" "}
-       </p>
+        </p>
         <p>
           L'agent utilisateur accède alors au service souhaité une fois qu'il a
           été authentifié par le fournisseur de service à partir des données
@@ -200,8 +202,8 @@ function Cgu() {
             <ul>
               <li className="secondary-list">
                 Les informations relatives à l'état-civil et notamment le prénom
-                et le nom utilisés par l'agent dans le cadre de ses fonctions (nom
-                de naissance, nom patronymique ou nom d'usage)&nbsp;;
+                et le nom utilisés par l'agent dans le cadre de ses fonctions
+                (nom de naissance, nom patronymique ou nom d'usage)&nbsp;;
               </li>
               <li className="secondary-list">
                 l'adresse de courrier électronique professionnelle&nbsp;;
@@ -211,8 +213,8 @@ function Cgu() {
                 service et qui permettent notamment d'assurer sa sécurité. Ces
                 données sont&nbsp;: clés de fédération ou «&nbsp;alias&nbsp;»
                 générés par le système à la connexion de l'usager, comprenant
-                notamment l'identifiant technique propre au Fournisseur d'identité
-                et un alias technique unique propre au système.
+                notamment l'identifiant technique propre au Fournisseur
+                d'identité et un alias technique unique propre au système.
               </li>
             </ul>
           </li>
@@ -233,9 +235,9 @@ function Cgu() {
                 …)&nbsp;;
               </li>
               <li className="secondary-list">
-                des informations relatives aux fonctions ou au rôle occupé par la
-                personnel au sein de son administration comme son statut, son rôle
-                ou la population d'appartenance (agent fonctionnaire, agent
+                des informations relatives aux fonctions ou au rôle occupé par
+                la personnel au sein de son administration comme son statut, son
+                rôle ou la population d'appartenance (agent fonctionnaire, agent
                 contractuel, prestataire, stagiaire, …) qui comprennent le cas
                 échéant l'identifiant unique créé par l'application Chorus DT.
               </li>
@@ -262,10 +264,10 @@ function Cgu() {
         <p>
           La DINUM s'engage à prendre toutes les mesures nécessaires permettant
           de garantir la sécurité et la confidentialité des informations
-          échangées dans le cadre du service. 
+          échangées dans le cadre du service.
         </p>
-      <p>
-         La responsabilité de la DINUM ne peut être engagée en cas d'usurpation
+        <p>
+          La responsabilité de la DINUM ne peut être engagée en cas d'usurpation
           d'identité ou de toute utilisation frauduleuse du Service.
         </p>
         <h3 id="url-anchor-dp">
@@ -276,7 +278,7 @@ function Cgu() {
           La DINUM s'engage à assurer la protection des données collectées dans
           le cadre du Service mentionnées dans l'article 3.4 des présentes CGU.
         </p>
-      <p>
+        <p>
           La DINUM est responsable de traitement des informations traitées dans
           le cadre du Service et, à ce titre, s'engage à respecter les
           obligations inhérentes à ce traitement, notamment celles relevant de
@@ -298,7 +300,7 @@ function Cgu() {
           commercialisation des informations transmises par l'Agent au moyen du
           Service, et à ne pas les communiquer à des tiers, en dehors des cas
           prévus par la loi.
-      </p>
+        </p>
         <p>
           En cas d'incident lors de l'utilisation de ProConnect, l'Agent est
           invité à se rapprocher de son administration de rattachement, ou à
@@ -399,7 +401,6 @@ function Cgu() {
           public ou qui ne lui appartient pas.
         </p>
         <p>
-        
           Les données transmises aux services en ligne des Partenaires restent
           de la responsabilité du Fournisseur d'identité, même si celles-ci sont
           transmises par les moyens techniques mis à disposition dans le
@@ -410,7 +411,7 @@ function Cgu() {
           de rectification, et le cas échéant d'opposition et de suppression des
           données à caractère personnel auprès des Partenaires. Il doit alors
           s'adresser à son administration.
-       </p>
+        </p>
         <p>
           Toute personne procédant à une fausse déclaration pour elle-même ou
           pour autrui s'expose, notamment, aux sanctions prévues à l'article
@@ -419,7 +420,7 @@ function Cgu() {
           s'engage également à ne jamais usurper l'identité d'un tiers en se
           faisant passer pour celui-ci vis à vis du Service au risque d'encourir
           un an d'emprisonnement et 15 000 euros d'amende sur la base de
-          l'article 226-4-1 du Code pénal. 
+          l'article 226-4-1 du Code pénal.
         </p>
         <p>
           Il est également rappelé qu'est puni de trois ans d'emprisonnement et
@@ -465,31 +466,26 @@ function Cgu() {
           Les présentes conditions d'utilisation s'imposent à tout Agent
           utilisateur du Service.
         </p>
-          Les termes des présentes conditions générales d'utilisation peuvent
-          être amendés à tout moment. Il appartient à l'Agent utilisateur de
-          s'informer des conditions générales d'utilisation du Service en
-          vigueur.
-      </p>
-      <p>
-          La DINUM se réserve le droit de bloquer, sans préavis ni indemnité
-          d'aucune sorte, tout Agent utilisateur soupçonné d'une utilisation
-          illicite ou frauduleuse ainsi que contraire aux présentes CGU.
-        </p>
-        <h2 className="fr-col-12">Historique</h2>
-        <a
-          className="fr-raw-link border-grey fr-py-2w fr-col-8"
-          href="https://agentconnect.gouv.fr/files/20210601-DINUM-AC-CGU%20Agents_v1.0.pdf"
-        >
-          <span
-            className="fr-icon-file-download-line"
-            aria-hidden="true"
-          ></span>
-          &nbsp;
-          <span>
-            Version 1.0 - Applicable à partir du 01 juin 2021 (PDF 142 Ko)
-          </span>
-        </a>
+        Les termes des présentes conditions générales d'utilisation peuvent être
+        amendés à tout moment. Il appartient à l'Agent utilisateur de s'informer
+        des conditions générales d'utilisation du Service en vigueur.
       </div>
+      <p>
+        La DINUM se réserve le droit de bloquer, sans préavis ni indemnité
+        d'aucune sorte, tout Agent utilisateur soupçonné d'une utilisation
+        illicite ou frauduleuse ainsi que contraire aux présentes CGU.
+      </p>
+      <h2 className="fr-col-12">Historique</h2>
+      <a
+        className="fr-raw-link border-grey fr-py-2w fr-col-8"
+        href="https://agentconnect.gouv.fr/files/20210601-DINUM-AC-CGU%20Agents_v1.0.pdf"
+      >
+        <span className="fr-icon-file-download-line" aria-hidden="true"></span>
+        &nbsp;
+        <span>
+          Version 1.0 - Applicable à partir du 01 juin 2021 (PDF 142 Ko)
+        </span>
+      </a>
     </div>
   );
 }
