@@ -8,11 +8,11 @@ function Header() {
   const isConnected = !!userInfo;
   const quickAccessItems = [
     {
-      iconId: "fr-icon-code-s-slash-line" as const,
+      iconId: "fr-icon-question-line" as const,
       linkProps: {
-        to: "https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation",
+        to: "https://agentconnect.crisp.help/fr/",
       },
-      text: "Intégrer ProConnect",
+      text: "Aide",
     },
     {
       iconId: "fr-icon-timer-line" as const,
