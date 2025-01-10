@@ -11,13 +11,16 @@ function Footer() {
         to: "/plan-du-site",
       }}
       bottomItems={[
-        < a href="/accessibility" className="fr-footer__bottom-link">
+        <a href="/accessibility" className="fr-footer__bottom-link">
           Accessibilité : non conforme
         </a>,
         <a href="/cgu#url-anchor-dp" className="fr-footer__bottom-link">
           Données personnelles
         </a>,
-        <a href="https://github.com/numerique-gouv/proconnect-documentation?tab=readme-ov-file#-proconnect---documentation" className="fr-footer__bottom-link">
+        <a
+          href="https://github.com/numerique-gouv/proconnect-documentation?tab=readme-ov-file#-proconnect---documentation"
+          className="fr-footer__bottom-link"
+        >
           Intégrer ProConnect
         </a>,
         <a href="/cgu" className="fr-footer__bottom-link">
