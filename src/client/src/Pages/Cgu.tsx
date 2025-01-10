@@ -106,7 +106,7 @@ function Cgu() {
           le <b>«&nbsp;Service&nbsp;»</b>.
         </p>
         <p>
-          Un <b>«&nbsp;Agent&nbsp;»</b>, ou{" "}
+          Un <b>«&nbsp;Agent&nbsp;»</b>, ou
           <b>«&nbsp;Agent utilisateur&nbsp;»</b>, est toute personne physique
           disposant d'un compte vérifié dans le cadre de son activité
           professionnelle.
