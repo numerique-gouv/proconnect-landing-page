@@ -26,8 +26,8 @@ function Result(props: { subtitle: string }) {
                 Bonne nouvelle, vous êtes éligible&nbsp;!
               </h1>
               <p>{props.subtitle}</p>
-              <a className="fr-raw-link" href="/services">
-                <Button>Explorer l'annuaire des sites</Button>
+              <a className="fr-raw-link fr-btn" href="/services">
+                Explorer l'annuaire des sites
               </a>
             </div>
           </div>
