@@ -2,7 +2,6 @@ import React from "react";
 import welcome from "../assets/welcome.svg";
 import "./layout.css";
 import { fr } from "@codegouvfr/react-dsfr";
-import Button from "@codegouvfr/react-dsfr/Button";
 import news from "../assets/news.svg";
 import HowDoesItWork from "../components/HowDoesItWork/HowDoesItWork";
 import { tilesData } from "../data";
@@ -23,7 +22,7 @@ function HomeLayout() {
               </h1>
               <a className="fr-raw-link fr-btn" href="/eligibilite">
                 <i className={fr.cx("ri-user-star-line") + " fr-pr-2w"} />
-                  Êtes-vous éligible&nbsp;?
+                Êtes-vous éligible&nbsp;?
               </a>
             </div>
             <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
@@ -76,7 +75,7 @@ function HomeLayout() {
               l'identification ProConnect !
             </p>
             <a className="fr-raw-link fr-btn" href="https://proconnect.gouv.fr">
-                En savoir plus sur la certification Insee
+              En savoir plus sur la certification Insee
             </a>
           </div>
           <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">

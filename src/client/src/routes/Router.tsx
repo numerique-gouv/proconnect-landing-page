@@ -15,6 +15,7 @@ import MonCompte from "../Pages/MonCompte";
 import PostAuthentification from "../Pages/PostAuthentication";
 import PostLogout from "../Pages/PostLogout";
 import AuthenticationError from "../Pages/AuthenticationError";
+import { Accessibility } from "../Pages/Accessibility";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,14 @@ const router = createBrowserRouter([
         element: (
           <WrapperLayout>
             <Services></Services>
+          </WrapperLayout>
+        ),
+      },
+      {
+        path: "/accessibility",
+        element: (
+          <WrapperLayout>
+            <Accessibility />
           </WrapperLayout>
         ),
       },

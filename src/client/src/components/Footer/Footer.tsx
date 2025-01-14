@@ -3,16 +3,15 @@ import { Footer as DsfrFooter } from "@codegouvfr/react-dsfr/Footer";
 function Footer() {
   return (
     <DsfrFooter
+      accessibility="non compliant"
       termsLinkProps={{
         to: "/mentions-legales",
       }}
+      accessibilityLinkProps={{ to: "/accessibility" }}
       websiteMapLinkProps={{
         to: "/plan-du-site",
       }}
       bottomItems={[
-        <a href="/accessibility" className="fr-footer__bottom-link">
-          Accessibilité : non conforme
-        </a>,
         <a href="/cgu#url-anchor-dp" className="fr-footer__bottom-link">
           Données personnelles
         </a>,
