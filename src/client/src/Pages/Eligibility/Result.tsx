@@ -1,4 +1,3 @@
-import Button from "@codegouvfr/react-dsfr/Button";
 import Lottie from "react-lottie";
 import eligibleAnimation from "../../assets/Success.json";
 import WantToIntegrateProConnect from "../../components/WantToIntegrateProConnect/WantToIntegrateProConnect";
