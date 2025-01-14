@@ -138,7 +138,8 @@ function Cgu() {
             «&nbsp;Contribuer au décloisonnement des applications ministérielles
             et à leur ouverture à l'interministériel&nbsp;»
           </i>
-          conformément aux 8 missions du programme TECH.GOUV. <br />
+          conformément aux 8 missions du programme TECH.GOUV.</p>
+        <p>
           Le Service ProConnect s'adresse aux agents de la fonction publique de
           l'Etat et des opérateurs présents dans les annexes générales au projet
           de loi de finances de l'année. <br />
@@ -150,9 +151,11 @@ function Cgu() {
           d'authentification pour les agents exerçant au sein de la fonction
           publique d'État (administrations centrales, services déconcentrés) et
           des opérateurs de l'État.
-          <br />
+        </p>
+        <p>
           «&nbsp;ProConnect&nbsp;» repose sur une fédération d'identité.
-          <br />
+        </p>
+        <p>
           Le service ProConnect permet à un agent d'accéder à des services en
           ligne en utilisant un compte déjà existant sous réserve que ce compte
           fourni par le fournisseur d'identité soit reconnu par le service
@@ -255,11 +258,14 @@ function Cgu() {
         <p>
           La DINUM met en œuvre et opère le Service conformément au cadre
           juridique en vigueur défini en préambule.
-          <br />
+        </p>
+        <p>
           La DINUM s'engage à prendre toutes les mesures nécessaires permettant
           de garantir la sécurité et la confidentialité des informations
-          échangées dans le cadre du service. <br />
-          La responsabilité de la DINUM ne peut être engagée en cas d'usurpation
+          échangées dans le cadre du service. 
+        </p>
+      <p>
+         La responsabilité de la DINUM ne peut être engagée en cas d'usurpation
           d'identité ou de toute utilisation frauduleuse du Service.
         </p>
         <h3 id="url-anchor-dp">
@@ -269,12 +275,15 @@ function Cgu() {
         <p>
           La DINUM s'engage à assurer la protection des données collectées dans
           le cadre du Service mentionnées dans l'article 3.4 des présentes CGU.
-          <br />
+        </p>
+      <p>
           La DINUM est responsable de traitement des informations traitées dans
           le cadre du Service et, à ce titre, s'engage à respecter les
           obligations inhérentes à ce traitement, notamment celles relevant de
           la loi n° 78-17 du 6 janvier 1978 relative à l'informatique aux
-          fichiers et aux libertés. <br />
+          fichiers et aux libertés.
+        </p>
+        <p>
           La DINUM s'engage notamment à empêcher que les données collectées
           soient déformées, endommagées ou que des tiers non autorisés y aient
           accès, conformément aux dispositions prévues par l'ordonnance du 8
@@ -282,12 +291,15 @@ function Cgu() {
           les autorités administratives et entre les autorités administratives
           et le décret n° 2010-112 du 2 février 2010 pris pour l'application des
           articles 9, 10 et 12 de cette ordonnance. A ce titre le Service est
-          homologué. <br />
+          homologué.
+        </p>
+        <p>
           La DINUM et les Partenaires s'engagent à n'opérer aucune
           commercialisation des informations transmises par l'Agent au moyen du
           Service, et à ne pas les communiquer à des tiers, en dehors des cas
           prévus par la loi.
-          <br />
+      </p>
+        <p>
           En cas d'incident lors de l'utilisation de ProConnect, l'Agent est
           invité à se rapprocher de son administration de rattachement, ou à
           défaut, du Fournisseur de Service auquel il souhaite accéder.
@@ -385,16 +397,21 @@ function Cgu() {
           L'Agent est encouragé à se déconnecter à la fin de sa navigation, en
           particulier lorsqu'il utilise le Service au travers d'un appareil
           public ou qui ne lui appartient pas.
-          <br />
+        </p>
+        <p>
+        
           Les données transmises aux services en ligne des Partenaires restent
           de la responsabilité du Fournisseur d'identité, même si celles-ci sont
           transmises par les moyens techniques mis à disposition dans le
-          Service. <br />
+          Service.
+        </p>
+        <p>
           L'Agent utilisateur peut à tout moment faire valoir ses droits d'accès
           de rectification, et le cas échéant d'opposition et de suppression des
           données à caractère personnel auprès des Partenaires. Il doit alors
           s'adresser à son administration.
-          <br />
+       </p>
+        <p>
           Toute personne procédant à une fausse déclaration pour elle-même ou
           pour autrui s'expose, notamment, aux sanctions prévues à l'article
           441-1 du Code Pénal, prévoyant des peines pouvant aller jusqu'à trois
@@ -402,12 +419,16 @@ function Cgu() {
           s'engage également à ne jamais usurper l'identité d'un tiers en se
           faisant passer pour celui-ci vis à vis du Service au risque d'encourir
           un an d'emprisonnement et 15 000 euros d'amende sur la base de
-          l'article 226-4-1 du Code pénal. <br />
+          l'article 226-4-1 du Code pénal. 
+        </p>
+        <p>
           Il est également rappelé qu'est puni de trois ans d'emprisonnement et
           de 45 000 euros d'amende le fait, par toute personne agissant sans
           titre, de s'immiscer dans l'exercice d'une fonction publique en
           accomplissant l'un des actes réservés au titulaire de cette fonction
-          sur la base de l'article 433-12 du Code pénal. <br />
+          sur la base de l'article 433-12 du Code pénal.
+        </p>
+        <p>
           En sa qualité d'Agent de la fonction publique, l'Utilisateur se doit
           de respecter la loi n° 83-634 du 13 juillet 1983 portant droits et
           obligations des fonctionnaires, qui énonce notamment que&nbsp;:
@@ -428,7 +449,8 @@ function Cgu() {
           établissements publics qui en dépendent. La DINUM est donc engagée
           dans un processus d'amélioration de l'accessibilité de l'ensemble de
           ses sites.
-          <br />
+        </p>
+        <p>
           La DINUM se réserve la liberté de faire évoluer, de modifier ou de
           suspendre, sans préavis, le Service pour des raisons de maintenance ou
           pour tout autre motif jugé nécessaire. Une page d'information est
@@ -442,11 +464,13 @@ function Cgu() {
         <p>
           Les présentes conditions d'utilisation s'imposent à tout Agent
           utilisateur du Service.
-          <br />
+        </p>
           Les termes des présentes conditions générales d'utilisation peuvent
           être amendés à tout moment. Il appartient à l'Agent utilisateur de
           s'informer des conditions générales d'utilisation du Service en
-          vigueur. <br />
+          vigueur.
+      </p>
+      <p>
           La DINUM se réserve le droit de bloquer, sans préavis ni indemnité
           d'aucune sorte, tout Agent utilisateur soupçonné d'une utilisation
           illicite ou frauduleuse ainsi que contraire aux présentes CGU.
