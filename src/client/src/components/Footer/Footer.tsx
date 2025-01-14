@@ -7,6 +7,7 @@ function Footer() {
       termsLinkProps={{
         to: "/mentions-legales",
       }}
+      accessibilityLinkProps={{ to: "/accessibility" }}
       websiteMapLinkProps={{
         to: "/plan-du-site",
       }}
