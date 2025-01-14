@@ -7,14 +7,11 @@ function Footer() {
       termsLinkProps={{
         to: "/mentions-legales",
       }}
-      accessibilityLinkProps={{ to: "/accessibility" }}
+      accessibilityLinkProps={{ to: "/accessibilite" }}
       websiteMapLinkProps={{
         to: "/plan-du-site",
       }}
       bottomItems={[
-        <a href="/accessibility" className="fr-footer__bottom-link">
-          Accessibilité : non conforme
-        </a>,
         <a href="/cgu#url-anchor-dp" className="fr-footer__bottom-link">
           Données personnelles
         </a>,

@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/accessibility",
+        path: "/accessibilite",
         element: (
           <WrapperLayout>
             <Accessibility />
