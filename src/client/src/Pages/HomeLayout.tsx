@@ -21,11 +21,9 @@ function HomeLayout() {
                 la solution officielle qui vous identifie <br />
                 en tant que professionnel.
               </h1>
-              <a className="fr-raw-link" href="/eligibilite">
-                <Button>
-                  <i className={fr.cx("ri-user-star-line") + " fr-pr-2w"} />
+              <a className="fr-raw-link fr-btn" href="/eligibilite">
+                <i className={fr.cx("ri-user-star-line") + " fr-pr-2w"} />
                   Êtes-vous éligible&nbsp;?
-                </Button>
               </a>
             </div>
             <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
@@ -77,14 +75,8 @@ function HomeLayout() {
               La certification des dirigeants évolue et rejoint bientôt
               l'identification ProConnect !
             </p>
-            <a className="fr-raw-link" href="https://proconnect.gouv.fr">
-              <Button
-                iconId="fr-icon-external-link-line"
-                iconPosition="right"
-                priority="secondary"
-              >
+            <a className="fr-raw-link fr-btn" href="https://proconnect.gouv.fr">
                 En savoir plus sur la certification Insee
-              </Button>
             </a>
           </div>
           <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
