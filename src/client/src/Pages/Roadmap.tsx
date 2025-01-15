@@ -9,121 +9,136 @@ function Roadmap() {
         <div className="fr-grid-row fr-grid-row--gutters">
           <div className="fr-col-12">
             <nav className="navmenu fr-col-12">
-              <ul>
-                <li>
+              <ul className="roadmap-list">
+                <li className="roadmap-item">
                   <div className="bubble fr-py-5v">
                     <h2 className="fr-h6 fr-mb-1w">S2 2023</h2>
-                    <p className="fr-mb-0">
-                      • Fusion avec MonComptePro : tous les agents de la
-                      fonction publique peuvent se connecter à AgentConnect.
-                    </p>
-                    <p className="fr-mb-0">
-                      • Parcours utilisateur amélioré avec la connexion par
-                      adresse email.
-                    </p>
+                    <ul className="roadmap-event-list">
+                      <li>
+                        Fusion avec MonComptePro : tous les agents de la
+                        fonction publique peuvent se connecter à AgentConnect.
+                      </li>
+                      <li>
+                        Parcours utilisateur amélioré avec la connexion par
+                        adresse email.
+                      </li>
+                    </ul>
                   </div>
                 </li>
-                <li>
+                <li className="roadmap-item">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">S1 2024</h2>
-                    <p className="fr-mb-0">
-                      • Migration de l'infrastructure cloud de MonComptePro.
-                    </p>
-                    <p className="fr-mb-0">
-                      • Outillage interne : nouvelle interface de modération.
-                    </p>
-                    <p className="fr-mb-0">
-                      • Nouveau fournisseur de service :{" "}
-                      <a href="https://annuaire-entreprises.data.gouv.fr/">
-                        Annuaire des entreprises
-                      </a>
-                      .
-                    </p>
-                    <p className="fr-mb-0">
-                      • Premier fournisseur de service à destination du secteur
-                      privé :{" "}
-                      <a href="https://egapro.travail.gouv.fr/">Egapro</a>.
-                    </p>
-                    <p className="fr-mb-0">
-                      • la DGCCRF a rejoint la fédération d'identité
-                    </p>
-                    <p className="fr-mb-0">• Refonte graphique</p>
-                    <p className="fr-mb-0">
-                      • MonComptePro permet la connexion en Authentification
-                      Double Facteur
-                    </p>
-                    <p className="fr-mb-0">
-                      • Outillage AgentConnect (monitoring et segmentation)
-                    </p>
+                    <ul className="roadmap-event-list">
+                      <li>
+                        Migration de l'infrastructure cloud de MonComptePro.
+                      </li>
+                      <li>
+                        Outillage interne : nouvelle interface de modération.
+                      </li>
+                      <li>
+                        Nouveau fournisseur de service :{" "}
+                        <a href="https://annuaire-entreprises.data.gouv.fr/">
+                          Annuaire des entreprises
+                        </a>
+                      </li>
+                      <li>
+                        Premier fournisseur de service à destination du secteur
+                        privé :{" "}
+                        <a href="https://egapro.travail.gouv.fr/">Egapro</a>.
+                      </li>
+                      <li>la DGCCRF a rejoint la fédération d'identité</li>
+                      <li>Refonte graphique</li>
+                      <li>
+                        MonComptePro permet la connexion en Authentification
+                        Double Facteur
+                      </li>
+                      <li>
+                        Outillage AgentConnect (monitoring et segmentation)
+                      </li>
+                    </ul>
                   </div>
                 </li>
-                <li>
+                <li className="roadmap-item">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">T3 2024</h2>
-                    <p className="fr-mb-0">
-                      • France Travail rejoint la fédération d'identité.
-                    </p>
-                    <p className="fr-mb-0">
-                      • AgentConnect est disponible pour les professionnels du
-                      secteur privé et devient ProConnect.
-                    </p>
-                    <p className="fr-mb-0">
-                      • Intégration de la Fédération Éducation-Recherche
-                      (RENATER)
-                    </p>
-                    <p className="fr-mb-0">
-                      • Le ministère de la Justice rejoint la fédération
-                      d’identité
-                    </p>
-                    <p className="fr-mb-0">
-                      • La Gendarmerie Nationale et la Police Nationale
-                      rejoignent la Fédération d'Identité
-                    </p>
+                    <ul className="roadmap-event-list">
+                      <li>France Travail rejoint la fédération d'identité.</li>
+                      <li>
+                        AgentConnect est disponible pour les professionnels du
+                        secteur privé et devient ProConnect.
+                      </li>
+                      <li>
+                        Intégration de la Fédération Éducation-Recherche
+                        (RENATER)
+                      </li>
+                      <li>
+                        Le ministère de la Justice rejoint la fédération
+                        d’identité
+                      </li>
+                      <li>
+                        La Gendarmerie Nationale et la Police Nationale
+                        rejoignent la Fédération d'Identité
+                      </li>
+                    </ul>
                   </div>
                 </li>
-                <li className="active">
+                <li className="roadmap-item">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">T4 2024</h2>
-                    <p className="fr-mb-0">
-                      • InclusionConnect fusionne avec ProConnect
-                    </p>
-                    <p className="fr-mb-0">
-                      • Réconciliation d’identité avec MonComptePro
-                    </p>
-                    <p className="fr-mb-0">
-                      • Multi Factor Authentication dans ProConnect
-                    </p>
-                    <p className="fr-mb-0">
-                      • Le Ministère de l'Agriculture et de la Souveraineté
-                      Alimentaire rejoint la fédération d’identité
-                    </p>
-                    <p className="fr-mb-0">
-                      • Nouveau fournisseur de service :{" "}
-                      <a
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="https://www.tchap.gouv.fr/"
-                      >
-                        Tchap
-                      </a>
-                      .
-                    </p>
+                    <ul className="roadmap-event-list">
+                      <li>InclusionConnect fusionne avec ProConnect</li>
+                      <li>Réconciliation d’identité avec MonComptePro</li>
+                      <li>Multi Factor Authentication dans ProConnect</li>
+                      <li>
+                        Le Ministère de l'Agriculture et de la Souveraineté
+                        Alimentaire rejoint la fédération d’identité
+                      </li>
+                    </ul>
                   </div>
                 </li>
-                <li>
+                <li className="roadmap-item active">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">T1 2025</h2>
-                    <p className="fr-mb-0">• Certification dirigeants</p>
-                    <p className="fr-mb-0">• Espace Partenaires ProConnect</p>
-                    <p className="fr-mb-0">
-                      • Migration de l’infrastructure cloud de ProConnect.
-                    </p>
+                    <ul className="roadmap-event-list">
+                      <li>Certification dirigeants pour les indépendants</li>
+                      <li>
+                        Nouveau fournisseur de service :{" "}
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://www.tchap.gouv.fr/"
+                        >
+                          Tchap
+                        </a>
+                        .
+                      </li>
+                      <li>
+                        Les Services du Premier Ministre rejoignent la
+                        fédération d'identité
+                      </li>
+                    </ul>
                   </div>
                 </li>
-                <li>
+                <li className="roadmap-item">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">T2 2025</h2>
-                    <p className="fr-mb-0">• Délégation dirigeants</p>
+                    <ul className="roadmap-event-list">
+                      <li>Authentification multifacteur dans ProConnect</li>
+                      <li>Certification dirigeants pour toutes et tous</li>
+                      <li>Migration de l’infrastructure cloud de ProConnect</li>
+                      <li>Support de la carte agent</li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="roadmap-item">
+                  <div className="bubble">
+                    <h2 className="fr-h6 fr-mb-1w">S2 2025</h2>
+                    <ul className="roadmap-event-list">
+                      <li>
+                        Réconciliation d’identité entre Fournisseurs d'identité
+                      </li>
+                      <li>Délégation Dirigeants</li>
+                    </ul>
                   </div>
                 </li>
               </ul>
