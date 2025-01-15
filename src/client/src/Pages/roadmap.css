@@ -1,20 +1,25 @@
 /* FRISE CHRONOLOGIQUE */
 
-.navmenu ul {
+.navmenu ul.roadmap-list {
   list-style: none;
   padding-left: 30px;
   position: relative;
   border-left: 2px solid var(--background-action-high-blue-france);
 }
 
-.navmenu ul li {
+ul.roadmap-event-list li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navmenu ul li.roadmap-item {
   padding: 20px 0;
   padding-left: 15px;
   position: relative;
   line-height: 1rem;
 }
 
-.navmenu ul li::after {
+.navmenu ul li.roadmap-item::after {
   content: "";
   position: absolute;
   background: var(--background-default-grey);
@@ -28,11 +33,11 @@
   transition: background 250ms;
 }
 
-.navmenu ul li.active::after {
+.navmenu ul li.active.roadmap-item::after {
   background: var(--background-action-high-blue-france);
 }
 
-.navmenu ul li:last-child::before {
+.navmenu ul li.roadmap-item:last-child::before {
   content: "";
   width: 18px;
   top: 40px;
@@ -42,7 +47,7 @@
   left: -40px;
 }
 
-.navmenu ul li:first-child::before {
+.navmenu ul li.roadmap-item:first-child::before {
   content: "";
   width: 20px;
   top: 0;
