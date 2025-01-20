@@ -36,40 +36,26 @@ function Roadmap() {
                         Outillage interne : nouvelle interface de modération.
                       </li>
                       <li>
-                        Nouveau fournisseur de service :{" "}
-                        <a href="https://annuaire-entreprises.data.gouv.fr/">
-                          Annuaire des entreprises
-                        </a>
-                      </li>
-                      <li>
                         Premier fournisseur de service à destination du secteur
                         privé :{" "}
                         <a href="https://egapro.travail.gouv.fr/">Egapro</a>.
                       </li>
-                      <li>la DGCCRF a rejoint la fédération d'identité</li>
                       <li>Refonte graphique</li>
                       <li>
                         MonComptePro permet la connexion en Authentification
                         Double Facteur
-                      </li>
-                      <li>
-                        Outillage AgentConnect (monitoring et segmentation)
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li className="roadmap-item">
                   <div className="bubble">
-                    <h2 className="fr-h6 fr-mb-1w">T3 2024</h2>
+                    <h2 className="fr-h6 fr-mb-1w">S2 2024</h2>
                     <ul className="roadmap-event-list">
                       <li>France Travail rejoint la fédération d'identité.</li>
                       <li>
                         AgentConnect est disponible pour les professionnels du
                         secteur privé et devient ProConnect.
-                      </li>
-                      <li>
-                        Intégration de la Fédération Éducation-Recherche
-                        (RENATER)
                       </li>
                       <li>
                         Le ministère de la Justice rejoint la fédération
@@ -79,16 +65,7 @@ function Roadmap() {
                         La Gendarmerie Nationale et la Police Nationale
                         rejoignent la Fédération d'Identité
                       </li>
-                    </ul>
-                  </div>
-                </li>
-                <li className="roadmap-item">
-                  <div className="bubble">
-                    <h2 className="fr-h6 fr-mb-1w">T4 2024</h2>
-                    <ul className="roadmap-event-list">
                       <li>InclusionConnect fusionne avec ProConnect</li>
-                      <li>Réconciliation d’identité avec MonComptePro</li>
-                      <li>Multi Factor Authentication dans ProConnect</li>
                       <li>
                         Le Ministère de l'Agriculture et de la Souveraineté
                         Alimentaire rejoint la fédération d’identité
