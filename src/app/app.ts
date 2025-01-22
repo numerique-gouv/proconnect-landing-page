@@ -5,7 +5,7 @@ import { config } from "../config";
 
 import session from "express-session";
 import { buildRouter } from "./router";
-import { getNewRedisClient } from "../connectors/reddis.connector";
+import { createSessionStore } from "../sessionStores";
 
 declare module "express-session" {
   interface SessionData {
@@ -30,10 +30,7 @@ function buildApp() {
 
   app.use(
     session({
-      store: new RedisStore({
-        client: getNewRedisClient(),
-        prefix: "pc:session:",
-      }),
+      store: createSessionStore(),
       name: "pc_session",
       secret: config.SESSION_SECRET,
       rolling: true,

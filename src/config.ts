@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const config = {
+  ENV: process.env["ENV"] || "development",
   PORT: process.env["PORT"] || 3001,
   HOST_URL: process.env["HOST_URL"] || "",
   PC_CLIENT_ID: process.env["PC_CLIENT_ID"] || "",
