@@ -2,7 +2,7 @@
 
 ## 1. Lancer ce site localement
 
-Vous devez avoir npm et redis installés sur votre machine.
+Vous devez avoir npm installés sur votre machine.
 
 ### 1.1. Télécharger le repo
 
