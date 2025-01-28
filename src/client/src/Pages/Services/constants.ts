@@ -26,9 +26,8 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "Pad",
     url: "https://pad.numerique.gouv.fr/",
-    description: "Editer des documents et des textes de manière collaborative",
+    description: "Éditer des documents et des textes de manière collaborative",
     network: "internet",
-    categories: ["suiteNumerique"],
   },
   {
     title: "Audioconf",
@@ -78,14 +77,6 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://webinaire.numerique.gouv.fr/welcome",
     description:
       "Animer des présentations interactives avec un public à distance.",
-    network: "internet",
-    categories: ["suiteNumerique"],
-  },
-  {
-    title: "Rizomo",
-    url: "https://rizomo.numerique.gouv.fr/",
-    description:
-      "Accéder au portail des applications collaboratives interministérielles",
     network: "internet",
     categories: ["suiteNumerique"],
   },
@@ -450,6 +441,14 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Calculer et publier l'index égalité professionnelle pour promouvoir la parité.",
     network: "internet",
+    isOpenToPrivate: false,
+  },
+  {
+    title: "Docs",
+    url: "https://docs.numerique.gouv.fr",
+    description: "Éditer des documents et des textes de manière collaborative",
+    network: "internet",
+    categories: ["suiteNumerique"],
     isOpenToPrivate: false,
   },
 ];
