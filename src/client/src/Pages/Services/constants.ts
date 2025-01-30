@@ -322,7 +322,8 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Académie France Travail",
     url: "https://academiefrancetravail.org",
     network: "internet",
-    description: "Développer ses compétences dans le cadre du Réseau pour l'Emploi",
+    description:
+      "Développer ses compétences dans le cadre du Réseau pour l'Emploi",
     categories: ["inclusion"],
     isOpenToPrivate: true,
   },
