@@ -18,7 +18,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Resana",
     url: "https://resana.numerique.gouv.fr/public/",
     description:
-      "Collaborer en temps réel sur vos documents, présentations et tableurs, tout en facilitant les échanges au sein de vos équipes.",
+      "Collaborer en temps réel sur vos documents, présentations et tableurs, tout en facilitant les échanges au sein de vos équipes",
     isOpenToPrivate: true,
     network: "internet",
     categories: ["suiteNumerique"],
@@ -46,7 +46,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Webconférence de l’État",
     url: "https://webconf.numerique.gouv.fr/",
     description:
-      "Collaborer en temps réel avec vos équipes via des réunions à distance.",
+      "Collaborer en temps réel avec vos équipes via des réunions à distance",
     network: "internet",
     categories: ["suiteNumerique"],
   },
@@ -76,7 +76,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Webinaire",
     url: "https://webinaire.numerique.gouv.fr/welcome",
     description:
-      "Animer des présentations interactives avec un public à distance.",
+      "Animer des présentations interactives avec un public à distance",
     network: "internet",
     categories: ["suiteNumerique"],
   },
@@ -275,7 +275,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://projets.beta.numerique.gouv.fr",
     network: "internet",
     description:
-      "Organiser et suivre vos projets grâce à un outil collaboratif de gestion de tâches.",
+      "Organiser et suivre vos projets grâce à un outil collaboratif de gestion de tâches",
     categories: ["suiteNumerique"],
   },
   {
@@ -283,7 +283,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://aides-territoires.beta.gouv.fr",
     network: "internet",
     description:
-      "Faciliter la recherche d'aides des collectivités territoriales et de leurs partenaires locaux.",
+      "Faciliter la recherche d'aides des collectivités territoriales et de leurs partenaires locaux",
     categories: ["suiteTerritoriale"],
     isOpenToPrivate: true,
   },
@@ -307,7 +307,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://visio.numerique.gouv.fr",
     network: "internet",
     description:
-      "Communiquer en direct avec vos équipes ou partenaires grâce à des appels vidéo sécurisés.",
+      "Communiquer en direct avec vos équipes ou partenaires grâce à des appels vidéo sécurisés",
     categories: ["suiteNumerique", "suiteTerritoriale"],
   },
   {
@@ -320,9 +320,9 @@ const SERVICES_LIST: Array<serviceType> = [
   },
   {
     title: "Académie France Travail",
-    url: "https://app.bealink.io/?company=academiefrancetravail",
+    url: "https://academiefrancetravail.org",
     network: "internet",
-    description: "-",
+    description: "Développer ses compétences dans le cadre du Réseau pour l'Emploi",
     categories: ["inclusion"],
     isOpenToPrivate: true,
   },
@@ -331,7 +331,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://grist.numerique.gouv.fr",
     network: "internet",
     description:
-      "Structurer et analyser vos données dans des tableaux collaboratifs sur mesure.",
+      "Structurer et analyser vos données dans des tableaux collaboratifs sur mesure",
     categories: ["suiteNumerique"],
   },
   {
@@ -339,7 +339,7 @@ const SERVICES_LIST: Array<serviceType> = [
     url: "https://grist.incubateur.anct.gouv.fr/",
     network: "internet",
     description:
-      "Structurer et analyser vos données dans des tableaux collaboratifs sur mesure.",
+      "Structurer et analyser vos données dans des tableaux collaboratifs sur mesure",
     categories: ["suiteTerritoriale"],
   },
   {
@@ -389,13 +389,13 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     categories: ["suiteTerritoriale"],
     description:
-      "Permet aux communes de certifier et modifier les données présentes sur l'Annuaire des Collectivités",
+      "Certifier et modifier les données présentes sur l'Annuaire des Collectivités",
   },
   {
     title: "Les emplois de l'inclusion",
     url: "https://emplois.inclusion.beta.gouv.fr",
     description:
-      "Faciliter la mise en relation des personnes les plus éloignées de l’emploi avec des employeurs inclusifs.",
+      "Faciliter la mise en relation des personnes les plus éloignées de l’emploi avec des employeurs inclusifs",
     network: "internet",
     isOpenToPrivate: true,
     categories: ["inclusion"],
@@ -439,7 +439,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Egapro",
     url: "https://egapro.travail.gouv.fr/",
     description:
-      "Calculer et publier l'index égalité professionnelle pour promouvoir la parité.",
+      "Calculer et publier l'index égalité professionnelle pour promouvoir la parité",
     network: "internet",
     isOpenToPrivate: false,
   },
@@ -449,6 +449,15 @@ const SERVICES_LIST: Array<serviceType> = [
     description: "Éditer des documents et des textes de manière collaborative",
     network: "internet",
     categories: ["suiteNumerique"],
+    isOpenToPrivate: false,
+  },
+  {
+    title: "Agents en intervention",
+    url: "https://agentsenintervention.anct.gouv.fr",
+    description:
+      "Faciliter la gestion et le suivi des interventions techniques dans les collectivités",
+    network: "internet",
+    categories: ["suiteTerritoriale"],
     isOpenToPrivate: false,
   },
 ];
