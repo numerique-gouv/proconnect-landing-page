@@ -461,6 +461,15 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["suiteTerritoriale"],
     isOpenToPrivate: false,
   },
+  {
+    title: "Mon espace collectivité",
+    url: "https://monespacecollectivite.incubateur.anct.gouv.fr/",
+    description:
+      "Réunir en un seul endroit collectivités et État Local pour accélérer les projets et leur impact sur le territoire",
+    network: "internet",
+    categories: ["suiteTerritoriale"],
+    isOpenToPrivate: false,
+  },
 ];
 
 const titlesToKeep = [
