@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./roadmap.css";
+import { useTitle } from "../lib/useTitle";
 
 function Roadmap() {
-  useEffect(() => {
-    document.title = "Feuille de route - ProConnect";
-  }, []);
+  useTitle("Feuille de route");
+
   return (
     <React.Fragment>
       <div className="fr-container fr-my-5w">

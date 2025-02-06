@@ -1,9 +1,8 @@
-import { useEffect } from "react";
+import { useTitle } from "../lib/useTitle";
 
 function SiteMap() {
-  useEffect(() => {
-    document.title = "Plan du site - ProConnect";
-  }, []);
+  useTitle("Plan du site");
+
   return (
     <div className="fr-container fr-mt-2w fr-mb-4w">
       <h1 className="fr-h3">Plan du site</h1>

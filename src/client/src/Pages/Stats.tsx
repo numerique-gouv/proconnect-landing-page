@@ -1,9 +1,8 @@
-import { useEffect } from "react";
+import { useTitle } from "../lib/useTitle";
 
 function Stats() {
-  useEffect(() => {
-    document.title = "Statistiques - ProConnect";
-  }, []);
+  useTitle("Statistiques");
+
   return (
     <div className="fr-container">
       <div className="fr-grid-row">

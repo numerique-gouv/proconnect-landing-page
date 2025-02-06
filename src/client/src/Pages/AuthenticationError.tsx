@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import ConnectionLost from "../assets/connectionLost.svg";
 import { deleteUserInfo } from "../lib/authentication";
+import { useTitle } from "../lib/useTitle";
 
 function AuthenticationError() {
-  useEffect(() => {
-    document.title = "Erreur d'authentification - ProConnect";
-  }, []);
+  useTitle("Erreur d'authentification");
+
   useEffect(() => {
     deleteUserInfo();
   }, []);

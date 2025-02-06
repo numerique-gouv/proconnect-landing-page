@@ -1,12 +1,11 @@
-import { useEffect } from "react";
 import "./eligibility.css";
 
 import { WhoIsYourBoss } from "./WhoIsYourBoss";
+import { useTitle } from "../../lib/useTitle";
 
 function EligibilityTest() {
-  useEffect(() => {
-    document.title = "Testez votre éligibilité - ProConnect";
-  }, []);
+  useTitle("Testez votre éligibilité");
+
   return (
     <div className="fr-container" id="componentStart">
       <WhoIsYourBoss />

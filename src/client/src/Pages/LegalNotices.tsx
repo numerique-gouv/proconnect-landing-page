@@ -1,9 +1,8 @@
-import { useEffect } from "react";
+import { useTitle } from "../lib/useTitle";
 
 function LegalNotices() {
-  useEffect(() => {
-    document.title = "Mentions légales - ProConnect";
-  }, []);
+  useTitle("Mentions légales");
+
   return (
     <div className="fr-container fr-my-5w">
       <h1 className="fr-h3">Mentions légales</h1>
