@@ -479,8 +479,6 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["suiteTerritoriale"],
     isOpenToPrivate: false,
   },
-
-
 ];
 
 const titlesToKeep = [
