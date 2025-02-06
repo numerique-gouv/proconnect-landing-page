@@ -470,6 +470,17 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["suiteTerritoriale"],
     isOpenToPrivate: false,
   },
+  {
+    title: "Déclic eLearning",
+    url: "https://apprendre.asso-declic.fr/",
+    description:
+      "Accéder à la plateforme de eLearning dédiée aux OPSNs et collectivités adhérentes du réseau Déclic",
+    network: "internet",
+    categories: ["suiteTerritoriale"],
+    isOpenToPrivate: false,
+  },
+
+
 ];
 
 const titlesToKeep = [
