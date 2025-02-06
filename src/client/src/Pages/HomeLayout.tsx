@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import welcome from "../assets/welcome.svg";
 import "./layout.css";
 import { fr } from "@codegouvfr/react-dsfr";
@@ -7,6 +7,9 @@ import HowDoesItWork from "../components/HowDoesItWork/HowDoesItWork";
 import { tilesData } from "../data";
 
 function HomeLayout() {
+  useEffect(() => {
+    document.title = "Accueil - ProConnect";
+  }, []);
   return (
     <React.Fragment>
       <div className="fr-container--fluid background-welcome-page">

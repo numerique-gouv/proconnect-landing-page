@@ -1,10 +1,14 @@
 import Card from "../../components/Card/Card";
 import { Tag } from "@codegouvfr/react-dsfr/Tag";
 import "./services.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { categoryType, SERVICES_LIST } from "./constants";
 
 function Services() {
+  useEffect(() => {
+    document.title = "Annuaire des services - ProConnect";
+  }, []);
+
   const [selectedTag, setSelectedTag] = useState<categoryType | "all">("all");
 
   const services = computeFilteredServiceList();

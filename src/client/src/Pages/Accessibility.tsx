@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 function Accessibility() {
+  useEffect(() => {
+    document.title = "Accessibilité - ProConnect";
+  }, []);
   return (
     <div className="fr-container fr-my-5w">
       <div className="fr-grid-row">

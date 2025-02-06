@@ -11,6 +11,10 @@ function MonCompte() {
   const userInfo = getUserInfo();
   const navigate = useNavigate();
   useEffect(() => {
+    document.title = "Mon compte - ProConnect";
+  }, []);
+
+  useEffect(() => {
     if (!userInfo) {
       navigate("/");
     }

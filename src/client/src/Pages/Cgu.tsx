@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 function Cgu() {
+  useEffect(() => {
+    document.title = "CGU - ProConnect";
+  }, []);
   return (
     <div className="fr-container fr-my-5w">
       <div className="fr-grid-row">

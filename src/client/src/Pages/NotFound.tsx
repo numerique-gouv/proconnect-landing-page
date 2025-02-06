@@ -2,8 +2,12 @@ import Button from "@codegouvfr/react-dsfr/Button";
 import ConnectionLost from "../assets/connectionLost.svg";
 
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function NotFound() {
+  useEffect(() => {
+    document.title = "Page non trouvée - ProConnect";
+  }, []);
   let navigate = useNavigate();
   return (
     <div className="fr-container">

@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 function Stats() {
+  useEffect(() => {
+    document.title = "Statistiques - ProConnect";
+  }, []);
   return (
     <div className="fr-container">
       <div className="fr-grid-row">

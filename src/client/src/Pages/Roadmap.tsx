@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./roadmap.css";
 
 function Roadmap() {
+  useEffect(() => {
+    document.title = "Feuille de route - ProConnect";
+  }, []);
   return (
     <React.Fragment>
       <div className="fr-container fr-my-5w">

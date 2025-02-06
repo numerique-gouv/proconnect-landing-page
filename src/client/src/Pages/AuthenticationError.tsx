@@ -4,6 +4,9 @@ import { deleteUserInfo } from "../lib/authentication";
 
 function AuthenticationError() {
   useEffect(() => {
+    document.title = "Erreur d'authentification - ProConnect";
+  }, []);
+  useEffect(() => {
     deleteUserInfo();
   }, []);
   return (
