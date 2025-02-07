@@ -1,4 +1,8 @@
+import { useTitle } from "../lib/useTitle";
+
 function Stats() {
+  useTitle("Statistiques");
+
   return (
     <div className="fr-container">
       <div className="fr-grid-row">

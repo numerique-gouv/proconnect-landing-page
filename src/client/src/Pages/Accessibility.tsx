@@ -1,4 +1,8 @@
+import { useTitle } from "../lib/useTitle";
+
 function Accessibility() {
+  useTitle("Accessibilité");
+
   return (
     <div className="fr-container fr-my-5w">
       <div className="fr-grid-row">

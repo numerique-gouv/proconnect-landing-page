@@ -3,8 +3,11 @@ import { Tag } from "@codegouvfr/react-dsfr/Tag";
 import "./services.css";
 import { useState } from "react";
 import { categoryType, SERVICES_LIST } from "./constants";
+import { useTitle } from "../../lib/useTitle";
 
 function Services() {
+  useTitle("Annuaire des services");
+
   const [selectedTag, setSelectedTag] = useState<categoryType | "all">("all");
 
   const services = computeFilteredServiceList();

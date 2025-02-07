@@ -6,10 +6,13 @@ import { SHORT_LIST_SERVICES } from "./Services/constants";
 import { getUserInfo } from "../lib/authentication";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { useTitle } from "../lib/useTitle";
 
 function MonCompte() {
   const userInfo = getUserInfo();
   const navigate = useNavigate();
+  useTitle("Mon compte");
+
   useEffect(() => {
     if (!userInfo) {
       navigate("/");

@@ -1,7 +1,10 @@
 import React from "react";
 import "./roadmap.css";
+import { useTitle } from "../lib/useTitle";
 
 function Roadmap() {
+  useTitle("Feuille de route");
+
   return (
     <React.Fragment>
       <div className="fr-container fr-my-5w">

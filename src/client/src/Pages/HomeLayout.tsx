@@ -5,8 +5,11 @@ import { fr } from "@codegouvfr/react-dsfr";
 import news from "../assets/news.svg";
 import HowDoesItWork from "../components/HowDoesItWork/HowDoesItWork";
 import { tilesData } from "../data";
+import { useTitle } from "../lib/useTitle";
 
 function HomeLayout() {
+  useTitle("Accueil");
+
   return (
     <React.Fragment>
       <div className="fr-container--fluid background-welcome-page">

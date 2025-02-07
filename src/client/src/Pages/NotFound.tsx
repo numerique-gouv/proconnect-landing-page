@@ -2,8 +2,11 @@ import Button from "@codegouvfr/react-dsfr/Button";
 import ConnectionLost from "../assets/connectionLost.svg";
 
 import { useNavigate } from "react-router-dom";
+import { useTitle } from "../lib/useTitle";
 
 function NotFound() {
+  useTitle("Page non trouvée");
+
   let navigate = useNavigate();
   return (
     <div className="fr-container">

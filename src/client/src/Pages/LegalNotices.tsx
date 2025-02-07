@@ -1,4 +1,8 @@
+import { useTitle } from "../lib/useTitle";
+
 function LegalNotices() {
+  useTitle("Mentions légales");
+
   return (
     <div className="fr-container fr-my-5w">
       <h1 className="fr-h3">Mentions légales</h1>

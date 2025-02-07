@@ -1,4 +1,8 @@
+import { useTitle } from "../lib/useTitle";
+
 function SiteMap() {
+  useTitle("Plan du site");
+
   return (
     <div className="fr-container fr-mt-2w fr-mb-4w">
       <h1 className="fr-h3">Plan du site</h1>
