@@ -10,7 +10,7 @@ function Header() {
     {
       iconId: "fr-icon-question-line" as const,
       linkProps: {
-        to: "https://agentconnect.crisp.help/fr/",
+        to: "https://proconnect.crisp.help/fr/",
       },
       text: "Aide",
     },
