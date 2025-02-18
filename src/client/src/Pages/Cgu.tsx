@@ -79,19 +79,9 @@ function Cgu() {
           </li>
 
           <li className="fr-py-2w">
-            La
-            <span
-              className="fr-icon-file-download-line"
-              aria-hidden="true"
-            ></span>
-            <a href="https://www.gouvernement.fr/sites/default/files/contenu/piece-jointe/2021/05/20210601-dinum-ac-creation_agentconnect-vf.pdf">
-              <span>
-                décision n°DINUM-202106-01 du 1er juin 2021 (PDF 754 Ko)
-              </span>
-            </a>
-            , signée par le DINUM, créant le Service ProConnect à destination
-            des agents de la fonction publique d'État et des opérateurs de
-            l'État.
+            La décision n°DINUM-202106-01 du 1er juin 2021, signée par le DINUM,
+            créant le Service ProConnect à destination des agents de la fonction
+            publique d'État et des opérateurs de l'État.
           </li>
         </ul>
         <h2>2. Objet du document</h2>
@@ -479,17 +469,6 @@ function Cgu() {
         d'aucune sorte, tout Agent utilisateur soupçonné d'une utilisation
         illicite ou frauduleuse ainsi que contraire aux présentes CGU.
       </p>
-      <h2 className="fr-col-12">Historique</h2>
-      <a
-        className="fr-raw-link border-grey fr-py-2w fr-col-8"
-        href="https://agentconnect.gouv.fr/files/20210601-DINUM-AC-CGU%20Agents_v1.0.pdf"
-      >
-        <span className="fr-icon-file-download-line" aria-hidden="true"></span>
-        &nbsp;
-        <span>
-          Version 1.0 - Applicable à partir du 01 juin 2021 (PDF 142 Ko)
-        </span>
-      </a>
     </div>
   );
 }
