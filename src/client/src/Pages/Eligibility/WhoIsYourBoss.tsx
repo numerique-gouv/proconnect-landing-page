@@ -20,7 +20,7 @@ export function WhoIsYourBoss() {
               <img src={eligibility} alt="" />
             </div>
             <div className="fr-col-12 fr-col-md-6">
-              <h1 className="fr-h2">Testez votre éligibilité&nbsp;!</h1>
+              <h1 className="fr-h2">Testez votre éligibilité !</h1>
               <RadioButtons
                 legend="Qui est votre employeur ?"
                 name="radio"

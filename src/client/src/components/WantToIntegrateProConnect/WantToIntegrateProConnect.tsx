@@ -7,15 +7,15 @@ function WantToIntegrateProConnect() {
         <div className="fr-grid-row fr-grid-row--center fr-grid-row--middle">
           <div>
             <p className="centered-content delete-margin-bottom bold">
-              Vous voulez intégrer ProConnect sur votre site&nbsp;?
+              Vous voulez intégrer ProConnect sur votre site ?
             </p>
           </div>
         </div>
       </div>
       <div className="fr-container centered-text fr-my-2w">
         <a
-          className="fr-raw-link "
-          href="mailto:support.partenaires@agentconnect.gouv.fr"
+          className="fr-raw-link"
+          href="mailto:support+partenaires@proconnect.gouv.fr"
         >
           <Button
             className="fr-mr-2w fr-pl-5w fr-pr-5w"
@@ -26,7 +26,7 @@ function WantToIntegrateProConnect() {
         </a>
         <a
           className="fr-raw-link"
-          href="https://github.com/numerique-gouv/agentconnect-documentation/blob/main/README.md#-agentconnect---documentation"
+          href="https://github.com/numerique-gouv/proconnect-documentation/blob/main/README.md"
         >
           <Button
             priority="secondary"

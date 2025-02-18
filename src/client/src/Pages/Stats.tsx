@@ -1,18 +1,15 @@
 import { useTitle } from "../lib/useTitle";
+import { CallOut } from "@codegouvfr/react-dsfr/CallOut";
 
 function Stats() {
   useTitle("Statistiques");
 
   return (
-    <div className="fr-container">
-      <div className="fr-grid-row">
-        <iframe
-          className="fr-col-12"
-          height="2000"
-          src="https://stats.agentconnect.gouv.fr/public/dashboard/59405cec-eb60-47c6-9eb2-0f4ee9a0378c"
-          width="100%"
-        ></iframe>
-      </div>
+    <div className="fr-container fr-mt-9w">
+      <CallOut iconId="ri-information-line" title="Statistiques ProConnect">
+        Les statistiques sont momentanément indisponibles. Nous nous excusons
+        pour la gêne occasionnée.
+      </CallOut>
     </div>
   );
 }

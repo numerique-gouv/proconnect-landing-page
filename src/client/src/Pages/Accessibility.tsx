@@ -45,9 +45,9 @@ function Accessibility() {
           accessible ou obtenir le contenu sous une autre forme :
           <ul>
             <li>
-              Email :{" "}
-              <a href="mailto:support@agentconnect.gouv.fr">
-                support@agentconnect.gouv.fr
+              Email :
+              <a href="mailto:support+federation@proconnect.gouv.fr">
+                support+federation@proconnect.gouv.fr
               </a>
             </li>
             <li>

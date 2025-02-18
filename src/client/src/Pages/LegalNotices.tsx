@@ -24,8 +24,8 @@ function LegalNotices() {
       </p>
       <h2 className="fr-h4">Directeur de publication</h2>
       <p>
-        Stéphanie Schaer&nbsp;: Directrice du programme FranceConnect - Cheffe
-        de mission DINUM chez direction interministérielle du numérique (DINUM).
+        Stéphanie Schaer : Directrice du programme FranceConnect - Cheffe de
+        mission DINUM chez direction interministérielle du numérique (DINUM).
       </p>
       <h2 className="fr-h4">Conception et gestion du site</h2>
       <p>
@@ -52,7 +52,7 @@ function LegalNotices() {
         <br />
         RCS: 527 594 493
         <br />
-        Siège social&nbsp;: 1 rue Royale, 92210 Saint Cloud, France
+        Siège social : 1 rue Royale, 92210 Saint Cloud, France
       </p>
     </div>
   );
