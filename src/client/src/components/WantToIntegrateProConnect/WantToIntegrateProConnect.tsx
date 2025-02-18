@@ -7,7 +7,7 @@ function WantToIntegrateProConnect() {
         <div className="fr-grid-row fr-grid-row--center fr-grid-row--middle">
           <div>
             <p className="centered-content delete-margin-bottom bold">
-              Vous voulez intégrer ProConnect sur votre site&nbsp;?
+              Vous voulez intégrer ProConnect sur votre site ?
             </p>
           </div>
         </div>

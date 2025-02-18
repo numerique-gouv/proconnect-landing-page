@@ -21,9 +21,7 @@ function Result(props: { subtitle: string }) {
               <Lottie options={defaultOptions} height={300} width={300} />
             </div>
             <div className="fr-col-12 fr-col-md-6">
-              <h1 className="fr-h2">
-                Bonne nouvelle, vous êtes éligible&nbsp;!
-              </h1>
+              <h1 className="fr-h2">Bonne nouvelle, vous êtes éligible !</h1>
               <p>{props.subtitle}</p>
               <a className="fr-raw-link fr-btn" href="/services">
                 Explorer l'annuaire des sites
