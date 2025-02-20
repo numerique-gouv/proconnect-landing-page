@@ -64,7 +64,7 @@ function MonCompte() {
             {isIdentityProviderPCI && (
               <a
                 className="fr-raw-link"
-                href="https://app.moncomptepro.beta.gouv.fr/personal-information"
+                href="https://identite.proconnect.gouv.fr/personal-information"
               >
                 <Button
                   iconId="fr-icon-settings-5-line"

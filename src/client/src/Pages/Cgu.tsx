@@ -10,88 +10,77 @@ function Cgu() {
         <h2 className="fr-col-12">1. Préambule</h2>
         <p>
           Ce document présente les modalités d'engagement à l'utilisation de
-          ProConnect (ci-après le «&nbsp;Service&nbsp;») pour les Agents
-          utilisateurs du Service. Il traduit leurs engagements de chacun en vue
-          de faciliter et de simplifier l'accès aux outils utilisés dans le
-          cadre professionnel pour les Utilisateurs du Service. Il s'inscrit
-          dans le cadre juridique suivant&nbsp;:
+          ProConnect (ci-après le « Service ») pour les Agents utilisateurs du
+          Service. Il traduit leurs engagements de chacun en vue de faciliter et
+          de simplifier l'accès aux outils utilisés dans le cadre professionnel
+          pour les Utilisateurs du Service. Il s'inscrit dans le cadre juridique
+          suivant :
         </p>
         <ul>
           <li className="fr-pb-2w">
-            La protection de la vie privée, notamment&nbsp;
+            La protection de la vie privée, notamment 
             <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32016R0679&from=FR">
               règlement (UE) 2016/679 du 27 avril 2016
             </a>
-            &nbsp;(dit le RGPD) et de la&nbsp;
+             (dit le RGPD) et de la 
             <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/">
               loi n° 78-17 du 6 janvier 1978
             </a>
-            &nbsp;modifiée relative à l'informatique, aux fichiers et aux
-            libertés.
+             modifiée relative à l'informatique, aux fichiers et aux libertés.
           </li>
 
           <li className="fr-py-2w">
             La relation entre le public et l'administration, telle que prévue
-            par le&nbsp;
+            par le 
             <a href="https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000031366350/">
               Code des relations entre le public et l'administration
             </a>
-            &nbsp;pour les dispositions s'appliquant également aux agents.
+             pour les dispositions s'appliquant également aux agents.
           </li>
 
           <li className="fr-py-2w">
-            La&nbsp;
+            La 
             <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000504704/#:~:text=Aucun%20fonctionnaire%20ne%20doit%20subir,de%20compromettre%20son%20avenir%20professionnel.">
               loi n° 83-634 du 13 juillet 1983
             </a>
-            &nbsp;portant droits et obligations des fonctionnaires.
+             portant droits et obligations des fonctionnaires.
           </li>
 
           <li className="fr-py-2w">
-            La&nbsp;
+            La 
             <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000801164/">
               loi n° 2004-575 du 21 juin 2004
             </a>
-            &nbsp;pour la confiance dans l'économie numérique.
+             pour la confiance dans l'économie numérique.
           </li>
 
           <li className="fr-py-2w">
             La sécurité des systèmes d'information et notamment du référentiel
-            général de sécurité (RGS) encadré par le&nbsp;
+            général de sécurité (RGS) encadré par le 
             <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021779444/#:~:text=Copier%20le%20texte-,D%C3%A9cret%20n%C2%B0%202010%2D112%20du%202%20f%C3%A9vrier%202010%20pris,et%20entre%20les%20autorit%C3%A9s%20administratives">
               décret n° 2010-112 du 2 février 2010
             </a>
-            &nbsp; pris pour l'application des articles 9, 10 et 12 de&nbsp;
+              pris pour l'application des articles 9, 10 et 12 de 
             <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000636232/">
               l'ordonnance n° 2005-1516 du 8 décembre 2005
             </a>
-            &nbsp;relative aux échanges électroniques entre les usagers et les
+             relative aux échanges électroniques entre les usagers et les
             autorités administratives et entre les autorités administratives.
           </li>
 
           <li className="fr-py-2w">
-            Le&nbsp;
+            Le 
             <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039281619/">
               décret n° 2019-1088 du 25 octobre 2019
             </a>
-            &nbsp;relatif au système d'information et de communication de l'Etat
-            et à la direction interministérielle du numérique.
+             relatif au système d'information et de communication de l'Etat et à
+            la direction interministérielle du numérique.
           </li>
 
           <li className="fr-py-2w">
-            La
-            <span
-              className="fr-icon-file-download-line"
-              aria-hidden="true"
-            ></span>
-            <a href="https://www.gouvernement.fr/sites/default/files/contenu/piece-jointe/2021/05/20210601-dinum-ac-creation_agentconnect-vf.pdf">
-              <span>
-                décision n°DINUM-202106-01 du 1er juin 2021 (PDF 754 Ko)
-              </span>
-            </a>
-            , signée par le DINUM, créant le Service ProConnect à destination
-            des agents de la fonction publique d'État et des opérateurs de
-            l'État.
+            La décision n°DINUM-202106-01 du 1er juin 2021, signée par le DINUM,
+            créant le Service ProConnect à destination des agents de la fonction
+            publique d'État et des opérateurs de l'État.
           </li>
         </ul>
         <h2>2. Objet du document</h2>
@@ -103,28 +92,26 @@ function Cgu() {
           centrales, services déconcentrés) et des opérateurs de l'État présents
           dans les annexes générales au projet de loi de finances de l'année.
         </p>
-        <h2>3. Service «&nbsp;ProConnect&nbsp;»</h2>
+        <h2>3. Service « ProConnect »</h2>
         <h3 className="fr-col-12">3.1. Définitions</h3>
         <p>
           ProConnect est un service mis en œuvre par la DINUM, dénommé ci-après
-          le <b>«&nbsp;Service&nbsp;»</b>.
+          le <b>« Service »</b>.
         </p>
         <p>
-          Un <b>«&nbsp;Agent&nbsp;»</b>, ou
-          <b>«&nbsp;Agent utilisateur&nbsp;»</b>, est toute personne physique
-          disposant d'un compte vérifié dans le cadre de son activité
-          professionnelle.
+          Un <b>« Agent »</b>, ou
+          <b>« Agent utilisateur »</b>, est toute personne physique disposant
+          d'un compte vérifié dans le cadre de son activité professionnelle.
         </p>
         <p>
-          Un <b>«&nbsp;Fournisseur de Services&nbsp;»</b> (FS), entité
-          partenaire du Service ProConnect qui propose un ou des services
-          nécessitant l'authentification en ligne des personnes habilitées à y
-          accéder.
+          Un <b>« Fournisseur de Services »</b> (FS), entité partenaire du
+          Service ProConnect qui propose un ou des services nécessitant
+          l'authentification en ligne des personnes habilitées à y accéder.
         </p>
         <p>
           L'ensemble des parties prenantes au Service (Fournisseurs d'Identité,
           Fournisseurs de Services) sont dénommées ci-après les
-          <b>«&nbsp;Partenaires&nbsp;»</b>.
+          <b>« Partenaires »</b>.
         </p>
         <h3>3.2. Objet de ProConnect</h3>
         <p>
@@ -141,8 +128,8 @@ function Cgu() {
         <p>
           Ainsi, ProConnect permet de
           <i>
-            «&nbsp;Contribuer au décloisonnement des applications ministérielles
-            et à leur ouverture à l'interministériel&nbsp;»
+            « Contribuer au décloisonnement des applications ministérielles et à
+            leur ouverture à l'interministériel »
           </i>
           conformément aux 8 missions du programme TECH.GOUV.
         </p>
@@ -159,7 +146,7 @@ function Cgu() {
           publique d'État (administrations centrales, services déconcentrés) et
           des opérateurs de l'État.
           <br />
-          «&nbsp;ProConnect&nbsp;» repose sur une fédération d'identité.
+          « ProConnect » repose sur une fédération d'identité.
         </p>
         <p>
           Le service ProConnect permet à un agent d'accéder à des services en
@@ -176,11 +163,11 @@ function Cgu() {
           d'un opérateur de l'État.
         </p>
         <p>
-          <i>Cinématique d'usage&nbsp;:</i> <br />
+          <i>Cinématique d'usage :</i> <br />
           Pour accéder à un service en ligne, l'Agent utilisateur clique sur le
-          bouton de connexion «&nbsp;ProConnect&nbsp;» présent sur la page dudit
-          service puis sélectionne un compte (fournisseur d'identité) qu'il
-          connait parmi ceux proposés.
+          bouton de connexion « ProConnect » présent sur la page dudit service
+          puis sélectionne un compte (fournisseur d'identité) qu'il connait
+          parmi ceux proposés.
         </p>
         <p>
           ProConnect le redirige alors vers la page de connexion de ce compte
@@ -195,48 +182,48 @@ function Cgu() {
           En utilisant le Service, l'Agent utilisateur reconnait être informé de
           l'échange et du partage des informations nécessaires à son
           identification et authentification. Ainsi les informations suivantes
-          sont nécessairement échangées&nbsp;:
+          sont nécessairement échangées :
         </p>
         <h4 className="fr-col-12">
-          1° Pour la gestion de l'identification de l'agent utilisateur&nbsp;:
+          1° Pour la gestion de l'identification de l'agent utilisateur :
         </h4>
         <ul>
           <li>
-            De façon obligatoire, les informations relatives à l'identité&nbsp;:
+            De façon obligatoire, les informations relatives à l'identité :
             <ul>
               <li className="secondary-list">
                 Les informations relatives à l'état-civil et notamment le prénom
                 et le nom utilisés par l'agent dans le cadre de ses fonctions
-                (nom de naissance, nom patronymique ou nom d'usage)&nbsp;;
+                (nom de naissance, nom patronymique ou nom d'usage) ;
               </li>
               <li className="secondary-list">
-                l'adresse de courrier électronique professionnelle&nbsp;;
+                l'adresse de courrier électronique professionnelle ;
               </li>
               <li className="secondary-list">
                 les données techniques indispensables au bon fonctionnement du
                 service et qui permettent notamment d'assurer sa sécurité. Ces
-                données sont&nbsp;: clés de fédération ou «&nbsp;alias&nbsp;»
-                générés par le système à la connexion de l'usager, comprenant
-                notamment l'identifiant technique propre au Fournisseur
-                d'identité et un alias technique unique propre au système.
+                données sont : clés de fédération ou « alias » générés par le
+                système à la connexion de l'usager, comprenant notamment
+                l'identifiant technique propre au Fournisseur d'identité et un
+                alias technique unique propre au système.
               </li>
             </ul>
           </li>
           <li>
             De façon facultative, les informations relatives à la situation
-            professionnelle&nbsp;:
+            professionnelle :
             <ul>
               <li className="secondary-list">
-                le numéro de téléphone de l'agent&nbsp;;
+                le numéro de téléphone de l'agent ;
               </li>
               <li className="secondary-list">
                 le numéro d'inscription de l'administration ou de l'opérateur de
                 l'État au répertoire des entreprises et de leurs établissements
-                (SIREN ou SIRET)&nbsp;;
+                (SIREN ou SIRET) ;
               </li>
               <li className="secondary-list">
                 l'unité d'affectation (intitulé de la direction, du service,
-                …)&nbsp;;
+                …) ;
               </li>
               <li className="secondary-list">
                 des informations relatives aux fonctions ou au rôle occupé par
@@ -251,10 +238,10 @@ function Cgu() {
         <h4>
           2° Pour la gestion de la traçabilité des accès de l'utilisateur les
           catégories de données à caractère personnel enregistrées sont les
-          suivantes&nbsp;:
+          suivantes :
         </h4>
         <ul>
-          <li>l'adresse IP et numéro du port source&nbsp;;</li>
+          <li>l'adresse IP et numéro du port source ;</li>
           <li>les dates et heures de connexion au Service ProConnect.</li>
         </ul>
         <h2 className="fr-col-12 fr-mt-5v" id="confidential">
@@ -313,11 +300,11 @@ function Cgu() {
         <h4>4.2.2 Droits des personnes concernées</h4>
         <p>
           La DINUM et les Partenaires garantissent aux Agents utilisateurs du
-          Service les droits prévus aux articles 39 et suivants de la&nbsp;
+          Service les droits prévus aux articles 39 et suivants de la 
           <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/">
             loi n° 78-17 du 6 janvier 1978
           </a>
-          &nbsp;relative à l'informatique aux fichiers et aux libertés. Ils
+           relative à l'informatique aux fichiers et aux libertés. Ils
           s'exercent, notamment s'agissant des données mentionnées au 2° de
           l'article 3.4, auprès de la DINUM située au 20, avenue de Ségur, 75007
           Paris, par voie postale ou par voie électronique, dans les conditions
@@ -332,8 +319,8 @@ function Cgu() {
           visites, pages consultées) mais utilise des cookies nécessaires au bon
           fonctionnement du Service, respectant les conditions d'exemption du
           consentement de l'internaute définies par la recommandation
-          «&nbsp;Cookies&nbsp;» de la Commission nationale informatique et
-          libertés (CNIL).
+          « Cookies » de la Commission nationale informatique et libertés
+          (CNIL).
         </p>
         <h4>4.2.4 Durée de Conservation</h4>
         <p>
@@ -381,7 +368,7 @@ function Cgu() {
         <h2 className="fr-col-12">5. Rôles et engagements de l'agent</h2>
         <p>
           L'Agent utilisateur s'engage à respecter les présentes CGU et en
-          particulier à&nbsp;:
+          particulier à :
         </p>
         <ul>
           <li>Utiliser le Service dans un cadre strictement professionnel.</li>
@@ -436,13 +423,12 @@ function Cgu() {
         <p>
           En sa qualité d'Agent de la fonction publique, l'Utilisateur se doit
           de respecter la loi n° 83-634 du 13 juillet 1983 portant droits et
-          obligations des fonctionnaires, qui énonce notamment que&nbsp;:
-          «&nbsp;Les fonctionnaires sont tenus au secret professionnel dans le
-          cadre des règles instituées dans le code pénal. Les fonctionnaires
-          doivent faire preuve de discrétion professionnelle pour tous les
-          faits, informations ou documents dont ils ont connaissance dans
-          l'exercice ou à l'occasion de l'exercice de leurs fonctions
-          […]&nbsp;».
+          obligations des fonctionnaires, qui énonce notamment que : « Les
+          fonctionnaires sont tenus au secret professionnel dans le cadre des
+          règles instituées dans le code pénal. Les fonctionnaires doivent faire
+          preuve de discrétion professionnelle pour tous les faits, informations
+          ou documents dont ils ont connaissance dans l'exercice ou à l'occasion
+          de l'exercice de leurs fonctions […] ».
         </p>
         <h2 className="fr-col-12">6. Accessibilité et disponibilité</h2>
         <p>
@@ -479,17 +465,6 @@ function Cgu() {
         d'aucune sorte, tout Agent utilisateur soupçonné d'une utilisation
         illicite ou frauduleuse ainsi que contraire aux présentes CGU.
       </p>
-      <h2 className="fr-col-12">Historique</h2>
-      <a
-        className="fr-raw-link border-grey fr-py-2w fr-col-8"
-        href="https://agentconnect.gouv.fr/files/20210601-DINUM-AC-CGU%20Agents_v1.0.pdf"
-      >
-        <span className="fr-icon-file-download-line" aria-hidden="true"></span>
-        &nbsp;
-        <span>
-          Version 1.0 - Applicable à partir du 01 juin 2021 (PDF 142 Ko)
-        </span>
-      </a>
     </div>
   );
 }

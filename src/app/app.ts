@@ -1,6 +1,5 @@
 import Express from "express";
 import path from "path";
-import RedisStore from "connect-redis";
 import { config } from "../config";
 
 import session from "express-session";
