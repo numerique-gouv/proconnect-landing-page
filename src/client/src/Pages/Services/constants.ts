@@ -479,6 +479,13 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["suiteTerritoriale"],
     isOpenToPrivate: false,
   },
+  {
+    title: "Portail-Immo",
+    url: "https://www.portail-immo.gouv.fr",
+    description:
+      "Centraliser l'information, la documentation et l'accès aux applications de la politique immobilière de l'État en un point d'entrée unique.",
+    network: "internet",
+  },
 ];
 
 const titlesToKeep = [
