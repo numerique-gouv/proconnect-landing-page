@@ -22,7 +22,7 @@ function Header() {
       text: "Feuille de route",
     },
     ...(isConnected
-      ? [<DropDownLogout />]
+      ? [<DropDownLogout key="dropDownLogout" />]
       : [
           {
             iconId: "fr-icon-account-circle-line" as const,
