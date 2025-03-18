@@ -517,15 +517,8 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
   },
   {
-    title: "MonAideCyber",
-    url: "https://monaidecyber.ssi.gouv.fr/",
-    description:
-      "Accompagner les entités publiques ou privées à améliorer leur niveau de cybersécurité au moyen d’un diagnostic.",
-    network: "internet",
-  },
-  {
     title: "Maestro",
-    url: "https://maestro.beta.gouv.fr/login-callback/",
+    url: "https://maestro.beta.gouv.fr/",
     description:
       "Faciliter et encadrer l'échange d'informations en temps réel entre les acteurs du dispositif de contrôle officiel de la DGAL.",
     network: "internet",
@@ -534,8 +527,16 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "BeforeCare",
     url: "https://beforecare.lescrous.fr/home/",
     description:
-      "Permettre aux établissements en zone blanches d’inscrire leurs étudiants éligibles à l'aide carte restauration universitaire.",
+      "Permettre aux établissements en zone blanche d’inscrire leurs étudiants éligibles à l'aide carte restauration universitaire.",
     network: "internet",
+  },
+  {
+    title: "Mon Portail Pro",
+    url: "https://monportailpro.francetravail.fr/",
+    description:
+      "Accéder à la marketplace des acteurs du réseau pour l'emploi.",
+    network: "internet",
+    categories: ["inclusion"],
   },
 ];
 
