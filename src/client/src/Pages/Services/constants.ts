@@ -486,6 +486,58 @@ const SERVICES_LIST: Array<serviceType> = [
       "Centraliser l'information, la documentation et l'accès aux applications de la politique immobilière de l'État en un point d'entrée unique.",
     network: "internet",
   },
+  {
+    title: "MesServicesCyber",
+    url: "https://messervices.cyber.gouv.fr/",
+    description:
+      "Accéder aux services et ressources cyber proposés par l’ANSSI et ses partenaires.",
+    network: "internet",
+  },
+  {
+    title: "Mon Indemnisation Justice",
+    url: "https://mon-indemnisation.anje-justice.fr/",
+    description:
+      "Réduire la durée de traitement des demandes d’indemnisation des usagers victimes des opérations de justice.",
+    network: "internet",
+    isOpenToPrivate: false,
+  },
+  {
+    title: "TrackDéchets - Fiche Établissement",
+    url: "https://fiche-etablissement.trackdechets.beta.gouv.fr/",
+    description:
+      "Mettre à disposition de l'administration des données sur la traçabilité des déchets.",
+    network: "internet",
+    isOpenToPrivate: false,
+  },
+  {
+    title: "MonAideCyber",
+    url: "https://monaidecyber.ssi.gouv.fr/",
+    description:
+      "Accompagner les entités publiques ou privées à améliorer leur niveau de cybersécurité au moyen d’un diagnostic.",
+    network: "internet",
+  },
+  {
+    title: "Maestro",
+    url: "https://maestro.beta.gouv.fr/",
+    description:
+      "Faciliter et encadrer l'échange d'informations en temps réel entre les acteurs du dispositif de contrôle officiel de la DGAL.",
+    network: "internet",
+  },
+  {
+    title: "BeforeCare",
+    url: "https://beforecare.lescrous.fr/home/",
+    description:
+      "Permettre aux établissements en zone blanche d’inscrire leurs étudiants éligibles à l'aide carte restauration universitaire.",
+    network: "internet",
+  },
+  {
+    title: "Mon Portail Pro",
+    url: "https://monportailpro.francetravail.fr/",
+    description:
+      "Accéder à la marketplace des acteurs du réseau pour l'emploi.",
+    network: "internet",
+    categories: ["inclusion"],
+  },
 ];
 
 const titlesToKeep = [
