@@ -1,6 +1,5 @@
 import { Badge } from "@codegouvfr/react-dsfr/Badge";
 import yourProfil from "../assets/your-profil.svg";
-import Button from "@codegouvfr/react-dsfr/Button";
 import Card from "../components/Card/Card";
 import { SHORT_LIST_SERVICES } from "./Services/constants";
 import { getUserInfo } from "../lib/authentication";
@@ -63,16 +62,10 @@ function MonCompte() {
             </div>
             {isIdentityProviderPCI && (
               <a
-                className="fr-raw-link"
+                className="fr-btn fr-btn--secondary fr-icon-settings-5-line fr-btn--icon-left fr-mt-2w"
                 href="https://identite.proconnect.gouv.fr/personal-information"
               >
-                <Button
-                  iconId="fr-icon-settings-5-line"
-                  priority="secondary"
-                  className="fr-mt-2w"
-                >
-                  Gérer le profil
-                </Button>
+                Gérer le profil
               </a>
             )}
           </div>
@@ -88,10 +81,8 @@ function MonCompte() {
                   key={index}
                 ></Card>
               ))}
-              <a href="/services">
-                <Button className="centered-content fr-mt-4w">
-                  Voir tous les services
-                </Button>
+              <a className="fr-btn centered-content fr-mt-4w" href="/services">
+                Voir tous les services
               </a>
             </div>
           </div>
