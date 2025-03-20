@@ -146,7 +146,8 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "DataPass",
     url: "https://datapass.api.gouv.fr/",
-    description: "Profiter facilement d’habilitations conformes entre administrations et accéder à des données et services en accès restreint",
+    description:
+      "Profiter facilement d’habilitations conformes entre administrations et accéder à des données et services en accès restreint",
     isOpenToPrivate: true,
     network: "internet",
   },
