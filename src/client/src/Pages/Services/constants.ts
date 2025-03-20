@@ -146,7 +146,8 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "DataPass",
     url: "https://datapass.api.gouv.fr/",
-    description: "Régulariser l'exploitation de données à caractères personnel",
+    description:
+      "Profiter facilement d’habilitations conformes entre administrations et accéder à des données et services en accès restreint",
     isOpenToPrivate: true,
     network: "internet",
   },
@@ -537,6 +538,14 @@ const SERVICES_LIST: Array<serviceType> = [
       "Accéder à la marketplace des acteurs du réseau pour l'emploi.",
     network: "internet",
     categories: ["inclusion"],
+  },
+  {
+    title: "Tchap",
+    url: "https://tchap.gouv.fr/",
+    description:
+      "Communiquer facilement en toute sécurité entre agents de la fonction publique",
+    network: "internet",
+    categories: ["suiteNumerique"],
   },
 ];
 
