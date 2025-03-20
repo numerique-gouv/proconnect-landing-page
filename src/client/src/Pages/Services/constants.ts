@@ -542,7 +542,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Tchap",
     url: "https://tchap.gouv.fr/",
     description:
-      "Communiquer facilement en toute sécurité entre agents de la fonction publique"
+      "Communiquer facilement en toute sécurité entre agents de la fonction publique",
     network: "internet",
     categories: ["suiteNumerique"],
   },
