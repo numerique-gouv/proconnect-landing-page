@@ -12,12 +12,6 @@ function WantToIntegrateProConnect() {
       </div>
       <div className="fr-container centered-text fr-my-2w">
         <a
-          className="fr-btn fr-icon-mail-line fr-btn--icon-left fr-mr-2w fr-pl-5w fr-pr-5w"
-          href="mailto:support+partenaires@proconnect.gouv.fr"
-        >
-          Nous écrire
-        </a>
-        <a
           className="fr-btn fr-btn--secondary fr-icon-code-s-slash-line fr-btn--icon-left fr-pl-3w fr-pr-3w"
           href="https://github.com/numerique-gouv/proconnect-documentation/blob/main/README.md"
         >
