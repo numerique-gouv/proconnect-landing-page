@@ -20,6 +20,11 @@ body {
 
 .content {
   flex: 1;
+  background-color: var(--background-raised-grey);
+}
+
+.footer {
+  background-color: var(--background-raised-grey);
 }
 
 /* Content css */
