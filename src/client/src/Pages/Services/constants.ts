@@ -208,7 +208,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "RDV Solidarités",
     url: "https://rdv-solidarites.fr",
     network: "internet",
-    description: "-",
+    description: "Prendre rendez-vous en ligne avec votre département",
     categories: ["inclusion"],
   },
   {
@@ -223,7 +223,7 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "RDV Aide Numérique",
     url: "https://www.rdv-aide-numerique.fr",
     network: "internet",
-    description: "-",
+    description: "Prendre rendez-vous avec un ou une médiatrice numérique",
     categories: ["inclusion"],
   },
   {
@@ -292,7 +292,8 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Parcours Solidarités",
     url: "https://www.parcours-solidarites.fr",
     network: "internet",
-    description: "-",
+    description:
+      "Assister les travailleurs sociaux dans leurs missions d’accompagnement de l’usager",
     categories: ["inclusion"],
   },
   {
