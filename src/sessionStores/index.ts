@@ -1,6 +1,5 @@
-import { Store } from "express-session";
-import RedisStore from "connect-redis";
-import { MemoryStore } from "express-session";
+import { Store, MemoryStore } from "express-session";
+import { RedisStore } from "connect-redis";
 import { getNewRedisClient } from "./reddis.connector";
 import { config } from "../config";
 
