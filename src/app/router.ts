@@ -1,72 +1,67 @@
-import Express from "express";
+import Express, { Request } from "express";
 import { config } from "../config";
-import { Issuer } from "openid-client";
 import path from "path";
 import * as crypto from "crypto";
 import { buildRedirectController } from "./buildController";
+import { buildOidcClient } from "./oidc";
 
-function buildRouter() {
+const getCurrentUrl = (req: Request) =>
+  new URL(`${req.protocol}://${req.get("host")}${req.originalUrl}`);
+
+async function buildRouter() {
   const router = Express.Router();
+  const oidcClient = await buildOidcClient();
 
   router.get(
     "/openid/authorize",
     buildRedirectController(async (req) => {
-      const client = await getProConnectClient();
-      const scope = config.PC_SCOPES;
       const nonce = crypto.randomBytes(16).toString("hex");
       const state = crypto.randomBytes(16).toString("hex");
 
       req.session.state = state;
       req.session.nonce = nonce;
 
-      const redirectUrl = client.authorizationUrl({
-        scope,
+      return oidcClient.buildAuthorizationUrl({
         nonce,
         state,
-        redirect_uri: `${config.HOST_URL}/openid/callback`,
-        claims: {
-          id_token: {
-            amr: {
-              essential: true,
-            },
-          },
-        },
       });
-
-      return redirectUrl;
     })
   );
 
   router.get(
     "/openid/callback",
     buildRedirectController(async (req) => {
-      const client = await getProConnectClient();
-      const params = client.callbackParams(req);
-      if (params.state !== req.session.state) {
+      const queryParams = req.query;
+      const { state } = queryParams;
+      const currentUrl = getCurrentUrl(req);
+
+      if (state !== req.session.state) {
         throw new Error(
-          `The provided state "${params.state}" does not match the stored session state "${req.session.state}"`
+          `The provided state "${state}" does not match the stored session state "${req.session.state}"`
         );
       }
       if (req.session.nonce === null) {
         throw new Error(`No nonce stored in the session`);
       }
-      const tokenSet = await client.callback(
-        `${config.HOST_URL}/openid/callback`,
-        params,
-        {
-          state: req.session.state,
-          nonce: req.session.nonce,
-        }
-      );
+      const tokens = await oidcClient.authorizationCodeGrant(currentUrl, {
+        expectedNonce: req.session.nonce,
+        expectedState: req.session.state,
+      });
+
       req.session.nonce = null;
       req.session.state = null;
-      if (!tokenSet.access_token) {
-        throw new Error("The access_token value was not provided");
+
+      const claims = tokens.claims();
+      if (!claims) {
+        throw new Error(`No claims returned`);
       }
 
-      const userinfo = await client.userinfo(tokenSet.access_token);
+      const userinfo = await oidcClient.fetchUserInfo(
+        tokens.access_token,
+        claims.sub
+      );
 
-      req.session.idToken = tokenSet.id_token;
+      req.session.idToken = tokens.id_token;
       req.session.email = userinfo.email;
       req.session.firstName = userinfo.given_name;
       req.session.lastName = userinfo.usual_name as string;
@@ -78,19 +73,13 @@ function buildRouter() {
   router.get(
     "/openid/logout",
     buildRedirectController(async (req) => {
-      const client = await getProConnectClient();
       const id_token_hint = req.session.idToken;
       req.session.destroy();
       if (!id_token_hint) {
         return `${config.HOST_URL}/post-logout`;
       }
 
-      const redirectUrl = client.endSessionUrl({
-        post_logout_redirect_uri: `${config.HOST_URL}/post-logout`,
-        id_token_hint,
-      });
-
-      return redirectUrl;
+      return oidcClient.buildEndSessionUrl(id_token_hint);
     })
   );
 
@@ -109,15 +98,3 @@ function buildRouter() {
 }
 
 export { buildRouter };
-
-async function getProConnectClient() {
-  const pcIssuer = await Issuer.discover(config.PC_DISCOVERY_URL);
-
-  return new pcIssuer.Client({
-    client_id: config.PC_CLIENT_ID,
-    client_secret: config.PC_CLIENT_SECRET,
-    response_types: ["code"],
-    id_token_signed_response_alg: config.PC_ID_TOKEN_SIGNED_RESPONSE_ALG,
-    userinfo_signed_response_alg: config.PC_USERINFO_SIGNED_RESPONSE_ALG,
-  });
-}

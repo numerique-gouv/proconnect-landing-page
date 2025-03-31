@@ -17,20 +17,20 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "@types/express-session": "^1.18.0",
+    "@types/express-session": "^1.18.1",
     "@types/node": "^22.10.5",
     "concurrently": "^9.1.2",
-    "nodemon": "^3.1.7",
+    "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
-    "prettier": "^3.4.2"
+    "prettier": "^3.5.3"
   },
   "dependencies": {
-    "connect-redis": "^7.1.1",
+    "connect-redis": "^8.0.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "ioredis": "^5.5.0",
-    "openid-client": "^5.7.0"
+    "openid-client": "^6.3.4"
   }
 }

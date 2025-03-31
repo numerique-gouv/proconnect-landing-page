@@ -22,7 +22,7 @@
     "@types/react-lottie": "^1.2.10",
     "@types/react-scroll": "^1.8.10",
     "@vitejs/plugin-react": "^4.2.1",
-    "prettier": "^3.3.3",
+    "prettier": "^3.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.4",
