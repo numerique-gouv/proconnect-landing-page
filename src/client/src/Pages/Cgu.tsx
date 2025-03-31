@@ -171,7 +171,8 @@ function Cgu() {
         </p>
         <p>
           ProConnect le redirige alors vers la page de connexion de ce compte
-          pour que l'agent puisse s'identifier par un moyen d'authentification.{" "}
+          pour que l'agent puisse s'identifier par un moyen
+          d'authentification.{" "}
         </p>
         <p>
           L'agent utilisateur accède alors au service souhaité une fois qu'il a

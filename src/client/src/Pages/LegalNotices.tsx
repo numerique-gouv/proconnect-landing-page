@@ -9,7 +9,8 @@ function LegalNotices() {
       <h2 className="fr-h4">Éditeur</h2>
       <p>
         Ce site est édité par le programme ProConnect de la direction
-        interministérielle du numérique (DINUM), un service du Premier ministre.{" "}
+        interministérielle du numérique (DINUM), un service du Premier
+        ministre.{" "}
       </p>
       <p>
         ProConnect/DINUM
