@@ -19,9 +19,9 @@ declare module "express-session" {
   }
 }
 
-function buildApp() {
+async function buildApp() {
   const app = Express();
-  const router = buildRouter();
+  const router = await buildRouter();
 
   app.use(
     Express.static(path.join(__dirname, "..", "..", "src", "client", "dist"))
