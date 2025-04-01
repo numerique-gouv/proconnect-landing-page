@@ -23,6 +23,8 @@ async function buildApp() {
   const app = Express();
   const router = await buildRouter();
 
+  app.enable("trust proxy");
+
   app.use(
     Express.static(path.join(__dirname, "..", "..", "src", "client", "dist"))
   );
