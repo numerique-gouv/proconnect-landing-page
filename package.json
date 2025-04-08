@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^5.0.0",
+    "@types/express": "^5.0.1",
     "@types/express-session": "^1.18.1",
     "@types/node": "^22.14.0",
     "concurrently": "^9.1.2",
@@ -28,7 +28,7 @@
   "dependencies": {
     "connect-redis": "^8.0.2",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2",
+    "express": "^5.1.0",
     "express-session": "^1.18.1",
     "ioredis": "^5.5.0",
     "openid-client": "^6.3.4"
