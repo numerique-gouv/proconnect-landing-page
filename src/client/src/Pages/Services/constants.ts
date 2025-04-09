@@ -24,6 +24,13 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["suiteNumerique"],
   },
   {
+    title: "Datagouv",
+    url: "https://www.data.gouv.fr/",
+    description:
+      "Partager, améliorer et réutiliser les données publiques.",
+    network: "internet",
+  },
+  {
     title: "Pad",
     url: "https://pad.numerique.gouv.fr/",
     description: "Éditer des documents et des textes de manière collaborative",
