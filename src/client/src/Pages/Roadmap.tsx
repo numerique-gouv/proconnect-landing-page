@@ -97,7 +97,8 @@ function Roadmap() {
                         fédération d'identité
                       </li>
                       <li>
-                        Ouverture de l&rsquo;<a
+                        Ouverture de l&rsquo;
+                        <a
                           rel="noopener noreferrer"
                           target="_blank"
                           href="https://partenaires.proconnect.gouv.fr/"
