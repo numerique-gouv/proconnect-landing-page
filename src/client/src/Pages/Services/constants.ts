@@ -26,8 +26,7 @@ const SERVICES_LIST: Array<serviceType> = [
   {
     title: "Datagouv",
     url: "https://www.data.gouv.fr/",
-    description:
-      "Partager, améliorer et réutiliser les données publiques.",
+    description: "Partager, améliorer et réutiliser les données publiques.",
     network: "internet",
   },
   {
