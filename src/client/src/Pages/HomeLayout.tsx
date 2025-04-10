@@ -12,27 +12,39 @@ function HomeLayout() {
 
   return (
     <React.Fragment>
-      <div className="fr-container--fluid background-welcome-page">
+      <div className="fr-container--fluid ">
         <div className="fr-container fr-py-4w fr-py-md-8w">
           <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
-            <div className="fr-col-12 fr-col-md-6">
-              <h1 className="fr-h2">
-                <span className="blue-france">ProConnect</span>
-                ,
-                <br />
-                la solution officielle qui vous identifie <br />
-                en tant que professionnel.
-              </h1>
-              <a className="fr-raw-link fr-btn" href="/eligibilite">
-                <i className={fr.cx("ri-user-star-line") + " fr-pr-2w"} />
-                Êtes-vous éligible ?
-              </a>
+            <div className="fr-col-12 fr-col-md-6 fr-grid-row--center fr-grid-row ">
+              <div className="fr-col-10 fr-grid-row--center fr-grid-row align-center">
+                <h1 className="fr-h1">
+                  ProConnect, l'accès pour les pros, validé par l'État
+                </h1>
+                <h2 className="fr-h4">
+                  Votre identité professionnelle est la meilleure clé pour une
+                  connexion simple et sécurisée.
+                </h2>
+              </div>
             </div>
             <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
               <img src={welcome} alt="" />
             </div>
           </div>
         </div>
+      </div>
+      <div className="fr-container">
+        <h2>Êtes-vous éligible ?</h2>
+        <p>
+          <span className="bold">
+            Oui ! ProConnect peut être utilisé par tous les professionnels du
+            public comme du privé.
+          </span>
+          <br />
+          Certains sites peuvent être réservés à des publics spécifiques : vos
+          droits d’accès dépendent de votre adresse e-mail professionnelle et de
+          votre organisation. Dites-nous qui est votre employeur et découvrez
+          une sélection de sites faits pour vous !
+        </p>
       </div>
       <div className="fr-container fr-py-4w fr-py-md-8w">
         <HowDoesItWork tiles={tilesData} />
