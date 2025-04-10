@@ -13,7 +13,8 @@ function WantToIntegrateProConnect() {
       <div className="fr-container centered-text fr-my-2w">
         <a
           className="fr-btn fr-btn--secondary fr-icon-code-s-slash-line fr-btn--icon-left fr-pl-3w fr-pr-3w"
-          href="https://github.com/numerique-gouv/proconnect-documentation/blob/main/README.md"
+          href="https://partenaires.proconnect.gouv.fr/"
+          target="_blank"
         >
           Commencer vos tests
         </a>

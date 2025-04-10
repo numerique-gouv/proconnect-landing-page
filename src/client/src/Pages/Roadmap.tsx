@@ -96,6 +96,16 @@ function Roadmap() {
                         Les Services du Premier Ministre rejoignent la
                         fédération d'identité
                       </li>
+                      <li>
+                        Ouverture de l&rsquo;
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://partenaires.proconnect.gouv.fr/"
+                        >
+                          Espace Partenaires
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </li>

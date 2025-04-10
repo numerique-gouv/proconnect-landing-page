@@ -17,7 +17,7 @@ function Footer() {
           Données personnelles
         </a>,
         <a
-          href="https://github.com/numerique-gouv/proconnect-documentation?tab=readme-ov-file#-proconnect---documentation"
+          href="https://partenaires.proconnect.gouv.fr/"
           className="fr-footer__bottom-link"
         >
           Intégrer ProConnect
