@@ -88,7 +88,7 @@ async function buildRouter() {
     res.json({ firstName, lastName, email, isIdentityProviderPCI });
   });
 
-  router.get("/*", (_, res) => {
+  router.get(/\/(.*)/, (_, res) => {
     res.sendFile(
       path.join(__dirname, "..", "..", "src", "client", "dist", "index.html")
     );
