@@ -7,9 +7,8 @@ import SiteMap from "../Pages/SiteMap";
 import Cgu from "../Pages/Cgu";
 import LegalNotices from "../Pages/LegalNotices";
 import Stats from "../Pages/Stats";
-import EligibilityTest from "../Pages/Eligibility/EligibilityTest";
-import { PublicResult } from "../Pages/Eligibility/PublicResult";
-import { PrivateResult } from "../Pages/Eligibility/PrivateResult";
+import SiteRecommandation from "../Pages/SiteRecommandation/SiteRecommandation";
+import SiteRecommandationTest from "../Pages/SiteRecommandation/SiteRecommandationTest";
 import NotFound from "../Pages/NotFound";
 import MonCompte from "../Pages/MonCompte";
 import PostAuthentification from "../Pages/PostAuthentication";
@@ -50,29 +49,22 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/eligibilite",
+        path: "/recommandation-test",
         element: (
           <WrapperLayout>
-            <EligibilityTest />
+            <SiteRecommandationTest />
           </WrapperLayout>
         ),
       },
       {
-        path: "/eligibilite/public",
+        path: "/recommandation/:employer",
         element: (
           <WrapperLayout>
-            <PublicResult />
+            <SiteRecommandation />
           </WrapperLayout>
         ),
       },
-      {
-        path: "/eligibilite/private",
-        element: (
-          <WrapperLayout>
-            <PrivateResult />
-          </WrapperLayout>
-        ),
-      },
+
       {
         path: "/feuille-de-route",
         element: (

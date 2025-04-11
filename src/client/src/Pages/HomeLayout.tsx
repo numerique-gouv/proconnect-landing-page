@@ -1,10 +1,8 @@
 import React from "react";
-import welcome from "../assets/welcome.svg";
+import welcome from "../assets/illu_hero.webp";
+
 import "./layout.css";
-import { fr } from "@codegouvfr/react-dsfr";
 import news from "../assets/news.svg";
-import HowDoesItWork from "../components/HowDoesItWork/HowDoesItWork";
-import { tilesData } from "../data";
 import { useTitle } from "../lib/useTitle";
 
 function HomeLayout() {
@@ -27,7 +25,7 @@ function HomeLayout() {
               </div>
             </div>
             <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
-              <img src={welcome} alt="" />
+              <img width="80%" src={welcome} alt="" />
             </div>
           </div>
         </div>
@@ -42,12 +40,18 @@ function HomeLayout() {
           <br />
           Certains sites peuvent être réservés à des publics spécifiques : vos
           droits d’accès dépendent de votre adresse e-mail professionnelle et de
-          votre organisation. Dites-nous qui est votre employeur et découvrez
-          une sélection de sites faits pour vous !
+          votre organisation.
+          <br />
+          Dites-nous qui est votre employeur et découvrez une sélection de sites
+          faits pour vous !
+          <br />
+          <br />
+          <a className="fr-raw-link fr-btn" href="/recommandation-test">
+            Quels sites sont faits pour vous ?
+          </a>
         </p>
       </div>
       <div className="fr-container fr-py-4w fr-py-md-8w">
-        <HowDoesItWork tiles={tilesData} />
         <div
           className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-mt-2w"
           id="agentconnect-devient-proconnect"
