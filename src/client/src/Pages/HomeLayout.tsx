@@ -223,6 +223,7 @@ function HomeLayout() {
                     >
                       l'Annuaire des Entreprises
                     </a>
+                    )
                   </li>
                   <li>Complétez vos informations personnelles</li>
                   <li>Votre compte est créé !</li>
