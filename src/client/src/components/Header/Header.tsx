@@ -1,5 +1,6 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
+import "./header.css";
 import { getUserInfo } from "../../lib/authentication";
 import HeaderLogo from "../../assets/header_logo.svg";
 

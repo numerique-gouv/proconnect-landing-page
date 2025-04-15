@@ -4,6 +4,7 @@ import profiling_transparent from "../assets/illu_profiling_transparent.webp";
 import suite from "../assets/illu_suite.webp";
 import illu_partners from "../assets/illu_partners.webp";
 import "./layout.css";
+import logo from "../assets/logo_centered.svg";
 import { useTitle } from "../lib/useTitle";
 import { Chip } from "../components/Chip/Chip";
 
@@ -16,11 +17,12 @@ function HomeLayout() {
         <div className="fr-container fr-py-4w fr-py-md-8w">
           <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle">
             <div className="fr-col-12 fr-col-md-6 fr-grid-row--center fr-grid-row ">
-              <div className="fr-col-10 fr-grid-row--center fr-grid-row align-center">
-                <h1 className="fr-h1">
+              <div className="fr-col-10 fr-grid-row--center fr-grid-row centered-text">
+                <img className="fr-mb-2w" src={logo} alt="" />
+                <h1 className="fr-h1 ">
                   ProConnect, l'accès pour les pros, validé par l'État
                 </h1>
-                <h2 className="fr-h4">
+                <h2 className="fr-h4 ">
                   Votre identité professionnelle est la meilleure clé pour une
                   connexion simple et sécurisée.
                 </h2>
