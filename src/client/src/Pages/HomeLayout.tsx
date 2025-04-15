@@ -155,6 +155,145 @@ function HomeLayout() {
           />
         </div>
       </div>
+      <div className="fr-container fr-mb-2w">
+        <h1 className="fr-h1">Questions fréquentes</h1>
+        <div className="fr-accordions-group">
+          <section className="fr-accordion">
+            <h3 className="fr-accordion__title">
+              <button
+                className="fr-accordion__btn"
+                aria-expanded="false"
+                aria-controls="accordion-114"
+              >
+                Comment savoir à quels sites j'ai droit ?
+              </button>
+            </h3>
+            <div className="fr-collapse" id="accordion-114">
+              Vos droits d'accès dépendent de votre adresse e-mail
+              professionnelle et de votre organisation. Dites-nous qui est votre
+              employeur et&nbsp;
+              <a className="fr-link" href="/recommandation-test">
+                découvrez une sélection de sites faits pour vous
+              </a>
+              &nbsp;!
+            </div>
+          </section>
+          <section className="fr-accordion">
+            <h3 className="fr-accordion__title">
+              <button
+                className="fr-accordion__btn"
+                aria-expanded="false"
+                aria-controls="accordion-115"
+              >
+                Comment créer un compte sur ProConnect ?
+              </button>
+            </h3>
+            <div className="fr-collapse" id="accordion-115">
+              <p>
+                <strong>
+                  Vous faites partie d'une administration ou structure
+                  partenaire ?
+                </strong>
+                <br />
+                Rentrez votre email professionnelle : vous serez automatiquement
+                redirigé vers votre portail d'identification habituel (ex :
+                Calypsso, Curasso, Cerbère etc.).
+                <br />
+                👉 Pas besoin de créer un nouveau compte !
+              </p>
+              <p>
+                <strong>
+                  Votre adresse est rattachée à une autre structure ?
+                </strong>
+                <br />
+                Créez un compte en quelques étapes simples :
+                <ol>
+                  <li>
+                    Confirmez votre adresse email à l’aide du code de validation
+                    reçu
+                  </li>
+                  <li>Choisissez un mot de passe</li>
+                  <li>
+                    Entrez le SIRET de votre organisation (disponible sur{" "}
+                    <a
+                      className="fr-link"
+                      target="_blank"
+                      rel="noopener external"
+                      href="https://annuaire-entreprises.data.gouv.fr/"
+                    >
+                      l'Annuaire des Entreprises
+                    </a>
+                  </li>
+                  <li>Complétez vos informations personnelles</li>
+                  <li>Votre compte est créé !</li>
+                </ol>
+              </p>
+            </div>
+          </section>
+          <section className="fr-accordion">
+            <h3 className="fr-accordion__title">
+              <button
+                className="fr-accordion__btn"
+                aria-expanded="false"
+                aria-controls="accordion-116"
+              >
+                Je ne reçois pas de code de confirmation
+              </button>
+            </h3>
+            <div className="fr-collapse" id="accordion-116">
+              <p>
+                Vous êtes peut-être dans l’une de ces situations :
+                <ul>
+                  <li>
+                    Vous avez fait une erreur de saisie dans votre adresse mail
+                    : recréez un compte avec la bonne adresse
+                  </li>
+                  <li>
+                    Le code est arrivé dans vos courriers indésirables :
+                    vérifiez vos spams
+                  </li>
+                  <li>
+                    Votre organisation utilise une protection contre les spams
+                    (comme MailInBlack ou Altospam) : contactez votre
+                    fournisseur de mail pour qu’il autorise les emails en
+                    provenance de nepasrepondre@email.moncomptepro.beta.gouv.fr
+                    (adresse IP : 172.246.41.163). Puis, demandez-lui de
+                    paramétrer le filtre anti-spam pour laisser passer nos
+                    emails.
+                  </li>
+                  <li>
+                    Votre code a expiré ou vous avez perdu l’email qui contenait
+                    le code : vous pouvez vous reconnecter en cliquant sur « me
+                    renvoyer un code de confirmation » lorsqu'il vous sera
+                    demandé de saisir le code (
+                    <a
+                      className="fr-link"
+                      target="_blank"
+                      rel="noopener external"
+                      href="https://proconnect.crisp.help/fr/article/comment-regler-les-problematiques-liees-au-code-de-confirmation-a-10-chiffres-jyepuz/?bust=1744729438909"
+                    >
+                      en savoir plus
+                    </a>
+                    )
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div className="fr-container">
+        <p>
+          <a
+            className="fr-link"
+            target="_blank"
+            rel="noopener external"
+            href="https://proconnect.crisp.help/fr/"
+          >
+            Voir tous les articles du centre d'aide
+          </a>
+        </p>
+      </div>
     </React.Fragment>
   );
 }
