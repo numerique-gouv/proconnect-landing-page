@@ -4,6 +4,7 @@ import profiling_transparent from "../assets/illu_profiling_transparent.webp";
 import suite from "../assets/illu_suite.webp";
 import illu_partners from "../assets/illu_partners.webp";
 import "./layout.css";
+import illu_certified from "../assets/illu_certified.webp";
 import logo from "../assets/logo_centered.svg";
 import { useTitle } from "../lib/useTitle";
 import { Chip } from "../components/Chip/Chip";
@@ -57,8 +58,12 @@ function HomeLayout() {
       </div>
       <div className="fr-container fr-mb-10w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12 ">
-          <img className="fr-col-7" src={profiling_transparent} width="100%" />
-          <div className="fr-col-5 fr-pl-6w">
+          <img
+            className="fr-col-7 fr-hidden fr-unhidden-md"
+            src={profiling_transparent}
+            width="100%"
+          />
+          <div className="fr-col-12 fr-col-md-5 fr-pl-md-6w">
             <Chip className="fr-mb-2w" text="Connexion unique" />
             <h2 className="fr-h2 fr-mb-1w">Votre identité professionnelle</h2>
             <p>
@@ -72,7 +77,7 @@ function HomeLayout() {
       </div>
       <div className="fr-container fr-mb-10w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
-          <div className="fr-col-5 fr-pr-6w">
+          <div className="fr-col-12 fr-col-md-5 fr-pr-md-6w">
             <Chip className="fr-mb-2w" text="Diversité de partenaires" />
             <h2 className="fr-h2 fr-mb-1w">Toujours plus de partenaires</h2>
             <p>
@@ -93,14 +98,22 @@ function HomeLayout() {
               </a>
             </p>
           </div>
-          <img className="fr-col-7" src={illu_partners} width="100%" />
+          <img
+            className="fr-col-7 fr-hidden fr-unhidden-md"
+            src={illu_partners}
+            width="100%"
+          />
         </div>
       </div>
       <div className="fr-container fr-mb-10w">
-        <div className="fr-grid-row fr-grid-row--gutters fr-col-12 ">
-          <img className="fr-col-7" src={suite} width="100%" />
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
+          <img
+            className="fr-col-7 fr-hidden fr-unhidden-md"
+            src={suite}
+            width="100%"
+          />
 
-          <div className="fr-col-5 fr-pl-6w">
+          <div className="fr-col-12 fr-col-md-5 fr-pl-md-6w">
             <Chip className="fr-mb-2w" text="Professionnels du public" />
             <h2 className="fr-h2 fr-mb-1w">Zoom sur la Suite Numérique</h2>
             <p>
@@ -122,6 +135,24 @@ function HomeLayout() {
               </a>
             </p>
           </div>
+        </div>
+      </div>
+      <div className="fr-container fr-mb-10w">
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
+          <div className="fr-col-12 fr-col-md-5 fr-pr-md-6w">
+            <Chip className="fr-mb-2w" text="En cours de construction" />
+            <h2 className="fr-h2 fr-mb-1w">Certification Dirigeant</h2>
+            <p>
+              Pour les professionnels du secteur privé, nous vous certifions
+              bientôt en tant que dirigeant de votre entreprise pour vos
+              démarches sécurisées.
+            </p>
+          </div>
+          <img
+            className="fr-col-7 fr-hidden fr-unhidden-md"
+            src={illu_certified}
+            width="100%"
+          />
         </div>
       </div>
     </React.Fragment>
