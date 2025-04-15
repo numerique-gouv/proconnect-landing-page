@@ -1,9 +1,11 @@
 import React from "react";
 import welcome from "../assets/illu_hero.webp";
-
+import profiling_transparent from "../assets/illu_profiling_transparent.webp";
+import suite from "../assets/illu_suite.webp";
+import illu_partners from "../assets/illu_partners.webp";
 import "./layout.css";
-import news from "../assets/news.svg";
 import { useTitle } from "../lib/useTitle";
+import { Chip } from "../components/Chip/Chip";
 
 function HomeLayout() {
   useTitle("Accueil");
@@ -30,8 +32,8 @@ function HomeLayout() {
           </div>
         </div>
       </div>
-      <div className="fr-container">
-        <h2>Êtes-vous éligible ?</h2>
+      <div className="fr-container fr-mb-10w">
+        <h2 className="fr-h2">Êtes-vous éligible ?</h2>
         <p>
           <span className="bold">
             Oui ! ProConnect peut être utilisé par tous les professionnels du
@@ -51,51 +53,72 @@ function HomeLayout() {
           </a>
         </p>
       </div>
-      <div className="fr-container fr-py-4w fr-py-md-8w">
-        <div
-          className="fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-mt-2w"
-          id="agentconnect-devient-proconnect"
-        >
-          <div className="fr-col-12 fr-col-md-6 fr-pt-0">
-            <h2 className="fr-h3">AgentConnect devient ProConnect !</h2>
-            <h3 className="fr-h4">Pourquoi ce changement ?</h3>
+      <div className="fr-container fr-mb-10w">
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12 ">
+          <img className="fr-col-7" src={profiling_transparent} width="100%" />
+          <div className="fr-col-5 fr-pl-6w">
+            <Chip className="fr-mb-2w" text="Connexion unique" />
+            <h2 className="fr-h2 fr-mb-1w">Votre identité professionnelle</h2>
             <p>
-              Les services de connexion pour les pros évoluent ! MonComptePro,
-              InclusionConnect et AgentConnect fusionnent pour devenir
-              ProConnect.
+              ProConnect vous fait entrer là où vous avez droit ! Connectez-vous
+              une fois le matin et accédez toute la journée à tous vos sites
+              partenaires autorisés, grâce à votre adresse email
+              professionnelle.
             </p>
-            <h3 className="fr-h4">Qu'est-ce que ça change pour vous ?</h3>
-            <ul>
-              <li>Vous continuez à vous connecter de la même manière.</li>
-              <li>
-                Vous pouvez désormais accéder à encore plus de sites et d'outils
-                de l'administration !
-              </li>
-            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="fr-container fr-mb-10w">
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
+          <div className="fr-col-5 fr-pr-6w">
+            <Chip className="fr-mb-2w" text="Diversité de partenaires" />
+            <h2 className="fr-h2 fr-mb-1w">Toujours plus de partenaires</h2>
             <p>
-              <a href="/services" className="blue-france fr-mb-5w">
-                Découvrez l’annuaire des services 
-                <span
-                  className="fr-icon-arrow-right-line"
-                  aria-hidden="true"
-                ></span>
+              Plus de 120 partenaires intègrent déjà le bouton ProConnect pour
+              simplifier l'accès à un service, des démarches ou encore des
+              données.
+              <br />
+              Certains sites sont réservés à des publics spécifiques (ex.:
+              agents du Ministère de la Justice, du Ministère de l'Intérieur,
+              etc.)
+              <br />
+              D'autres sont ouverts à tous les professionnels, y compris ceux du
+              privé.
+              <br />
+              <br />
+              <a className="fr-link" href="/services">
+                Consulter l'annuaire des sites
               </a>
             </p>
-            <h3 className="fr-h4">Comment repérer le bouton ProConnect ?</h3>
-            <p>
-              Facile ! Vous verrez la Marianne avec la mention "pro" en jaune.
-            </p>
-            <h3 className="fr-h4">Comment certifiez-vous les dirigeants ?</h3>
-            <p>
-              La certification des dirigeants évolue et rejoint bientôt
-              l'identification ProConnect !
-            </p>
-            <a className="fr-raw-link fr-btn" href="https://proconnect.gouv.fr">
-              En savoir plus sur la certification Insee
-            </a>
           </div>
-          <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">
-            <img src={news} alt="" />
+          <img className="fr-col-7" src={illu_partners} width="100%" />
+        </div>
+      </div>
+      <div className="fr-container fr-mb-10w">
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12 ">
+          <img className="fr-col-7" src={suite} width="100%" />
+
+          <div className="fr-col-5 fr-pl-6w">
+            <Chip className="fr-mb-2w" text="Professionnels du public" />
+            <h2 className="fr-h2 fr-mb-1w">Zoom sur la Suite Numérique</h2>
+            <p>
+              En tant que membre de l'administration publique, ProConnect vous
+              donne accès à de nombreux outils pour créer, organiser et
+              collaborer.
+              <br />
+              Resana, Webinaire, Webconf, Audioconf... Autant d'outils puissants
+              à portée de main.
+              <br />
+              <br />
+              <a
+                className="fr-link"
+                target="_blank"
+                rel="noopener external"
+                href="https://lasuite.numerique.gouv.fr"
+              >
+                Découvrir la Suite Numérique
+              </a>
+            </p>
           </div>
         </div>
       </div>
