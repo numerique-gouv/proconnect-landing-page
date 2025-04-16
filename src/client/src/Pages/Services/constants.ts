@@ -24,9 +24,9 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["suiteNumerique"],
   },
   {
-    title: "Datagouv",
+    title: "data.gouv.fr",
     url: "https://www.data.gouv.fr/",
-    description: "Partager, améliorer et réutiliser les données publiques.",
+    description: "Partager, améliorer et réutiliser les données publiques",
     network: "internet",
   },
   {
