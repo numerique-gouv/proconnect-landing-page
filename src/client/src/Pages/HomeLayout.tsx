@@ -56,7 +56,7 @@ function HomeLayout() {
           </a>
         </p>
       </div>
-      <div className="fr-container fr-mb-10w">
+      <div className="fr-container fr-mb-16w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
           <div className="fr-col-12 fr-col-md-7 display-column">
             <img src={profiling_transparent} width="100%" />
@@ -73,7 +73,7 @@ function HomeLayout() {
           </div>
         </div>
       </div>
-      <div className="fr-container fr-mb-10w">
+      <div className="fr-container fr-mb-16w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12 reverse-md">
           <div className="fr-col-12 fr-col-md-5 fr-pr-md-6w">
             <Chip className="fr-mb-2w" text="Diversité de partenaires" />
@@ -101,7 +101,7 @@ function HomeLayout() {
           </div>
         </div>
       </div>
-      <div className="fr-container fr-mb-10w">
+      <div className="fr-container fr-mb-16w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
           <div className="fr-col-12 fr-col-md-7 display-column">
             <img src={suite} width="100%" />
@@ -131,7 +131,7 @@ function HomeLayout() {
           </div>
         </div>
       </div>
-      <div className="fr-container fr-mb-10w">
+      <div className="fr-container fr-mb-16w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12 reverse-md">
           <div className="fr-col-12 fr-col-md-5 fr-pr-md-6w">
             <Chip className="fr-mb-2w" text="En cours de construction" />
