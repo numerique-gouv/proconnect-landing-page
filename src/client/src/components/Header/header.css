@@ -5,3 +5,12 @@
 #fr-header-header-with-quick-access-items-nav-items {
   filter: none;
 }
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h5 {
+  color: var(--text-title-blue-france);
+}

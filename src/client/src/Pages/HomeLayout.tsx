@@ -23,10 +23,10 @@ function HomeLayout() {
                 <h1 className="fr-h1 ">
                   ProConnect, l'accès pour les pros, validé par l'État
                 </h1>
-                <h2 className="fr-h4 ">
+                <p>
                   Votre identité professionnelle est la meilleure clé pour une
                   connexion simple et sécurisée.
-                </h2>
+                </p>
               </div>
             </div>
             <div className="fr-col-6 fr-hidden fr-unhidden-md centered-content">

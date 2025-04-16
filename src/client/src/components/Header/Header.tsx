@@ -2,7 +2,7 @@ import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
 import "./header.css";
 import { getUserInfo } from "../../lib/authentication";
-import HeaderLogo from "../../assets/header_logo.svg";
+import logo from "../../assets/logo_centered.svg";
 
 import { DropDownLogout } from "../DropDownLogout/DropDownLogout";
 
@@ -48,7 +48,12 @@ function Header() {
         }}
         id="fr-header-header-with-quick-access-items-nav-items"
         quickAccessItems={quickAccessItems}
-        serviceTagline={<img src={HeaderLogo} />}
+        serviceTagline={
+          <p id="logo">
+            <img src={logo} width={"32px"} />
+            <h5 className="fr-ml-1w">ProConnect</h5>
+          </p>
+        }
         serviceTitle=""
       />
     </>
