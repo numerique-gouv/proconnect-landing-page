@@ -27,6 +27,13 @@ body {
   background-color: var(--background-raised-grey);
 }
 
+@media only screen and (max-width: 767px) {
+  .reverse-md {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 /* Content css */
 .background-welcome-page {
   background-color: var(--background-alt-brown-opera);
@@ -55,9 +62,10 @@ body {
 }
 
 .display-column {
-  display: "flex";
-  flex-direction: "column";
-  align-items: "center";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pc-background-white {

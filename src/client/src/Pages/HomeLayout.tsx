@@ -57,12 +57,10 @@ function HomeLayout() {
         </p>
       </div>
       <div className="fr-container fr-mb-10w">
-        <div className="fr-grid-row fr-grid-row--gutters fr-col-12 ">
-          <img
-            className="fr-col-7 fr-hidden fr-unhidden-md"
-            src={profiling_transparent}
-            width="100%"
-          />
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
+          <div className="fr-col-12 fr-col-md-7 display-column">
+            <img src={profiling_transparent} width="100%" />
+          </div>
           <div className="fr-col-12 fr-col-md-5 fr-pl-md-6w">
             <Chip className="fr-mb-2w" text="Connexion unique" />
             <h2 className="fr-h2 fr-mb-1w">Votre identité professionnelle</h2>
@@ -76,7 +74,7 @@ function HomeLayout() {
         </div>
       </div>
       <div className="fr-container fr-mb-10w">
-        <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12 reverse-md">
           <div className="fr-col-12 fr-col-md-5 fr-pr-md-6w">
             <Chip className="fr-mb-2w" text="Diversité de partenaires" />
             <h2 className="fr-h2 fr-mb-1w">Toujours plus de partenaires</h2>
@@ -98,20 +96,16 @@ function HomeLayout() {
               </a>
             </p>
           </div>
-          <img
-            className="fr-col-7 fr-hidden fr-unhidden-md"
-            src={illu_partners}
-            width="100%"
-          />
+          <div className="fr-col-12 fr-col-md-7 display-column">
+            <img src={illu_partners} width="100%" />
+          </div>
         </div>
       </div>
       <div className="fr-container fr-mb-10w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
-          <img
-            className="fr-col-7 fr-hidden fr-unhidden-md"
-            src={suite}
-            width="100%"
-          />
+          <div className="fr-col-12 fr-col-md-7 display-column">
+            <img src={suite} width="100%" />
+          </div>
 
           <div className="fr-col-12 fr-col-md-5 fr-pl-md-6w">
             <Chip className="fr-mb-2w" text="Professionnels du public" />
@@ -138,7 +132,7 @@ function HomeLayout() {
         </div>
       </div>
       <div className="fr-container fr-mb-10w">
-        <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
+        <div className="fr-grid-row fr-grid-row--gutters fr-col-12 reverse-md">
           <div className="fr-col-12 fr-col-md-5 fr-pr-md-6w">
             <Chip className="fr-mb-2w" text="En cours de construction" />
             <h2 className="fr-h2 fr-mb-1w">Certification Dirigeant</h2>
@@ -148,11 +142,9 @@ function HomeLayout() {
               démarches sécurisées.
             </p>
           </div>
-          <img
-            className="fr-col-7 fr-hidden fr-unhidden-md"
-            src={illu_certified}
-            width="100%"
-          />
+          <div className="fr-col-12 fr-col-md-7 display-column">
+            <img src={illu_certified} width="100%" />
+          </div>
         </div>
       </div>
       <div className="fr-container fr-mb-2w">
