@@ -9,7 +9,7 @@ interface Offre {
 
 type Props = {
   offre: Offre;
-  customizedMdCol: string;
+  customizedMdCol?: string;
 };
 
 const Card: React.FC<Props> = ({

@@ -13,15 +13,6 @@ function Footer() {
         to: "/plan-du-site",
       }}
       bottomItems={[
-        <a href="/cgu#url-anchor-dp" className="fr-footer__bottom-link">
-          Données personnelles
-        </a>,
-        <a
-          href="https://partenaires.proconnect.gouv.fr/"
-          className="fr-footer__bottom-link"
-        >
-          Intégrer ProConnect
-        </a>,
         <a href="/cgu" className="fr-footer__bottom-link">
           Conditions générales d'utilisation
         </a>,
@@ -33,6 +24,12 @@ function Footer() {
           className="fr-footer__bottom-link"
         >
           Statuts des services
+        </a>,
+        <a
+          href="https://partenaires.proconnect.gouv.fr/"
+          className="fr-footer__bottom-link"
+        >
+          Devenez un FI ou FS partenaire
         </a>,
       ]}
     />

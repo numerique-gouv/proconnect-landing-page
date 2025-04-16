@@ -1,0 +1,11 @@
+.chip {
+  border-radius: 4px;
+  background-color: var(--background-alt-blue-france);
+  color: var(--text-title-blue-france);
+  font-weight: bold;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: inline-block;
+}

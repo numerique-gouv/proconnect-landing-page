@@ -13,6 +13,22 @@ type serviceType = {
 
 export type { serviceType };
 
+const GROUPS_LIST: Array<{ title: string; description: string; url: string }> =
+  [
+    {
+      title: "Suite numérique",
+      description:
+        "Outiller les agents de l'État dans leur travail du quotidien",
+      url: "https://lasuite.numerique.gouv.fr/",
+    },
+    {
+      title: "Suite territoriale",
+      description:
+        "Outiller les collectivités territoriales dans leurs besoins essentiels",
+      url: "https://suiteterritoriale.anct.gouv.fr/",
+    },
+  ];
+
 const SERVICES_LIST: Array<serviceType> = [
   {
     title: "Resana",
@@ -69,6 +85,14 @@ const SERVICES_LIST: Array<serviceType> = [
     description:
       "Vérifier des informations légales publiques des entreprises, associations et services publics en France",
     network: "internet",
+  },
+  {
+    title: "Datagouv",
+    url: "https://www.data.gouv.fr/",
+    description: "Utiliser, partager et améliorer les données publiques",
+    network: "internet",
+    categories: [],
+    isOpenToPrivate: false,
   },
   {
     title: "Démarches Simplifiées",
@@ -303,7 +327,7 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["inclusion"],
   },
   {
-    title: "Immersion Facilitée",
+    title: "Immersion Facile",
     url: "https://immersion-facile.beta.gouv.fr",
     network: "internet",
     description: "Faciliter la réalisation des immersions professionnelles",
@@ -567,5 +591,5 @@ const SHORT_LIST_SERVICES = SERVICES_LIST.filter((service) =>
   titlesToKeep.includes(service.title)
 ).map(({ title, url, description }) => ({ title, url, description }));
 
-export { SERVICES_LIST, SHORT_LIST_SERVICES };
+export { SERVICES_LIST, SHORT_LIST_SERVICES, GROUPS_LIST };
 export type { categoryType };

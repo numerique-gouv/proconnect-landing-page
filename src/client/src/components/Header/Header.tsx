@@ -1,19 +1,15 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import NameChangeNotice from "./NameChangeNotice";
+import "./header.css";
 import { getUserInfo } from "../../lib/authentication";
+import logo from "../../assets/logo_centered.svg";
+
 import { DropDownLogout } from "../DropDownLogout/DropDownLogout";
 
 function Header() {
   const userInfo = getUserInfo();
   const isConnected = !!userInfo;
   const quickAccessItems = [
-    {
-      iconId: "fr-icon-question-line" as const,
-      linkProps: {
-        to: "https://proconnect.crisp.help/fr/",
-      },
-      text: "Aide",
-    },
     {
       iconId: "fr-icon-timer-line" as const,
       linkProps: {
@@ -35,7 +31,6 @@ function Header() {
         ]),
   ];
 
-  const currentURL = window.location.pathname;
   return (
     <>
       <NameChangeNotice />
@@ -52,27 +47,14 @@ function Header() {
           title: "Accueil - ProConnect",
         }}
         id="fr-header-header-with-quick-access-items-nav-items"
-        navigation={[
-          {
-            isActive: currentURL === "/",
-            linkProps: {
-              to: "/",
-              target: "_self",
-            },
-            text: "Accueil",
-          },
-          {
-            isActive: currentURL === "/services",
-            linkProps: {
-              to: "/services",
-              target: "_self",
-            },
-            text: "Annuaire des services",
-          },
-        ]}
         quickAccessItems={quickAccessItems}
-        serviceTagline="la solution officielle qui vous identifie en tant que professionnel"
-        serviceTitle="ProConnect"
+        serviceTagline={
+          <p id="logo">
+            <img src={logo} width={"32px"} />
+            <h5 className="fr-ml-1w">ProConnect</h5>
+          </p>
+        }
+        serviceTitle=""
       />
     </>
   );
