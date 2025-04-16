@@ -275,7 +275,7 @@ function HomeLayout() {
           </section>
         </div>
       </div>
-      <div className="fr-container">
+      <div className="fr-container fr-mb-10w">
         <p>
           <a
             className="fr-link"
