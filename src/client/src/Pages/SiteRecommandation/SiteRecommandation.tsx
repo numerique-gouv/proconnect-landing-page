@@ -25,7 +25,7 @@ function SiteRecommandation() {
   return (
     <div className="fr-container fr-pt-4w">
       <h1 className="fr-h2 blue-france">C'est parfait pour vous !</h1>
-      <div className="fr-grid-row fr-grid-row--gutters fr-mb-5w">
+      <div className="fr-grid-row fr-grid-row--gutters fr-mb-2w">
         {offers.map((offer) => (
           <Card
             customizedMdCol={"fr-col-md-4"}

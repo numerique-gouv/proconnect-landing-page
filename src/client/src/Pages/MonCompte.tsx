@@ -73,7 +73,7 @@ function MonCompte() {
             <h2 className="fr-h3">
               Découvrez encore plus de sites et de services
             </h2>
-            <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--center">
+            <div className="fr-grid-row fr-grid-row--gutters fr-grid-row--center fr-mb-2w">
               {SHORT_LIST_SERVICES.map((offre, index) => (
                 <Card
                   offre={offre}
@@ -81,10 +81,12 @@ function MonCompte() {
                   key={index}
                 ></Card>
               ))}
-              <a className="fr-btn centered-content fr-mt-4w" href="/services">
+            </div>
+            <p className="centered-text">
+              <a className="fr-raw-link fr-btn" href="/services">
                 Voir tous les services
               </a>
-            </div>
+            </p>
           </div>
         </div>
       </div>
