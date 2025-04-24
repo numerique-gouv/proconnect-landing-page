@@ -46,10 +46,10 @@ function Header() {
       id="fr-header-header-with-quick-access-items-nav-items"
       quickAccessItems={quickAccessItems}
       serviceTagline={
-        <p id="logo">
-          <img src={logo} width={"32px"} />
-          <h5 className="fr-ml-1w">ProConnect</h5>
-        </p>
+        <span id="logo" className="fr-h5 blue-france">
+          <img src={logo} width={"32px"} className="fr-mr-1w" />
+          ProConnect
+        </span>
       }
       serviceTitle=""
     />
