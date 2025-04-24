@@ -238,32 +238,29 @@ function HomeLayout() {
               </button>
             </h3>
             <div className="fr-collapse" id="accordion-116">
-              <p>
-                Vous êtes peut-être dans l’une de ces situations :
-              </p>
+              <p>Vous êtes peut-être dans l’une de ces situations :</p>
               <ul>
                 <li>
-                    Vous avez fait une erreur de saisie dans votre adresse mail
-                    : recréez un compte avec la bonne adresse
+                  Vous avez fait une erreur de saisie dans votre adresse mail :
+                  recréez un compte avec la bonne adresse
                 </li>
                 <li>
-                    Le code est arrivé dans vos courriers indésirables :
-                    vérifiez vos spams
+                  Le code est arrivé dans vos courriers indésirables : vérifiez
+                  vos spams
                 </li>
                 <li>
                   Votre organisation utilise une protection contre les spams
-                    (comme MailInBlack ou Altospam) : contactez votre
-                    fournisseur de mail pour qu’il autorise les emails en
-                    provenance de nepasrepondre@email.moncomptepro.beta.gouv.fr
-                    (adresse IP : 172.246.41.163). Puis, demandez-lui de
-                    paramétrer le filtre anti-spam pour laisser passer nos
-                    emails.
+                  (comme MailInBlack ou Altospam) : contactez votre fournisseur
+                  de mail pour qu’il autorise les emails en provenance de
+                  nepasrepondre@email.moncomptepro.beta.gouv.fr (adresse IP :
+                  172.246.41.163). Puis, demandez-lui de paramétrer le filtre
+                  anti-spam pour laisser passer nos emails.
                 </li>
                 <li>
                   Votre code a expiré ou vous avez perdu l’email qui contenait
                   le code : vous pouvez vous reconnecter en cliquant sur « me
-                    renvoyer un code de confirmation » lorsqu'il vous sera
-                    demandé de saisir le code (
+                  renvoyer un code de confirmation » lorsqu'il vous sera demandé
+                  de saisir le code (
                   <a
                     className="fr-link"
                     target="_blank"
