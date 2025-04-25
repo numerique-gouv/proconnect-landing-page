@@ -122,7 +122,7 @@ function HomeLayout() {
               <a
                 className="fr-link"
                 target="_blank"
-                rel="noopener external"
+                rel="noopener external noreferrer"
                 href="https://lasuite.numerique.gouv.fr"
               >
                 Découvrir la Suite Numérique

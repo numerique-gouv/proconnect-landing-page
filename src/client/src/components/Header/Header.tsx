@@ -1,5 +1,4 @@
 import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
-import NameChangeNotice from "./NameChangeNotice";
 import "./header.css";
 import { getUserInfo } from "../../lib/authentication";
 import logo from "../../assets/logo_centered.svg";
@@ -32,31 +31,28 @@ function Header() {
   ];
 
   return (
-    <>
-      <NameChangeNotice />
-      <DsfrHeader
-        brandTop={
-          <>
-            République
-            <br />
-            Française
-          </>
-        }
-        homeLinkProps={{
-          to: "/",
-          title: "Accueil - ProConnect",
-        }}
-        id="fr-header-header-with-quick-access-items-nav-items"
-        quickAccessItems={quickAccessItems}
-        serviceTagline={
-          <p id="logo">
-            <img src={logo} width={"32px"} />
-            <h5 className="fr-ml-1w">ProConnect</h5>
-          </p>
-        }
-        serviceTitle=""
-      />
-    </>
+    <DsfrHeader
+      brandTop={
+        <>
+          République
+          <br />
+          Française
+        </>
+      }
+      homeLinkProps={{
+        to: "/",
+        title: "Accueil - ProConnect",
+      }}
+      id="fr-header-header-with-quick-access-items-nav-items"
+      quickAccessItems={quickAccessItems}
+      serviceTagline={
+        <p id="logo">
+          <img src={logo} width={"32px"} />
+          <h5 className="fr-ml-1w">ProConnect</h5>
+        </p>
+      }
+      serviceTitle=""
+    />
   );
 }
 
