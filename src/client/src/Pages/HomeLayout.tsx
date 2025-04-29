@@ -128,6 +128,7 @@ function HomeLayout() {
                 target="_blank"
                 rel="noopener external noreferrer"
                 href="https://lasuite.numerique.gouv.fr"
+                title="La Suite Numérique - nouvelle fenêtre"
               >
                 Découvrir la Suite Numérique
               </a>
@@ -217,6 +218,7 @@ function HomeLayout() {
                     target="_blank"
                     rel="noopener external noreferrer"
                     href="https://annuaire-entreprises.data.gouv.fr/"
+                    title="Annuaire des entreprises - nouvelle fenêtre"
                   >
                     l'Annuaire des Entreprises
                   </a>
@@ -266,6 +268,7 @@ function HomeLayout() {
                     target="_blank"
                     rel="noopener external noreferrer"
                     href="https://proconnect.crisp.help/fr/article/comment-regler-les-problematiques-liees-au-code-de-confirmation-a-10-chiffres-jyepuz/?bust=1744729438909"
+                    title="Aide ProConnect - nouvelle fenêtre"
                   >
                     en savoir plus
                   </a>
@@ -283,6 +286,7 @@ function HomeLayout() {
             target="_blank"
             rel="noopener external noreferrer"
             href="https://proconnect.crisp.help/fr/"
+            title="Aide ProConnect - nouvelle fenêtre"
           >
             Voir tous les articles du centre d'aide
           </a>
