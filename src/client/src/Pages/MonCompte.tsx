@@ -83,7 +83,7 @@ function MonCompte() {
               ))}
             </div>
             <p className="centered-text">
-              <a className="fr-raw-link fr-btn" href="/services">
+              <a className="fr-btn" href="/services">
                 Voir tous les services
               </a>
             </p>
