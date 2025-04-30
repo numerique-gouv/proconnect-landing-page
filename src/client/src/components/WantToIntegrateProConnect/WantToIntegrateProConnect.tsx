@@ -15,6 +15,8 @@ function WantToIntegrateProConnect() {
           className="fr-btn fr-btn--secondary fr-icon-code-s-slash-line fr-btn--icon-left fr-pl-3w fr-pr-3w"
           href="https://partenaires.proconnect.gouv.fr/"
           target="_blank"
+          rel="noopener noreferrer"
+          title="Commencer vos tests - nouvelle fenêtre"
         >
           Commencer vos tests
         </a>

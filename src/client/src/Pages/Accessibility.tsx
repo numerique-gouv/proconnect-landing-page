@@ -72,12 +72,22 @@ function Accessibility() {
           <ul>
             <li>
               Formulaire de contact :{" "}
-              <a href="https://formulaire.defenseurdesdroits.fr/">
+              <a
+                href="https://formulaire.defenseurdesdroits.fr/"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="Écrire un message au Défenseur des droits - nouvelle fenêtre"
+              >
                 Écrire un message au Défenseur des droits
               </a>
             </li>
             <li>
-              <a href="https://www.defenseurdesdroits.fr/saisir/delegues">
+              <a
+                href="https://www.defenseurdesdroits.fr/saisir/delegues"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="Contacter le délégué du Défenseur des droits dans votre région - nouvelle fenêtre"
+              >
                 Contacter le délégué du Défenseur des droits dans votre région
               </a>
             </li>
