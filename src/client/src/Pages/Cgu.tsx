@@ -128,8 +128,10 @@ function Cgu() {
         <p>
           Ainsi, ProConnect permet de
           <i>
-            « Contribuer au décloisonnement des applications ministérielles et à
-            leur ouverture à l'interministériel »
+            <blockquote>
+              « Contribuer au décloisonnement des applications ministérielles et
+              à leur ouverture à l'interministériel »
+            </blockquote>
           </i>
           conformément aux 8 missions du programme TECH.GOUV.
         </p>
@@ -424,12 +426,14 @@ function Cgu() {
         <p>
           En sa qualité d'Agent de la fonction publique, l'Utilisateur se doit
           de respecter la loi n° 83-634 du 13 juillet 1983 portant droits et
-          obligations des fonctionnaires, qui énonce notamment que : « Les
-          fonctionnaires sont tenus au secret professionnel dans le cadre des
-          règles instituées dans le code pénal. Les fonctionnaires doivent faire
-          preuve de discrétion professionnelle pour tous les faits, informations
-          ou documents dont ils ont connaissance dans l'exercice ou à l'occasion
-          de l'exercice de leurs fonctions […] ».
+          obligations des fonctionnaires, qui énonce notamment que :{" "}
+          <blockquote>
+            « Les fonctionnaires sont tenus au secret professionnel dans le
+            cadre des règles instituées dans le code pénal. Les fonctionnaires
+            doivent faire preuve de discrétion professionnelle pour tous les
+            faits, informations ou documents dont ils ont connaissance dans
+            l'exercice ou à l'occasion de l'exercice de leurs fonctions […] ».
+          </blockquote>
         </p>
         <h2 className="fr-col-12">6. Accessibilité et disponibilité</h2>
         <p>
