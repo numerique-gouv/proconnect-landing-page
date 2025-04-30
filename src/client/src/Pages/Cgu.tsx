@@ -18,62 +18,94 @@ function Cgu() {
         </p>
         <ul>
           <li className="fr-pb-2w">
-            La protection de la vie privée, notamment 
-            <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32016R0679&from=FR">
+            La protection de la vie privée, notamment{" "}
+            <a
+              href="https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32016R0679&from=FR"
+              rel="noreferrer noopener"
+              title="Règlement (UE) 2016/679 du 27 avril 2016 - nouvelle fenêtre"
+            >
               règlement (UE) 2016/679 du 27 avril 2016
-            </a>
-             (dit le RGPD) et de la 
-            <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/">
+            </a>{" "}
+             (dit le RGPD) et de la{" "}
+            <a
+              href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/"
+              rel="noreferrer noopener"
+              title="Loi n° 78-17 du 6 janvier 1978 - nouvelle fenêtre"
+            >
               loi n° 78-17 du 6 janvier 1978
-            </a>
-             modifiée relative à l'informatique, aux fichiers et aux libertés.
+            </a>{" "}
+            modifiée relative à l'informatique, aux fichiers et aux libertés.
           </li>
 
           <li className="fr-py-2w">
             La relation entre le public et l'administration, telle que prévue
-            par le 
-            <a href="https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000031366350/">
+            par le{" "}
+            <a
+              href="https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000031366350/"
+              rel="noreferrer noopener"
+              title="Code des relations entre le public et l'administration - nouvelle fenêtre"
+            >
               Code des relations entre le public et l'administration
-            </a>
-             pour les dispositions s'appliquant également aux agents.
+            </a>{" "}
+            pour les dispositions s'appliquant également aux agents.
           </li>
 
           <li className="fr-py-2w">
-            La 
-            <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000504704/#:~:text=Aucun%20fonctionnaire%20ne%20doit%20subir,de%20compromettre%20son%20avenir%20professionnel.">
+            La{" "}
+            <a
+              href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000504704/#:~:text=Aucun%20fonctionnaire%20ne%20doit%20subir,de%20compromettre%20son%20avenir%20professionnel."
+              rel="noreferrer noopener"
+              title="Loi n° 83-634 du 13 juillet 1983 - nouvelle fenêtre"
+            >
               loi n° 83-634 du 13 juillet 1983
-            </a>
-             portant droits et obligations des fonctionnaires.
+            </a>{" "}
+            portant droits et obligations des fonctionnaires.
           </li>
 
           <li className="fr-py-2w">
-            La 
-            <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000801164/">
+            La{" "}
+            <a
+              href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000801164/"
+              rel="noreferrer noopener"
+              title="Loi n° 2004-575 du 21 juin 2004 - nouvelle fenêtre"
+            >
               loi n° 2004-575 du 21 juin 2004
-            </a>
-             pour la confiance dans l'économie numérique.
+            </a>{" "}
+            pour la confiance dans l'économie numérique.
           </li>
 
           <li className="fr-py-2w">
             La sécurité des systèmes d'information et notamment du référentiel
-            général de sécurité (RGS) encadré par le 
-            <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021779444/#:~:text=Copier%20le%20texte-,D%C3%A9cret%20n%C2%B0%202010%2D112%20du%202%20f%C3%A9vrier%202010%20pris,et%20entre%20les%20autorit%C3%A9s%20administratives">
+            général de sécurité (RGS) encadré par le{" "}
+            <a
+              href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021779444/#:~:text=Copier%20le%20texte-,D%C3%A9cret%20n%C2%B0%202010%2D112%20du%202%20f%C3%A9vrier%202010%20pris,et%20entre%20les%20autorit%C3%A9s%20administratives"
+              rel="noreferrer noopener"
+              title="Décret n° 2010-112 du 2 février 2010 - nouvelle fenêtre"
+            >
               décret n° 2010-112 du 2 février 2010
-            </a>
-              pris pour l'application des articles 9, 10 et 12 de 
-            <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000636232/">
+            </a>{" "}
+            pris pour l'application des articles 9, 10 et 12 de{" "}
+            <a
+              href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000636232/"
+              rel="noreferrer noopener"
+              title="L'ordonnance n° 2005-1516 du 8 décembre 2005 - nouvelle fenêtre"
+            >
               l'ordonnance n° 2005-1516 du 8 décembre 2005
-            </a>
-             relative aux échanges électroniques entre les usagers et les
+            </a>{" "}
+            relative aux échanges électroniques entre les usagers et les
             autorités administratives et entre les autorités administratives.
           </li>
 
           <li className="fr-py-2w">
-            Le 
-            <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039281619/">
+            Le{" "}
+            <a
+              href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000039281619/"
+              rel="noreferrer noopener"
+              title="Décret n° 2019-1088 du 25 octobre 2019 - nouvelle fenêtre"
+            >
               décret n° 2019-1088 du 25 octobre 2019
-            </a>
-             relatif au système d'information et de communication de l'Etat et à
+            </a>{" "}
+            relatif au système d'information et de communication de l'Etat et à
             la direction interministérielle du numérique.
           </li>
 
@@ -301,11 +333,15 @@ function Cgu() {
         <h4>4.2.2 Droits des personnes concernées</h4>
         <p>
           La DINUM et les Partenaires garantissent aux Agents utilisateurs du
-          Service les droits prévus aux articles 39 et suivants de la 
-          <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/">
+          Service les droits prévus aux articles 39 et suivants de la{" "}
+          <a
+            href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/"
+            rel="noreferrer noopener"
+            title="Loi n° 78-17 du 6 janvier 1978 - nouvelle fenêtre"
+          >
             loi n° 78-17 du 6 janvier 1978
-          </a>
-           relative à l'informatique aux fichiers et aux libertés. Ils
+          </a>{" "}
+          relative à l'informatique aux fichiers et aux libertés. Ils
           s'exercent, notamment s'agissant des données mentionnées au 2° de
           l'article 3.4, auprès de la DINUM située au 20, avenue de Ségur, 75007
           Paris, par voie postale ou par voie électronique, dans les conditions
