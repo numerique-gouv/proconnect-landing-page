@@ -31,6 +31,8 @@ const Card: React.FC<Props> = ({
         enlargeLink
         linkProps={{
           to: url,
+          title: `${title} - nouvelle fenêtre`,
+          rel: "noopener noreferrer",
         }}
         size="medium"
         title={title}
