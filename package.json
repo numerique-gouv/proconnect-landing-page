@@ -18,7 +18,7 @@
   "devDependencies": {
     "@types/express": "^5.0.1",
     "@types/express-session": "^1.18.1",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.17",
     "concurrently": "^9.1.2",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
