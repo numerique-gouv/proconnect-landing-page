@@ -2,6 +2,7 @@ import { Header as DsfrHeader } from "@codegouvfr/react-dsfr/Header";
 import "./header.css";
 import { getUserInfo } from "../../lib/authentication";
 import logo from "../../assets/logo_centered.svg";
+import { headerFooterDisplayItem } from "@codegouvfr/react-dsfr/Display";
 
 import { DropDownLogout } from "../DropDownLogout/DropDownLogout";
 
@@ -16,6 +17,7 @@ function Header() {
       },
       text: "Feuille de route",
     },
+
     ...(isConnected
       ? [<DropDownLogout key="dropDownLogout" />]
       : [
@@ -28,6 +30,7 @@ function Header() {
             text: "Se connecter",
           },
         ]),
+    headerFooterDisplayItem,
   ];
 
   return (
