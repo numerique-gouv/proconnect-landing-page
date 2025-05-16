@@ -1,4 +1,5 @@
 import { Footer as DsfrFooter } from "@codegouvfr/react-dsfr/Footer";
+import { headerFooterDisplayItem } from "@codegouvfr/react-dsfr/Display";
 
 function Footer() {
   return (
@@ -39,6 +40,7 @@ function Footer() {
         >
           Devenez un FI ou FS partenaire
         </a>,
+        headerFooterDisplayItem,
       ]}
     />
   );
