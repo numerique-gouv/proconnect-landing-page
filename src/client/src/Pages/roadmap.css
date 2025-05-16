@@ -22,7 +22,7 @@ ul.roadmap-event-list li {
 .navmenu ul li.roadmap-item::after {
   content: "";
   position: absolute;
-  background: var(--background-default-grey);
+  background: var(--background-raised-grey);
   width: 22px;
   height: 22px;
   left: -42px;
@@ -43,7 +43,7 @@ ul.roadmap-event-list li {
   top: 40px;
   bottom: 0;
   position: absolute;
-  background-color: var(--background-default-grey);
+  background-color: var(--background-raised-grey);
   left: -40px;
 }
 
@@ -53,7 +53,7 @@ ul.roadmap-event-list li {
   top: 0;
   height: 38px;
   position: absolute;
-  background-color: var(--background-default-grey);
+  background-color: var(--background-raised-grey);
   left: -41.5px;
 }
 
