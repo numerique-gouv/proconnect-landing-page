@@ -11,7 +11,7 @@ declare module "@codegouvfr/react-dsfr/spa" {
   }
 }
 
-startReactDsfr({ defaultColorScheme: "light", Link });
+startReactDsfr({ defaultColorScheme: "system", Link });
 
 const queryClient = new QueryClient();
 
