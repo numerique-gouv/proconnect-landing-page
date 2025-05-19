@@ -1,6 +1,6 @@
 import React from "react";
 import welcome from "../assets/illu_hero.webp";
-import profiling_transparent from "../assets/illu_profiling_transparent.webp";
+import profiling_transparent from "../assets/illu_profiling.webp";
 import suite from "../assets/illu_suite.webp";
 import illu_partners from "../assets/illu_partners.webp";
 import "./layout.css";
