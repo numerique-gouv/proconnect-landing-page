@@ -2,7 +2,7 @@ import { RadioButtons } from "@codegouvfr/react-dsfr/RadioButtons";
 import Button from "@codegouvfr/react-dsfr/Button";
 import { useState } from "react";
 import { bosses, bossNames, bossNameType } from "./constants";
-import profiling from "../../assets/illu_profiling.webp";
+import profiling from "../../assets/illu_profiling_eligibility.webp";
 import { useNavigate } from "react-router-dom";
 
 export function WhoIsYourEmployer() {

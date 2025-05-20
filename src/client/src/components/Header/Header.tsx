@@ -16,6 +16,7 @@ function Header() {
       },
       text: "Feuille de route",
     },
+
     ...(isConnected
       ? [<DropDownLogout key="dropDownLogout" />]
       : [
