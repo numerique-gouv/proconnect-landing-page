@@ -14,7 +14,9 @@ function SiteMap() {
           <a href="/services">Annuaire des services</a>
         </li>
         <li>
-          <a href="/eligibilite">Testez votre éligibilité</a>
+          <a href="/recommandation-test">
+            Découvrez les sites recommandés pour vous
+          </a>
         </li>
         <li>
           <a href="/feuille-de-route">Feuille de route</a>
