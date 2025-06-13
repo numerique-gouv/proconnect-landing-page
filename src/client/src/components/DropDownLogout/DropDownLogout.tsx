@@ -59,7 +59,7 @@ export function DropDownLogout() {
           <a
             href="/mon-compte"
             rel="noreferrer"
-            className="fr-btn fr-icon-account-line"
+            className="fr-btn fr-icon-account-circle-line"
           >
             Mon compte {`(${firstName} ${lastName})`}
           </a>
