@@ -48,7 +48,7 @@ function Header() {
       quickAccessItems={quickAccessItems}
       serviceTagline={
         <span id="logo" className="fr-h5 blue-france">
-          <img src={logo} width={"32px"} className="fr-mr-1w" />
+          <img src={logo} width={"32px"} className="fr-mr-1w" alt="" />
           ProConnect
         </span>
       }
