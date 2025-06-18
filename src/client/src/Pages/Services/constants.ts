@@ -73,13 +73,6 @@ const SERVICES_LIST: Array<serviceType> = [
     categories: ["suiteNumerique"],
   },
   {
-    title: "Osmose",
-    url: "https://osmose.numerique.gouv.fr/plugins/DINUMThemePlugin/jsp/front/privateLoginOsmose.jsp?redirect=https%3A%2F%2Fosmose.numerique.gouv.fr%2Fjcms%2F",
-    description: "Travailler avec des outils collaboratifs",
-    network: "internet",
-    categories: ["suiteNumerique"],
-  },
-  {
     title: "Annuaire des Entreprises",
     url: "https://annuaire-entreprises.data.gouv.fr/",
     description:
@@ -574,9 +567,25 @@ const SERVICES_LIST: Array<serviceType> = [
     title: "Tchap",
     url: "https://tchap.gouv.fr/",
     description:
-      "Communiquer facilement en toute sécurité entre agents de la fonction publique",
+      "Communiquer facilement en toute sécurité entre agents de la fonction publique.",
     network: "internet",
     categories: ["suiteNumerique"],
+  },
+  {
+    title: "Jecliqueoupas",
+    url: "https://jecliqueoupas.cyber.gouv.fr/",
+    description:
+      "Analyser un fichier reçu dans un cadre professionnel afin de s'assurer qu'il ne contient pas de charge malveillante.",
+    network: "internet",
+    isOpenToPrivate: false,
+  },
+  {
+    title: "Data.Subvention",
+    url: "https://datasubvention.beta.gouv.fr/",
+    description:
+      "Obtenir les informations sur les associations et leurs subventions.",
+    network: "internet",
+    isOpenToPrivate: false,
   },
 ];
 
