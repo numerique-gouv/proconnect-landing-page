@@ -587,6 +587,14 @@ const SERVICES_LIST: Array<serviceType> = [
     network: "internet",
     isOpenToPrivate: false,
   },
+  {
+    title: "CryptPad - Collaboration Chiffrée de bout en bout",
+    url: "https://gouv.cryptpad.fr/",
+    description:
+      "Editer des Documents format texte, kanban, office et questionnaires chiffrés de bout en bout.",
+    network: "internet",
+    isOpenToPrivate: false,
+  },
 ];
 
 const titlesToKeep = [
