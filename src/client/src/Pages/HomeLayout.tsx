@@ -153,7 +153,7 @@ function HomeLayout() {
         </div>
       </div>
       <div className="fr-container fr-mb-2w">
-        <h1 className="fr-h1">Questions fréquentes</h1>
+        <h2 className="fr-h1">Questions fréquentes</h2>
         <div className="fr-accordions-group">
           <section className="fr-accordion">
             <h3 className="fr-accordion__title">
