@@ -82,6 +82,7 @@ function Accessibility() {
                 title="Écrire un message au Défenseur des droits - nouvelle fenêtre"
               >
                 Écrire un message au Défenseur des droits
+                <span className="visually-hidden"> - nouvelle fenêtre</span>
               </a>
             </li>
             <li>
@@ -92,6 +93,7 @@ function Accessibility() {
                 title="Contacter le délégué du Défenseur des droits dans votre région - nouvelle fenêtre"
               >
                 Contacter le délégué du Défenseur des droits dans votre région
+                <span className="visually-hidden"> - nouvelle fenêtre</span>
               </a>
             </li>
             <li>

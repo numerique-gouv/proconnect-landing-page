@@ -130,6 +130,7 @@ function HomeLayout() {
               title="Découvrir la Suite Numérique - nouvelle fenêtre"
             >
               Découvrir la Suite Numérique
+              <span className="visually-hidden"> - nouvelle fenêtre</span>
             </a>
           </div>
         </div>
@@ -218,6 +219,7 @@ function HomeLayout() {
                     title="Annuaire des entreprises - nouvelle fenêtre"
                   >
                     l'Annuaire des Entreprises
+                    <span className="visually-hidden"> - nouvelle fenêtre</span>
                   </a>
                   )
                 </li>
@@ -268,6 +270,7 @@ function HomeLayout() {
                     title="Aide ProConnect - nouvelle fenêtre"
                   >
                     en savoir plus
+                    <span className="visually-hidden"> - nouvelle fenêtre</span>
                   </a>
                   )
                 </li>
@@ -286,6 +289,7 @@ function HomeLayout() {
             title="Voir tous les articles du centre d'aide - nouvelle fenêtre"
           >
             Voir tous les articles du centre d'aide
+            <span className="visually-hidden"> - nouvelle fenêtre</span>
           </a>
         </p>
       </div>
