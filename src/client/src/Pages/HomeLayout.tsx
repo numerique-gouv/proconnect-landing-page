@@ -62,7 +62,7 @@ function HomeLayout() {
       <div className="fr-container fr-mb-16w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
           <div className="fr-col-12 fr-col-md-6 display-column">
-            <img src={profiling_transparent} width="100%" />
+            <img src={profiling_transparent} width="100%" alt="" />
           </div>
           <div className="fr-col-12 fr-col-md-6 fr-pl-md-4w">
             <Chip className="fr-mb-2w" text="Connexion unique" />
@@ -101,14 +101,14 @@ function HomeLayout() {
             </p>
           </div>
           <div className="fr-col-12 fr-col-md-6 display-column ">
-            <img src={illu_partners} width="100%" />
+            <img src={illu_partners} width="100%" alt="" />
           </div>
         </div>
       </div>
       <div className="fr-container fr-mb-16w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
           <div className="fr-col-12 fr-col-md-6 display-column ">
-            <img src={suite} width="100%" />
+            <img src={suite} width="100%" alt="" />
           </div>
 
           <div className="fr-col-12 fr-col-md-5 fr-pl-md-6w">
@@ -148,7 +148,7 @@ function HomeLayout() {
             </p>
           </div>
           <div className="fr-col-12 fr-col-md-6 display-column ">
-            <img src={illu_certified} width="100%" />
+            <img src={illu_certified} width="100%" alt="" />
           </div>
         </div>
       </div>
