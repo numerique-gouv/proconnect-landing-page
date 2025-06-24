@@ -13,16 +13,17 @@ function LegalNotices() {
         ministre.{" "}
       </p>
       <p>
-        ProConnect/DINUM
-        <br />
-        20 avenue de Ségur 75007 Paris <br />
-        Tel. accueil : 01.71.21.01.70
+        <address>
+          <p className="fr-mb-0">ProConnect/DINUM</p>
+          <p className="fr-mb-0">20 avenue de Ségur</p>
+          <p className="fr-mb-0">75007 Paris</p>
+          <p className="fr-mb-0">Tel. accueil : 01.71.21.01.70</p>
+        </address>
       </p>
-      <p>
+      <p className="fr-mb-0">
         SIRET : 12000101100010 (secrétariat général du gouvernement)
-        <br />
-        SIREN : 120 001 011
       </p>
+      <p>SIREN : 120 001 011</p>
       <h2 className="fr-h4">Directeur de publication</h2>
       <p>
         Stéphanie Schaer : Directrice du programme FranceConnect - Cheffe de
@@ -48,11 +49,9 @@ function LegalNotices() {
         proconnect.gouv.fr est recommandée.
       </p>
       <h2 className="fr-h4">Hébergement</h2>
-      <p>
-        Outscale SAS
-        <br />
-        RCS: 527 594 493
-        <br />
+      <p className="fr-mb-0">Outscale SAS</p>
+      <p className="fr-mb-0">RCS: 527 594 493</p>
+      <p className="fr-mb-0">
         Siège social : 1 rue Royale, 92210 Saint Cloud, France
       </p>
     </div>

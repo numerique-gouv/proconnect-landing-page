@@ -37,27 +37,25 @@ function HomeLayout() {
       </div>
       <div className="fr-container fr-mb-10w">
         <h2 className="fr-h2">Êtes-vous éligible ?</h2>
-        <p>
-          <span className="bold">
-            Oui ! ProConnect peut être utilisé par tous les professionnels du
-            public comme du privé.
-          </span>
-          <br />
+        <p className="bold fr-mb-0">
+          Oui ! ProConnect peut être utilisé par tous les professionnels du
+          public comme du privé.
+        </p>
+        <p className="fr-mb-0">
           Certains sites peuvent être réservés à des publics spécifiques : vos
-          droits d’accès dépendent de votre adresse e-mail <br />
-          professionnelle et de votre organisation.
-          <br />
+          droits d’accès dépendent de votre adresse e-mail professionnelle et de
+          votre organisation.
+        </p>
+        <p>
           Dites-nous qui est votre employeur et découvrez une sélection de sites
           faits pour vous !
-          <br />
-          <br />
-          <a
-            className="fr-btn fr-btn--lg fr-btn--icon-left fr-icon-user-heart-line"
-            href="/recommandation-test"
-          >
-            Quels sites sont faits pour vous ?
-          </a>
         </p>
+        <a
+          className="fr-btn fr-btn--lg fr-btn--icon-left fr-icon-user-heart-line"
+          href="/recommandation-test"
+        >
+          Quels sites sont faits pour vous ?
+        </a>
       </div>
       <div className="fr-container fr-mb-16w">
         <div className="fr-grid-row fr-grid-row--gutters fr-col-12">
@@ -67,12 +65,13 @@ function HomeLayout() {
           <div className="fr-col-12 fr-col-md-6 fr-pl-md-4w">
             <Chip className="fr-mb-2w" text="Connexion unique" />
             <h2 className="fr-h2 fr-mb-1w">Votre identité professionnelle</h2>
+            <p className="fr-mb-0">
+              ProConnect vous fait entrer là où vous avez droit !
+            </p>
             <p>
-              ProConnect vous fait entrer là où vous avez droit ! <br />
-              Connectez-vous une fois le matin et accédez toute la <br />
-              journée à tous vos sites partenaires autorisés, grâce à votre
-              <br />
-              adresse email professionnelle.
+              Connectez-vous une fois le matin et accédez toute la journée à
+              tous vos sites partenaires autorisés, grâce à votre adresse email
+              professionnelle.
             </p>
           </div>
         </div>
@@ -82,23 +81,23 @@ function HomeLayout() {
           <div className="fr-col-12 fr-col-md-6 fr-pr-md-4w">
             <Chip className="fr-mb-2w" text="Diversité de partenaires" />
             <h2 className="fr-h2 fr-mb-1w">Toujours plus de partenaires</h2>
-            <p>
+            <p className="fr-mb-0">
               Plus de 120 partenaires intègrent déjà le bouton ProConnect pour
               simplifier l'accès à un service, des démarches ou encore des
               données.
-              <br />
+            </p>
+            <p className="fr-mb-0">
               Certains sites sont réservés à des publics spécifiques (ex.:
               agents du Ministère de la Justice, du Ministère de l'Intérieur,
               etc.)
-              <br />
+            </p>
+            <p className="fr-mb-0">
               D'autres sont ouverts à tous les professionnels, y compris ceux du
               privé.
-              <br />
-              <br />
-              <a className="fr-link" href="/services">
-                Consulter l'annuaire des sites
-              </a>
             </p>
+            <a className="fr-link" href="/services">
+              Consulter l'annuaire des sites
+            </a>
           </div>
           <div className="fr-col-12 fr-col-md-6 display-column ">
             <img src={illu_partners} width="100%" alt="" />
@@ -114,25 +113,24 @@ function HomeLayout() {
           <div className="fr-col-12 fr-col-md-5 fr-pl-md-6w">
             <Chip className="fr-mb-2w" text="Professionnels du public" />
             <h2 className="fr-h2 fr-mb-1w">Zoom sur la Suite Numérique</h2>
-            <p>
+            <p className="fr-mb-0">
               En tant que membre de l'administration publique, ProConnect vous
               donne accès à de nombreux outils pour créer, organiser et
               collaborer.
-              <br />
+            </p>
+            <p className="fr-mb-0">
               Resana, Webinaire, Webconf, Audioconf... Autant d'outils puissants
               à portée de main.
-              <br />
-              <br />
-              <a
-                className="fr-link"
-                target="_blank"
-                rel="noopener external noreferrer"
-                href="https://lasuite.numerique.gouv.fr"
-                title="La Suite Numérique - nouvelle fenêtre"
-              >
-                Découvrir la Suite Numérique
-              </a>
             </p>
+            <a
+              className="fr-link"
+              target="_blank"
+              rel="noopener external noreferrer"
+              href="https://lasuite.numerique.gouv.fr"
+              title="Découvrir la Suite Numérique - nouvelle fenêtre"
+            >
+              Découvrir la Suite Numérique
+            </a>
           </div>
         </div>
       </div>
@@ -142,9 +140,9 @@ function HomeLayout() {
             <Chip className="fr-mb-2w" text="En cours de construction" />
             <h2 className="fr-h2 fr-mb-1w">Certification Dirigeant</h2>
             <p>
-              Pour les professionnels du secteur privé, nous vous <br />
-              certifions bientôt en tant que dirigeant de votre entreprise
-              <br /> pour vos démarches sécurisées.
+              Pour les professionnels du secteur privé, nous vous certifions
+              bientôt en tant que dirigeant de votre entreprise pour vos
+              démarches sécurisées.
             </p>
           </div>
           <div className="fr-col-12 fr-col-md-6 display-column ">
@@ -186,25 +184,24 @@ function HomeLayout() {
               </button>
             </h3>
             <div className="fr-collapse" id="accordion-115">
-              <p>
+              <p className="fr-mb-0">
                 <strong>
                   Vous faites partie d'une administration ou structure
                   partenaire ?
                 </strong>
-                <br />
+              </p>
+              <p className="fr-mb-0">
                 Rentrez votre email professionnelle : vous serez automatiquement
                 redirigé vers votre portail d'identification habituel (ex :
                 Calypsso, Curasso, Cerbère etc.).
-                <br />
-                👉 Pas besoin de créer un nouveau compte !
               </p>
+              <p>👉 Pas besoin de créer un nouveau compte !</p>
               <p>
                 <strong>
                   Votre adresse est rattachée à une autre structure ?
                 </strong>
               </p>
-              <br />
-              Créez un compte en quelques étapes simples :
+              <p>Créez un compte en quelques étapes simples :</p>
               <ol>
                 <li>
                   Confirmez votre adresse email à l’aide du code de validation
@@ -286,7 +283,7 @@ function HomeLayout() {
             target="_blank"
             rel="noopener external noreferrer"
             href="https://proconnect.crisp.help/fr/"
-            title="Aide ProConnect - nouvelle fenêtre"
+            title="Voir tous les articles du centre d'aide - nouvelle fenêtre"
           >
             Voir tous les articles du centre d'aide
           </a>

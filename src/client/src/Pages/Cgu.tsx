@@ -146,11 +146,12 @@ function Cgu() {
           <b>« Partenaires »</b>.
         </p>
         <h3>3.2. Objet de ProConnect</h3>
-        <p>
+        <p className="fr-mb-0">
           ProConnect met en relation des Fournisseurs d'identité et des
           Fournisseurs de services pour permettre de simplifier le travail des
           agents.
-          <br />
+        </p>
+        <p>
           C'est un service proposé par la DINUM qui permet aux agents de se
           connecter à des services en ligne proposés par des Fournisseurs de
           services autorisés préalablement. ProConnect s'appuie sur des comptes
@@ -170,17 +171,16 @@ function Cgu() {
         <p>
           Le Service ProConnect s'adresse aux agents de la fonction publique de
           l'Etat et des opérateurs présents dans les annexes générales au projet
-          de loi de finances de l'année. <br />
-          L'utilisation du service ProConnect est facultative et gratuite.
+          de loi de finances de l'année. L'utilisation du service ProConnect est
+          facultative et gratuite.
         </p>
         <h3>3.3. Fonctionnalités</h3>
         <p>
           ProConnect est un dispositif facultatif d'identification et
           d'authentification pour les agents exerçant au sein de la fonction
           publique d'État (administrations centrales, services déconcentrés) et
-          des opérateurs de l'État.
-          <br />
-          « ProConnect » repose sur une fédération d'identité.
+          des opérateurs de l'État.« ProConnect » repose sur une fédération
+          d'identité.
         </p>
         <p>
           Le service ProConnect permet à un agent d'accéder à des services en
@@ -197,7 +197,9 @@ function Cgu() {
           d'un opérateur de l'État.
         </p>
         <p>
-          <i>Cinématique d'usage :</i> <br />
+          <i>Cinématique d'usage :</i>
+        </p>
+        <p>
           Pour accéder à un service en ligne, l'Agent utilisateur clique sur le
           bouton de connexion « ProConnect » présent sur la page dudit service
           puis sélectionne un compte (fournisseur d'identité) qu'il connait
@@ -205,8 +207,7 @@ function Cgu() {
         </p>
         <p>
           ProConnect le redirige alors vers la page de connexion de ce compte
-          pour que l'agent puisse s'identifier par un moyen
-          d'authentification.{" "}
+          pour que l'agent puisse s'identifier par un moyen d'authentification.
         </p>
         <p>
           L'agent utilisateur accède alors au service souhaité une fois qu'il a
@@ -487,9 +488,9 @@ function Cgu() {
           suspendre, sans préavis, le Service pour des raisons de maintenance ou
           pour tout autre motif jugé nécessaire. Une page d'information est
           alors affichée à l'Agent utilisateur lui mentionnant cette
-          indisponibilité. <br />
-          L'indisponibilité ne donne droit à aucune indemnité.
+          indisponibilité.
         </p>
+        <p>L'indisponibilité ne donne droit à aucune indemnité.</p>
         <h2 className="fr-col-12">
           7. Acceptation – modification – résiliation
         </h2>
