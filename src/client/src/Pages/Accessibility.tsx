@@ -7,9 +7,11 @@ function Accessibility() {
     <div className="fr-container fr-my-5w">
       <div className="fr-grid-row">
         <h1>Accessibilité</h1>
-        <p>
+        <p className="fr-mb-0">
           Le site ProConnect n'est actuellement pas en conformité avec le RGAA
-          (Référentiel Général d'Amélioration de l'Accessibilité). <br />
+          (Référentiel Général d'Amélioration de l'Accessibilité).
+        </p>
+        <p>
           Nous n'avons pas encore réalisé d'audit d'accessibilité qui nous
           permettrait d'identifier précisément les non-conformités.
         </p>
@@ -18,15 +20,14 @@ function Accessibility() {
           Aucun test d'accessibilité n'a été réalisé à ce jour. Nous prévoyons
           de mener un audit complet afin d'identifier les points d'amélioration.
         </p>
-
         <h2>Contenus non accessibles</h2>
         <p>
           En l'absence d'audit, nous ne pouvons pas détailler précisément les
-          contenus non conformes. <br />
-          Nous sommes conscients que certains éléments du site peuvent présenter
-          des difficultés d'accès pour les utilisateurs en situation de
-          handicap.
+          contenus non conformes. Nous sommes conscients que certains éléments
+          du site peuvent présenter des difficultés d'accès pour les
+          utilisateurs en situation de handicap.
         </p>
+
         <h2>Établissement de cette déclaration d'accessibilité</h2>
         <p>
           Cette déclaration a été établie le 13 janvier 2025 par{" "}
@@ -37,7 +38,6 @@ function Accessibility() {
           . Elle n'est pas basée sur une analyse de conformité car aucun audit
           n'a été réalisé.
         </p>
-
         <h2>Retour d'information et contact</h2>
         <p>
           Si vous n’arrivez pas à accéder à un contenu ou à un service, vous
@@ -51,14 +51,17 @@ function Accessibility() {
               </a>
             </li>
             <li>
-              Adresse postale : ProConnect/DINUM <br />
-              20 avenue de Ségur 75007 Paris <br />
-              Tel. accueil : 01.71.21.01.70
+              <p className="fr-mb-0">Adresse postale :</p>
+              <address>
+                <p className="fr-mb-0">ProConnect/DINUM</p>
+                <p className="fr-mb-0">20 avenue de Ségur</p>
+                <p className="fr-mb-0">75007 Paris</p>
+                <p className="fr-mb-0">Tel. accueil : 01.71.21.01.70</p>
+              </address>
             </li>
           </ul>
           Nous tâcherons de vous répondre dans les meilleurs délais.
         </p>
-
         <h2>Voies de recours</h2>
         <p>
           Si vous constatez un défaut d'accessibilité vous empêchant d'accéder à
@@ -92,14 +95,14 @@ function Accessibility() {
               </a>
             </li>
             <li>
-              Envoyer un courrier postal (gratuit, ne pas mettre de timbre)
-              <br />
-              Défenseur des droits
-              <br />
-              Libre réponse 71120
-              <br />
-              75342 Paris CEDEX 07
-              <br />
+              <p className="fr-mb-0">
+                Envoyer un courrier postal (gratuit, ne pas mettre de timbre) :
+              </p>
+              <address>
+                <p className="fr-mb-0">Défenseur des droits</p>
+                <p className="fr-mb-0">Libre réponse 71120</p>
+                <p className="fr-mb-0">75342 Paris CEDEX 07</p>
+              </address>
             </li>
           </ul>
         </p>
