@@ -90,6 +90,9 @@ function Roadmap() {
                           title="Tchap - nouvelle fenêtre"
                         >
                           Tchap
+                          <span className="visually-hidden">
+                            - nouvelle fenêtre
+                          </span>
                         </a>
                         .
                       </li>
@@ -106,6 +109,9 @@ function Roadmap() {
                           title="Espace Partenaires ProConnect - nouvelle fenêtre"
                         >
                           Espace Partenaires
+                          <span className="visually-hidden">
+                            - nouvelle fenêtre
+                          </span>
                         </a>
                       </li>
                     </ul>
