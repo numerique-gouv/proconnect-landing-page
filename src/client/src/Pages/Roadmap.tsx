@@ -15,7 +15,7 @@ function Roadmap() {
               <ul className="roadmap-list">
                 <li className="roadmap-item">
                   <div className="bubble fr-py-5v">
-                    <h2 className="fr-h6 fr-mb-1w">S2 2023</h2>
+                    <h2 className="fr-h6 fr-mb-1w">Semestre deux 2023</h2>
                     <ul className="roadmap-event-list">
                       <li>
                         Fusion avec MonComptePro : tous les agents de la
@@ -30,7 +30,7 @@ function Roadmap() {
                 </li>
                 <li className="roadmap-item">
                   <div className="bubble">
-                    <h2 className="fr-h6 fr-mb-1w">S1 2024</h2>
+                    <h2 className="fr-h6 fr-mb-1w">Semestre un 2024</h2>
                     <ul className="roadmap-event-list">
                       <li>
                         Migration de l'infrastructure cloud de MonComptePro.
@@ -53,7 +53,7 @@ function Roadmap() {
                 </li>
                 <li className="roadmap-item">
                   <div className="bubble">
-                    <h2 className="fr-h6 fr-mb-1w">S2 2024</h2>
+                    <h2 className="fr-h6 fr-mb-1w">Semestre deux 2024</h2>
                     <ul className="roadmap-event-list">
                       <li>France Travail rejoint la fédération d'identité.</li>
                       <li>
@@ -78,7 +78,7 @@ function Roadmap() {
                 </li>
                 <li className="roadmap-item active">
                   <div className="bubble">
-                    <h2 className="fr-h6 fr-mb-1w">T1 2025</h2>
+                    <h2 className="fr-h6 fr-mb-1w">Trimestre un 2025</h2>
                     <ul className="roadmap-event-list">
                       <li>Certification dirigeants pour les indépendants</li>
                       <li>
@@ -119,7 +119,7 @@ function Roadmap() {
                 </li>
                 <li className="roadmap-item">
                   <div className="bubble">
-                    <h2 className="fr-h6 fr-mb-1w">T2 2025</h2>
+                    <h2 className="fr-h6 fr-mb-1w">Trimestre deux 2025</h2>
                     <ul className="roadmap-event-list">
                       <li>Authentification multifacteur dans ProConnect</li>
                       <li>Certification dirigeants pour toutes et tous</li>
@@ -130,7 +130,7 @@ function Roadmap() {
                 </li>
                 <li className="roadmap-item">
                   <div className="bubble">
-                    <h2 className="fr-h6 fr-mb-1w">S2 2025</h2>
+                    <h2 className="fr-h6 fr-mb-1w">Semestre deux 2025</h2>
                     <ul className="roadmap-event-list">
                       <li>
                         Réconciliation d’identité entre Fournisseurs d'identité
