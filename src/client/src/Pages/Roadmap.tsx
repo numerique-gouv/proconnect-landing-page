@@ -76,7 +76,7 @@ function Roadmap() {
                     </ul>
                   </div>
                 </li>
-                <li className="roadmap-item active">
+                <li className="roadmap-item">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">Trimestre un 2025</h2>
                     <ul className="roadmap-event-list">
@@ -117,9 +117,10 @@ function Roadmap() {
                     </ul>
                   </div>
                 </li>
-                <li className="roadmap-item">
+                <li className="roadmap-item active">
                   <div className="bubble">
                     <h2 className="fr-h6 fr-mb-1w">Trimestre deux 2025</h2>
+                    <span className="visually-hidden">période en cours</span>
                     <ul className="roadmap-event-list">
                       <li>Authentification multifacteur dans ProConnect</li>
                       <li>Certification dirigeants pour toutes et tous</li>
