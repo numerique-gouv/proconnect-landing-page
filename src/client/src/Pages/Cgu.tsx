@@ -1,7 +1,7 @@
 import { useTitle } from "../lib/useTitle";
 
 function Cgu() {
-  useTitle("CGU");
+  useTitle("Conditions générales d'utilisation");
 
   return (
     <div className="fr-container fr-my-5w">
