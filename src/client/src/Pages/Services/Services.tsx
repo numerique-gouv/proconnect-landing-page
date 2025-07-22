@@ -28,6 +28,7 @@ function Services() {
             }}
           >
             Tous les services
+            {renderSelectedLabel("all", selectedTag)}
           </Tag>
         </div>
         <div className="tag-container">
@@ -38,6 +39,7 @@ function Services() {
             }}
           >
             Suite numérique
+            {renderSelectedLabel("suiteNumerique", selectedTag)}
           </Tag>
         </div>
         <div className="tag-container">
@@ -48,6 +50,7 @@ function Services() {
             }}
           >
             Suite territoriale
+            {renderSelectedLabel("suiteTerritoriale", selectedTag)}
           </Tag>
         </div>
         <div className="tag-container">
@@ -58,6 +61,7 @@ function Services() {
             }}
           >
             Sphère inclusion
+            {renderSelectedLabel("inclusion", selectedTag)}
           </Tag>
         </div>
       </div>
@@ -123,6 +127,12 @@ function Services() {
           service.categories?.includes("inclusion")
         );
     }
+  }
+
+  function renderSelectedLabel(tagValue: string, selectedTag: string) {
+    return selectedTag === tagValue ? (
+      <span className="visually-hidden"> (sélectionné)</span>
+    ) : null;
   }
 }
 
