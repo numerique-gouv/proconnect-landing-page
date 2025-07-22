@@ -13,6 +13,7 @@ function Footer() {
       websiteMapLinkProps={{
         to: "/plan-du-site",
       }}
+      homeLinkProps={{ to: "/", title: "Accueil - ProConnect" }}
       bottomItems={[
         <a key="cgu" href="/cgu" className="fr-footer__bottom-link">
           Conditions générales d'utilisation
