@@ -3,7 +3,12 @@ import "./recommandation.css";
 import { useTitle } from "../../lib/useTitle";
 import { Navigate, useParams } from "react-router-dom";
 import { GROUPS_LIST, SERVICES_LIST } from "../Services/constants";
-import { bossNames, bossNameType, recommandationMapping } from "./constants";
+import {
+  bosses,
+  bossNames,
+  bossNameType,
+  recommandationMapping,
+} from "./constants";
 import Card from "../../components/Card/Card";
 
 type offerType = {
@@ -13,18 +18,24 @@ type offerType = {
 };
 
 function SiteRecommandation() {
-  useTitle("Recommandation de site");
-
   const params = useParams();
   const employer = params["employer"] as bossNameType | undefined;
+
   if (!employer || !bossNames.includes(employer)) {
     return <Navigate to="/not-found" />;
   }
+
+  useTitle(`Annuaire des services ${bosses[employer].label.toLowerCase()}`);
+
   const offers = computeOffers(employer);
 
   return (
     <div className="fr-container fr-pt-4w">
       <h1 className="fr-h2 blue-france">C'est parfait pour vous !</h1>
+      <h2 className="fr-h6 blue-france">
+        Recommandation de services pour votre cas :{" "}
+        {bosses[employer].label.toLowerCase()}
+      </h2>
       <div className="fr-grid-row fr-grid-row--gutters fr-mb-2w">
         {offers.map((offer) => (
           <Card
