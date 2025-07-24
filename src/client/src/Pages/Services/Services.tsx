@@ -10,6 +10,11 @@ function Services() {
 
   const [selectedTag, setSelectedTag] = useState<categoryType | "all">("all");
 
+  const getSelectedLabel = (tagValue: string) =>
+    selectedTag === tagValue ? (
+      <span className="visually-hidden"> (sélectionné)</span>
+    ) : null;
+
   const services = computeFilteredServiceList();
 
   return (
@@ -28,6 +33,7 @@ function Services() {
             }}
           >
             Tous les services
+            {getSelectedLabel("all")}
           </Tag>
         </div>
         <div className="tag-container">
@@ -38,6 +44,7 @@ function Services() {
             }}
           >
             Suite numérique
+            {getSelectedLabel("suiteNumerique")}
           </Tag>
         </div>
         <div className="tag-container">
@@ -48,6 +55,7 @@ function Services() {
             }}
           >
             Suite territoriale
+            {getSelectedLabel("suiteTerritoriale")}
           </Tag>
         </div>
         <div className="tag-container">
@@ -58,6 +66,7 @@ function Services() {
             }}
           >
             Sphère inclusion
+            {getSelectedLabel("inclusion")}
           </Tag>
         </div>
       </div>
