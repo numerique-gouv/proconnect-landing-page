@@ -10,11 +10,13 @@ function Stats() {
   return (
     <div className="fr-container">
       <div className="fr-grid-row">
+        <h1>Tableau de bord des statistiques ProConnect</h1>
         <iframe
           className="fr-col-12"
           height="1200"
           src={url}
           width="100%"
+          title="Tableau de bord des statistiques ProConnect"
         ></iframe>
       </div>
     </div>
